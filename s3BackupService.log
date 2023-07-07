@@ -1,0 +1,2669 @@
+2023-07-03 15:28:53 INFO  S3Backup:63 - S3 client : ListBucketsResponse(Buckets=[Bucket(Name=aws-cloudtrail-logs-889743517798-4c17d79f, CreationDate=2023-07-03T07:50:39Z), Bucket(Name=vyomlabsbucket, CreationDate=2023-06-07T08:56:43Z)], Owner=Owner(ID=d7dc917e255348a8f34cda28a78d40b6d8d48d311590ae781810a9e572635624))
+  2023-07-03 15:28:53 INFO  S3Backup:81 - Fresh differential files uploading.......
+  2023-07-03 15:28:53 INFO  S3Backup:84 - backupFolderPath :D:/Central Data
+  2023-07-03 15:28:53 INFO  S3Backup:139 - File Status for 123.txt is :CREATED
+  2023-07-03 15:28:53 INFO  S3Backup:142 - File Status for abc.txt is :MODIFIED
+  2023-07-03 15:28:53 INFO  S3Backup:142 - File Status for def.txt is :MODIFIED
+  2023-07-03 15:28:53 INFO  S3Backup:142 - File Status for user1.txt is :MODIFIED
+  2023-07-03 15:28:53 INFO  S3Backup:142 - File Status for user 2.txt is :MODIFIED
+  2023-07-03 15:28:53 INFO  S3Backup:142 - File Status for ghi.txt is :MODIFIED
+  2023-07-03 15:28:53 INFO  S3Backup:142 - File Status for jkl.txt is :MODIFIED
+  2023-07-03 15:28:53 INFO  S3Backup:142 - File Status for mno.txt is :MODIFIED
+  2023-07-03 15:28:53 INFO  S3Backup:142 - File Status for new.txt is :MODIFIED
+  2023-07-03 15:28:53 INFO  S3Backup:142 - File Status for new_file.txt is :MODIFIED
+  2023-07-03 15:28:53 INFO  S3Backup:142 - File Status for new_file_test.txt is :MODIFIED
+  2023-07-03 15:28:53 INFO  S3Backup:142 - File Status for user 1 payroll.txt is :MODIFIED
+  2023-07-03 15:28:53 INFO  S3Backup:142 - File Status for user 2 payroll.txt is :MODIFIED
+  2023-07-03 15:28:53 INFO  S3Backup:139 - File Status for pqr.txt is :CREATED
+  2023-07-03 15:28:53 INFO  S3Backup:142 - File Status for pqrstuv.txt is :MODIFIED
+  2023-07-03 15:28:53 INFO  S3Backup:142 - File Status for wertyuihgcxd.txt is :MODIFIED
+  2023-07-03 15:28:53 INFO  S3Backup:139 - File Status for wxyz.txt is :CREATED
+  2023-07-03 15:28:53 INFO  S3Backup:142 - File Status for yuioiuytre.txt is :MODIFIED
+  2023-07-03 15:28:53 INFO  S3Backup:105 - Backup completed successfully.
+  2023-07-03 15:35:54 INFO  S3Backup:63 - S3 client : ListBucketsResponse(Buckets=[Bucket(Name=aws-cloudtrail-logs-889743517798-4c17d79f, CreationDate=2023-07-03T07:50:39Z), Bucket(Name=vyomlabsbucket, CreationDate=2023-06-07T08:56:43Z)], Owner=Owner(ID=d7dc917e255348a8f34cda28a78d40b6d8d48d311590ae781810a9e572635624))
+  2023-07-03 15:35:54 INFO  S3Backup:66 - Failure files uploading.......
+  2023-07-03 18:58:14 INFO  S3Backup:64 - S3 client : ListBucketsResponse(Buckets=[Bucket(Name=aws-cloudtrail-logs-889743517798-4c17d79f, CreationDate=2023-07-03T07:50:39Z), Bucket(Name=vyomlabsbucket, CreationDate=2023-06-07T08:56:43Z)], Owner=Owner(ID=d7dc917e255348a8f34cda28a78d40b6d8d48d311590ae781810a9e572635624))
+  2023-07-03 18:58:14 INFO  S3Backup:82 - Fresh differential files uploading.......
+  2023-07-03 18:58:14 INFO  S3Backup:85 - backupFolderPath :D:/Central Data
+  2023-07-03 18:58:14 INFO  S3Backup:150 - File Status for File1.txt is :MODIFIED
+  2023-07-03 18:58:14 INFO  S3Backup:150 - File Status for File10.txt is :MODIFIED
+  2023-07-03 18:58:14 INFO  S3Backup:150 - File Status for File2.txt is :MODIFIED
+  2023-07-03 18:58:14 INFO  S3Backup:150 - File Status for File3.txt is :MODIFIED
+  2023-07-03 18:58:14 INFO  S3Backup:150 - File Status for File4.txt is :MODIFIED
+  2023-07-03 18:58:14 INFO  S3Backup:150 - File Status for File5.txt is :MODIFIED
+  2023-07-03 18:58:14 INFO  S3Backup:150 - File Status for File6.txt is :MODIFIED
+  2023-07-03 18:58:14 INFO  S3Backup:150 - File Status for File7.txt is :MODIFIED
+  2023-07-03 18:58:14 INFO  S3Backup:150 - File Status for File8.txt is :MODIFIED
+  2023-07-03 18:58:14 INFO  S3Backup:150 - File Status for File9.txt is :MODIFIED
+  2023-07-03 18:58:14 INFO  S3Backup:150 - File Status for user1.txt is :MODIFIED
+  2023-07-03 18:58:14 INFO  S3Backup:150 - File Status for user 2.txt is :MODIFIED
+  2023-07-03 18:58:14 INFO  S3Backup:150 - File Status for user 1 payroll.txt is :MODIFIED
+  2023-07-03 18:58:14 INFO  S3Backup:150 - File Status for user 2 payroll.txt is :MODIFIED
+  2023-07-03 18:58:14 INFO  S3Backup:111 - Backup completed successfully.
+  2023-07-03 18:59:45 INFO  S3Backup:64 - S3 client : ListBucketsResponse(Buckets=[Bucket(Name=aws-cloudtrail-logs-889743517798-4c17d79f, CreationDate=2023-07-03T07:50:39Z), Bucket(Name=vyomlabsbucket, CreationDate=2023-06-07T08:56:43Z)], Owner=Owner(ID=d7dc917e255348a8f34cda28a78d40b6d8d48d311590ae781810a9e572635624))
+  2023-07-03 18:59:45 INFO  S3Backup:82 - Fresh differential files uploading.......
+  2023-07-03 18:59:45 INFO  S3Backup:85 - backupFolderPath :D:/Central Data
+  2023-07-03 18:59:45 INFO  S3Backup:150 - File Status for File1.txt is :MODIFIED
+  2023-07-03 18:59:45 INFO  S3Backup:100 - key after: Central Data/File1.txt
+  2023-07-03 18:59:45 INFO  S3Backup:101 - path: D:\Central Data\File1.txt
+  2023-07-03 19:00:11 INFO  S3Backup:64 - S3 client : ListBucketsResponse(Buckets=[Bucket(Name=aws-cloudtrail-logs-889743517798-4c17d79f, CreationDate=2023-07-03T07:50:39Z), Bucket(Name=vyomlabsbucket, CreationDate=2023-06-07T08:56:43Z)], Owner=Owner(ID=d7dc917e255348a8f34cda28a78d40b6d8d48d311590ae781810a9e572635624))
+  2023-07-03 19:00:11 INFO  S3Backup:82 - Fresh differential files uploading.......
+  2023-07-03 19:00:11 INFO  S3Backup:85 - backupFolderPath :D:/Central Data
+  2023-07-03 19:00:11 INFO  S3Backup:150 - File Status for File1.txt is :MODIFIED
+  2023-07-03 19:00:11 INFO  S3Backup:100 - key after: Central Data/File1.txt
+  2023-07-03 19:00:11 INFO  S3Backup:101 - path: D:\Central Data\File1.txt
+  2023-07-03 19:00:11 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File1.txt
+  2023-07-03 19:00:12 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:11 pm
+  2023-07-03 19:00:12 INFO  S3Backup:150 - File Status for File10.txt is :MODIFIED
+  2023-07-03 19:00:12 INFO  S3Backup:100 - key after: Central Data/File10.txt
+  2023-07-03 19:00:12 INFO  S3Backup:101 - path: D:\Central Data\File10.txt
+  2023-07-03 19:00:12 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File10.txt
+  2023-07-03 19:00:12 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:11 pm
+  2023-07-03 19:00:12 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:12 pm
+  2023-07-03 19:00:12 INFO  S3Backup:150 - File Status for File2.txt is :MODIFIED
+  2023-07-03 19:00:12 INFO  S3Backup:100 - key after: Central Data/File2.txt
+  2023-07-03 19:00:12 INFO  S3Backup:101 - path: D:\Central Data\File2.txt
+  2023-07-03 19:00:12 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File2.txt
+  2023-07-03 19:00:12 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:11 pm
+  2023-07-03 19:00:12 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:12 pm
+  2023-07-03 19:00:12 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:12 pm
+  2023-07-03 19:00:12 INFO  S3Backup:150 - File Status for File3.txt is :MODIFIED
+  2023-07-03 19:00:12 INFO  S3Backup:100 - key after: Central Data/File3.txt
+  2023-07-03 19:00:12 INFO  S3Backup:101 - path: D:\Central Data\File3.txt
+  2023-07-03 19:00:12 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File3.txt
+  2023-07-03 19:00:12 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:11 pm
+  2023-07-03 19:00:12 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:12 pm
+  2023-07-03 19:00:12 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:12 pm
+  2023-07-03 19:00:12 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:12 pm
+  2023-07-03 19:00:12 INFO  S3Backup:150 - File Status for File4.txt is :MODIFIED
+  2023-07-03 19:00:12 INFO  S3Backup:100 - key after: Central Data/File4.txt
+  2023-07-03 19:00:12 INFO  S3Backup:101 - path: D:\Central Data\File4.txt
+  2023-07-03 19:00:13 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File4.txt
+  2023-07-03 19:00:13 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:11 pm
+  2023-07-03 19:00:13 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:12 pm
+  2023-07-03 19:00:13 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:12 pm
+  2023-07-03 19:00:13 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:12 pm
+  2023-07-03 19:00:13 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:13 pm
+  2023-07-03 19:00:13 INFO  S3Backup:150 - File Status for File5.txt is :MODIFIED
+  2023-07-03 19:00:13 INFO  S3Backup:100 - key after: Central Data/File5.txt
+  2023-07-03 19:00:13 INFO  S3Backup:101 - path: D:\Central Data\File5.txt
+  2023-07-03 19:00:13 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File5.txt
+  2023-07-03 19:00:13 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:11 pm
+  2023-07-03 19:00:13 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:12 pm
+  2023-07-03 19:00:13 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:12 pm
+  2023-07-03 19:00:13 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:12 pm
+  2023-07-03 19:00:13 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:13 pm
+  2023-07-03 19:00:13 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:13 pm
+  2023-07-03 19:00:13 INFO  S3Backup:150 - File Status for File6.txt is :MODIFIED
+  2023-07-03 19:00:13 INFO  S3Backup:100 - key after: Central Data/File6.txt
+  2023-07-03 19:00:13 INFO  S3Backup:101 - path: D:\Central Data\File6.txt
+  2023-07-03 19:00:13 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File6.txt
+  2023-07-03 19:00:13 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:11 pm
+  2023-07-03 19:00:13 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:12 pm
+  2023-07-03 19:00:13 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:12 pm
+  2023-07-03 19:00:13 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:12 pm
+  2023-07-03 19:00:13 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:13 pm
+  2023-07-03 19:00:13 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:13 pm
+  2023-07-03 19:00:13 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:13 pm
+  2023-07-03 19:00:13 INFO  S3Backup:150 - File Status for File7.txt is :MODIFIED
+  2023-07-03 19:00:13 INFO  S3Backup:100 - key after: Central Data/File7.txt
+  2023-07-03 19:00:13 INFO  S3Backup:101 - path: D:\Central Data\File7.txt
+  2023-07-03 19:00:13 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File7.txt
+  2023-07-03 19:00:13 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:11 pm
+  2023-07-03 19:00:13 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:12 pm
+  2023-07-03 19:00:13 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:12 pm
+  2023-07-03 19:00:13 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:12 pm
+  2023-07-03 19:00:13 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:13 pm
+  2023-07-03 19:00:13 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:13 pm
+  2023-07-03 19:00:13 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:13 pm
+  2023-07-03 19:00:13 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:13 pm
+  2023-07-03 19:00:13 INFO  S3Backup:150 - File Status for File8.txt is :MODIFIED
+  2023-07-03 19:00:13 INFO  S3Backup:100 - key after: Central Data/File8.txt
+  2023-07-03 19:00:13 INFO  S3Backup:101 - path: D:\Central Data\File8.txt
+  2023-07-03 19:00:13 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File8.txt
+  2023-07-03 19:00:13 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:11 pm
+  2023-07-03 19:00:13 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:12 pm
+  2023-07-03 19:00:13 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:12 pm
+  2023-07-03 19:00:13 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:12 pm
+  2023-07-03 19:00:13 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:13 pm
+  2023-07-03 19:00:13 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:13 pm
+  2023-07-03 19:00:13 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:13 pm
+  2023-07-03 19:00:13 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:13 pm
+  2023-07-03 19:00:13 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:13 pm
+  2023-07-03 19:00:13 INFO  S3Backup:150 - File Status for File9.txt is :MODIFIED
+  2023-07-03 19:00:13 INFO  S3Backup:100 - key after: Central Data/File9.txt
+  2023-07-03 19:00:13 INFO  S3Backup:101 - path: D:\Central Data\File9.txt
+  2023-07-03 19:00:13 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File9.txt
+  2023-07-03 19:00:13 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:11 pm
+  2023-07-03 19:00:13 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:12 pm
+  2023-07-03 19:00:13 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:12 pm
+  2023-07-03 19:00:13 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:12 pm
+  2023-07-03 19:00:13 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:13 pm
+  2023-07-03 19:00:13 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:13 pm
+  2023-07-03 19:00:13 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:13 pm
+  2023-07-03 19:00:13 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:13 pm
+  2023-07-03 19:00:13 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:13 pm
+  2023-07-03 19:00:13 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:13 pm
+  2023-07-03 19:00:13 INFO  S3Backup:150 - File Status for user1.txt is :MODIFIED
+  2023-07-03 19:00:13 INFO  S3Backup:150 - File Status for user 2.txt is :MODIFIED
+  2023-07-03 19:00:13 INFO  S3Backup:150 - File Status for user 1 payroll.txt is :MODIFIED
+  2023-07-03 19:00:13 INFO  S3Backup:150 - File Status for user 2 payroll.txt is :MODIFIED
+  2023-07-03 19:00:13 INFO  S3Backup:111 - Backup completed successfully.
+  2023-07-03 19:00:13 INFO  S3Backup:168 - File Details : {
+  "name": "File1.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File1.txt",
+  "pathOnS3": "Central Data/File1.txt",
+  "uploadDateAndTime": "Jul 3, 2023, 7:00:11 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-03 19:00:13 INFO  S3Backup:168 - File Details : {
+  "name": "File10.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File10.txt",
+  "pathOnS3": "Central Data/File10.txt",
+  "uploadDateAndTime": "Jul 3, 2023, 7:00:12 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-03 19:00:13 INFO  S3Backup:168 - File Details : {
+  "name": "File2.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File2.txt",
+  "pathOnS3": "Central Data/File2.txt",
+  "uploadDateAndTime": "Jul 3, 2023, 7:00:12 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-03 19:00:13 INFO  S3Backup:168 - File Details : {
+  "name": "File3.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File3.txt",
+  "pathOnS3": "Central Data/File3.txt",
+  "uploadDateAndTime": "Jul 3, 2023, 7:00:12 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-03 19:00:13 INFO  S3Backup:168 - File Details : {
+  "name": "File4.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File4.txt",
+  "pathOnS3": "Central Data/File4.txt",
+  "uploadDateAndTime": "Jul 3, 2023, 7:00:13 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-03 19:00:13 INFO  S3Backup:168 - File Details : {
+  "name": "File5.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File5.txt",
+  "pathOnS3": "Central Data/File5.txt",
+  "uploadDateAndTime": "Jul 3, 2023, 7:00:13 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-03 19:00:13 INFO  S3Backup:168 - File Details : {
+  "name": "File6.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File6.txt",
+  "pathOnS3": "Central Data/File6.txt",
+  "uploadDateAndTime": "Jul 3, 2023, 7:00:13 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-03 19:00:13 INFO  S3Backup:168 - File Details : {
+  "name": "File7.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File7.txt",
+  "pathOnS3": "Central Data/File7.txt",
+  "uploadDateAndTime": "Jul 3, 2023, 7:00:13 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-03 19:00:13 INFO  S3Backup:168 - File Details : {
+  "name": "File8.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File8.txt",
+  "pathOnS3": "Central Data/File8.txt",
+  "uploadDateAndTime": "Jul 3, 2023, 7:00:13 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-03 19:00:13 INFO  S3Backup:168 - File Details : {
+  "name": "File9.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File9.txt",
+  "pathOnS3": "Central Data/File9.txt",
+  "uploadDateAndTime": "Jul 3, 2023, 7:00:13 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-03 19:00:58 INFO  S3Backup:64 - S3 client : ListBucketsResponse(Buckets=[Bucket(Name=aws-cloudtrail-logs-889743517798-4c17d79f, CreationDate=2023-07-03T07:50:39Z), Bucket(Name=vyomlabsbucket, CreationDate=2023-06-07T08:56:43Z)], Owner=Owner(ID=d7dc917e255348a8f34cda28a78d40b6d8d48d311590ae781810a9e572635624))
+  2023-07-03 19:00:58 INFO  S3Backup:82 - Fresh differential files uploading.......
+  2023-07-03 19:00:58 INFO  S3Backup:85 - backupFolderPath :D:/Central Data
+  2023-07-03 19:00:58 INFO  S3Backup:150 - File Status for File1.txt is :MODIFIED
+  2023-07-03 19:00:58 INFO  S3Backup:100 - key after: Central Data/File1.txt
+  2023-07-03 19:00:58 INFO  S3Backup:101 - path: D:\Central Data\File1.txt
+  2023-07-03 19:00:59 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File1.txt
+  2023-07-03 19:01:00 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:59 pm
+  2023-07-03 19:01:00 INFO  S3Backup:150 - File Status for File10.txt is :MODIFIED
+  2023-07-03 19:01:00 INFO  S3Backup:100 - key after: Central Data/File10.txt
+  2023-07-03 19:01:00 INFO  S3Backup:101 - path: D:\Central Data\File10.txt
+  2023-07-03 19:01:00 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File10.txt
+  2023-07-03 19:01:00 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:59 pm
+  2023-07-03 19:01:00 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:01:00 pm
+  2023-07-03 19:01:00 INFO  S3Backup:150 - File Status for File2.txt is :MODIFIED
+  2023-07-03 19:01:00 INFO  S3Backup:100 - key after: Central Data/File2.txt
+  2023-07-03 19:01:00 INFO  S3Backup:101 - path: D:\Central Data\File2.txt
+  2023-07-03 19:01:00 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File2.txt
+  2023-07-03 19:01:00 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:59 pm
+  2023-07-03 19:01:00 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:01:00 pm
+  2023-07-03 19:01:00 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:01:00 pm
+  2023-07-03 19:01:00 INFO  S3Backup:150 - File Status for File3.txt is :MODIFIED
+  2023-07-03 19:01:00 INFO  S3Backup:100 - key after: Central Data/File3.txt
+  2023-07-03 19:01:00 INFO  S3Backup:101 - path: D:\Central Data\File3.txt
+  2023-07-03 19:01:00 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File3.txt
+  2023-07-03 19:01:00 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:59 pm
+  2023-07-03 19:01:00 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:01:00 pm
+  2023-07-03 19:01:00 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:01:00 pm
+  2023-07-03 19:01:00 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:01:00 pm
+  2023-07-03 19:01:00 INFO  S3Backup:150 - File Status for File4.txt is :MODIFIED
+  2023-07-03 19:01:00 INFO  S3Backup:100 - key after: Central Data/File4.txt
+  2023-07-03 19:01:00 INFO  S3Backup:101 - path: D:\Central Data\File4.txt
+  2023-07-03 19:01:00 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File4.txt
+  2023-07-03 19:01:00 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:59 pm
+  2023-07-03 19:01:00 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:01:00 pm
+  2023-07-03 19:01:00 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:01:00 pm
+  2023-07-03 19:01:00 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:01:00 pm
+  2023-07-03 19:01:00 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:01:00 pm
+  2023-07-03 19:01:00 INFO  S3Backup:150 - File Status for File5.txt is :MODIFIED
+  2023-07-03 19:01:00 INFO  S3Backup:100 - key after: Central Data/File5.txt
+  2023-07-03 19:01:00 INFO  S3Backup:101 - path: D:\Central Data\File5.txt
+  2023-07-03 19:01:00 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File5.txt
+  2023-07-03 19:01:00 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:59 pm
+  2023-07-03 19:01:00 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:01:00 pm
+  2023-07-03 19:01:00 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:01:00 pm
+  2023-07-03 19:01:00 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:01:00 pm
+  2023-07-03 19:01:00 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:01:00 pm
+  2023-07-03 19:01:00 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:01:00 pm
+  2023-07-03 19:01:00 INFO  S3Backup:150 - File Status for File6.txt is :MODIFIED
+  2023-07-03 19:01:00 INFO  S3Backup:100 - key after: Central Data/File6.txt
+  2023-07-03 19:01:00 INFO  S3Backup:101 - path: D:\Central Data\File6.txt
+  2023-07-03 19:01:00 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File6.txt
+  2023-07-03 19:01:00 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:59 pm
+  2023-07-03 19:01:00 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:01:00 pm
+  2023-07-03 19:01:00 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:01:00 pm
+  2023-07-03 19:01:00 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:01:00 pm
+  2023-07-03 19:01:00 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:01:00 pm
+  2023-07-03 19:01:00 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:01:00 pm
+  2023-07-03 19:01:00 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:01:00 pm
+  2023-07-03 19:01:00 INFO  S3Backup:150 - File Status for File7.txt is :MODIFIED
+  2023-07-03 19:01:00 INFO  S3Backup:100 - key after: Central Data/File7.txt
+  2023-07-03 19:01:00 INFO  S3Backup:101 - path: D:\Central Data\File7.txt
+  2023-07-03 19:01:00 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File7.txt
+  2023-07-03 19:01:00 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:59 pm
+  2023-07-03 19:01:00 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:01:00 pm
+  2023-07-03 19:01:00 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:01:00 pm
+  2023-07-03 19:01:00 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:01:00 pm
+  2023-07-03 19:01:00 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:01:00 pm
+  2023-07-03 19:01:00 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:01:00 pm
+  2023-07-03 19:01:00 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:01:00 pm
+  2023-07-03 19:01:00 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:01:00 pm
+  2023-07-03 19:01:00 INFO  S3Backup:150 - File Status for File8.txt is :MODIFIED
+  2023-07-03 19:01:00 INFO  S3Backup:100 - key after: Central Data/File8.txt
+  2023-07-03 19:01:00 INFO  S3Backup:101 - path: D:\Central Data\File8.txt
+  2023-07-03 19:01:01 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File8.txt
+  2023-07-03 19:01:01 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:59 pm
+  2023-07-03 19:01:01 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:01:00 pm
+  2023-07-03 19:01:01 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:01:00 pm
+  2023-07-03 19:01:01 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:01:00 pm
+  2023-07-03 19:01:01 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:01:00 pm
+  2023-07-03 19:01:01 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:01:00 pm
+  2023-07-03 19:01:01 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:01:00 pm
+  2023-07-03 19:01:01 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:01:00 pm
+  2023-07-03 19:01:01 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:01:01 pm
+  2023-07-03 19:01:01 INFO  S3Backup:150 - File Status for File9.txt is :MODIFIED
+  2023-07-03 19:01:01 INFO  S3Backup:100 - key after: Central Data/File9.txt
+  2023-07-03 19:01:01 INFO  S3Backup:101 - path: D:\Central Data\File9.txt
+  2023-07-03 19:01:01 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File9.txt
+  2023-07-03 19:01:01 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:00:59 pm
+  2023-07-03 19:01:01 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:01:00 pm
+  2023-07-03 19:01:01 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:01:00 pm
+  2023-07-03 19:01:01 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:01:00 pm
+  2023-07-03 19:01:01 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:01:00 pm
+  2023-07-03 19:01:01 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:01:00 pm
+  2023-07-03 19:01:01 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:01:00 pm
+  2023-07-03 19:01:01 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:01:00 pm
+  2023-07-03 19:01:01 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:01:01 pm
+  2023-07-03 19:01:01 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:01:01 pm
+  2023-07-03 19:01:01 INFO  S3Backup:150 - File Status for user1.txt is :MODIFIED
+  2023-07-03 19:01:01 INFO  S3Backup:150 - File Status for user 2.txt is :MODIFIED
+  2023-07-03 19:01:01 INFO  S3Backup:150 - File Status for user 1 payroll.txt is :MODIFIED
+  2023-07-03 19:01:01 INFO  S3Backup:150 - File Status for user 2 payroll.txt is :MODIFIED
+  2023-07-03 19:01:01 INFO  S3Backup:111 - Backup completed successfully.
+  2023-07-03 19:01:01 INFO  S3Backup:168 - File Details : {
+  "name": "File1.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File1.txt",
+  "pathOnS3": "Central Data/File1.txt",
+  "uploadDateAndTime": "Jul 3, 2023, 7:00:59 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-03 19:01:01 INFO  S3Backup:168 - File Details : {
+  "name": "File10.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File10.txt",
+  "pathOnS3": "Central Data/File10.txt",
+  "uploadDateAndTime": "Jul 3, 2023, 7:01:00 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-03 19:01:01 INFO  S3Backup:168 - File Details : {
+  "name": "File2.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File2.txt",
+  "pathOnS3": "Central Data/File2.txt",
+  "uploadDateAndTime": "Jul 3, 2023, 7:01:00 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-03 19:01:01 INFO  S3Backup:168 - File Details : {
+  "name": "File3.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File3.txt",
+  "pathOnS3": "Central Data/File3.txt",
+  "uploadDateAndTime": "Jul 3, 2023, 7:01:00 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-03 19:01:01 INFO  S3Backup:168 - File Details : {
+  "name": "File4.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File4.txt",
+  "pathOnS3": "Central Data/File4.txt",
+  "uploadDateAndTime": "Jul 3, 2023, 7:01:00 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-03 19:01:01 INFO  S3Backup:168 - File Details : {
+  "name": "File5.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File5.txt",
+  "pathOnS3": "Central Data/File5.txt",
+  "uploadDateAndTime": "Jul 3, 2023, 7:01:00 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-03 19:01:01 INFO  S3Backup:168 - File Details : {
+  "name": "File6.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File6.txt",
+  "pathOnS3": "Central Data/File6.txt",
+  "uploadDateAndTime": "Jul 3, 2023, 7:01:00 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-03 19:01:01 INFO  S3Backup:168 - File Details : {
+  "name": "File7.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File7.txt",
+  "pathOnS3": "Central Data/File7.txt",
+  "uploadDateAndTime": "Jul 3, 2023, 7:01:00 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-03 19:01:01 INFO  S3Backup:168 - File Details : {
+  "name": "File8.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File8.txt",
+  "pathOnS3": "Central Data/File8.txt",
+  "uploadDateAndTime": "Jul 3, 2023, 7:01:01 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-03 19:01:01 INFO  S3Backup:168 - File Details : {
+  "name": "File9.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File9.txt",
+  "pathOnS3": "Central Data/File9.txt",
+  "uploadDateAndTime": "Jul 3, 2023, 7:01:01 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-03 19:02:22 INFO  S3Backup:64 - S3 client : ListBucketsResponse(Buckets=[Bucket(Name=aws-cloudtrail-logs-889743517798-4c17d79f, CreationDate=2023-07-03T07:50:39Z), Bucket(Name=vyomlabsbucket, CreationDate=2023-06-07T08:56:43Z)], Owner=Owner(ID=d7dc917e255348a8f34cda28a78d40b6d8d48d311590ae781810a9e572635624))
+  2023-07-03 19:02:22 INFO  S3Backup:67 - Failure files uploading.......
+  2023-07-03 19:03:20 INFO  S3Backup:64 - S3 client : ListBucketsResponse(Buckets=[Bucket(Name=aws-cloudtrail-logs-889743517798-4c17d79f, CreationDate=2023-07-03T07:50:39Z), Bucket(Name=vyomlabsbucket, CreationDate=2023-06-07T08:56:43Z)], Owner=Owner(ID=d7dc917e255348a8f34cda28a78d40b6d8d48d311590ae781810a9e572635624))
+  2023-07-03 19:03:20 INFO  S3Backup:82 - Fresh differential files uploading.......
+  2023-07-03 19:03:20 INFO  S3Backup:85 - backupFolderPath :D:/Central Data
+  2023-07-03 19:03:20 INFO  S3Backup:150 - File Status for File 1.txt is :MODIFIED
+  2023-07-03 19:03:20 INFO  S3Backup:100 - key after: Central Data/File 1.txt
+  2023-07-03 19:03:20 INFO  S3Backup:101 - path: D:\Central Data\File 1.txt
+  2023-07-03 19:03:21 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File 1.txt
+  2023-07-03 19:03:21 INFO  S3Backup:150 - File Status for File 10.txt is :MODIFIED
+  2023-07-03 19:03:21 INFO  S3Backup:100 - key after: Central Data/File 10.txt
+  2023-07-03 19:03:21 INFO  S3Backup:101 - path: D:\Central Data\File 10.txt
+  2023-07-03 19:03:21 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File 10.txt
+  2023-07-03 19:03:21 INFO  S3Backup:150 - File Status for File 2.txt is :MODIFIED
+  2023-07-03 19:03:21 INFO  S3Backup:100 - key after: Central Data/File 2.txt
+  2023-07-03 19:03:21 INFO  S3Backup:101 - path: D:\Central Data\File 2.txt
+  2023-07-03 19:03:21 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File 2.txt
+  2023-07-03 19:03:21 INFO  S3Backup:150 - File Status for File 3.txt is :MODIFIED
+  2023-07-03 19:03:21 INFO  S3Backup:100 - key after: Central Data/File 3.txt
+  2023-07-03 19:03:21 INFO  S3Backup:101 - path: D:\Central Data\File 3.txt
+  2023-07-03 19:03:21 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File 3.txt
+  2023-07-03 19:03:21 INFO  S3Backup:150 - File Status for File 4.txt is :MODIFIED
+  2023-07-03 19:03:21 INFO  S3Backup:100 - key after: Central Data/File 4.txt
+  2023-07-03 19:03:21 INFO  S3Backup:101 - path: D:\Central Data\File 4.txt
+  2023-07-03 19:03:21 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File 4.txt
+  2023-07-03 19:03:21 INFO  S3Backup:150 - File Status for File 5.txt is :MODIFIED
+  2023-07-03 19:03:21 INFO  S3Backup:100 - key after: Central Data/File 5.txt
+  2023-07-03 19:03:21 INFO  S3Backup:101 - path: D:\Central Data\File 5.txt
+  2023-07-03 19:03:21 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File 5.txt
+  2023-07-03 19:03:21 INFO  S3Backup:150 - File Status for File 6.txt is :MODIFIED
+  2023-07-03 19:03:21 INFO  S3Backup:100 - key after: Central Data/File 6.txt
+  2023-07-03 19:03:21 INFO  S3Backup:101 - path: D:\Central Data\File 6.txt
+  2023-07-03 19:03:21 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File 6.txt
+  2023-07-03 19:03:21 INFO  S3Backup:150 - File Status for File 7.txt is :MODIFIED
+  2023-07-03 19:03:21 INFO  S3Backup:100 - key after: Central Data/File 7.txt
+  2023-07-03 19:03:21 INFO  S3Backup:101 - path: D:\Central Data\File 7.txt
+  2023-07-03 19:03:21 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File 7.txt
+  2023-07-03 19:03:21 INFO  S3Backup:150 - File Status for File 8.txt is :MODIFIED
+  2023-07-03 19:03:21 INFO  S3Backup:100 - key after: Central Data/File 8.txt
+  2023-07-03 19:03:21 INFO  S3Backup:101 - path: D:\Central Data\File 8.txt
+  2023-07-03 19:03:21 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File 8.txt
+  2023-07-03 19:03:21 INFO  S3Backup:150 - File Status for File 9.txt is :MODIFIED
+  2023-07-03 19:03:21 INFO  S3Backup:100 - key after: Central Data/File 9.txt
+  2023-07-03 19:03:21 INFO  S3Backup:101 - path: D:\Central Data\File 9.txt
+  2023-07-03 19:03:21 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File 9.txt
+  2023-07-03 19:03:21 INFO  S3Backup:150 - File Status for user1.txt is :MODIFIED
+  2023-07-03 19:03:21 INFO  S3Backup:150 - File Status for user 2.txt is :MODIFIED
+  2023-07-03 19:03:21 INFO  S3Backup:150 - File Status for user 1 payroll.txt is :MODIFIED
+  2023-07-03 19:03:21 INFO  S3Backup:150 - File Status for user 2 payroll.txt is :MODIFIED
+  2023-07-03 19:03:21 INFO  S3Backup:111 - Backup completed successfully.
+  2023-07-03 19:03:22 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:03:21 pm
+  2023-07-03 19:03:22 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:03:21 pm
+  2023-07-03 19:03:22 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:03:21 pm
+  2023-07-03 19:03:22 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:03:21 pm
+  2023-07-03 19:03:22 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:03:21 pm
+  2023-07-03 19:03:22 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:03:21 pm
+  2023-07-03 19:03:22 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:03:21 pm
+  2023-07-03 19:03:22 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:03:21 pm
+  2023-07-03 19:03:22 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:03:21 pm
+  2023-07-03 19:03:22 INFO  FileUploadDetailsService:131 - Date format : 03-Jul-2023 07:03:21 pm
+  2023-07-03 19:03:22 INFO  S3Backup:168 - File Details : {
+  "name": "File 1.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 1.txt",
+  "pathOnS3": "Central Data/File 1.txt",
+  "uploadDateAndTime": "Jul 3, 2023, 7:03:21 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-03 19:03:22 INFO  S3Backup:168 - File Details : {
+  "name": "File 10.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 10.txt",
+  "pathOnS3": "Central Data/File 10.txt",
+  "uploadDateAndTime": "Jul 3, 2023, 7:03:21 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-03 19:03:22 INFO  S3Backup:168 - File Details : {
+  "name": "File 2.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 2.txt",
+  "pathOnS3": "Central Data/File 2.txt",
+  "uploadDateAndTime": "Jul 3, 2023, 7:03:21 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-03 19:03:22 INFO  S3Backup:168 - File Details : {
+  "name": "File 3.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 3.txt",
+  "pathOnS3": "Central Data/File 3.txt",
+  "uploadDateAndTime": "Jul 3, 2023, 7:03:21 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-03 19:03:22 INFO  S3Backup:168 - File Details : {
+  "name": "File 4.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4.txt",
+  "pathOnS3": "Central Data/File 4.txt",
+  "uploadDateAndTime": "Jul 3, 2023, 7:03:21 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-03 19:03:22 INFO  S3Backup:168 - File Details : {
+  "name": "File 5.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 5.txt",
+  "pathOnS3": "Central Data/File 5.txt",
+  "uploadDateAndTime": "Jul 3, 2023, 7:03:21 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-03 19:03:22 INFO  S3Backup:168 - File Details : {
+  "name": "File 6.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 6.txt",
+  "pathOnS3": "Central Data/File 6.txt",
+  "uploadDateAndTime": "Jul 3, 2023, 7:03:21 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-03 19:03:22 INFO  S3Backup:168 - File Details : {
+  "name": "File 7.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 7.txt",
+  "pathOnS3": "Central Data/File 7.txt",
+  "uploadDateAndTime": "Jul 3, 2023, 7:03:21 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-03 19:03:22 INFO  S3Backup:168 - File Details : {
+  "name": "File 8.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 8.txt",
+  "pathOnS3": "Central Data/File 8.txt",
+  "uploadDateAndTime": "Jul 3, 2023, 7:03:21 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-03 19:03:22 INFO  S3Backup:168 - File Details : {
+  "name": "File 9.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 9.txt",
+  "pathOnS3": "Central Data/File 9.txt",
+  "uploadDateAndTime": "Jul 3, 2023, 7:03:21 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-04 18:37:17 INFO  S3Backup:65 - S3 client : ListBucketsResponse(Buckets=[Bucket(Name=aws-cloudtrail-logs-889743517798-4c17d79f, CreationDate=2023-07-03T07:50:39Z), Bucket(Name=vyomlabsbucket, CreationDate=2023-06-07T08:56:43Z)], Owner=Owner(ID=d7dc917e255348a8f34cda28a78d40b6d8d48d311590ae781810a9e572635624))
+  2023-07-04 18:37:17 INFO  S3Backup:68 - Failure files uploading.......
+  2023-07-04 18:37:31 INFO  S3Backup:65 - S3 client : ListBucketsResponse(Buckets=[Bucket(Name=aws-cloudtrail-logs-889743517798-4c17d79f, CreationDate=2023-07-03T07:50:39Z), Bucket(Name=vyomlabsbucket, CreationDate=2023-06-07T08:56:43Z)], Owner=Owner(ID=d7dc917e255348a8f34cda28a78d40b6d8d48d311590ae781810a9e572635624))
+  2023-07-04 18:37:31 INFO  S3Backup:83 - Fresh differential files uploading.......
+  2023-07-04 18:37:31 INFO  S3Backup:86 - backupFolderPath :D:/Central Data
+  2023-07-04 18:37:31 INFO  S3Backup:152 - File Status for File 1.txt is :MODIFIED
+  2023-07-04 18:37:31 INFO  S3Backup:152 - File Status for File 10.txt is :MODIFIED
+  2023-07-04 18:37:31 INFO  S3Backup:152 - File Status for File 2.txt is :MODIFIED
+  2023-07-04 18:37:31 INFO  S3Backup:152 - File Status for File 3.txt is :MODIFIED
+  2023-07-04 18:37:31 INFO  S3Backup:152 - File Status for File 4.txt is :MODIFIED
+  2023-07-04 18:37:31 INFO  S3Backup:152 - File Status for File 5.txt is :MODIFIED
+  2023-07-04 18:37:31 INFO  S3Backup:152 - File Status for File 6.txt is :MODIFIED
+  2023-07-04 18:37:31 INFO  S3Backup:152 - File Status for File 7.txt is :MODIFIED
+  2023-07-04 18:37:31 INFO  S3Backup:152 - File Status for File 8.txt is :MODIFIED
+  2023-07-04 18:37:31 INFO  S3Backup:152 - File Status for File 9.txt is :MODIFIED
+  2023-07-04 18:37:31 INFO  S3Backup:152 - File Status for user1.txt is :MODIFIED
+  2023-07-04 18:37:31 INFO  S3Backup:152 - File Status for user 2.txt is :MODIFIED
+  2023-07-04 18:37:31 INFO  S3Backup:152 - File Status for user 1 payroll.txt is :MODIFIED
+  2023-07-04 18:37:31 INFO  S3Backup:152 - File Status for user 2 payroll.txt is :MODIFIED
+  2023-07-04 18:37:31 INFO  S3Backup:113 - Backup completed successfully.
+  2023-07-04 18:39:48 INFO  S3Backup:65 - S3 client : ListBucketsResponse(Buckets=[Bucket(Name=aws-cloudtrail-logs-889743517798-4c17d79f, CreationDate=2023-07-03T07:50:39Z), Bucket(Name=vyomlabsbucket, CreationDate=2023-06-07T08:56:43Z)], Owner=Owner(ID=d7dc917e255348a8f34cda28a78d40b6d8d48d311590ae781810a9e572635624))
+  2023-07-04 18:39:48 INFO  S3Backup:83 - Fresh differential files uploading.......
+  2023-07-04 18:39:48 INFO  S3Backup:86 - backupFolderPath :D:/Central Data
+  2023-07-04 18:39:48 INFO  S3Backup:152 - File Status for File 1.txt is :MODIFIED
+  2023-07-04 18:39:48 INFO  S3Backup:152 - File Status for File 10.txt is :MODIFIED
+  2023-07-04 18:39:48 INFO  S3Backup:152 - File Status for File 2.txt is :MODIFIED
+  2023-07-04 18:39:48 INFO  S3Backup:152 - File Status for File 3.txt is :MODIFIED
+  2023-07-04 18:39:48 INFO  S3Backup:152 - File Status for File 4.txt is :MODIFIED
+  2023-07-04 18:39:48 INFO  S3Backup:152 - File Status for File 5.txt is :MODIFIED
+  2023-07-04 18:39:48 INFO  S3Backup:152 - File Status for File 6.txt is :MODIFIED
+  2023-07-04 18:39:48 INFO  S3Backup:152 - File Status for File 7.txt is :MODIFIED
+  2023-07-04 18:39:48 INFO  S3Backup:152 - File Status for File 8.txt is :MODIFIED
+  2023-07-04 18:39:48 INFO  S3Backup:152 - File Status for File 9.txt is :MODIFIED
+  2023-07-04 18:39:48 INFO  S3Backup:152 - File Status for user1.txt is :MODIFIED
+  2023-07-04 18:39:48 INFO  S3Backup:152 - File Status for user 2.txt is :MODIFIED
+  2023-07-04 18:39:48 INFO  S3Backup:152 - File Status for user 1 payroll.txt is :MODIFIED
+  2023-07-04 18:39:48 INFO  S3Backup:152 - File Status for user 2 payroll.txt is :MODIFIED
+  2023-07-04 18:39:48 INFO  S3Backup:113 - Backup completed successfully.
+  2023-07-04 18:45:41 INFO  S3Backup:65 - S3 client : ListBucketsResponse(Buckets=[Bucket(Name=aws-cloudtrail-logs-889743517798-4c17d79f, CreationDate=2023-07-03T07:50:39Z), Bucket(Name=vyomlabsbucket, CreationDate=2023-06-07T08:56:43Z)], Owner=Owner(ID=d7dc917e255348a8f34cda28a78d40b6d8d48d311590ae781810a9e572635624))
+  2023-07-04 18:45:41 INFO  S3Backup:83 - Fresh differential files uploading.......
+  2023-07-04 18:45:41 INFO  S3Backup:86 - backupFolderPath :D:/Central Data
+  2023-07-04 18:45:41 INFO  S3Backup:151 - File Status for File 10.txt is :MODIFIED
+  2023-07-04 18:45:41 INFO  S3Backup:101 - key after: Central Data/File 10.txt
+  2023-07-04 18:45:41 INFO  S3Backup:102 - path: D:\Central Data\File 10.txt
+  2023-07-04 18:45:42 INFO  S3Backup:131 - Uploaded file: D:\Central Data\File 10.txt
+  2023-07-04 18:45:42 INFO  S3Backup:151 - File Status for File 2.txt is :MODIFIED
+  2023-07-04 18:45:42 INFO  S3Backup:101 - key after: Central Data/File 2.txt
+  2023-07-04 18:45:42 INFO  S3Backup:102 - path: D:\Central Data\File 2.txt
+  2023-07-04 18:45:42 INFO  S3Backup:131 - Uploaded file: D:\Central Data\File 2.txt
+  2023-07-04 18:45:42 INFO  S3Backup:151 - File Status for File 3.txt is :MODIFIED
+  2023-07-04 18:45:42 INFO  S3Backup:101 - key after: Central Data/File 3.txt
+  2023-07-04 18:45:42 INFO  S3Backup:102 - path: D:\Central Data\File 3.txt
+  2023-07-04 18:45:42 INFO  S3Backup:131 - Uploaded file: D:\Central Data\File 3.txt
+  2023-07-04 18:45:42 INFO  S3Backup:151 - File Status for File 4.txt is :MODIFIED
+  2023-07-04 18:45:42 INFO  S3Backup:101 - key after: Central Data/File 4.txt
+  2023-07-04 18:45:42 INFO  S3Backup:102 - path: D:\Central Data\File 4.txt
+  2023-07-04 18:45:42 INFO  S3Backup:131 - Uploaded file: D:\Central Data\File 4.txt
+  2023-07-04 18:45:42 INFO  S3Backup:151 - File Status for File 5.txt is :MODIFIED
+  2023-07-04 18:45:42 INFO  S3Backup:101 - key after: Central Data/File 5.txt
+  2023-07-04 18:45:42 INFO  S3Backup:102 - path: D:\Central Data\File 5.txt
+  2023-07-04 18:45:42 INFO  S3Backup:131 - Uploaded file: D:\Central Data\File 5.txt
+  2023-07-04 18:45:42 INFO  S3Backup:151 - File Status for File 6.txt is :MODIFIED
+  2023-07-04 18:45:42 INFO  S3Backup:101 - key after: Central Data/File 6.txt
+  2023-07-04 18:45:42 INFO  S3Backup:102 - path: D:\Central Data\File 6.txt
+  2023-07-04 18:45:42 INFO  S3Backup:131 - Uploaded file: D:\Central Data\File 6.txt
+  2023-07-04 18:45:42 INFO  S3Backup:151 - File Status for File 7.txt is :MODIFIED
+  2023-07-04 18:45:42 INFO  S3Backup:101 - key after: Central Data/File 7.txt
+  2023-07-04 18:45:42 INFO  S3Backup:102 - path: D:\Central Data\File 7.txt
+  2023-07-04 18:45:42 INFO  S3Backup:131 - Uploaded file: D:\Central Data\File 7.txt
+  2023-07-04 18:45:42 INFO  S3Backup:151 - File Status for File 8.txt is :MODIFIED
+  2023-07-04 18:45:42 INFO  S3Backup:101 - key after: Central Data/File 8.txt
+  2023-07-04 18:45:42 INFO  S3Backup:102 - path: D:\Central Data\File 8.txt
+  2023-07-04 18:45:42 INFO  S3Backup:131 - Uploaded file: D:\Central Data\File 8.txt
+  2023-07-04 18:45:42 INFO  S3Backup:151 - File Status for File 9.txt is :MODIFIED
+  2023-07-04 18:45:42 INFO  S3Backup:101 - key after: Central Data/File 9.txt
+  2023-07-04 18:45:42 INFO  S3Backup:102 - path: D:\Central Data\File 9.txt
+  2023-07-04 18:45:42 INFO  S3Backup:131 - Uploaded file: D:\Central Data\File 9.txt
+  2023-07-04 18:45:42 INFO  S3Backup:151 - File Status for File_temp.txt is :MODIFIED
+  2023-07-04 18:45:42 INFO  S3Backup:101 - key after: Central Data/File_temp.txt
+  2023-07-04 18:45:42 INFO  S3Backup:102 - path: D:\Central Data\File_temp.txt
+  2023-07-04 18:45:42 INFO  S3Backup:131 - Uploaded file: D:\Central Data\File_temp.txt
+  2023-07-04 18:45:42 INFO  S3Backup:151 - File Status for user1.txt is :MODIFIED
+  2023-07-04 18:45:42 INFO  S3Backup:151 - File Status for user 2.txt is :MODIFIED
+  2023-07-04 18:45:42 INFO  S3Backup:151 - File Status for user 1 payroll.txt is :MODIFIED
+  2023-07-04 18:45:42 INFO  S3Backup:151 - File Status for user 2 payroll.txt is :MODIFIED
+  2023-07-04 18:45:42 INFO  S3Backup:112 - Backup completed successfully.
+  2023-07-04 18:45:43 INFO  FileUploadDetailsService:131 - Date format : 04-Jul-2023 06:45:42 pm
+  2023-07-04 18:45:43 INFO  FileUploadDetailsService:131 - Date format : 04-Jul-2023 06:45:42 pm
+  2023-07-04 18:45:43 INFO  FileUploadDetailsService:131 - Date format : 04-Jul-2023 06:45:42 pm
+  2023-07-04 18:45:43 INFO  FileUploadDetailsService:131 - Date format : 04-Jul-2023 06:45:42 pm
+  2023-07-04 18:45:43 INFO  FileUploadDetailsService:131 - Date format : 04-Jul-2023 06:45:42 pm
+  2023-07-04 18:45:43 INFO  FileUploadDetailsService:131 - Date format : 04-Jul-2023 06:45:42 pm
+  2023-07-04 18:45:43 INFO  FileUploadDetailsService:131 - Date format : 04-Jul-2023 06:45:42 pm
+  2023-07-04 18:45:43 INFO  FileUploadDetailsService:131 - Date format : 04-Jul-2023 06:45:42 pm
+  2023-07-04 18:45:43 INFO  FileUploadDetailsService:131 - Date format : 04-Jul-2023 06:45:42 pm
+  2023-07-04 18:45:43 INFO  FileUploadDetailsService:131 - Date format : 04-Jul-2023 06:45:42 pm
+  2023-07-04 18:45:44 INFO  S3Backup:170 - File Details : {
+  "name": "File 10.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 10.txt",
+  "pathOnS3": "Central Data/File 10.txt",
+  "uploadDateAndTime": "Jul 4, 2023, 6:45:42 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-04 18:45:44 INFO  S3Backup:170 - File Details : {
+  "name": "File 2.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 2.txt",
+  "pathOnS3": "Central Data/File 2.txt",
+  "uploadDateAndTime": "Jul 4, 2023, 6:45:42 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-04 18:45:44 INFO  S3Backup:170 - File Details : {
+  "name": "File 3.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 3.txt",
+  "pathOnS3": "Central Data/File 3.txt",
+  "uploadDateAndTime": "Jul 4, 2023, 6:45:42 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-04 18:45:44 INFO  S3Backup:170 - File Details : {
+  "name": "File 4.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4.txt",
+  "pathOnS3": "Central Data/File 4.txt",
+  "uploadDateAndTime": "Jul 4, 2023, 6:45:42 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-04 18:45:44 INFO  S3Backup:170 - File Details : {
+  "name": "File 5.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 5.txt",
+  "pathOnS3": "Central Data/File 5.txt",
+  "uploadDateAndTime": "Jul 4, 2023, 6:45:42 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-04 18:45:44 INFO  S3Backup:170 - File Details : {
+  "name": "File 6.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 6.txt",
+  "pathOnS3": "Central Data/File 6.txt",
+  "uploadDateAndTime": "Jul 4, 2023, 6:45:42 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-04 18:45:44 INFO  S3Backup:170 - File Details : {
+  "name": "File 7.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 7.txt",
+  "pathOnS3": "Central Data/File 7.txt",
+  "uploadDateAndTime": "Jul 4, 2023, 6:45:42 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-04 18:45:44 INFO  S3Backup:170 - File Details : {
+  "name": "File 8.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 8.txt",
+  "pathOnS3": "Central Data/File 8.txt",
+  "uploadDateAndTime": "Jul 4, 2023, 6:45:42 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-04 18:45:44 INFO  S3Backup:170 - File Details : {
+  "name": "File 9.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 9.txt",
+  "pathOnS3": "Central Data/File 9.txt",
+  "uploadDateAndTime": "Jul 4, 2023, 6:45:42 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-04 18:45:44 INFO  S3Backup:170 - File Details : {
+  "name": "File_temp.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File_temp.txt",
+  "pathOnS3": "Central Data/File_temp.txt",
+  "uploadDateAndTime": "Jul 4, 2023, 6:45:42 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-04 18:47:49 INFO  S3Backup:65 - S3 client : ListBucketsResponse(Buckets=[Bucket(Name=aws-cloudtrail-logs-889743517798-4c17d79f, CreationDate=2023-07-03T07:50:39Z), Bucket(Name=vyomlabsbucket, CreationDate=2023-06-07T08:56:43Z)], Owner=Owner(ID=d7dc917e255348a8f34cda28a78d40b6d8d48d311590ae781810a9e572635624))
+  2023-07-04 18:47:49 INFO  S3Backup:83 - Fresh differential files uploading.......
+  2023-07-04 18:47:49 INFO  S3Backup:86 - backupFolderPath :D:/Central Data
+  2023-07-04 18:47:49 INFO  S3Backup:151 - File Status for File 10.txt is :MODIFIED
+  2023-07-04 18:47:49 INFO  S3Backup:101 - key after: Central Data/File 10.txt
+  2023-07-04 18:47:49 INFO  S3Backup:102 - path: D:\Central Data\File 10.txt
+  2023-07-04 18:47:49 INFO  S3Backup:131 - Uploaded file: D:\Central Data\File 10.txt
+  2023-07-04 18:47:49 INFO  S3Backup:151 - File Status for File 2.txt is :MODIFIED
+  2023-07-04 18:47:49 INFO  S3Backup:101 - key after: Central Data/File 2.txt
+  2023-07-04 18:47:49 INFO  S3Backup:102 - path: D:\Central Data\File 2.txt
+  2023-07-04 18:47:49 INFO  S3Backup:131 - Uploaded file: D:\Central Data\File 2.txt
+  2023-07-04 18:47:49 INFO  S3Backup:151 - File Status for File 3.txt is :MODIFIED
+  2023-07-04 18:47:49 INFO  S3Backup:101 - key after: Central Data/File 3.txt
+  2023-07-04 18:47:49 INFO  S3Backup:102 - path: D:\Central Data\File 3.txt
+  2023-07-04 18:47:49 INFO  S3Backup:131 - Uploaded file: D:\Central Data\File 3.txt
+  2023-07-04 18:47:49 INFO  S3Backup:151 - File Status for File 4.txt is :MODIFIED
+  2023-07-04 18:47:49 INFO  S3Backup:101 - key after: Central Data/File 4.txt
+  2023-07-04 18:47:49 INFO  S3Backup:102 - path: D:\Central Data\File 4.txt
+  2023-07-04 18:47:49 INFO  S3Backup:131 - Uploaded file: D:\Central Data\File 4.txt
+  2023-07-04 18:47:49 INFO  S3Backup:151 - File Status for File 5.txt is :MODIFIED
+  2023-07-04 18:47:49 INFO  S3Backup:101 - key after: Central Data/File 5.txt
+  2023-07-04 18:47:49 INFO  S3Backup:102 - path: D:\Central Data\File 5.txt
+  2023-07-04 18:47:49 INFO  S3Backup:131 - Uploaded file: D:\Central Data\File 5.txt
+  2023-07-04 18:47:49 INFO  S3Backup:151 - File Status for File 6.txt is :MODIFIED
+  2023-07-04 18:47:49 INFO  S3Backup:101 - key after: Central Data/File 6.txt
+  2023-07-04 18:47:49 INFO  S3Backup:102 - path: D:\Central Data\File 6.txt
+  2023-07-04 18:47:49 INFO  S3Backup:131 - Uploaded file: D:\Central Data\File 6.txt
+  2023-07-04 18:47:49 INFO  S3Backup:151 - File Status for File 7.txt is :MODIFIED
+  2023-07-04 18:47:49 INFO  S3Backup:101 - key after: Central Data/File 7.txt
+  2023-07-04 18:47:49 INFO  S3Backup:102 - path: D:\Central Data\File 7.txt
+  2023-07-04 18:47:49 INFO  S3Backup:131 - Uploaded file: D:\Central Data\File 7.txt
+  2023-07-04 18:47:49 INFO  S3Backup:151 - File Status for File 8.txt is :MODIFIED
+  2023-07-04 18:47:49 INFO  S3Backup:101 - key after: Central Data/File 8.txt
+  2023-07-04 18:47:49 INFO  S3Backup:102 - path: D:\Central Data\File 8.txt
+  2023-07-04 18:47:49 INFO  S3Backup:131 - Uploaded file: D:\Central Data\File 8.txt
+  2023-07-04 18:47:49 INFO  S3Backup:151 - File Status for File 9.txt is :MODIFIED
+  2023-07-04 18:47:49 INFO  S3Backup:101 - key after: Central Data/File 9.txt
+  2023-07-04 18:47:49 INFO  S3Backup:102 - path: D:\Central Data\File 9.txt
+  2023-07-04 18:47:49 INFO  S3Backup:131 - Uploaded file: D:\Central Data\File 9.txt
+  2023-07-04 18:47:49 INFO  S3Backup:151 - File Status for File_temp.txt is :MODIFIED
+  2023-07-04 18:47:49 INFO  S3Backup:101 - key after: Central Data/File_temp.txt
+  2023-07-04 18:47:49 INFO  S3Backup:102 - path: D:\Central Data\File_temp.txt
+  2023-07-04 18:47:49 INFO  S3Backup:131 - Uploaded file: D:\Central Data\File_temp.txt
+  2023-07-04 18:47:49 INFO  S3Backup:151 - File Status for user1.txt is :MODIFIED
+  2023-07-04 18:47:49 INFO  S3Backup:151 - File Status for user 2.txt is :MODIFIED
+  2023-07-04 18:47:49 INFO  S3Backup:151 - File Status for user 1 payroll.txt is :MODIFIED
+  2023-07-04 18:47:49 INFO  S3Backup:151 - File Status for user 2 payroll.txt is :MODIFIED
+  2023-07-04 18:47:49 INFO  S3Backup:112 - Backup completed successfully.
+  2023-07-04 18:47:50 INFO  FileUploadDetailsService:131 - Date format : 04-Jul-2023 06:47:49 pm
+  2023-07-04 18:47:50 INFO  FileUploadDetailsService:131 - Date format : 04-Jul-2023 06:47:49 pm
+  2023-07-04 18:47:50 INFO  FileUploadDetailsService:131 - Date format : 04-Jul-2023 06:47:49 pm
+  2023-07-04 18:47:50 INFO  FileUploadDetailsService:131 - Date format : 04-Jul-2023 06:47:49 pm
+  2023-07-04 18:47:50 INFO  FileUploadDetailsService:131 - Date format : 04-Jul-2023 06:47:49 pm
+  2023-07-04 18:47:50 INFO  FileUploadDetailsService:131 - Date format : 04-Jul-2023 06:47:49 pm
+  2023-07-04 18:47:50 INFO  FileUploadDetailsService:131 - Date format : 04-Jul-2023 06:47:49 pm
+  2023-07-04 18:47:50 INFO  FileUploadDetailsService:131 - Date format : 04-Jul-2023 06:47:49 pm
+  2023-07-04 18:47:50 INFO  FileUploadDetailsService:131 - Date format : 04-Jul-2023 06:47:49 pm
+  2023-07-04 18:47:50 INFO  FileUploadDetailsService:131 - Date format : 04-Jul-2023 06:47:49 pm
+  2023-07-04 18:47:51 INFO  S3Backup:170 - File Details : {
+  "name": "File 10.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 10.txt",
+  "pathOnS3": "Central Data/File 10.txt",
+  "uploadDateAndTime": "Jul 4, 2023, 6:47:49 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-04 18:47:51 INFO  S3Backup:170 - File Details : {
+  "name": "File 2.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 2.txt",
+  "pathOnS3": "Central Data/File 2.txt",
+  "uploadDateAndTime": "Jul 4, 2023, 6:47:49 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-04 18:47:51 INFO  S3Backup:170 - File Details : {
+  "name": "File 3.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 3.txt",
+  "pathOnS3": "Central Data/File 3.txt",
+  "uploadDateAndTime": "Jul 4, 2023, 6:47:49 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-04 18:47:51 INFO  S3Backup:170 - File Details : {
+  "name": "File 4.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4.txt",
+  "pathOnS3": "Central Data/File 4.txt",
+  "uploadDateAndTime": "Jul 4, 2023, 6:47:49 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-04 18:47:51 INFO  S3Backup:170 - File Details : {
+  "name": "File 5.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 5.txt",
+  "pathOnS3": "Central Data/File 5.txt",
+  "uploadDateAndTime": "Jul 4, 2023, 6:47:49 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-04 18:47:51 INFO  S3Backup:170 - File Details : {
+  "name": "File 6.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 6.txt",
+  "pathOnS3": "Central Data/File 6.txt",
+  "uploadDateAndTime": "Jul 4, 2023, 6:47:49 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-04 18:47:51 INFO  S3Backup:170 - File Details : {
+  "name": "File 7.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 7.txt",
+  "pathOnS3": "Central Data/File 7.txt",
+  "uploadDateAndTime": "Jul 4, 2023, 6:47:49 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-04 18:47:51 INFO  S3Backup:170 - File Details : {
+  "name": "File 8.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 8.txt",
+  "pathOnS3": "Central Data/File 8.txt",
+  "uploadDateAndTime": "Jul 4, 2023, 6:47:49 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-04 18:47:51 INFO  S3Backup:170 - File Details : {
+  "name": "File 9.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 9.txt",
+  "pathOnS3": "Central Data/File 9.txt",
+  "uploadDateAndTime": "Jul 4, 2023, 6:47:49 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-04 18:47:51 INFO  S3Backup:170 - File Details : {
+  "name": "File_temp.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File_temp.txt",
+  "pathOnS3": "Central Data/File_temp.txt",
+  "uploadDateAndTime": "Jul 4, 2023, 6:47:49 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-04 18:48:32 INFO  S3Backup:65 - S3 client : ListBucketsResponse(Buckets=[Bucket(Name=aws-cloudtrail-logs-889743517798-4c17d79f, CreationDate=2023-07-03T07:50:39Z), Bucket(Name=vyomlabsbucket, CreationDate=2023-06-07T08:56:43Z)], Owner=Owner(ID=d7dc917e255348a8f34cda28a78d40b6d8d48d311590ae781810a9e572635624))
+  2023-07-04 18:48:32 INFO  S3Backup:83 - Fresh differential files uploading.......
+  2023-07-04 18:48:32 INFO  S3Backup:86 - backupFolderPath :D:/Central Data
+  2023-07-04 18:48:32 INFO  S3Backup:151 - File Status for File 10.txt is :MODIFIED
+  2023-07-04 18:48:32 INFO  S3Backup:101 - key after: Central Data/File 10.txt
+  2023-07-04 18:48:32 INFO  S3Backup:102 - path: D:\Central Data\File 10.txt
+  2023-07-04 18:48:32 INFO  S3Backup:131 - Uploaded file: D:\Central Data\File 10.txt
+  2023-07-04 18:48:32 INFO  S3Backup:151 - File Status for File 2.txt is :MODIFIED
+  2023-07-04 18:48:32 INFO  S3Backup:101 - key after: Central Data/File 2.txt
+  2023-07-04 18:48:32 INFO  S3Backup:102 - path: D:\Central Data\File 2.txt
+  2023-07-04 18:48:32 INFO  S3Backup:131 - Uploaded file: D:\Central Data\File 2.txt
+  2023-07-04 18:48:32 INFO  S3Backup:151 - File Status for File 3.txt is :MODIFIED
+  2023-07-04 18:48:32 INFO  S3Backup:101 - key after: Central Data/File 3.txt
+  2023-07-04 18:48:32 INFO  S3Backup:102 - path: D:\Central Data\File 3.txt
+  2023-07-04 18:48:32 INFO  S3Backup:131 - Uploaded file: D:\Central Data\File 3.txt
+  2023-07-04 18:48:32 INFO  S3Backup:151 - File Status for File 4.txt is :MODIFIED
+  2023-07-04 18:48:32 INFO  S3Backup:101 - key after: Central Data/File 4.txt
+  2023-07-04 18:48:32 INFO  S3Backup:102 - path: D:\Central Data\File 4.txt
+  2023-07-04 18:48:32 INFO  S3Backup:131 - Uploaded file: D:\Central Data\File 4.txt
+  2023-07-04 18:48:32 INFO  S3Backup:151 - File Status for File 5.txt is :MODIFIED
+  2023-07-04 18:48:32 INFO  S3Backup:101 - key after: Central Data/File 5.txt
+  2023-07-04 18:48:32 INFO  S3Backup:102 - path: D:\Central Data\File 5.txt
+  2023-07-04 18:48:32 INFO  S3Backup:131 - Uploaded file: D:\Central Data\File 5.txt
+  2023-07-04 18:48:32 INFO  S3Backup:151 - File Status for File 6.txt is :MODIFIED
+  2023-07-04 18:48:32 INFO  S3Backup:101 - key after: Central Data/File 6.txt
+  2023-07-04 18:48:32 INFO  S3Backup:102 - path: D:\Central Data\File 6.txt
+  2023-07-04 18:48:32 INFO  S3Backup:131 - Uploaded file: D:\Central Data\File 6.txt
+  2023-07-04 18:48:32 INFO  S3Backup:151 - File Status for File 7.txt is :MODIFIED
+  2023-07-04 18:48:32 INFO  S3Backup:101 - key after: Central Data/File 7.txt
+  2023-07-04 18:48:32 INFO  S3Backup:102 - path: D:\Central Data\File 7.txt
+  2023-07-04 18:48:32 INFO  S3Backup:131 - Uploaded file: D:\Central Data\File 7.txt
+  2023-07-04 18:48:32 INFO  S3Backup:151 - File Status for File 8.txt is :MODIFIED
+  2023-07-04 18:48:32 INFO  S3Backup:101 - key after: Central Data/File 8.txt
+  2023-07-04 18:48:32 INFO  S3Backup:102 - path: D:\Central Data\File 8.txt
+  2023-07-04 18:48:32 INFO  S3Backup:131 - Uploaded file: D:\Central Data\File 8.txt
+  2023-07-04 18:48:32 INFO  S3Backup:151 - File Status for File 9.txt is :MODIFIED
+  2023-07-04 18:48:32 INFO  S3Backup:101 - key after: Central Data/File 9.txt
+  2023-07-04 18:48:32 INFO  S3Backup:102 - path: D:\Central Data\File 9.txt
+  2023-07-04 18:48:32 INFO  S3Backup:131 - Uploaded file: D:\Central Data\File 9.txt
+  2023-07-04 18:48:32 INFO  S3Backup:151 - File Status for File_temp.txt is :MODIFIED
+  2023-07-04 18:48:32 INFO  S3Backup:101 - key after: Central Data/File_temp.txt
+  2023-07-04 18:48:32 INFO  S3Backup:102 - path: D:\Central Data\File_temp.txt
+  2023-07-04 18:48:32 INFO  S3Backup:131 - Uploaded file: D:\Central Data\File_temp.txt
+  2023-07-04 18:48:32 INFO  S3Backup:151 - File Status for user1.txt is :MODIFIED
+  2023-07-04 18:48:32 INFO  S3Backup:151 - File Status for user 2.txt is :MODIFIED
+  2023-07-04 18:48:32 INFO  S3Backup:151 - File Status for user 1 payroll.txt is :MODIFIED
+  2023-07-04 18:48:32 INFO  S3Backup:151 - File Status for user 2 payroll.txt is :MODIFIED
+  2023-07-04 18:48:32 INFO  S3Backup:112 - Backup completed successfully.
+  2023-07-04 18:48:33 INFO  FileUploadDetailsService:131 - Date format : 04-Jul-2023 06:48:32 pm
+  2023-07-04 18:48:33 INFO  FileUploadDetailsService:131 - Date format : 04-Jul-2023 06:48:32 pm
+  2023-07-04 18:48:33 INFO  FileUploadDetailsService:131 - Date format : 04-Jul-2023 06:48:32 pm
+  2023-07-04 18:48:33 INFO  FileUploadDetailsService:131 - Date format : 04-Jul-2023 06:48:32 pm
+  2023-07-04 18:48:33 INFO  FileUploadDetailsService:131 - Date format : 04-Jul-2023 06:48:32 pm
+  2023-07-04 18:48:33 INFO  FileUploadDetailsService:131 - Date format : 04-Jul-2023 06:48:32 pm
+  2023-07-04 18:48:33 INFO  FileUploadDetailsService:131 - Date format : 04-Jul-2023 06:48:32 pm
+  2023-07-04 18:48:33 INFO  FileUploadDetailsService:131 - Date format : 04-Jul-2023 06:48:32 pm
+  2023-07-04 18:48:33 INFO  FileUploadDetailsService:131 - Date format : 04-Jul-2023 06:48:32 pm
+  2023-07-04 18:48:33 INFO  FileUploadDetailsService:131 - Date format : 04-Jul-2023 06:48:32 pm
+  2023-07-04 18:48:35 INFO  S3Backup:170 - File Details : {
+  "name": "File 10.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 10.txt",
+  "pathOnS3": "Central Data/File 10.txt",
+  "uploadDateAndTime": "Jul 4, 2023, 6:48:32 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-04 18:48:35 INFO  S3Backup:170 - File Details : {
+  "name": "File 2.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 2.txt",
+  "pathOnS3": "Central Data/File 2.txt",
+  "uploadDateAndTime": "Jul 4, 2023, 6:48:32 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-04 18:48:35 INFO  S3Backup:170 - File Details : {
+  "name": "File 3.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 3.txt",
+  "pathOnS3": "Central Data/File 3.txt",
+  "uploadDateAndTime": "Jul 4, 2023, 6:48:32 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-04 18:48:35 INFO  S3Backup:170 - File Details : {
+  "name": "File 4.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4.txt",
+  "pathOnS3": "Central Data/File 4.txt",
+  "uploadDateAndTime": "Jul 4, 2023, 6:48:32 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-04 18:48:35 INFO  S3Backup:170 - File Details : {
+  "name": "File 5.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 5.txt",
+  "pathOnS3": "Central Data/File 5.txt",
+  "uploadDateAndTime": "Jul 4, 2023, 6:48:32 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-04 18:48:35 INFO  S3Backup:170 - File Details : {
+  "name": "File 6.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 6.txt",
+  "pathOnS3": "Central Data/File 6.txt",
+  "uploadDateAndTime": "Jul 4, 2023, 6:48:32 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-04 18:48:35 INFO  S3Backup:170 - File Details : {
+  "name": "File 7.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 7.txt",
+  "pathOnS3": "Central Data/File 7.txt",
+  "uploadDateAndTime": "Jul 4, 2023, 6:48:32 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-04 18:48:35 INFO  S3Backup:170 - File Details : {
+  "name": "File 8.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 8.txt",
+  "pathOnS3": "Central Data/File 8.txt",
+  "uploadDateAndTime": "Jul 4, 2023, 6:48:32 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-04 18:48:35 INFO  S3Backup:170 - File Details : {
+  "name": "File 9.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 9.txt",
+  "pathOnS3": "Central Data/File 9.txt",
+  "uploadDateAndTime": "Jul 4, 2023, 6:48:32 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-04 18:48:35 INFO  S3Backup:170 - File Details : {
+  "name": "File_temp.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File_temp.txt",
+  "pathOnS3": "Central Data/File_temp.txt",
+  "uploadDateAndTime": "Jul 4, 2023, 6:48:32 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 11:54:42 INFO  S3Backup:63 - S3 client : ListBucketsResponse(Buckets=[Bucket(Name=aws-cloudtrail-logs-889743517798-4c17d79f, CreationDate=2023-07-03T07:50:39Z), Bucket(Name=vyomlabsbucket, CreationDate=2023-06-07T08:56:43Z)], Owner=Owner(ID=d7dc917e255348a8f34cda28a78d40b6d8d48d311590ae781810a9e572635624))
+  2023-07-05 11:54:42 INFO  S3Backup:81 - Fresh differential files uploading.......
+  2023-07-05 11:54:42 INFO  S3Backup:84 - backupFolderPath :D:/Central Data
+  2023-07-05 11:54:42 INFO  S3Backup:149 - File Status for File 1.txt is :MODIFIED
+  2023-07-05 11:54:42 INFO  S3Backup:99 - key after: Central Data/File 1.txt
+  2023-07-05 11:54:42 INFO  S3Backup:100 - path: D:\Central Data\File 1.txt
+  2023-07-05 11:54:42 INFO  S3Backup:129 - Uploaded file: D:\Central Data\File 1.txt
+  2023-07-05 11:54:42 INFO  S3Backup:149 - File Status for File 10.txt is :MODIFIED
+  2023-07-05 11:54:42 INFO  S3Backup:99 - key after: Central Data/File 10.txt
+  2023-07-05 11:54:42 INFO  S3Backup:100 - path: D:\Central Data\File 10.txt
+  2023-07-05 11:54:42 INFO  S3Backup:129 - Uploaded file: D:\Central Data\File 10.txt
+  2023-07-05 11:54:42 INFO  S3Backup:149 - File Status for File 2.txt is :MODIFIED
+  2023-07-05 11:54:42 INFO  S3Backup:99 - key after: Central Data/File 2.txt
+  2023-07-05 11:54:42 INFO  S3Backup:100 - path: D:\Central Data\File 2.txt
+  2023-07-05 11:54:42 INFO  S3Backup:129 - Uploaded file: D:\Central Data\File 2.txt
+  2023-07-05 11:54:42 INFO  S3Backup:149 - File Status for File 3.txt is :MODIFIED
+  2023-07-05 11:54:42 INFO  S3Backup:99 - key after: Central Data/File 3.txt
+  2023-07-05 11:54:42 INFO  S3Backup:100 - path: D:\Central Data\File 3.txt
+  2023-07-05 11:54:42 INFO  S3Backup:129 - Uploaded file: D:\Central Data\File 3.txt
+  2023-07-05 11:54:42 INFO  S3Backup:149 - File Status for File 4.txt is :MODIFIED
+  2023-07-05 11:54:42 INFO  S3Backup:99 - key after: Central Data/File 4.txt
+  2023-07-05 11:54:42 INFO  S3Backup:100 - path: D:\Central Data\File 4.txt
+  2023-07-05 11:54:42 INFO  S3Backup:129 - Uploaded file: D:\Central Data\File 4.txt
+  2023-07-05 11:54:42 INFO  S3Backup:149 - File Status for File 5.txt is :MODIFIED
+  2023-07-05 11:54:42 INFO  S3Backup:99 - key after: Central Data/File 5.txt
+  2023-07-05 11:54:42 INFO  S3Backup:100 - path: D:\Central Data\File 5.txt
+  2023-07-05 11:54:42 INFO  S3Backup:129 - Uploaded file: D:\Central Data\File 5.txt
+  2023-07-05 11:54:42 INFO  S3Backup:149 - File Status for File 6.txt is :MODIFIED
+  2023-07-05 11:54:42 INFO  S3Backup:99 - key after: Central Data/File 6.txt
+  2023-07-05 11:54:42 INFO  S3Backup:100 - path: D:\Central Data\File 6.txt
+  2023-07-05 11:54:42 INFO  S3Backup:129 - Uploaded file: D:\Central Data\File 6.txt
+  2023-07-05 11:54:42 INFO  S3Backup:149 - File Status for File 7.txt is :MODIFIED
+  2023-07-05 11:54:42 INFO  S3Backup:99 - key after: Central Data/File 7.txt
+  2023-07-05 11:54:42 INFO  S3Backup:100 - path: D:\Central Data\File 7.txt
+  2023-07-05 11:54:43 INFO  S3Backup:129 - Uploaded file: D:\Central Data\File 7.txt
+  2023-07-05 11:54:43 INFO  S3Backup:149 - File Status for File 8.txt is :MODIFIED
+  2023-07-05 11:54:43 INFO  S3Backup:99 - key after: Central Data/File 8.txt
+  2023-07-05 11:54:43 INFO  S3Backup:100 - path: D:\Central Data\File 8.txt
+  2023-07-05 11:54:43 INFO  S3Backup:129 - Uploaded file: D:\Central Data\File 8.txt
+  2023-07-05 11:54:43 INFO  S3Backup:149 - File Status for File 9.txt is :MODIFIED
+  2023-07-05 11:54:43 INFO  S3Backup:99 - key after: Central Data/File 9.txt
+  2023-07-05 11:54:43 INFO  S3Backup:100 - path: D:\Central Data\File 9.txt
+  2023-07-05 11:54:43 INFO  S3Backup:129 - Uploaded file: D:\Central Data\File 9.txt
+  2023-07-05 11:54:43 INFO  S3Backup:149 - File Status for File_temp.txt is :MODIFIED
+  2023-07-05 11:54:43 INFO  S3Backup:149 - File Status for user1.txt is :MODIFIED
+  2023-07-05 11:54:43 INFO  S3Backup:149 - File Status for user 2.txt is :MODIFIED
+  2023-07-05 11:54:43 INFO  S3Backup:149 - File Status for user 1 payroll.txt is :MODIFIED
+  2023-07-05 11:54:43 INFO  S3Backup:149 - File Status for user 2 payroll.txt is :MODIFIED
+  2023-07-05 11:54:43 INFO  S3Backup:110 - Backup completed successfully.
+  2023-07-05 11:54:44 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 11:54:42 am
+  2023-07-05 11:54:44 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 11:54:42 am
+  2023-07-05 11:54:44 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 11:54:42 am
+  2023-07-05 11:54:44 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 11:54:42 am
+  2023-07-05 11:54:44 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 11:54:42 am
+  2023-07-05 11:54:44 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 11:54:42 am
+  2023-07-05 11:54:44 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 11:54:42 am
+  2023-07-05 11:54:44 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 11:54:43 am
+  2023-07-05 11:54:44 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 11:54:43 am
+  2023-07-05 11:54:44 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 11:54:43 am
+  2023-07-05 11:54:46 INFO  S3Backup:168 - File Details : {
+  "name": "File 1.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 1.txt",
+  "pathOnS3": "Central Data/File 1.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 11:54:42 AM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 11:54:46 INFO  S3Backup:168 - File Details : {
+  "name": "File 10.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 10.txt",
+  "pathOnS3": "Central Data/File 10.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 11:54:42 AM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 11:54:46 INFO  S3Backup:168 - File Details : {
+  "name": "File 2.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 2.txt",
+  "pathOnS3": "Central Data/File 2.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 11:54:42 AM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 11:54:46 INFO  S3Backup:168 - File Details : {
+  "name": "File 3.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 3.txt",
+  "pathOnS3": "Central Data/File 3.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 11:54:42 AM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 11:54:46 INFO  S3Backup:168 - File Details : {
+  "name": "File 4.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4.txt",
+  "pathOnS3": "Central Data/File 4.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 11:54:42 AM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 11:54:46 INFO  S3Backup:168 - File Details : {
+  "name": "File 5.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 5.txt",
+  "pathOnS3": "Central Data/File 5.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 11:54:42 AM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 11:54:46 INFO  S3Backup:168 - File Details : {
+  "name": "File 6.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 6.txt",
+  "pathOnS3": "Central Data/File 6.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 11:54:42 AM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 11:54:46 INFO  S3Backup:168 - File Details : {
+  "name": "File 7.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 7.txt",
+  "pathOnS3": "Central Data/File 7.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 11:54:43 AM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 11:54:46 INFO  S3Backup:168 - File Details : {
+  "name": "File 8.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 8.txt",
+  "pathOnS3": "Central Data/File 8.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 11:54:43 AM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 11:54:46 INFO  S3Backup:168 - File Details : {
+  "name": "File 9.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 9.txt",
+  "pathOnS3": "Central Data/File 9.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 11:54:43 AM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 15:21:17 INFO  S3Backup:64 - S3 client : ListBucketsResponse(Buckets=[Bucket(Name=aws-cloudtrail-logs-889743517798-4c17d79f, CreationDate=2023-07-03T07:50:39Z), Bucket(Name=vyomlabsbucket, CreationDate=2023-06-07T08:56:43Z)], Owner=Owner(ID=d7dc917e255348a8f34cda28a78d40b6d8d48d311590ae781810a9e572635624))
+  2023-07-05 15:21:17 INFO  S3Backup:67 - Failure files uploading.......
+  2023-07-05 15:21:30 INFO  S3Backup:64 - S3 client : ListBucketsResponse(Buckets=[Bucket(Name=aws-cloudtrail-logs-889743517798-4c17d79f, CreationDate=2023-07-03T07:50:39Z), Bucket(Name=vyomlabsbucket, CreationDate=2023-06-07T08:56:43Z)], Owner=Owner(ID=d7dc917e255348a8f34cda28a78d40b6d8d48d311590ae781810a9e572635624))
+  2023-07-05 15:21:30 INFO  S3Backup:82 - Fresh differential files uploading.......
+  2023-07-05 15:21:30 INFO  S3Backup:85 - backupFolderPath :D:/Central Data
+  2023-07-05 15:21:30 INFO  S3Backup:150 - File Status for File 1_1.txt is :MODIFIED
+  2023-07-05 15:21:30 INFO  S3Backup:100 - key after: Central Data/File 1_1.txt
+  2023-07-05 15:21:30 INFO  S3Backup:101 - path: D:\Central Data\File 1_1.txt
+  2023-07-05 15:21:31 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File 1_1.txt
+  2023-07-05 15:21:31 INFO  S3Backup:150 - File Status for File 1_10.txt is :MODIFIED
+  2023-07-05 15:21:31 INFO  S3Backup:100 - key after: Central Data/File 1_10.txt
+  2023-07-05 15:21:31 INFO  S3Backup:101 - path: D:\Central Data\File 1_10.txt
+  2023-07-05 15:21:31 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File 1_10.txt
+  2023-07-05 15:21:31 INFO  S3Backup:150 - File Status for File 1_2.txt is :MODIFIED
+  2023-07-05 15:21:31 INFO  S3Backup:100 - key after: Central Data/File 1_2.txt
+  2023-07-05 15:21:31 INFO  S3Backup:101 - path: D:\Central Data\File 1_2.txt
+  2023-07-05 15:21:31 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File 1_2.txt
+  2023-07-05 15:21:31 INFO  S3Backup:150 - File Status for File 1_3.txt is :MODIFIED
+  2023-07-05 15:21:31 INFO  S3Backup:100 - key after: Central Data/File 1_3.txt
+  2023-07-05 15:21:31 INFO  S3Backup:101 - path: D:\Central Data\File 1_3.txt
+  2023-07-05 15:21:31 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File 1_3.txt
+  2023-07-05 15:21:31 INFO  S3Backup:150 - File Status for File 1_4.txt is :MODIFIED
+  2023-07-05 15:21:31 INFO  S3Backup:100 - key after: Central Data/File 1_4.txt
+  2023-07-05 15:21:31 INFO  S3Backup:101 - path: D:\Central Data\File 1_4.txt
+  2023-07-05 15:21:31 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File 1_4.txt
+  2023-07-05 15:21:31 INFO  S3Backup:150 - File Status for File 1_5.txt is :MODIFIED
+  2023-07-05 15:21:31 INFO  S3Backup:100 - key after: Central Data/File 1_5.txt
+  2023-07-05 15:21:31 INFO  S3Backup:101 - path: D:\Central Data\File 1_5.txt
+  2023-07-05 15:21:31 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File 1_5.txt
+  2023-07-05 15:21:31 INFO  S3Backup:150 - File Status for File 1_6.txt is :MODIFIED
+  2023-07-05 15:21:31 INFO  S3Backup:100 - key after: Central Data/File 1_6.txt
+  2023-07-05 15:21:31 INFO  S3Backup:101 - path: D:\Central Data\File 1_6.txt
+  2023-07-05 15:21:31 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File 1_6.txt
+  2023-07-05 15:21:31 INFO  S3Backup:150 - File Status for File 1_7.txt is :MODIFIED
+  2023-07-05 15:21:31 INFO  S3Backup:100 - key after: Central Data/File 1_7.txt
+  2023-07-05 15:21:31 INFO  S3Backup:101 - path: D:\Central Data\File 1_7.txt
+  2023-07-05 15:21:31 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File 1_7.txt
+  2023-07-05 15:21:31 INFO  S3Backup:150 - File Status for File 1_8.txt is :MODIFIED
+  2023-07-05 15:21:31 INFO  S3Backup:100 - key after: Central Data/File 1_8.txt
+  2023-07-05 15:21:31 INFO  S3Backup:101 - path: D:\Central Data\File 1_8.txt
+  2023-07-05 15:21:31 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File 1_8.txt
+  2023-07-05 15:21:31 INFO  S3Backup:150 - File Status for File 1_9.txt is :MODIFIED
+  2023-07-05 15:21:31 INFO  S3Backup:100 - key after: Central Data/File 1_9.txt
+  2023-07-05 15:21:31 INFO  S3Backup:101 - path: D:\Central Data\File 1_9.txt
+  2023-07-05 15:21:31 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File 1_9.txt
+  2023-07-05 15:21:31 INFO  S3Backup:150 - File Status for user1.txt is :MODIFIED
+  2023-07-05 15:21:31 INFO  S3Backup:150 - File Status for user 2.txt is :MODIFIED
+  2023-07-05 15:21:31 INFO  S3Backup:150 - File Status for user 1 payroll.txt is :MODIFIED
+  2023-07-05 15:21:31 INFO  S3Backup:150 - File Status for user 2 payroll.txt is :MODIFIED
+  2023-07-05 15:21:31 INFO  S3Backup:111 - Backup completed successfully.
+  2023-07-05 15:21:32 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 03:21:31 pm
+  2023-07-05 15:21:32 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 03:21:31 pm
+  2023-07-05 15:21:32 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 03:21:31 pm
+  2023-07-05 15:21:32 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 03:21:31 pm
+  2023-07-05 15:21:32 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 03:21:31 pm
+  2023-07-05 15:21:32 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 03:21:31 pm
+  2023-07-05 15:21:32 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 03:21:31 pm
+  2023-07-05 15:21:32 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 03:21:31 pm
+  2023-07-05 15:21:32 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 03:21:31 pm
+  2023-07-05 15:21:32 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 03:21:31 pm
+  2023-07-05 15:21:33 INFO  S3Backup:170 - File Details : {
+  "name": "File 1_1.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 1_1.txt",
+  "pathOnS3": "Central Data/File 1_1.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 3:21:31 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 15:21:33 INFO  S3Backup:170 - File Details : {
+  "name": "File 1_10.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 1_10.txt",
+  "pathOnS3": "Central Data/File 1_10.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 3:21:31 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 15:21:33 INFO  S3Backup:170 - File Details : {
+  "name": "File 1_2.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 1_2.txt",
+  "pathOnS3": "Central Data/File 1_2.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 3:21:31 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 15:21:33 INFO  S3Backup:170 - File Details : {
+  "name": "File 1_3.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 1_3.txt",
+  "pathOnS3": "Central Data/File 1_3.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 3:21:31 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 15:21:33 INFO  S3Backup:170 - File Details : {
+  "name": "File 1_4.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 1_4.txt",
+  "pathOnS3": "Central Data/File 1_4.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 3:21:31 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 15:21:33 INFO  S3Backup:170 - File Details : {
+  "name": "File 1_5.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 1_5.txt",
+  "pathOnS3": "Central Data/File 1_5.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 3:21:31 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 15:21:33 INFO  S3Backup:170 - File Details : {
+  "name": "File 1_6.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 1_6.txt",
+  "pathOnS3": "Central Data/File 1_6.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 3:21:31 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 15:21:33 INFO  S3Backup:170 - File Details : {
+  "name": "File 1_7.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 1_7.txt",
+  "pathOnS3": "Central Data/File 1_7.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 3:21:31 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 15:21:33 INFO  S3Backup:170 - File Details : {
+  "name": "File 1_8.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 1_8.txt",
+  "pathOnS3": "Central Data/File 1_8.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 3:21:31 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 15:21:33 INFO  S3Backup:170 - File Details : {
+  "name": "File 1_9.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 1_9.txt",
+  "pathOnS3": "Central Data/File 1_9.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 3:21:31 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 15:41:00 INFO  S3Backup:64 - S3 client : ListBucketsResponse(Buckets=[Bucket(Name=aws-cloudtrail-logs-889743517798-4c17d79f, CreationDate=2023-07-03T07:50:39Z), Bucket(Name=vyomlabsbucket, CreationDate=2023-06-07T08:56:43Z)], Owner=Owner(ID=d7dc917e255348a8f34cda28a78d40b6d8d48d311590ae781810a9e572635624))
+  2023-07-05 15:41:00 INFO  S3Backup:82 - Fresh differential files uploading.......
+  2023-07-05 15:41:00 INFO  S3Backup:85 - backupFolderPath :D:/Central Data
+  2023-07-05 15:41:00 INFO  S3Backup:150 - File Status for File 1_1.txt is :MODIFIED
+  2023-07-05 15:41:00 INFO  S3Backup:100 - key after: Central Data/File 1_1.txt
+  2023-07-05 15:41:00 INFO  S3Backup:101 - path: D:\Central Data\File 1_1.txt
+  2023-07-05 15:41:00 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File 1_1.txt
+  2023-07-05 15:41:01 INFO  S3Backup:150 - File Status for File 1_10.txt is :MODIFIED
+  2023-07-05 15:41:01 INFO  S3Backup:100 - key after: Central Data/File 1_10.txt
+  2023-07-05 15:41:01 INFO  S3Backup:101 - path: D:\Central Data\File 1_10.txt
+  2023-07-05 15:41:01 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File 1_10.txt
+  2023-07-05 15:41:01 INFO  S3Backup:150 - File Status for File 1_2.txt is :MODIFIED
+  2023-07-05 15:41:01 INFO  S3Backup:100 - key after: Central Data/File 1_2.txt
+  2023-07-05 15:41:01 INFO  S3Backup:101 - path: D:\Central Data\File 1_2.txt
+  2023-07-05 15:41:01 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File 1_2.txt
+  2023-07-05 15:41:01 INFO  S3Backup:150 - File Status for File 1_3.txt is :MODIFIED
+  2023-07-05 15:41:01 INFO  S3Backup:100 - key after: Central Data/File 1_3.txt
+  2023-07-05 15:41:01 INFO  S3Backup:101 - path: D:\Central Data\File 1_3.txt
+  2023-07-05 15:41:01 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File 1_3.txt
+  2023-07-05 15:41:01 INFO  S3Backup:150 - File Status for File 1_4.txt is :MODIFIED
+  2023-07-05 15:41:01 INFO  S3Backup:100 - key after: Central Data/File 1_4.txt
+  2023-07-05 15:41:01 INFO  S3Backup:101 - path: D:\Central Data\File 1_4.txt
+  2023-07-05 15:41:01 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File 1_4.txt
+  2023-07-05 15:41:01 INFO  S3Backup:150 - File Status for File 1_5.txt is :MODIFIED
+  2023-07-05 15:41:01 INFO  S3Backup:100 - key after: Central Data/File 1_5.txt
+  2023-07-05 15:41:01 INFO  S3Backup:101 - path: D:\Central Data\File 1_5.txt
+  2023-07-05 15:41:01 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File 1_5.txt
+  2023-07-05 15:41:01 INFO  S3Backup:150 - File Status for File 1_6.txt is :MODIFIED
+  2023-07-05 15:41:01 INFO  S3Backup:100 - key after: Central Data/File 1_6.txt
+  2023-07-05 15:41:01 INFO  S3Backup:101 - path: D:\Central Data\File 1_6.txt
+  2023-07-05 15:41:01 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File 1_6.txt
+  2023-07-05 15:41:01 INFO  S3Backup:150 - File Status for File 1_7.txt is :MODIFIED
+  2023-07-05 15:41:01 INFO  S3Backup:100 - key after: Central Data/File 1_7.txt
+  2023-07-05 15:41:01 INFO  S3Backup:101 - path: D:\Central Data\File 1_7.txt
+  2023-07-05 15:41:01 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File 1_7.txt
+  2023-07-05 15:41:01 INFO  S3Backup:150 - File Status for File 1_8.txt is :MODIFIED
+  2023-07-05 15:41:01 INFO  S3Backup:100 - key after: Central Data/File 1_8.txt
+  2023-07-05 15:41:01 INFO  S3Backup:101 - path: D:\Central Data\File 1_8.txt
+  2023-07-05 15:41:01 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File 1_8.txt
+  2023-07-05 15:41:01 INFO  S3Backup:150 - File Status for File 1_9.txt is :MODIFIED
+  2023-07-05 15:41:01 INFO  S3Backup:100 - key after: Central Data/File 1_9.txt
+  2023-07-05 15:41:01 INFO  S3Backup:101 - path: D:\Central Data\File 1_9.txt
+  2023-07-05 15:41:01 INFO  S3Backup:130 - Uploaded file: D:\Central Data\File 1_9.txt
+  2023-07-05 15:41:01 INFO  S3Backup:150 - File Status for user1.txt is :MODIFIED
+  2023-07-05 15:41:01 INFO  S3Backup:150 - File Status for user 2.txt is :MODIFIED
+  2023-07-05 15:41:01 INFO  S3Backup:150 - File Status for user 1 payroll.txt is :MODIFIED
+  2023-07-05 15:41:01 INFO  S3Backup:150 - File Status for user 2 payroll.txt is :MODIFIED
+  2023-07-05 15:41:01 INFO  S3Backup:111 - Backup completed successfully.
+  2023-07-05 15:41:02 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 03:41:00 pm
+  2023-07-05 15:41:02 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 03:41:01 pm
+  2023-07-05 15:41:02 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 03:41:01 pm
+  2023-07-05 15:41:02 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 03:41:01 pm
+  2023-07-05 15:41:02 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 03:41:01 pm
+  2023-07-05 15:41:02 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 03:41:01 pm
+  2023-07-05 15:41:02 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 03:41:01 pm
+  2023-07-05 15:41:02 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 03:41:01 pm
+  2023-07-05 15:41:02 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 03:41:01 pm
+  2023-07-05 15:41:02 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 03:41:01 pm
+  2023-07-05 15:41:03 INFO  S3Backup:170 - File Details : {
+  "name": "File 1_1.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 1_1.txt",
+  "pathOnS3": "Central Data/File 1_1.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 3:41:00 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 15:41:03 INFO  S3Backup:170 - File Details : {
+  "name": "File 1_10.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 1_10.txt",
+  "pathOnS3": "Central Data/File 1_10.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 3:41:01 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 15:41:03 INFO  S3Backup:170 - File Details : {
+  "name": "File 1_2.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 1_2.txt",
+  "pathOnS3": "Central Data/File 1_2.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 3:41:01 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 15:41:03 INFO  S3Backup:170 - File Details : {
+  "name": "File 1_3.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 1_3.txt",
+  "pathOnS3": "Central Data/File 1_3.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 3:41:01 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 15:41:03 INFO  S3Backup:170 - File Details : {
+  "name": "File 1_4.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 1_4.txt",
+  "pathOnS3": "Central Data/File 1_4.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 3:41:01 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 15:41:03 INFO  S3Backup:170 - File Details : {
+  "name": "File 1_5.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 1_5.txt",
+  "pathOnS3": "Central Data/File 1_5.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 3:41:01 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 15:41:03 INFO  S3Backup:170 - File Details : {
+  "name": "File 1_6.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 1_6.txt",
+  "pathOnS3": "Central Data/File 1_6.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 3:41:01 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 15:41:03 INFO  S3Backup:170 - File Details : {
+  "name": "File 1_7.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 1_7.txt",
+  "pathOnS3": "Central Data/File 1_7.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 3:41:01 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 15:41:03 INFO  S3Backup:170 - File Details : {
+  "name": "File 1_8.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 1_8.txt",
+  "pathOnS3": "Central Data/File 1_8.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 3:41:01 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 15:41:03 INFO  S3Backup:170 - File Details : {
+  "name": "File 1_9.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 1_9.txt",
+  "pathOnS3": "Central Data/File 1_9.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 3:41:01 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 16:02:12 INFO  S3Backup:64 - S3 client : ListBucketsResponse(Buckets=[Bucket(Name=aws-cloudtrail-logs-889743517798-4c17d79f, CreationDate=2023-07-03T07:50:39Z), Bucket(Name=vyomlabsbucket, CreationDate=2023-06-07T08:56:43Z)], Owner=Owner(ID=d7dc917e255348a8f34cda28a78d40b6d8d48d311590ae781810a9e572635624))
+  2023-07-05 16:02:12 INFO  S3Backup:82 - Fresh differential files uploading.......
+  2023-07-05 16:02:12 INFO  S3Backup:85 - backupFolderPath :D:/Central Data
+  2023-07-05 16:02:12 INFO  S3Backup:150 - File Status for File 1_1.txt is :MODIFIED
+  2023-07-05 16:02:12 INFO  S3Backup:150 - File Status for File 1_10.txt is :MODIFIED
+  2023-07-05 16:02:12 INFO  S3Backup:150 - File Status for File 1_2.txt is :MODIFIED
+  2023-07-05 16:02:12 INFO  S3Backup:150 - File Status for File 1_3.txt is :MODIFIED
+  2023-07-05 16:02:12 INFO  S3Backup:150 - File Status for File 1_4.txt is :MODIFIED
+  2023-07-05 16:02:12 INFO  S3Backup:150 - File Status for File 1_5.txt is :MODIFIED
+  2023-07-05 16:02:12 INFO  S3Backup:150 - File Status for File 1_6.txt is :MODIFIED
+  2023-07-05 16:02:12 INFO  S3Backup:150 - File Status for File 1_7.txt is :MODIFIED
+  2023-07-05 16:02:12 INFO  S3Backup:150 - File Status for File 1_8.txt is :MODIFIED
+  2023-07-05 16:02:12 INFO  S3Backup:150 - File Status for File 1_9.txt is :MODIFIED
+  2023-07-05 16:02:12 INFO  S3Backup:150 - File Status for user1.txt is :MODIFIED
+  2023-07-05 16:02:12 INFO  S3Backup:150 - File Status for user 2.txt is :MODIFIED
+  2023-07-05 16:02:12 INFO  S3Backup:150 - File Status for user 1 payroll.txt is :MODIFIED
+  2023-07-05 16:02:12 INFO  S3Backup:150 - File Status for user 2 payroll.txt is :MODIFIED
+  2023-07-05 16:02:12 INFO  S3Backup:111 - Backup completed successfully.
+  2023-07-05 18:52:14 INFO  S3Backup:66 - S3 client : ListBucketsResponse(Buckets=[Bucket(Name=aws-cloudtrail-logs-889743517798-4c17d79f, CreationDate=2023-07-03T07:50:39Z), Bucket(Name=vyomlabsbucket, CreationDate=2023-06-07T08:56:43Z)], Owner=Owner(ID=d7dc917e255348a8f34cda28a78d40b6d8d48d311590ae781810a9e572635624))
+  2023-07-05 18:52:14 INFO  S3Backup:69 - Failure files uploading.......
+  2023-07-05 18:57:40 INFO  S3Backup:66 - S3 client : ListBucketsResponse(Buckets=[Bucket(Name=aws-cloudtrail-logs-889743517798-4c17d79f, CreationDate=2023-07-03T07:50:39Z), Bucket(Name=vyomlabsbucket, CreationDate=2023-06-07T08:56:43Z)], Owner=Owner(ID=d7dc917e255348a8f34cda28a78d40b6d8d48d311590ae781810a9e572635624))
+  2023-07-05 18:57:40 INFO  S3Backup:84 - Fresh differential files uploading.......
+  2023-07-05 18:57:40 INFO  S3Backup:87 - backupFolderPath :D:/Central Data
+  2023-07-05 18:57:40 INFO  S3Backup:152 - File Status for File 2_1.txt is :MODIFIED
+  2023-07-05 18:57:40 INFO  S3Backup:102 - key after: Central Data/File 2_1.txt
+  2023-07-05 18:57:40 INFO  S3Backup:103 - path: D:\Central Data\File 2_1.txt
+  2023-07-05 18:57:40 INFO  S3Backup:132 - Uploaded file: D:\Central Data\File 2_1.txt
+  2023-07-05 18:57:40 INFO  S3Backup:152 - File Status for File 2_10.txt is :MODIFIED
+  2023-07-05 18:57:40 INFO  S3Backup:102 - key after: Central Data/File 2_10.txt
+  2023-07-05 18:57:40 INFO  S3Backup:103 - path: D:\Central Data\File 2_10.txt
+  2023-07-05 18:57:40 INFO  S3Backup:132 - Uploaded file: D:\Central Data\File 2_10.txt
+  2023-07-05 18:57:40 INFO  S3Backup:152 - File Status for File 2_2.txt is :MODIFIED
+  2023-07-05 18:57:40 INFO  S3Backup:102 - key after: Central Data/File 2_2.txt
+  2023-07-05 18:57:40 INFO  S3Backup:103 - path: D:\Central Data\File 2_2.txt
+  2023-07-05 18:57:41 INFO  S3Backup:132 - Uploaded file: D:\Central Data\File 2_2.txt
+  2023-07-05 18:57:41 INFO  S3Backup:152 - File Status for File 2_3.txt is :MODIFIED
+  2023-07-05 18:57:41 INFO  S3Backup:102 - key after: Central Data/File 2_3.txt
+  2023-07-05 18:57:41 INFO  S3Backup:103 - path: D:\Central Data\File 2_3.txt
+  2023-07-05 18:57:41 INFO  S3Backup:132 - Uploaded file: D:\Central Data\File 2_3.txt
+  2023-07-05 18:57:41 INFO  S3Backup:152 - File Status for File 2_4.txt is :MODIFIED
+  2023-07-05 18:57:41 INFO  S3Backup:102 - key after: Central Data/File 2_4.txt
+  2023-07-05 18:57:41 INFO  S3Backup:103 - path: D:\Central Data\File 2_4.txt
+  2023-07-05 18:57:41 INFO  S3Backup:132 - Uploaded file: D:\Central Data\File 2_4.txt
+  2023-07-05 18:57:41 INFO  S3Backup:152 - File Status for File 2_5.txt is :MODIFIED
+  2023-07-05 18:57:41 INFO  S3Backup:102 - key after: Central Data/File 2_5.txt
+  2023-07-05 18:57:41 INFO  S3Backup:103 - path: D:\Central Data\File 2_5.txt
+  2023-07-05 18:57:41 INFO  S3Backup:132 - Uploaded file: D:\Central Data\File 2_5.txt
+  2023-07-05 18:57:41 INFO  S3Backup:152 - File Status for File 2_6.txt is :MODIFIED
+  2023-07-05 18:57:41 INFO  S3Backup:102 - key after: Central Data/File 2_6.txt
+  2023-07-05 18:57:41 INFO  S3Backup:103 - path: D:\Central Data\File 2_6.txt
+  2023-07-05 18:57:41 INFO  S3Backup:132 - Uploaded file: D:\Central Data\File 2_6.txt
+  2023-07-05 18:57:41 INFO  S3Backup:152 - File Status for File 2_7.txt is :MODIFIED
+  2023-07-05 18:57:41 INFO  S3Backup:102 - key after: Central Data/File 2_7.txt
+  2023-07-05 18:57:41 INFO  S3Backup:103 - path: D:\Central Data\File 2_7.txt
+  2023-07-05 18:57:41 INFO  S3Backup:132 - Uploaded file: D:\Central Data\File 2_7.txt
+  2023-07-05 18:57:41 INFO  S3Backup:152 - File Status for File 2_8.txt is :MODIFIED
+  2023-07-05 18:57:41 INFO  S3Backup:102 - key after: Central Data/File 2_8.txt
+  2023-07-05 18:57:41 INFO  S3Backup:103 - path: D:\Central Data\File 2_8.txt
+  2023-07-05 18:57:41 INFO  S3Backup:132 - Uploaded file: D:\Central Data\File 2_8.txt
+  2023-07-05 18:57:41 INFO  S3Backup:152 - File Status for File 2_9.txt is :MODIFIED
+  2023-07-05 18:57:41 INFO  S3Backup:102 - key after: Central Data/File 2_9.txt
+  2023-07-05 18:57:41 INFO  S3Backup:103 - path: D:\Central Data\File 2_9.txt
+  2023-07-05 18:57:41 INFO  S3Backup:132 - Uploaded file: D:\Central Data\File 2_9.txt
+  2023-07-05 18:57:41 INFO  S3Backup:152 - File Status for user1.txt is :MODIFIED
+  2023-07-05 18:57:41 INFO  S3Backup:152 - File Status for user 2.txt is :MODIFIED
+  2023-07-05 18:57:41 INFO  S3Backup:152 - File Status for user 1 payroll.txt is :MODIFIED
+  2023-07-05 18:57:41 INFO  S3Backup:152 - File Status for user 2 payroll.txt is :MODIFIED
+  2023-07-05 18:57:41 INFO  S3Backup:113 - Backup completed successfully.
+  2023-07-05 18:57:42 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 06:57:40 pm
+  2023-07-05 18:57:42 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 06:57:40 pm
+  2023-07-05 18:57:42 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 06:57:41 pm
+  2023-07-05 18:57:42 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 06:57:41 pm
+  2023-07-05 18:57:42 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 06:57:41 pm
+  2023-07-05 18:57:42 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 06:57:41 pm
+  2023-07-05 18:57:42 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 06:57:41 pm
+  2023-07-05 18:57:42 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 06:57:41 pm
+  2023-07-05 18:57:42 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 06:57:41 pm
+  2023-07-05 18:57:42 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 06:57:41 pm
+  2023-07-05 18:57:46 INFO  S3Backup:176 - File Details : {
+  "name": "File 2_1.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 2_1.txt",
+  "pathOnS3": "Central Data/File 2_1.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 6:57:40 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 18:57:46 INFO  S3Backup:176 - File Details : {
+  "name": "File 2_10.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 2_10.txt",
+  "pathOnS3": "Central Data/File 2_10.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 6:57:40 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 18:57:46 INFO  S3Backup:176 - File Details : {
+  "name": "File 2_2.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 2_2.txt",
+  "pathOnS3": "Central Data/File 2_2.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 6:57:41 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 18:57:46 INFO  S3Backup:176 - File Details : {
+  "name": "File 2_3.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 2_3.txt",
+  "pathOnS3": "Central Data/File 2_3.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 6:57:41 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 18:57:46 INFO  S3Backup:176 - File Details : {
+  "name": "File 2_4.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 2_4.txt",
+  "pathOnS3": "Central Data/File 2_4.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 6:57:41 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 18:57:46 INFO  S3Backup:176 - File Details : {
+  "name": "File 2_5.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 2_5.txt",
+  "pathOnS3": "Central Data/File 2_5.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 6:57:41 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 18:57:46 INFO  S3Backup:176 - File Details : {
+  "name": "File 2_6.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 2_6.txt",
+  "pathOnS3": "Central Data/File 2_6.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 6:57:41 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 18:57:46 INFO  S3Backup:176 - File Details : {
+  "name": "File 2_7.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 2_7.txt",
+  "pathOnS3": "Central Data/File 2_7.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 6:57:41 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 18:57:46 INFO  S3Backup:176 - File Details : {
+  "name": "File 2_8.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 2_8.txt",
+  "pathOnS3": "Central Data/File 2_8.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 6:57:41 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 18:57:46 INFO  S3Backup:176 - File Details : {
+  "name": "File 2_9.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 2_9.txt",
+  "pathOnS3": "Central Data/File 2_9.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 6:57:41 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 19:00:53 INFO  S3Backup:66 - S3 client : ListBucketsResponse(Buckets=[Bucket(Name=aws-cloudtrail-logs-889743517798-4c17d79f, CreationDate=2023-07-03T07:50:39Z), Bucket(Name=vyomlabsbucket, CreationDate=2023-06-07T08:56:43Z)], Owner=Owner(ID=d7dc917e255348a8f34cda28a78d40b6d8d48d311590ae781810a9e572635624))
+  2023-07-05 19:00:53 INFO  S3Backup:84 - Fresh differential files uploading.......
+  2023-07-05 19:00:53 INFO  S3Backup:87 - backupFolderPath :D:/Central Data
+  2023-07-05 19:00:53 INFO  S3Backup:152 - File Status for File 2_1.txt is :MODIFIED
+  2023-07-05 19:00:53 INFO  S3Backup:102 - key after: Central Data/File 2_1.txt
+  2023-07-05 19:00:53 INFO  S3Backup:103 - path: D:\Central Data\File 2_1.txt
+  2023-07-05 19:00:53 INFO  S3Backup:132 - Uploaded file: D:\Central Data\File 2_1.txt
+  2023-07-05 19:00:53 INFO  S3Backup:152 - File Status for File 2_10.txt is :MODIFIED
+  2023-07-05 19:00:53 INFO  S3Backup:102 - key after: Central Data/File 2_10.txt
+  2023-07-05 19:00:53 INFO  S3Backup:103 - path: D:\Central Data\File 2_10.txt
+  2023-07-05 19:00:53 INFO  S3Backup:132 - Uploaded file: D:\Central Data\File 2_10.txt
+  2023-07-05 19:00:53 INFO  S3Backup:152 - File Status for File 2_2.txt is :MODIFIED
+  2023-07-05 19:00:53 INFO  S3Backup:102 - key after: Central Data/File 2_2.txt
+  2023-07-05 19:00:53 INFO  S3Backup:103 - path: D:\Central Data\File 2_2.txt
+  2023-07-05 19:00:53 INFO  S3Backup:132 - Uploaded file: D:\Central Data\File 2_2.txt
+  2023-07-05 19:00:53 INFO  S3Backup:152 - File Status for File 2_3.txt is :MODIFIED
+  2023-07-05 19:00:53 INFO  S3Backup:102 - key after: Central Data/File 2_3.txt
+  2023-07-05 19:00:53 INFO  S3Backup:103 - path: D:\Central Data\File 2_3.txt
+  2023-07-05 19:00:54 INFO  S3Backup:132 - Uploaded file: D:\Central Data\File 2_3.txt
+  2023-07-05 19:00:54 INFO  S3Backup:152 - File Status for File 2_4.txt is :MODIFIED
+  2023-07-05 19:00:54 INFO  S3Backup:102 - key after: Central Data/File 2_4.txt
+  2023-07-05 19:00:54 INFO  S3Backup:103 - path: D:\Central Data\File 2_4.txt
+  2023-07-05 19:00:54 INFO  S3Backup:132 - Uploaded file: D:\Central Data\File 2_4.txt
+  2023-07-05 19:00:54 INFO  S3Backup:152 - File Status for File 2_5.txt is :MODIFIED
+  2023-07-05 19:00:54 INFO  S3Backup:102 - key after: Central Data/File 2_5.txt
+  2023-07-05 19:00:54 INFO  S3Backup:103 - path: D:\Central Data\File 2_5.txt
+  2023-07-05 19:00:54 INFO  S3Backup:132 - Uploaded file: D:\Central Data\File 2_5.txt
+  2023-07-05 19:00:54 INFO  S3Backup:152 - File Status for File 2_6.txt is :MODIFIED
+  2023-07-05 19:00:54 INFO  S3Backup:102 - key after: Central Data/File 2_6.txt
+  2023-07-05 19:00:54 INFO  S3Backup:103 - path: D:\Central Data\File 2_6.txt
+  2023-07-05 19:00:54 INFO  S3Backup:132 - Uploaded file: D:\Central Data\File 2_6.txt
+  2023-07-05 19:00:54 INFO  S3Backup:152 - File Status for File 2_7.txt is :MODIFIED
+  2023-07-05 19:00:54 INFO  S3Backup:102 - key after: Central Data/File 2_7.txt
+  2023-07-05 19:00:54 INFO  S3Backup:103 - path: D:\Central Data\File 2_7.txt
+  2023-07-05 19:00:54 INFO  S3Backup:132 - Uploaded file: D:\Central Data\File 2_7.txt
+  2023-07-05 19:00:54 INFO  S3Backup:152 - File Status for File 2_8.txt is :MODIFIED
+  2023-07-05 19:00:54 INFO  S3Backup:102 - key after: Central Data/File 2_8.txt
+  2023-07-05 19:00:54 INFO  S3Backup:103 - path: D:\Central Data\File 2_8.txt
+  2023-07-05 19:00:54 INFO  S3Backup:132 - Uploaded file: D:\Central Data\File 2_8.txt
+  2023-07-05 19:00:54 INFO  S3Backup:152 - File Status for File 2_9.txt is :MODIFIED
+  2023-07-05 19:00:54 INFO  S3Backup:102 - key after: Central Data/File 2_9.txt
+  2023-07-05 19:00:54 INFO  S3Backup:103 - path: D:\Central Data\File 2_9.txt
+  2023-07-05 19:00:54 INFO  S3Backup:132 - Uploaded file: D:\Central Data\File 2_9.txt
+  2023-07-05 19:00:54 INFO  S3Backup:152 - File Status for user1.txt is :MODIFIED
+  2023-07-05 19:00:54 INFO  S3Backup:152 - File Status for user 2.txt is :MODIFIED
+  2023-07-05 19:00:54 INFO  S3Backup:152 - File Status for user 1 payroll.txt is :MODIFIED
+  2023-07-05 19:00:54 INFO  S3Backup:152 - File Status for user 2 payroll.txt is :MODIFIED
+  2023-07-05 19:00:54 INFO  S3Backup:113 - Backup completed successfully.
+  2023-07-05 19:00:54 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 07:00:53 pm
+  2023-07-05 19:00:55 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 07:00:53 pm
+  2023-07-05 19:00:55 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 07:00:53 pm
+  2023-07-05 19:00:55 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 07:00:54 pm
+  2023-07-05 19:00:55 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 07:00:54 pm
+  2023-07-05 19:00:55 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 07:00:54 pm
+  2023-07-05 19:00:55 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 07:00:54 pm
+  2023-07-05 19:00:55 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 07:00:54 pm
+  2023-07-05 19:00:55 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 07:00:54 pm
+  2023-07-05 19:00:55 INFO  FileUploadDetailsService:131 - Date format : 05-Jul-2023 07:00:54 pm
+  2023-07-05 19:00:59 INFO  S3Backup:176 - File Details : {
+  "name": "File 2_1.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 2_1.txt",
+  "pathOnS3": "Central Data/File 2_1.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 7:00:53 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 19:00:59 INFO  S3Backup:176 - File Details : {
+  "name": "File 2_10.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 2_10.txt",
+  "pathOnS3": "Central Data/File 2_10.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 7:00:53 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 19:00:59 INFO  S3Backup:176 - File Details : {
+  "name": "File 2_2.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 2_2.txt",
+  "pathOnS3": "Central Data/File 2_2.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 7:00:53 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 19:00:59 INFO  S3Backup:176 - File Details : {
+  "name": "File 2_3.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 2_3.txt",
+  "pathOnS3": "Central Data/File 2_3.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 7:00:54 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 19:00:59 INFO  S3Backup:176 - File Details : {
+  "name": "File 2_4.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 2_4.txt",
+  "pathOnS3": "Central Data/File 2_4.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 7:00:54 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 19:00:59 INFO  S3Backup:176 - File Details : {
+  "name": "File 2_5.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 2_5.txt",
+  "pathOnS3": "Central Data/File 2_5.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 7:00:54 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 19:00:59 INFO  S3Backup:176 - File Details : {
+  "name": "File 2_6.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 2_6.txt",
+  "pathOnS3": "Central Data/File 2_6.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 7:00:54 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 19:00:59 INFO  S3Backup:176 - File Details : {
+  "name": "File 2_7.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 2_7.txt",
+  "pathOnS3": "Central Data/File 2_7.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 7:00:54 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 19:00:59 INFO  S3Backup:176 - File Details : {
+  "name": "File 2_8.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 2_8.txt",
+  "pathOnS3": "Central Data/File 2_8.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 7:00:54 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-05 19:00:59 INFO  S3Backup:176 - File Details : {
+  "name": "File 2_9.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 2_9.txt",
+  "pathOnS3": "Central Data/File 2_9.txt",
+  "uploadDateAndTime": "Jul 5, 2023, 7:00:54 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 12:14:03 INFO  S3Backup:66 - S3 client : ListBucketsResponse(Buckets=[Bucket(Name=aws-cloudtrail-logs-889743517798-4c17d79f, CreationDate=2023-07-03T07:50:39Z), Bucket(Name=vyomlabsbucket, CreationDate=2023-06-07T08:56:43Z)], Owner=Owner(ID=d7dc917e255348a8f34cda28a78d40b6d8d48d311590ae781810a9e572635624))
+  2023-07-06 12:14:03 INFO  S3Backup:84 - Fresh differential files uploading.......
+  2023-07-06 12:14:03 INFO  S3Backup:87 - backupFolderPath :D:/Central Data
+  2023-07-06 12:14:03 INFO  S3Backup:152 - File Status for File 3_1.txt is :MODIFIED
+  2023-07-06 12:14:03 INFO  S3Backup:102 - key after: Central Data/File 3_1.txt
+  2023-07-06 12:14:03 INFO  S3Backup:103 - path: D:\Central Data\File 3_1.txt
+  2023-07-06 12:14:03 INFO  S3Backup:132 - Uploaded file: D:\Central Data\File 3_1.txt
+  2023-07-06 12:14:03 INFO  S3Backup:152 - File Status for File 3_10.txt is :MODIFIED
+  2023-07-06 12:14:03 INFO  S3Backup:102 - key after: Central Data/File 3_10.txt
+  2023-07-06 12:14:03 INFO  S3Backup:103 - path: D:\Central Data\File 3_10.txt
+  2023-07-06 12:14:04 INFO  S3Backup:132 - Uploaded file: D:\Central Data\File 3_10.txt
+  2023-07-06 12:14:04 INFO  S3Backup:152 - File Status for File 3_2.txt is :MODIFIED
+  2023-07-06 12:14:04 INFO  S3Backup:102 - key after: Central Data/File 3_2.txt
+  2023-07-06 12:14:04 INFO  S3Backup:103 - path: D:\Central Data\File 3_2.txt
+  2023-07-06 12:14:04 INFO  S3Backup:132 - Uploaded file: D:\Central Data\File 3_2.txt
+  2023-07-06 12:14:04 INFO  S3Backup:152 - File Status for File 3_3.txt is :MODIFIED
+  2023-07-06 12:14:04 INFO  S3Backup:102 - key after: Central Data/File 3_3.txt
+  2023-07-06 12:14:04 INFO  S3Backup:103 - path: D:\Central Data\File 3_3.txt
+  2023-07-06 12:14:04 INFO  S3Backup:132 - Uploaded file: D:\Central Data\File 3_3.txt
+  2023-07-06 12:14:04 INFO  S3Backup:152 - File Status for File 3_4.txt is :MODIFIED
+  2023-07-06 12:14:04 INFO  S3Backup:102 - key after: Central Data/File 3_4.txt
+  2023-07-06 12:14:04 INFO  S3Backup:103 - path: D:\Central Data\File 3_4.txt
+  2023-07-06 12:14:04 INFO  S3Backup:132 - Uploaded file: D:\Central Data\File 3_4.txt
+  2023-07-06 12:14:04 INFO  S3Backup:152 - File Status for File 3_5.txt is :MODIFIED
+  2023-07-06 12:14:04 INFO  S3Backup:102 - key after: Central Data/File 3_5.txt
+  2023-07-06 12:14:04 INFO  S3Backup:103 - path: D:\Central Data\File 3_5.txt
+  2023-07-06 12:14:04 INFO  S3Backup:132 - Uploaded file: D:\Central Data\File 3_5.txt
+  2023-07-06 12:14:04 INFO  S3Backup:152 - File Status for File 3_6.txt is :MODIFIED
+  2023-07-06 12:14:04 INFO  S3Backup:102 - key after: Central Data/File 3_6.txt
+  2023-07-06 12:14:04 INFO  S3Backup:103 - path: D:\Central Data\File 3_6.txt
+  2023-07-06 12:14:04 INFO  S3Backup:132 - Uploaded file: D:\Central Data\File 3_6.txt
+  2023-07-06 12:14:04 INFO  S3Backup:152 - File Status for File 3_7.txt is :MODIFIED
+  2023-07-06 12:14:04 INFO  S3Backup:102 - key after: Central Data/File 3_7.txt
+  2023-07-06 12:14:04 INFO  S3Backup:103 - path: D:\Central Data\File 3_7.txt
+  2023-07-06 12:14:04 INFO  S3Backup:132 - Uploaded file: D:\Central Data\File 3_7.txt
+  2023-07-06 12:14:04 INFO  S3Backup:152 - File Status for File 3_8.txt is :MODIFIED
+  2023-07-06 12:14:04 INFO  S3Backup:102 - key after: Central Data/File 3_8.txt
+  2023-07-06 12:14:04 INFO  S3Backup:103 - path: D:\Central Data\File 3_8.txt
+  2023-07-06 12:14:04 INFO  S3Backup:132 - Uploaded file: D:\Central Data\File 3_8.txt
+  2023-07-06 12:14:04 INFO  S3Backup:152 - File Status for File 3_9.txt is :MODIFIED
+  2023-07-06 12:14:04 INFO  S3Backup:102 - key after: Central Data/File 3_9.txt
+  2023-07-06 12:14:04 INFO  S3Backup:103 - path: D:\Central Data\File 3_9.txt
+  2023-07-06 12:14:04 INFO  S3Backup:132 - Uploaded file: D:\Central Data\File 3_9.txt
+  2023-07-06 12:14:04 INFO  S3Backup:152 - File Status for user1.txt is :MODIFIED
+  2023-07-06 12:14:04 INFO  S3Backup:152 - File Status for user 2.txt is :MODIFIED
+  2023-07-06 12:14:04 INFO  S3Backup:152 - File Status for user 1 payroll.txt is :MODIFIED
+  2023-07-06 12:14:04 INFO  S3Backup:152 - File Status for user 2 payroll.txt is :MODIFIED
+  2023-07-06 12:14:04 INFO  S3Backup:113 - Backup completed successfully.
+  2023-07-06 12:14:05 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 12:14:03 pm
+  2023-07-06 12:14:05 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 12:14:04 pm
+  2023-07-06 12:14:05 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 12:14:04 pm
+  2023-07-06 12:14:05 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 12:14:04 pm
+  2023-07-06 12:14:05 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 12:14:04 pm
+  2023-07-06 12:14:05 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 12:14:04 pm
+  2023-07-06 12:14:05 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 12:14:04 pm
+  2023-07-06 12:14:05 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 12:14:04 pm
+  2023-07-06 12:14:05 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 12:14:04 pm
+  2023-07-06 12:14:05 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 12:14:04 pm
+  2023-07-06 12:14:11 INFO  S3Backup:176 - File Details : {
+  "name": "File 3_1.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 3_1.txt",
+  "pathOnS3": "Central Data/File 3_1.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 12:14:03 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 12:14:11 INFO  S3Backup:176 - File Details : {
+  "name": "File 3_10.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 3_10.txt",
+  "pathOnS3": "Central Data/File 3_10.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 12:14:04 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 12:14:11 INFO  S3Backup:176 - File Details : {
+  "name": "File 3_2.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 3_2.txt",
+  "pathOnS3": "Central Data/File 3_2.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 12:14:04 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 12:14:11 INFO  S3Backup:176 - File Details : {
+  "name": "File 3_3.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 3_3.txt",
+  "pathOnS3": "Central Data/File 3_3.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 12:14:04 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 12:14:11 INFO  S3Backup:176 - File Details : {
+  "name": "File 3_4.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 3_4.txt",
+  "pathOnS3": "Central Data/File 3_4.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 12:14:04 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 12:14:11 INFO  S3Backup:176 - File Details : {
+  "name": "File 3_5.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 3_5.txt",
+  "pathOnS3": "Central Data/File 3_5.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 12:14:04 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 12:14:11 INFO  S3Backup:176 - File Details : {
+  "name": "File 3_6.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 3_6.txt",
+  "pathOnS3": "Central Data/File 3_6.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 12:14:04 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 12:14:11 INFO  S3Backup:176 - File Details : {
+  "name": "File 3_7.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 3_7.txt",
+  "pathOnS3": "Central Data/File 3_7.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 12:14:04 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 12:14:11 INFO  S3Backup:176 - File Details : {
+  "name": "File 3_8.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 3_8.txt",
+  "pathOnS3": "Central Data/File 3_8.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 12:14:04 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 12:14:11 INFO  S3Backup:176 - File Details : {
+  "name": "File 3_9.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 3_9.txt",
+  "pathOnS3": "Central Data/File 3_9.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 12:14:04 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 12:48:57 INFO  S3Backup:67 - S3 client : ListBucketsResponse(Buckets=[Bucket(Name=vyomlabsbucket, CreationDate=2023-06-07T08:56:43Z)], Owner=Owner(ID=d7dc917e255348a8f34cda28a78d40b6d8d48d311590ae781810a9e572635624))
+  2023-07-06 12:48:57 INFO  S3Backup:85 - Fresh differential files uploading.......
+  2023-07-06 12:48:57 INFO  S3Backup:88 - backupFolderPath :D:/Central Data
+  2023-07-06 12:48:57 INFO  S3Backup:156 - File Status for File 4_1.txt is :MODIFIED
+  2023-07-06 12:48:57 INFO  S3Backup:103 - key after: Central Data/File 4_1.txt
+  2023-07-06 12:48:57 INFO  S3Backup:104 - path: D:\Central Data\File 4_1.txt
+  2023-07-06 12:48:57 INFO  S3Backup:136 - Uploaded file: D:\Central Data\File 4_1.txt
+  2023-07-06 12:48:57 INFO  S3Backup:156 - File Status for File 4_10.txt is :MODIFIED
+  2023-07-06 12:48:57 INFO  S3Backup:103 - key after: Central Data/File 4_10.txt
+  2023-07-06 12:48:57 INFO  S3Backup:104 - path: D:\Central Data\File 4_10.txt
+  2023-07-06 12:48:57 INFO  S3Backup:136 - Uploaded file: D:\Central Data\File 4_10.txt
+  2023-07-06 12:48:57 INFO  S3Backup:156 - File Status for File 4_2.txt is :MODIFIED
+  2023-07-06 12:48:57 INFO  S3Backup:103 - key after: Central Data/File 4_2.txt
+  2023-07-06 12:48:57 INFO  S3Backup:104 - path: D:\Central Data\File 4_2.txt
+  2023-07-06 12:48:58 INFO  S3Backup:136 - Uploaded file: D:\Central Data\File 4_2.txt
+  2023-07-06 12:48:58 INFO  S3Backup:156 - File Status for File 4_3.txt is :MODIFIED
+  2023-07-06 12:48:58 INFO  S3Backup:103 - key after: Central Data/File 4_3.txt
+  2023-07-06 12:48:58 INFO  S3Backup:104 - path: D:\Central Data\File 4_3.txt
+  2023-07-06 12:48:58 INFO  S3Backup:136 - Uploaded file: D:\Central Data\File 4_3.txt
+  2023-07-06 12:48:58 INFO  S3Backup:156 - File Status for File 4_4.txt is :MODIFIED
+  2023-07-06 12:48:58 INFO  S3Backup:103 - key after: Central Data/File 4_4.txt
+  2023-07-06 12:48:58 INFO  S3Backup:104 - path: D:\Central Data\File 4_4.txt
+  2023-07-06 12:48:58 INFO  S3Backup:136 - Uploaded file: D:\Central Data\File 4_4.txt
+  2023-07-06 12:48:58 INFO  S3Backup:156 - File Status for File 4_5.txt is :MODIFIED
+  2023-07-06 12:48:58 INFO  S3Backup:103 - key after: Central Data/File 4_5.txt
+  2023-07-06 12:48:58 INFO  S3Backup:104 - path: D:\Central Data\File 4_5.txt
+  2023-07-06 12:48:58 INFO  S3Backup:136 - Uploaded file: D:\Central Data\File 4_5.txt
+  2023-07-06 12:48:58 INFO  S3Backup:156 - File Status for File 4_6.txt is :MODIFIED
+  2023-07-06 12:48:58 INFO  S3Backup:103 - key after: Central Data/File 4_6.txt
+  2023-07-06 12:48:58 INFO  S3Backup:104 - path: D:\Central Data\File 4_6.txt
+  2023-07-06 12:48:58 INFO  S3Backup:136 - Uploaded file: D:\Central Data\File 4_6.txt
+  2023-07-06 12:48:58 INFO  S3Backup:156 - File Status for File 4_7.txt is :MODIFIED
+  2023-07-06 12:48:58 INFO  S3Backup:103 - key after: Central Data/File 4_7.txt
+  2023-07-06 12:48:58 INFO  S3Backup:104 - path: D:\Central Data\File 4_7.txt
+  2023-07-06 12:48:58 INFO  S3Backup:136 - Uploaded file: D:\Central Data\File 4_7.txt
+  2023-07-06 12:48:58 INFO  S3Backup:156 - File Status for File 4_8.txt is :MODIFIED
+  2023-07-06 12:48:58 INFO  S3Backup:103 - key after: Central Data/File 4_8.txt
+  2023-07-06 12:48:58 INFO  S3Backup:104 - path: D:\Central Data\File 4_8.txt
+  2023-07-06 12:48:58 INFO  S3Backup:136 - Uploaded file: D:\Central Data\File 4_8.txt
+  2023-07-06 12:48:58 INFO  S3Backup:156 - File Status for File 4_9.txt is :MODIFIED
+  2023-07-06 12:48:58 INFO  S3Backup:103 - key after: Central Data/File 4_9.txt
+  2023-07-06 12:48:58 INFO  S3Backup:104 - path: D:\Central Data\File 4_9.txt
+  2023-07-06 12:48:58 INFO  S3Backup:136 - Uploaded file: D:\Central Data\File 4_9.txt
+  2023-07-06 12:48:58 INFO  S3Backup:156 - File Status for user1.txt is :MODIFIED
+  2023-07-06 12:48:58 INFO  S3Backup:156 - File Status for user 2.txt is :MODIFIED
+  2023-07-06 12:48:58 INFO  S3Backup:156 - File Status for user 1 payroll.txt is :MODIFIED
+  2023-07-06 12:48:58 INFO  S3Backup:156 - File Status for user 2 payroll.txt is :MODIFIED
+  2023-07-06 12:48:58 INFO  S3Backup:114 - Backup completed successfully.
+  2023-07-06 12:48:59 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 12:48:57 pm
+  2023-07-06 12:48:59 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 12:48:57 pm
+  2023-07-06 12:48:59 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 12:48:58 pm
+  2023-07-06 12:48:59 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 12:48:58 pm
+  2023-07-06 12:48:59 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 12:48:58 pm
+  2023-07-06 12:48:59 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 12:48:58 pm
+  2023-07-06 12:48:59 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 12:48:58 pm
+  2023-07-06 12:48:59 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 12:48:58 pm
+  2023-07-06 12:48:59 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 12:48:58 pm
+  2023-07-06 12:48:59 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 12:48:58 pm
+  2023-07-06 12:49:04 INFO  S3Backup:180 - File Details : {
+  "name": "File 4_1.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_1.txt",
+  "pathOnS3": "Central Data/File 4_1.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 12:48:57 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 12:49:04 INFO  S3Backup:180 - File Details : {
+  "name": "File 4_10.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_10.txt",
+  "pathOnS3": "Central Data/File 4_10.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 12:48:57 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 12:49:04 INFO  S3Backup:180 - File Details : {
+  "name": "File 4_2.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_2.txt",
+  "pathOnS3": "Central Data/File 4_2.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 12:48:58 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 12:49:04 INFO  S3Backup:180 - File Details : {
+  "name": "File 4_3.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_3.txt",
+  "pathOnS3": "Central Data/File 4_3.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 12:48:58 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 12:49:04 INFO  S3Backup:180 - File Details : {
+  "name": "File 4_4.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_4.txt",
+  "pathOnS3": "Central Data/File 4_4.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 12:48:58 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 12:49:04 INFO  S3Backup:180 - File Details : {
+  "name": "File 4_5.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_5.txt",
+  "pathOnS3": "Central Data/File 4_5.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 12:48:58 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 12:49:04 INFO  S3Backup:180 - File Details : {
+  "name": "File 4_6.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_6.txt",
+  "pathOnS3": "Central Data/File 4_6.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 12:48:58 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 12:49:04 INFO  S3Backup:180 - File Details : {
+  "name": "File 4_7.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_7.txt",
+  "pathOnS3": "Central Data/File 4_7.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 12:48:58 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 12:49:04 INFO  S3Backup:180 - File Details : {
+  "name": "File 4_8.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_8.txt",
+  "pathOnS3": "Central Data/File 4_8.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 12:48:58 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 12:49:04 INFO  S3Backup:180 - File Details : {
+  "name": "File 4_9.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_9.txt",
+  "pathOnS3": "Central Data/File 4_9.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 12:48:58 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 13:03:17 INFO  S3Backup:67 - S3 client : ListBucketsResponse(Buckets=[Bucket(Name=vyomlabsbucket, CreationDate=2023-06-07T08:56:43Z)], Owner=Owner(ID=d7dc917e255348a8f34cda28a78d40b6d8d48d311590ae781810a9e572635624))
+  2023-07-06 13:03:17 INFO  S3Backup:85 - Fresh differential files uploading.......
+  2023-07-06 13:03:17 INFO  S3Backup:88 - backupFolderPath :D:/Central Data
+  2023-07-06 13:03:17 INFO  S3Backup:156 - File Status for File 4_1.txt is :MODIFIED
+  2023-07-06 13:03:17 INFO  S3Backup:103 - key after: Central Data/File 4_1.txt
+  2023-07-06 13:03:17 INFO  S3Backup:104 - path: D:\Central Data\File 4_1.txt
+  2023-07-06 13:03:17 INFO  S3Backup:136 - Uploaded file: D:\Central Data\File 4_1.txt
+  2023-07-06 13:03:17 INFO  S3Backup:156 - File Status for File 4_10.txt is :MODIFIED
+  2023-07-06 13:03:17 INFO  S3Backup:103 - key after: Central Data/File 4_10.txt
+  2023-07-06 13:03:17 INFO  S3Backup:104 - path: D:\Central Data\File 4_10.txt
+  2023-07-06 13:03:17 INFO  S3Backup:136 - Uploaded file: D:\Central Data\File 4_10.txt
+  2023-07-06 13:03:17 INFO  S3Backup:156 - File Status for File 4_2.txt is :MODIFIED
+  2023-07-06 13:03:17 INFO  S3Backup:103 - key after: Central Data/File 4_2.txt
+  2023-07-06 13:03:17 INFO  S3Backup:104 - path: D:\Central Data\File 4_2.txt
+  2023-07-06 13:03:18 INFO  S3Backup:136 - Uploaded file: D:\Central Data\File 4_2.txt
+  2023-07-06 13:03:18 INFO  S3Backup:156 - File Status for File 4_3.txt is :MODIFIED
+  2023-07-06 13:03:18 INFO  S3Backup:103 - key after: Central Data/File 4_3.txt
+  2023-07-06 13:03:18 INFO  S3Backup:104 - path: D:\Central Data\File 4_3.txt
+  2023-07-06 13:03:18 INFO  S3Backup:136 - Uploaded file: D:\Central Data\File 4_3.txt
+  2023-07-06 13:03:18 INFO  S3Backup:156 - File Status for File 4_4.txt is :MODIFIED
+  2023-07-06 13:03:18 INFO  S3Backup:103 - key after: Central Data/File 4_4.txt
+  2023-07-06 13:03:18 INFO  S3Backup:104 - path: D:\Central Data\File 4_4.txt
+  2023-07-06 13:03:18 INFO  S3Backup:136 - Uploaded file: D:\Central Data\File 4_4.txt
+  2023-07-06 13:03:18 INFO  S3Backup:156 - File Status for File 4_5.txt is :MODIFIED
+  2023-07-06 13:03:18 INFO  S3Backup:103 - key after: Central Data/File 4_5.txt
+  2023-07-06 13:03:18 INFO  S3Backup:104 - path: D:\Central Data\File 4_5.txt
+  2023-07-06 13:03:18 INFO  S3Backup:136 - Uploaded file: D:\Central Data\File 4_5.txt
+  2023-07-06 13:03:18 INFO  S3Backup:156 - File Status for File 4_6.txt is :MODIFIED
+  2023-07-06 13:03:18 INFO  S3Backup:103 - key after: Central Data/File 4_6.txt
+  2023-07-06 13:03:18 INFO  S3Backup:104 - path: D:\Central Data\File 4_6.txt
+  2023-07-06 13:03:18 INFO  S3Backup:136 - Uploaded file: D:\Central Data\File 4_6.txt
+  2023-07-06 13:03:18 INFO  S3Backup:156 - File Status for File 4_7.txt is :MODIFIED
+  2023-07-06 13:03:18 INFO  S3Backup:103 - key after: Central Data/File 4_7.txt
+  2023-07-06 13:03:18 INFO  S3Backup:104 - path: D:\Central Data\File 4_7.txt
+  2023-07-06 13:03:18 INFO  S3Backup:136 - Uploaded file: D:\Central Data\File 4_7.txt
+  2023-07-06 13:03:18 INFO  S3Backup:156 - File Status for File 4_8.txt is :MODIFIED
+  2023-07-06 13:03:18 INFO  S3Backup:103 - key after: Central Data/File 4_8.txt
+  2023-07-06 13:03:18 INFO  S3Backup:104 - path: D:\Central Data\File 4_8.txt
+  2023-07-06 13:03:18 INFO  S3Backup:136 - Uploaded file: D:\Central Data\File 4_8.txt
+  2023-07-06 13:03:18 INFO  S3Backup:156 - File Status for File 4_9.txt is :MODIFIED
+  2023-07-06 13:03:18 INFO  S3Backup:103 - key after: Central Data/File 4_9.txt
+  2023-07-06 13:03:18 INFO  S3Backup:104 - path: D:\Central Data\File 4_9.txt
+  2023-07-06 13:03:18 INFO  S3Backup:136 - Uploaded file: D:\Central Data\File 4_9.txt
+  2023-07-06 13:03:18 INFO  S3Backup:156 - File Status for user1.txt is :MODIFIED
+  2023-07-06 13:03:18 INFO  S3Backup:156 - File Status for user 2.txt is :MODIFIED
+  2023-07-06 13:03:18 INFO  S3Backup:156 - File Status for user 1 payroll.txt is :MODIFIED
+  2023-07-06 13:03:18 INFO  S3Backup:156 - File Status for user 2 payroll.txt is :MODIFIED
+  2023-07-06 13:03:18 INFO  S3Backup:114 - Backup completed successfully.
+  2023-07-06 13:03:19 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 01:03:17 pm
+  2023-07-06 13:03:19 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 01:03:17 pm
+  2023-07-06 13:03:19 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 01:03:18 pm
+  2023-07-06 13:03:19 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 01:03:18 pm
+  2023-07-06 13:03:19 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 01:03:18 pm
+  2023-07-06 13:03:19 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 01:03:18 pm
+  2023-07-06 13:03:19 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 01:03:18 pm
+  2023-07-06 13:03:19 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 01:03:18 pm
+  2023-07-06 13:03:19 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 01:03:18 pm
+  2023-07-06 13:03:19 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 01:03:18 pm
+  2023-07-06 13:03:24 INFO  S3Backup:180 - File Details : {
+  "name": "File 4_1.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_1.txt",
+  "pathOnS3": "Central Data/File 4_1.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 1:03:17 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 13:03:24 INFO  S3Backup:180 - File Details : {
+  "name": "File 4_10.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_10.txt",
+  "pathOnS3": "Central Data/File 4_10.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 1:03:17 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 13:03:24 INFO  S3Backup:180 - File Details : {
+  "name": "File 4_2.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_2.txt",
+  "pathOnS3": "Central Data/File 4_2.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 1:03:18 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 13:03:24 INFO  S3Backup:180 - File Details : {
+  "name": "File 4_3.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_3.txt",
+  "pathOnS3": "Central Data/File 4_3.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 1:03:18 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 13:03:24 INFO  S3Backup:180 - File Details : {
+  "name": "File 4_4.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_4.txt",
+  "pathOnS3": "Central Data/File 4_4.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 1:03:18 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 13:03:24 INFO  S3Backup:180 - File Details : {
+  "name": "File 4_5.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_5.txt",
+  "pathOnS3": "Central Data/File 4_5.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 1:03:18 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 13:03:24 INFO  S3Backup:180 - File Details : {
+  "name": "File 4_6.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_6.txt",
+  "pathOnS3": "Central Data/File 4_6.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 1:03:18 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 13:03:24 INFO  S3Backup:180 - File Details : {
+  "name": "File 4_7.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_7.txt",
+  "pathOnS3": "Central Data/File 4_7.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 1:03:18 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 13:03:24 INFO  S3Backup:180 - File Details : {
+  "name": "File 4_8.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_8.txt",
+  "pathOnS3": "Central Data/File 4_8.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 1:03:18 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 13:03:24 INFO  S3Backup:180 - File Details : {
+  "name": "File 4_9.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_9.txt",
+  "pathOnS3": "Central Data/File 4_9.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 1:03:18 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 13:08:44 INFO  S3Backup:67 - S3 client : ListBucketsResponse(Buckets=[Bucket(Name=vyomlabsbucket, CreationDate=2023-06-07T08:56:43Z)], Owner=Owner(ID=d7dc917e255348a8f34cda28a78d40b6d8d48d311590ae781810a9e572635624))
+  2023-07-06 13:08:44 INFO  S3Backup:85 - Fresh differential files uploading.......
+  2023-07-06 13:08:44 INFO  S3Backup:88 - backupFolderPath :D:/Central Data
+  2023-07-06 13:08:44 INFO  S3Backup:156 - File Status for File 4_1.txt is :MODIFIED
+  2023-07-06 13:08:44 INFO  S3Backup:103 - key after: Central Data/File 4_1.txt
+  2023-07-06 13:08:44 INFO  S3Backup:104 - path: D:\Central Data\File 4_1.txt
+  2023-07-06 13:08:45 INFO  S3Backup:136 - Uploaded file: D:\Central Data\File 4_1.txt
+  2023-07-06 13:08:45 INFO  S3Backup:156 - File Status for File 4_10.txt is :MODIFIED
+  2023-07-06 13:08:45 INFO  S3Backup:103 - key after: Central Data/File 4_10.txt
+  2023-07-06 13:08:45 INFO  S3Backup:104 - path: D:\Central Data\File 4_10.txt
+  2023-07-06 13:08:45 INFO  S3Backup:136 - Uploaded file: D:\Central Data\File 4_10.txt
+  2023-07-06 13:08:45 INFO  S3Backup:156 - File Status for File 4_2.txt is :MODIFIED
+  2023-07-06 13:08:45 INFO  S3Backup:103 - key after: Central Data/File 4_2.txt
+  2023-07-06 13:08:45 INFO  S3Backup:104 - path: D:\Central Data\File 4_2.txt
+  2023-07-06 13:08:45 INFO  S3Backup:136 - Uploaded file: D:\Central Data\File 4_2.txt
+  2023-07-06 13:08:45 INFO  S3Backup:156 - File Status for File 4_3.txt is :MODIFIED
+  2023-07-06 13:08:45 INFO  S3Backup:103 - key after: Central Data/File 4_3.txt
+  2023-07-06 13:08:45 INFO  S3Backup:104 - path: D:\Central Data\File 4_3.txt
+  2023-07-06 13:08:45 INFO  S3Backup:136 - Uploaded file: D:\Central Data\File 4_3.txt
+  2023-07-06 13:08:45 INFO  S3Backup:156 - File Status for File 4_4.txt is :MODIFIED
+  2023-07-06 13:08:45 INFO  S3Backup:103 - key after: Central Data/File 4_4.txt
+  2023-07-06 13:08:45 INFO  S3Backup:104 - path: D:\Central Data\File 4_4.txt
+  2023-07-06 13:08:45 INFO  S3Backup:136 - Uploaded file: D:\Central Data\File 4_4.txt
+  2023-07-06 13:08:45 INFO  S3Backup:156 - File Status for File 4_5.txt is :MODIFIED
+  2023-07-06 13:08:45 INFO  S3Backup:103 - key after: Central Data/File 4_5.txt
+  2023-07-06 13:08:45 INFO  S3Backup:104 - path: D:\Central Data\File 4_5.txt
+  2023-07-06 13:08:45 INFO  S3Backup:136 - Uploaded file: D:\Central Data\File 4_5.txt
+  2023-07-06 13:08:45 INFO  S3Backup:156 - File Status for File 4_6.txt is :MODIFIED
+  2023-07-06 13:08:45 INFO  S3Backup:103 - key after: Central Data/File 4_6.txt
+  2023-07-06 13:08:45 INFO  S3Backup:104 - path: D:\Central Data\File 4_6.txt
+  2023-07-06 13:08:45 INFO  S3Backup:136 - Uploaded file: D:\Central Data\File 4_6.txt
+  2023-07-06 13:08:45 INFO  S3Backup:156 - File Status for File 4_7.txt is :MODIFIED
+  2023-07-06 13:08:45 INFO  S3Backup:103 - key after: Central Data/File 4_7.txt
+  2023-07-06 13:08:45 INFO  S3Backup:104 - path: D:\Central Data\File 4_7.txt
+  2023-07-06 13:08:45 INFO  S3Backup:136 - Uploaded file: D:\Central Data\File 4_7.txt
+  2023-07-06 13:08:45 INFO  S3Backup:156 - File Status for File 4_8.txt is :MODIFIED
+  2023-07-06 13:08:45 INFO  S3Backup:103 - key after: Central Data/File 4_8.txt
+  2023-07-06 13:08:45 INFO  S3Backup:104 - path: D:\Central Data\File 4_8.txt
+  2023-07-06 13:08:45 INFO  S3Backup:136 - Uploaded file: D:\Central Data\File 4_8.txt
+  2023-07-06 13:08:45 INFO  S3Backup:156 - File Status for File 4_9.txt is :MODIFIED
+  2023-07-06 13:08:45 INFO  S3Backup:103 - key after: Central Data/File 4_9.txt
+  2023-07-06 13:08:45 INFO  S3Backup:104 - path: D:\Central Data\File 4_9.txt
+  2023-07-06 13:08:45 INFO  S3Backup:136 - Uploaded file: D:\Central Data\File 4_9.txt
+  2023-07-06 13:08:45 INFO  S3Backup:156 - File Status for user1.txt is :MODIFIED
+  2023-07-06 13:08:45 INFO  S3Backup:156 - File Status for user 2.txt is :MODIFIED
+  2023-07-06 13:08:45 INFO  S3Backup:156 - File Status for user 1 payroll.txt is :MODIFIED
+  2023-07-06 13:08:45 INFO  S3Backup:156 - File Status for user 2 payroll.txt is :MODIFIED
+  2023-07-06 13:08:45 INFO  S3Backup:114 - Backup completed successfully.
+  2023-07-06 13:08:46 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 01:08:45 pm
+  2023-07-06 13:08:46 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 01:08:45 pm
+  2023-07-06 13:08:46 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 01:08:45 pm
+  2023-07-06 13:08:46 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 01:08:45 pm
+  2023-07-06 13:08:46 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 01:08:45 pm
+  2023-07-06 13:08:46 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 01:08:45 pm
+  2023-07-06 13:08:46 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 01:08:45 pm
+  2023-07-06 13:08:46 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 01:08:45 pm
+  2023-07-06 13:08:46 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 01:08:45 pm
+  2023-07-06 13:08:46 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 01:08:45 pm
+  2023-07-06 13:08:51 INFO  S3Backup:180 - File Details : {
+  "name": "File 4_1.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_1.txt",
+  "pathOnS3": "Central Data/File 4_1.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 1:08:45 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 13:08:51 INFO  S3Backup:180 - File Details : {
+  "name": "File 4_10.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_10.txt",
+  "pathOnS3": "Central Data/File 4_10.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 1:08:45 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 13:08:51 INFO  S3Backup:180 - File Details : {
+  "name": "File 4_2.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_2.txt",
+  "pathOnS3": "Central Data/File 4_2.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 1:08:45 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 13:08:51 INFO  S3Backup:180 - File Details : {
+  "name": "File 4_3.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_3.txt",
+  "pathOnS3": "Central Data/File 4_3.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 1:08:45 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 13:08:51 INFO  S3Backup:180 - File Details : {
+  "name": "File 4_4.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_4.txt",
+  "pathOnS3": "Central Data/File 4_4.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 1:08:45 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 13:08:51 INFO  S3Backup:180 - File Details : {
+  "name": "File 4_5.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_5.txt",
+  "pathOnS3": "Central Data/File 4_5.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 1:08:45 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 13:08:51 INFO  S3Backup:180 - File Details : {
+  "name": "File 4_6.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_6.txt",
+  "pathOnS3": "Central Data/File 4_6.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 1:08:45 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 13:08:51 INFO  S3Backup:180 - File Details : {
+  "name": "File 4_7.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_7.txt",
+  "pathOnS3": "Central Data/File 4_7.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 1:08:45 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 13:08:51 INFO  S3Backup:180 - File Details : {
+  "name": "File 4_8.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_8.txt",
+  "pathOnS3": "Central Data/File 4_8.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 1:08:45 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 13:08:51 INFO  S3Backup:180 - File Details : {
+  "name": "File 4_9.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_9.txt",
+  "pathOnS3": "Central Data/File 4_9.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 1:08:45 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 13:24:39 INFO  S3Backup:67 - S3 client : ListBucketsResponse(Buckets=[Bucket(Name=vyomlabsbucket, CreationDate=2023-06-07T08:56:43Z)], Owner=Owner(ID=d7dc917e255348a8f34cda28a78d40b6d8d48d311590ae781810a9e572635624))
+  2023-07-06 13:24:39 INFO  S3Backup:85 - Fresh differential files uploading.......
+  2023-07-06 13:24:39 INFO  S3Backup:88 - backupFolderPath :D:/Central Data
+  2023-07-06 13:24:39 INFO  S3Backup:156 - File Status for File 4_1.txt is :MODIFIED
+  2023-07-06 13:24:39 INFO  S3Backup:156 - File Status for File 4_10.txt is :MODIFIED
+  2023-07-06 13:24:39 INFO  S3Backup:156 - File Status for File 4_2.txt is :MODIFIED
+  2023-07-06 13:24:39 INFO  S3Backup:156 - File Status for File 4_3.txt is :MODIFIED
+  2023-07-06 13:24:39 INFO  S3Backup:156 - File Status for File 4_4.txt is :MODIFIED
+  2023-07-06 13:24:39 INFO  S3Backup:156 - File Status for File 4_5.txt is :MODIFIED
+  2023-07-06 13:24:39 INFO  S3Backup:156 - File Status for File 4_6.txt is :MODIFIED
+  2023-07-06 13:24:39 INFO  S3Backup:156 - File Status for File 4_7.txt is :MODIFIED
+  2023-07-06 13:24:39 INFO  S3Backup:156 - File Status for File 4_8.txt is :MODIFIED
+  2023-07-06 13:24:39 INFO  S3Backup:156 - File Status for File 4_9.txt is :MODIFIED
+  2023-07-06 13:24:39 INFO  S3Backup:156 - File Status for user1.txt is :MODIFIED
+  2023-07-06 13:24:39 INFO  S3Backup:156 - File Status for user 2.txt is :MODIFIED
+  2023-07-06 13:24:39 INFO  S3Backup:156 - File Status for user 1 payroll.txt is :MODIFIED
+  2023-07-06 13:24:39 INFO  S3Backup:156 - File Status for user 2 payroll.txt is :MODIFIED
+  2023-07-06 13:24:39 INFO  S3Backup:114 - Backup completed successfully.
+  2023-07-06 15:37:23 INFO  S3Backup:67 - S3 client : ListBucketsResponse(Buckets=[Bucket(Name=vyomlabsbucket, CreationDate=2023-06-07T08:56:43Z)], Owner=Owner(ID=d7dc917e255348a8f34cda28a78d40b6d8d48d311590ae781810a9e572635624))
+  2023-07-06 15:37:23 INFO  S3Backup:85 - Fresh differential files uploading.......
+  2023-07-06 15:37:23 INFO  S3Backup:88 - backupFolderPath :D:/Central Data
+  2023-07-06 15:37:23 INFO  S3Backup:156 - File Status for File 4_1.txt is :MODIFIED
+  2023-07-06 15:37:23 INFO  S3Backup:103 - key after: Central Data/File 4_1.txt
+  2023-07-06 15:37:23 INFO  S3Backup:104 - path: D:\Central Data\File 4_1.txt
+  2023-07-06 15:37:24 INFO  S3Backup:136 - Uploaded file: D:\Central Data\File 4_1.txt
+  2023-07-06 15:37:24 INFO  S3Backup:156 - File Status for File 4_10.txt is :MODIFIED
+  2023-07-06 15:37:24 INFO  S3Backup:103 - key after: Central Data/File 4_10.txt
+  2023-07-06 15:37:24 INFO  S3Backup:104 - path: D:\Central Data\File 4_10.txt
+  2023-07-06 15:37:24 INFO  S3Backup:136 - Uploaded file: D:\Central Data\File 4_10.txt
+  2023-07-06 15:37:24 INFO  S3Backup:156 - File Status for File 4_2.txt is :MODIFIED
+  2023-07-06 15:37:24 INFO  S3Backup:103 - key after: Central Data/File 4_2.txt
+  2023-07-06 15:37:24 INFO  S3Backup:104 - path: D:\Central Data\File 4_2.txt
+  2023-07-06 15:37:24 INFO  S3Backup:136 - Uploaded file: D:\Central Data\File 4_2.txt
+  2023-07-06 15:37:24 INFO  S3Backup:156 - File Status for File 4_3.txt is :MODIFIED
+  2023-07-06 15:37:24 INFO  S3Backup:103 - key after: Central Data/File 4_3.txt
+  2023-07-06 15:37:24 INFO  S3Backup:104 - path: D:\Central Data\File 4_3.txt
+  2023-07-06 15:37:24 INFO  S3Backup:136 - Uploaded file: D:\Central Data\File 4_3.txt
+  2023-07-06 15:37:24 INFO  S3Backup:156 - File Status for File 4_4.txt is :MODIFIED
+  2023-07-06 15:37:24 INFO  S3Backup:103 - key after: Central Data/File 4_4.txt
+  2023-07-06 15:37:24 INFO  S3Backup:104 - path: D:\Central Data\File 4_4.txt
+  2023-07-06 15:37:24 INFO  S3Backup:136 - Uploaded file: D:\Central Data\File 4_4.txt
+  2023-07-06 15:37:24 INFO  S3Backup:156 - File Status for File 4_5.txt is :MODIFIED
+  2023-07-06 15:37:24 INFO  S3Backup:103 - key after: Central Data/File 4_5.txt
+  2023-07-06 15:37:24 INFO  S3Backup:104 - path: D:\Central Data\File 4_5.txt
+  2023-07-06 15:37:24 INFO  S3Backup:136 - Uploaded file: D:\Central Data\File 4_5.txt
+  2023-07-06 15:37:24 INFO  S3Backup:156 - File Status for File 4_6.txt is :MODIFIED
+  2023-07-06 15:37:24 INFO  S3Backup:103 - key after: Central Data/File 4_6.txt
+  2023-07-06 15:37:24 INFO  S3Backup:104 - path: D:\Central Data\File 4_6.txt
+  2023-07-06 15:37:24 INFO  S3Backup:136 - Uploaded file: D:\Central Data\File 4_6.txt
+  2023-07-06 15:37:24 INFO  S3Backup:156 - File Status for File 4_7.txt is :MODIFIED
+  2023-07-06 15:37:24 INFO  S3Backup:103 - key after: Central Data/File 4_7.txt
+  2023-07-06 15:37:24 INFO  S3Backup:104 - path: D:\Central Data\File 4_7.txt
+  2023-07-06 15:37:24 INFO  S3Backup:136 - Uploaded file: D:\Central Data\File 4_7.txt
+  2023-07-06 15:37:24 INFO  S3Backup:156 - File Status for File 4_8.txt is :MODIFIED
+  2023-07-06 15:37:24 INFO  S3Backup:103 - key after: Central Data/File 4_8.txt
+  2023-07-06 15:37:24 INFO  S3Backup:104 - path: D:\Central Data\File 4_8.txt
+  2023-07-06 15:37:24 INFO  S3Backup:136 - Uploaded file: D:\Central Data\File 4_8.txt
+  2023-07-06 15:37:24 INFO  S3Backup:156 - File Status for File 4_9.txt is :MODIFIED
+  2023-07-06 15:37:24 INFO  S3Backup:103 - key after: Central Data/File 4_9.txt
+  2023-07-06 15:37:24 INFO  S3Backup:104 - path: D:\Central Data\File 4_9.txt
+  2023-07-06 15:37:24 INFO  S3Backup:136 - Uploaded file: D:\Central Data\File 4_9.txt
+  2023-07-06 15:37:24 INFO  S3Backup:156 - File Status for user1.txt is :MODIFIED
+  2023-07-06 15:37:24 INFO  S3Backup:103 - key after: Central Data/Finance/user 1/user1.txt
+  2023-07-06 15:37:24 INFO  S3Backup:104 - path: D:\Central Data\Finance\user 1\user1.txt
+  2023-07-06 15:37:24 INFO  S3Backup:136 - Uploaded file: D:\Central Data\Finance\user 1\user1.txt
+  2023-07-06 15:37:24 INFO  S3Backup:156 - File Status for user 2.txt is :MODIFIED
+  2023-07-06 15:37:24 INFO  S3Backup:103 - key after: Central Data/Finance/user 2/user 2.txt
+  2023-07-06 15:37:24 INFO  S3Backup:104 - path: D:\Central Data\Finance\user 2\user 2.txt
+  2023-07-06 15:37:25 INFO  S3Backup:136 - Uploaded file: D:\Central Data\Finance\user 2\user 2.txt
+  2023-07-06 15:37:25 INFO  S3Backup:156 - File Status for user 1 payroll.txt is :MODIFIED
+  2023-07-06 15:37:25 INFO  S3Backup:103 - key after: Central Data/Payroll/user 1/user 1 payroll.txt
+  2023-07-06 15:37:25 INFO  S3Backup:104 - path: D:\Central Data\Payroll\user 1\user 1 payroll.txt
+  2023-07-06 15:37:25 INFO  S3Backup:136 - Uploaded file: D:\Central Data\Payroll\user 1\user 1 payroll.txt
+  2023-07-06 15:37:25 INFO  S3Backup:156 - File Status for user 2 payroll.txt is :MODIFIED
+  2023-07-06 15:37:25 INFO  S3Backup:103 - key after: Central Data/Payroll/user 2/user 2 payroll.txt
+  2023-07-06 15:37:25 INFO  S3Backup:104 - path: D:\Central Data\Payroll\user 2\user 2 payroll.txt
+  2023-07-06 15:37:25 INFO  S3Backup:136 - Uploaded file: D:\Central Data\Payroll\user 2\user 2 payroll.txt
+  2023-07-06 15:37:25 INFO  S3Backup:114 - Backup completed successfully.
+  2023-07-06 15:37:26 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 03:37:24 pm
+  2023-07-06 15:37:26 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 03:37:24 pm
+  2023-07-06 15:37:26 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 03:37:24 pm
+  2023-07-06 15:37:26 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 03:37:24 pm
+  2023-07-06 15:37:26 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 03:37:24 pm
+  2023-07-06 15:37:26 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 03:37:24 pm
+  2023-07-06 15:37:26 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 03:37:24 pm
+  2023-07-06 15:37:26 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 03:37:24 pm
+  2023-07-06 15:37:26 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 03:37:24 pm
+  2023-07-06 15:37:26 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 03:37:24 pm
+  2023-07-06 15:37:26 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 03:37:24 pm
+  2023-07-06 15:37:26 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 03:37:25 pm
+  2023-07-06 15:37:26 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 03:37:25 pm
+  2023-07-06 15:37:26 INFO  FileUploadDetailsService:131 - Date format : 06-Jul-2023 03:37:25 pm
+  2023-07-06 15:37:30 INFO  S3Backup:180 - File Details : {
+  "name": "File 4_1.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_1.txt",
+  "pathOnS3": "Central Data/File 4_1.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 3:37:24 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 15:37:30 INFO  S3Backup:180 - File Details : {
+  "name": "File 4_10.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_10.txt",
+  "pathOnS3": "Central Data/File 4_10.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 3:37:24 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 15:37:30 INFO  S3Backup:180 - File Details : {
+  "name": "File 4_2.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_2.txt",
+  "pathOnS3": "Central Data/File 4_2.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 3:37:24 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 15:37:30 INFO  S3Backup:180 - File Details : {
+  "name": "File 4_3.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_3.txt",
+  "pathOnS3": "Central Data/File 4_3.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 3:37:24 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 15:37:30 INFO  S3Backup:180 - File Details : {
+  "name": "File 4_4.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_4.txt",
+  "pathOnS3": "Central Data/File 4_4.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 3:37:24 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 15:37:30 INFO  S3Backup:180 - File Details : {
+  "name": "File 4_5.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_5.txt",
+  "pathOnS3": "Central Data/File 4_5.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 3:37:24 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 15:37:30 INFO  S3Backup:180 - File Details : {
+  "name": "File 4_6.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_6.txt",
+  "pathOnS3": "Central Data/File 4_6.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 3:37:24 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 15:37:30 INFO  S3Backup:180 - File Details : {
+  "name": "File 4_7.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_7.txt",
+  "pathOnS3": "Central Data/File 4_7.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 3:37:24 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 15:37:30 INFO  S3Backup:180 - File Details : {
+  "name": "File 4_8.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_8.txt",
+  "pathOnS3": "Central Data/File 4_8.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 3:37:24 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 15:37:30 INFO  S3Backup:180 - File Details : {
+  "name": "File 4_9.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_9.txt",
+  "pathOnS3": "Central Data/File 4_9.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 3:37:24 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 15:37:30 INFO  S3Backup:180 - File Details : {
+  "name": "user1.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\Finance\\user 1\\user1.txt",
+  "pathOnS3": "Central Data/Finance/user 1/user1.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 3:37:24 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 15:37:30 INFO  S3Backup:180 - File Details : {
+  "name": "user 2.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\Finance\\user 2\\user 2.txt",
+  "pathOnS3": "Central Data/Finance/user 2/user 2.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 3:37:25 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 15:37:30 INFO  S3Backup:180 - File Details : {
+  "name": "user 1 payroll.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\Payroll\\user 1\\user 1 payroll.txt",
+  "pathOnS3": "Central Data/Payroll/user 1/user 1 payroll.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 3:37:25 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-06 15:37:30 INFO  S3Backup:180 - File Details : {
+  "name": "user 2 payroll.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\Payroll\\user 2\\user 2 payroll.txt",
+  "pathOnS3": "Central Data/Payroll/user 2/user 2 payroll.txt",
+  "uploadDateAndTime": "Jul 6, 2023, 3:37:25 PM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-07 11:46:46 INFO  S3Backup:68 - S3 client : ListBucketsResponse(Buckets=[Bucket(Name=vyomlabsbucket, CreationDate=2023-06-07T08:56:43Z)], Owner=Owner(ID=d7dc917e255348a8f34cda28a78d40b6d8d48d311590ae781810a9e572635624))
+  2023-07-07 11:46:46 INFO  S3Backup:86 - Fresh differential files uploading.......
+  2023-07-07 11:46:46 INFO  S3Backup:89 - backupFolderPath :D:/Central Data
+  2023-07-07 11:46:46 INFO  S3Backup:164 - File Status for File 4_1.txt is :MODIFIED
+  2023-07-07 11:46:46 INFO  S3Backup:104 - key after: Central Data/File 4_1.txt
+  2023-07-07 11:46:46 INFO  S3Backup:105 - path: D:\Central Data\File 4_1.txt
+  2023-07-07 11:46:47 INFO  S3Backup:140 - Uploaded file: D:\Central Data\File 4_1.txt
+  2023-07-07 11:46:47 INFO  S3Backup:164 - File Status for File 4_10.txt is :MODIFIED
+  2023-07-07 11:46:47 INFO  S3Backup:104 - key after: Central Data/File 4_10.txt
+  2023-07-07 11:46:47 INFO  S3Backup:105 - path: D:\Central Data\File 4_10.txt
+  2023-07-07 11:46:47 INFO  S3Backup:140 - Uploaded file: D:\Central Data\File 4_10.txt
+  2023-07-07 11:46:47 INFO  S3Backup:164 - File Status for File 4_2.txt is :MODIFIED
+  2023-07-07 11:46:47 INFO  S3Backup:104 - key after: Central Data/File 4_2.txt
+  2023-07-07 11:46:47 INFO  S3Backup:105 - path: D:\Central Data\File 4_2.txt
+  2023-07-07 11:46:47 INFO  S3Backup:140 - Uploaded file: D:\Central Data\File 4_2.txt
+  2023-07-07 11:46:47 INFO  S3Backup:164 - File Status for File 4_3.txt is :MODIFIED
+  2023-07-07 11:46:47 INFO  S3Backup:104 - key after: Central Data/File 4_3.txt
+  2023-07-07 11:46:47 INFO  S3Backup:105 - path: D:\Central Data\File 4_3.txt
+  2023-07-07 11:46:47 INFO  S3Backup:140 - Uploaded file: D:\Central Data\File 4_3.txt
+  2023-07-07 11:46:47 INFO  S3Backup:164 - File Status for File 4_4.txt is :MODIFIED
+  2023-07-07 11:46:47 INFO  S3Backup:104 - key after: Central Data/File 4_4.txt
+  2023-07-07 11:46:47 INFO  S3Backup:105 - path: D:\Central Data\File 4_4.txt
+  2023-07-07 11:46:47 INFO  S3Backup:140 - Uploaded file: D:\Central Data\File 4_4.txt
+  2023-07-07 11:46:47 INFO  S3Backup:164 - File Status for File 4_5.txt is :MODIFIED
+  2023-07-07 11:46:47 INFO  S3Backup:104 - key after: Central Data/File 4_5.txt
+  2023-07-07 11:46:47 INFO  S3Backup:105 - path: D:\Central Data\File 4_5.txt
+  2023-07-07 11:46:47 INFO  S3Backup:140 - Uploaded file: D:\Central Data\File 4_5.txt
+  2023-07-07 11:46:47 INFO  S3Backup:164 - File Status for File 4_6.txt is :MODIFIED
+  2023-07-07 11:46:47 INFO  S3Backup:104 - key after: Central Data/File 4_6.txt
+  2023-07-07 11:46:47 INFO  S3Backup:105 - path: D:\Central Data\File 4_6.txt
+  2023-07-07 11:46:47 INFO  S3Backup:140 - Uploaded file: D:\Central Data\File 4_6.txt
+  2023-07-07 11:46:47 INFO  S3Backup:164 - File Status for File 4_7.txt is :MODIFIED
+  2023-07-07 11:46:47 INFO  S3Backup:104 - key after: Central Data/File 4_7.txt
+  2023-07-07 11:46:47 INFO  S3Backup:105 - path: D:\Central Data\File 4_7.txt
+  2023-07-07 11:46:47 INFO  S3Backup:140 - Uploaded file: D:\Central Data\File 4_7.txt
+  2023-07-07 11:46:47 INFO  S3Backup:164 - File Status for File 4_8.txt is :MODIFIED
+  2023-07-07 11:46:47 INFO  S3Backup:104 - key after: Central Data/File 4_8.txt
+  2023-07-07 11:46:47 INFO  S3Backup:105 - path: D:\Central Data\File 4_8.txt
+  2023-07-07 11:46:47 INFO  S3Backup:140 - Uploaded file: D:\Central Data\File 4_8.txt
+  2023-07-07 11:46:47 INFO  S3Backup:164 - File Status for File 4_9.txt is :MODIFIED
+  2023-07-07 11:46:47 INFO  S3Backup:104 - key after: Central Data/File 4_9.txt
+  2023-07-07 11:46:47 INFO  S3Backup:105 - path: D:\Central Data\File 4_9.txt
+  2023-07-07 11:46:47 INFO  S3Backup:140 - Uploaded file: D:\Central Data\File 4_9.txt
+  2023-07-07 11:46:47 INFO  S3Backup:164 - File Status for user1.txt is :MODIFIED
+  2023-07-07 11:46:47 INFO  S3Backup:104 - key after: Central Data/Finance/user 1/user1.txt
+  2023-07-07 11:46:47 INFO  S3Backup:105 - path: D:\Central Data\Finance\user 1\user1.txt
+  2023-07-07 11:46:47 INFO  S3Backup:140 - Uploaded file: D:\Central Data\Finance\user 1\user1.txt
+  2023-07-07 11:46:47 INFO  S3Backup:164 - File Status for user 2.txt is :MODIFIED
+  2023-07-07 11:46:47 INFO  S3Backup:104 - key after: Central Data/Finance/user 2/user 2.txt
+  2023-07-07 11:46:47 INFO  S3Backup:105 - path: D:\Central Data\Finance\user 2\user 2.txt
+  2023-07-07 11:46:48 INFO  S3Backup:140 - Uploaded file: D:\Central Data\Finance\user 2\user 2.txt
+  2023-07-07 11:46:48 INFO  S3Backup:164 - File Status for user 1 payroll.txt is :MODIFIED
+  2023-07-07 11:46:48 INFO  S3Backup:104 - key after: Central Data/Payroll/user 1/user 1 payroll.txt
+  2023-07-07 11:46:48 INFO  S3Backup:105 - path: D:\Central Data\Payroll\user 1\user 1 payroll.txt
+  2023-07-07 11:46:48 INFO  S3Backup:140 - Uploaded file: D:\Central Data\Payroll\user 1\user 1 payroll.txt
+  2023-07-07 11:46:48 INFO  S3Backup:164 - File Status for user 2 payroll.txt is :MODIFIED
+  2023-07-07 11:46:48 INFO  S3Backup:104 - key after: Central Data/Payroll/user 2/user 2 payroll.txt
+  2023-07-07 11:46:48 INFO  S3Backup:105 - path: D:\Central Data\Payroll\user 2\user 2 payroll.txt
+  2023-07-07 11:46:48 INFO  S3Backup:140 - Uploaded file: D:\Central Data\Payroll\user 2\user 2 payroll.txt
+  2023-07-07 11:46:48 INFO  S3Backup:115 - Backup completed successfully.........................
+  2023-07-07 11:46:49 INFO  FileUploadDetailsService:131 - Date format : 07-Jul-2023 11:46:47 am
+  2023-07-07 11:46:49 INFO  FileUploadDetailsService:131 - Date format : 07-Jul-2023 11:46:47 am
+  2023-07-07 11:46:49 INFO  FileUploadDetailsService:131 - Date format : 07-Jul-2023 11:46:47 am
+  2023-07-07 11:46:49 INFO  FileUploadDetailsService:131 - Date format : 07-Jul-2023 11:46:47 am
+  2023-07-07 11:46:49 INFO  FileUploadDetailsService:131 - Date format : 07-Jul-2023 11:46:47 am
+  2023-07-07 11:46:49 INFO  FileUploadDetailsService:131 - Date format : 07-Jul-2023 11:46:47 am
+  2023-07-07 11:46:49 INFO  FileUploadDetailsService:131 - Date format : 07-Jul-2023 11:46:47 am
+  2023-07-07 11:46:49 INFO  FileUploadDetailsService:131 - Date format : 07-Jul-2023 11:46:47 am
+  2023-07-07 11:46:49 INFO  FileUploadDetailsService:131 - Date format : 07-Jul-2023 11:46:47 am
+  2023-07-07 11:46:49 INFO  FileUploadDetailsService:131 - Date format : 07-Jul-2023 11:46:47 am
+  2023-07-07 11:46:49 INFO  FileUploadDetailsService:131 - Date format : 07-Jul-2023 11:46:47 am
+  2023-07-07 11:46:49 INFO  FileUploadDetailsService:131 - Date format : 07-Jul-2023 11:46:48 am
+  2023-07-07 11:46:49 INFO  FileUploadDetailsService:131 - Date format : 07-Jul-2023 11:46:48 am
+  2023-07-07 11:46:49 INFO  FileUploadDetailsService:131 - Date format : 07-Jul-2023 11:46:48 am
+  2023-07-07 11:46:50 INFO  S3Backup:185 - Trigger to lambda function....................
+  2023-07-07 11:46:50 INFO  S3LambdaTrigger:21 - Lambda Trigger started..........
+  2023-07-07 11:46:50 INFO  S3LambdaTrigger:26 - Lambda function name : Monthly-Report-Generation-Function
+  2023-07-07 11:46:50 INFO  S3LambdaTrigger:35 - Lambda invoked...........
+  2023-07-07 11:47:01 INFO  S3LambdaTrigger:37 - Lambda function output : {"statusCode": 200, "body": "Cost report and Usage Report generated and stored in S3 bucket: vyomlabsbucket"}
+  2023-07-07 11:47:01 INFO  S3Backup:188 - Fetching cost report file....................
+  2023-07-07 11:47:01 INFO  S3Backup:190 - Fetching usage report file....................
+  2023-07-07 11:47:06 INFO  S3Backup:195 - File Details : {
+  "name": "File 4_1.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_1.txt",
+  "pathOnS3": "Central Data/File 4_1.txt",
+  "uploadDateAndTime": "Jul 7, 2023, 11:46:47 AM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-07 11:47:06 INFO  S3Backup:195 - File Details : {
+  "name": "File 4_10.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_10.txt",
+  "pathOnS3": "Central Data/File 4_10.txt",
+  "uploadDateAndTime": "Jul 7, 2023, 11:46:47 AM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-07 11:47:06 INFO  S3Backup:195 - File Details : {
+  "name": "File 4_2.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_2.txt",
+  "pathOnS3": "Central Data/File 4_2.txt",
+  "uploadDateAndTime": "Jul 7, 2023, 11:46:47 AM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-07 11:47:06 INFO  S3Backup:195 - File Details : {
+  "name": "File 4_3.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_3.txt",
+  "pathOnS3": "Central Data/File 4_3.txt",
+  "uploadDateAndTime": "Jul 7, 2023, 11:46:47 AM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-07 11:47:06 INFO  S3Backup:195 - File Details : {
+  "name": "File 4_4.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_4.txt",
+  "pathOnS3": "Central Data/File 4_4.txt",
+  "uploadDateAndTime": "Jul 7, 2023, 11:46:47 AM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-07 11:47:06 INFO  S3Backup:195 - File Details : {
+  "name": "File 4_5.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_5.txt",
+  "pathOnS3": "Central Data/File 4_5.txt",
+  "uploadDateAndTime": "Jul 7, 2023, 11:46:47 AM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-07 11:47:06 INFO  S3Backup:195 - File Details : {
+  "name": "File 4_6.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_6.txt",
+  "pathOnS3": "Central Data/File 4_6.txt",
+  "uploadDateAndTime": "Jul 7, 2023, 11:46:47 AM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-07 11:47:06 INFO  S3Backup:195 - File Details : {
+  "name": "File 4_7.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_7.txt",
+  "pathOnS3": "Central Data/File 4_7.txt",
+  "uploadDateAndTime": "Jul 7, 2023, 11:46:47 AM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-07 11:47:06 INFO  S3Backup:195 - File Details : {
+  "name": "File 4_8.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_8.txt",
+  "pathOnS3": "Central Data/File 4_8.txt",
+  "uploadDateAndTime": "Jul 7, 2023, 11:46:47 AM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-07 11:47:06 INFO  S3Backup:195 - File Details : {
+  "name": "File 4_9.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\File 4_9.txt",
+  "pathOnS3": "Central Data/File 4_9.txt",
+  "uploadDateAndTime": "Jul 7, 2023, 11:46:47 AM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-07 11:47:06 INFO  S3Backup:195 - File Details : {
+  "name": "user1.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\Finance\\user 1\\user1.txt",
+  "pathOnS3": "Central Data/Finance/user 1/user1.txt",
+  "uploadDateAndTime": "Jul 7, 2023, 11:46:47 AM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-07 11:47:06 INFO  S3Backup:195 - File Details : {
+  "name": "user 2.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\Finance\\user 2\\user 2.txt",
+  "pathOnS3": "Central Data/Finance/user 2/user 2.txt",
+  "uploadDateAndTime": "Jul 7, 2023, 11:46:48 AM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-07 11:47:06 INFO  S3Backup:195 - File Details : {
+  "name": "user 1 payroll.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\Payroll\\user 1\\user 1 payroll.txt",
+  "pathOnS3": "Central Data/Payroll/user 1/user 1 payroll.txt",
+  "uploadDateAndTime": "Jul 7, 2023, 11:46:48 AM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  2023-07-07 11:47:06 INFO  S3Backup:195 - File Details : {
+  "name": "user 2 payroll.txt",
+  "pathOnLocalDrive": "D:\\Central Data\\Payroll\\user 2\\user 2 payroll.txt",
+  "pathOnS3": "Central Data/Payroll/user 2/user 2 payroll.txt",
+  "uploadDateAndTime": "Jul 7, 2023, 11:46:48 AM",
+  "uploadStatus": "SUCCESS",
+  "fileStatus": "MODIFIED"
+}
+  
