@@ -9,16 +9,16 @@ import java.time.Instant;
 import java.time.temporal.ChronoUnit;
 import java.util.List;
 
-import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
+import com.opencsv.exceptions.CsvValidationException;
 import com.vyomlabs.emailservice.EmailService;
 import com.vyomlabs.filebackupdata.FileBackupDetails;
 import com.vyomlabs.filebackupdata.FileStatus;
+import com.vyomlabs.filebackupdata.FileUploadCategory;
 import com.vyomlabs.filebackupdata.FileUploadDetailsService;
 import com.vyomlabs.filebackupdata.FileUploadStatus;
+import com.vyomlabs.util.FileSizeCalculator;
 import com.vyomlabs.util.PropertiesExtractor;
 import com.vyomlabs.util.TextEncryptorAndDecryptor;
 
@@ -27,13 +27,11 @@ import software.amazon.awssdk.auth.credentials.StaticCredentialsProvider;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.s3.S3Client;
 import software.amazon.awssdk.services.s3.model.PutObjectRequest;
-import software.amazon.awssdk.services.s3.model.S3Exception;
-import software.amazon.awssdk.services.s3.model.StorageClass;
 
 public class S3Backup {
 
 	private final static Logger logger = Logger.getLogger(S3Backup.class);
-
+	public static FileUploadCategory fileUploadCategory;
 //	 BasicConfigurator.configure();
 //	 BasicConfigurator basicConfigurator = new BasicConfigurator();
 	// Replace with your AWS access key ID and secret access key
@@ -42,47 +40,36 @@ public class S3Backup {
 	private static FileStatus fileStatus;
 	// S3Config s3Config = new S3Config();
 	static S3LambdaTrigger s3LambdaTrigger = new S3LambdaTrigger();
-	private static final String NOTIFICATION_EMAIL = "your-email@example.com";
 	// private static final String REGION = "ap-south-1"; // Change to your desired
 	// AWS region
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException, CsvValidationException {
 
 		PropertiesExtractor propertiesExtractor = new PropertiesExtractor();
 		Region region = Region.of(propertiesExtractor.getProperty("s3.region"));
-		// Initialize S3 client
 		String BUCKET_NAME = propertiesExtractor.getProperty("s3.bucket-name");
-
 		S3Client s3Client = S3Client.builder().region(region)
 				.credentialsProvider(StaticCredentialsProvider.create(AwsBasicCredentials.create(
 						TextEncryptorAndDecryptor.decrypt(propertiesExtractor.getProperty("s3.access-key")),
 						TextEncryptorAndDecryptor.decrypt(propertiesExtractor.getProperty("s3.secret-key")))))
 				.build();
-//		S3ObjectFetch s3ObjectFetch = new S3ObjectFetch();
-//		File costReport = s3ObjectFetch.getCostReport(s3Client,BUCKET_NAME);
-//		S3Client.builder().region(region)
-//		.credentialsProvider(
-//				StaticCredentialsProvider.create(AwsBasicCredentials.create(accessKeyId, secretAccessKey)))
-//		.build();
-
-		logger.info("S3 client : " + s3Client.listBuckets());
-		// s3Client.listBuckets();
 		if (FileUploadDetailsService.checkIfBackupDetailsFileExists()
-				&& FileUploadDetailsService.getFailureFileDetails().size() > 0) {
+				&& !FileUploadDetailsService.getFailureFileDetails().isEmpty()) {
+			fileUploadCategory = FileUploadCategory.FAILURE_FILES_UPLOAD;
 			logger.info("Failure files uploading.......");
 			FileUploadDetailsService.getFailureFileDetails().forEach(file -> {
 				try {
 					uploadFileToS3(s3Client, BUCKET_NAME, file.getFilePathInS3(),
-							Path.of(file.getFilePathOnLocalDrive()));
-					// throw new IOException();
-					sendNotificationEmail(FileUploadDetailsService.getFileDetails(), s3Client, BUCKET_NAME);
-				} catch (IOException e) {
+							Path.of(file.getFilePathOnLocalDrive()),file.getFileStatus());
+					sendNotificationEmail(FileUploadDetailsService.getFailureFileDetails(), s3Client, BUCKET_NAME);
+				} catch (IOException | CsvValidationException e) {
 					// TODO Auto-generated catch block
 					logger.info("Exception caught in line no 53.....................");
 					e.printStackTrace();
 				}
 			});
 		} else {
+			fileUploadCategory = FileUploadCategory.DIFFERENTIAL_FILES_UPLOAD;
 			try {
 				logger.info("Fresh differential files uploading.......");
 				// "D:/Central Data"
@@ -98,23 +85,21 @@ public class S3Backup {
 				Files.walk(backupFolder.toPath()).filter(path -> !Files.isDirectory(path))
 						.filter(path -> isRecentlyUpdated(path)).forEach(path -> {
 							String key = backupFolder.toPath().relativize(path).toString();
-							// logger.info("key before : " + key);
 							key = backupFolderPath.substring(3) + "/" + key;
-							// logger.info("key after substring : " + key);
 							key = key.replace("\\", "/");
-							logger.info("key after: " + key);
+							logger.info("key: " + key);
 							logger.info("path: " + path);
 							try {
 								uploadFileToS3(s3Client, BUCKET_NAME, key, path);
 							} catch (IOException e) {
-								logger.info("Exception caught in else block");
+								logger.info("Exception in reading files......");
 								e.printStackTrace();
 							}
 
 						});
 
 				logger.info("Backup completed successfully.........................");
-				FileUploadDetailsService.writeDataInExcelFile();
+				FileUploadDetailsService.writeDataInCSVFile();
 				sendNotificationEmail(FileUploadDetailsService.getFileDetails(), s3Client, BUCKET_NAME);
 
 			} catch (Exception e) {
@@ -126,30 +111,38 @@ public class S3Backup {
 		}
 	}
 
-	private static void uploadFileToS3(S3Client s3Client, String bucketName, String key, Path filePath)
-			throws IOException {
+	private static void uploadFileToS3(S3Client s3Client, String bucketName, String key, Path filePath,
+			String... fileStatuses) throws IOException {
+		long size = Files.size(filePath);
 		try {
-			PutObjectRequest request = PutObjectRequest.builder().bucket(bucketName).key(key)/*
-																								 * .storageClass(
-																								 * StorageClass.
-																								 * STANDARD_IA)
-																								 */
-					.build();
-			// throw exception
+			PutObjectRequest request = PutObjectRequest.builder().bucket(bucketName).key(key)
+					.build();/*
+								 * .storageClass( StorageClass. STANDARD_IA)
+								 */
 			s3Client.putObject(request, filePath);
-
 			logger.info("Uploaded file: " + filePath);
-			FileUploadDetailsService.backupFileData(key, filePath, FileUploadStatus.SUCCESS, fileStatus);
-			// FileUploadDetailsService.writeDataInExcelFile();
+			if (fileStatuses.length > 0) {
+				//System.out.println("Types of files Uploading : "+fileUploadCategory);
+				FileUploadDetailsService.backupFileData(key, filePath, FileUploadStatus.SUCCESS, fileStatuses[0],
+						FileSizeCalculator.getFileSize(size));
+			} else {
+				//System.out.println("Types of files Uploading : "+fileUploadCategory);
+				FileUploadDetailsService.backupFileData(key, filePath, FileUploadStatus.SUCCESS, fileStatus.name(),
+						FileSizeCalculator.getFileSize(size));
+			}
 		} catch (Exception e) {
-			System.err.println("Error uploading file: " + filePath + " - " + e.getMessage());
-			FileUploadDetailsService.backupFileData(key, filePath, FileUploadStatus.FAILED, fileStatus);
-			// FileUploadDetailsService.writeDataInExcelFile();
+			System.err.println("Error uploading file in catch block: " + filePath + " - " + e.getMessage());
+			if (fileStatuses.length > 0) {
+				//System.out.println("Types of files Uploading : "+fileUploadCategory);
+				FileUploadDetailsService.backupFileData(key, filePath, FileUploadStatus.FAILED, fileStatuses[0],
+						FileSizeCalculator.getFileSize(size));
+			} else {
+				//System.out.println("Types of files Uploading in catch block: "+fileUploadCategory);
+				FileUploadDetailsService.backupFileData(key, filePath, FileUploadStatus.FAILED, fileStatus.name(),
+						FileSizeCalculator.getFileSize(size));
+			}
 		}
-//		catch (Exception e) {
-//			logger.info(e.getMessage());
-//			FileUploadDetailsService.backupFileData(key, filePath, FileUploadStatus.FAILED, fileStatus);
-//		}
+
 	}
 
 	private static boolean isRecentlyUpdated(Path filePath) {
@@ -164,10 +157,7 @@ public class S3Backup {
 				fileStatus = FileStatus.MODIFIED;
 				logger.info("File Status for " + filePath.toFile().getName() + " is :" + fileStatus);
 			}
-			// logger.info("lastModified: " + lastModified);
 			Instant oneMonthAgo = Instant.now().minus(30, ChronoUnit.DAYS);
-			// Instant.now().minus(0,ChronoUnit);
-			// logger.info("oneMonthAgo: " + oneMonthAgo);
 			return lastModified.isAfter(oneMonthAgo);
 
 		} catch (Exception e) {
