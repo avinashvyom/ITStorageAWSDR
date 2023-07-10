@@ -35,12 +35,12 @@ public class S3Backup {
 //	 BasicConfigurator.configure();
 //	 BasicConfigurator basicConfigurator = new BasicConfigurator();
 	// Replace with your AWS access key ID and secret access key
-	// static String accessKeyId = "AKIA46KGYVBTDKOMTCXQ";
-	// static String secretAccessKey = "QZil7QUbHLctXgSISkTJK3U9gRR3NzaMn20G8l5b";
+	// static String accessKeyId = "******************************";
+	// static String secretAccessKey = "******************************";
 	private static FileStatus fileStatus;
 	// S3Config s3Config = new S3Config();
 	static S3LambdaTrigger s3LambdaTrigger = new S3LambdaTrigger();
-	// private static final String REGION = "ap-south-1"; // Change to your desired
+	// private static final String REGION = "*********"; // Change to your desired
 	// AWS region
 
 	public static void main(String[] args) throws IOException, CsvValidationException {
