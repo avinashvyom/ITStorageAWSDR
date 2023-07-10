@@ -28,8 +28,9 @@ public class S3ObjectFetch {
 		ResponseInputStream<GetObjectResponse> inputStream = s3Client.getObject(getObjectRequest);
 		FileOutputStream outputStream = new FileOutputStream(path);
 
-		int copy = IOUtils.copy(inputStream, outputStream);
-		System.out.println("no of bytes copied : " + copy);
+		IOUtils.copy(inputStream, outputStream);
+		
+		//System.out.println("no of bytes copied : " + copy);
 
 		inputStream.close();
 		outputStream.close();
@@ -50,8 +51,8 @@ public class S3ObjectFetch {
 //		while ((bytesRead = inputStream.read(buffer)) != -1) {
 //			outputStream.write(buffer, 0, bytesRead);
 //		}
-		int copy = IOUtils.copy(inputStream, outputStream);
-		System.out.println("no of bytes copied : " + copy);
+		IOUtils.copy(inputStream, outputStream);
+		//System.out.println("no of bytes copied : " + copy);
 		inputStream.close();
 		outputStream.close();
 
@@ -62,8 +63,4 @@ public class S3ObjectFetch {
 		return new SimpleDateFormat("MMM-YYYY").format(new Date());
 	}
 	
-//	public static void main(String[] args) {
-//		S3ObjectFetch s3ObjectFetch = new S3ObjectFetch();
-//		System.out.println("Current month is : "+s3ObjectFetch.getCurrentMonthAndYear());
-//	}
 }

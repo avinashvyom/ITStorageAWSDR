@@ -111,9 +111,9 @@ public class EmailService {
 			.append(". \nThis report aims to summarize the usage cost incurred and data usage in this month, and details about the number of objects stored, bucket size and cost of the S3 bucket. \n\n")
 			.append("\nAttention to these details will greatly contribute to our overall understanding of S3 bucket operations and assist in decision-making processes.\n\n");
 		sb.append("Following are the details of files uploaded this month: \n");
-		int failedFiles = (int) fileList.stream().filter((name) -> name.getStatus().equals(FileUploadStatus.FAILED))
+		int failedFiles = (int) fileList.stream().filter((name) -> name.getUploadStatus().equals(FileUploadStatus.FAILED.name()))
 				.count();
-		int successFiles = (int) fileList.stream().filter((name) -> name.getStatus().equals(FileUploadStatus.SUCCESS))
+		int successFiles = (int) fileList.stream().filter((name) -> name.getUploadStatus().equals(FileUploadStatus.SUCCESS.name()))
 				.count();
 		int totalFiles = successFiles + failedFiles;
 		sb.append("Total number of files  : " + totalFiles + "\n");
