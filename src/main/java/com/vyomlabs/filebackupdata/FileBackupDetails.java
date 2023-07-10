@@ -1,7 +1,5 @@
 package com.vyomlabs.filebackupdata;
 
-import java.util.Date;
-
 import com.google.gson.annotations.SerializedName;
 
 import lombok.AllArgsConstructor;
@@ -22,11 +20,14 @@ public class FileBackupDetails {
 	private String filePathInS3;
 	
 	@SerializedName("uploadDateAndTime")
-	private Date uploadDate;
+	private String uploadDate;
 		
 	@SerializedName("uploadStatus")
-	private FileUploadStatus status;
+	private String uploadStatus;
 	
 	@SerializedName("fileStatus")
-	private FileStatus fileStatus;
+	private String fileStatus;
+	
+	@SerializedName("fileSize")
+	private String fileSize;
 }
