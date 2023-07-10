@@ -11,11 +11,12 @@ public class FileGenerator {
 		// TODO Auto-generated method stub
 
 		for (int i = 1; i <= 10; i++) {
-			File file = new File(Path.of("").toAbsolutePath().toString() + "\\" + "File 4_" + i + ".txt");
+			File file = new File(Path.of("").toAbsolutePath().toString() + "\\" + "File 8_" + i + ".txt");
 			file.createNewFile();
 			FileWriter fw = new FileWriter(file,true);
 			fw.write("Welcome to File "+i);
 			fw.close();
+			System.out.println("done................");
 		}
 //		System.out.println(file.canWrite());
 //		System.out.println(file.canRead());

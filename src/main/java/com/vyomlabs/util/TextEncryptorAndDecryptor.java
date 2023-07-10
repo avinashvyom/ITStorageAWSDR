@@ -49,25 +49,22 @@ public class TextEncryptorAndDecryptor {
 			Cipher cipher = Cipher.getInstance("AES/ECB/PKCS5Padding");
 			cipher.init(Cipher.DECRYPT_MODE, secretKey);
 			return new String(cipher.doFinal(Base64.getDecoder().decode(encryptedText)));
-			// return
-			// Base64.getEncoder().encodeToString(cipher.doFinal(inputString.getBytes("UTF-8")));
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return null;
 	}
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
-		String encryptedText = encrypt("AKIA46KGYVBTDKOMTCXQ");
-		System.out.println("Encrypted text is : " + encryptedText);
-
-		String originalString = decrypt(encryptedText);
-
-		System.out.println("Original string is : " + originalString);
-
-	}
+//	public static void main(String[] args) {
+//		// TODO Auto-generated method stub
+//		
+//		String encryptedText = encrypt("****************************************");
+//		System.out.println("Encrypted text is : " + encryptedText);
+//
+//		String originalString = decrypt(encryptedText);
+//
+//		System.out.println("Original string is : " + originalString);
+//
+//	}
 
 }
