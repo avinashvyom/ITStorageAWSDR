@@ -3,14 +3,9 @@ package com.vyomlabs.util;
 import java.text.DecimalFormat;
 
 public class FileSizeCalculator {
-	public static final long ONE_KB = 1024;
-	public static final long ONE_MB = ONE_KB * ONE_KB;
-	public static final long ONE_GB = ONE_KB * ONE_MB;
 
 	public static String getFileSize(long size) {
-		// System.out.println("Size in bytes : " + size);
 		DecimalFormat df = new DecimalFormat("0.00");
-
 		float sizeKb = 1024.0f;
 		float sizeMb = sizeKb * sizeKb;
 		float sizeGb = sizeMb * sizeKb;

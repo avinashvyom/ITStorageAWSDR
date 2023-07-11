@@ -4,12 +4,16 @@ import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 import java.util.Properties;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import javax.mail.Authenticator;
 import javax.mail.Message;
+import javax.mail.MessagingException;
 import javax.mail.PasswordAuthentication;
 import javax.mail.Session;
 import javax.mail.Transport;
@@ -18,12 +22,17 @@ import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 
+import org.apache.log4j.Logger;
+
+import com.vyomlabs.S3Backup;
 import com.vyomlabs.filebackupdata.FileBackupDetails;
 import com.vyomlabs.filebackupdata.FileUploadStatus;
 import com.vyomlabs.util.PropertiesExtractor;
 import com.vyomlabs.util.TextEncryptorAndDecryptor;
 
 public class EmailService {
+	
+	private final static Logger logger = Logger.getLogger(EmailService.class);
 
 	List<FileBackupDetails> fileList = new ArrayList<>();
 
@@ -75,7 +84,20 @@ public class EmailService {
 
 		try {
 			mimeMessage.setFrom(from);
-			mimeMessage.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
+			Arrays.asList(to.split(",")).forEach((mail)->{
+				try {
+					if(isValidEmail(mail)) {
+						mimeMessage.addRecipient(Message.RecipientType.TO, new InternetAddress(mail));
+					}
+					else {
+						logger.info("invalid email id.......");
+					}
+				} catch (MessagingException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			});
+			//mimeMessage.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
 			mimeMessage.setSubject(subject);
 			//String path = "D:\\Vyom Projects\\DR setup AWS S3\\FileBackupToAWSS3\\JULY_2023.xlsx";
 
@@ -103,18 +125,26 @@ public class EmailService {
 
 	}
 
+	private boolean isValidEmail(String mail) {
+		// TODO Auto-generated method stub
+		String patternForEmail = "^[a-z0-9](\\.?[a-z0-9_-]){0,}@[a-z0-9-]+\\.([a-z]{1,6}\\.)?[a-z]{2,6}$";
+		Pattern pattern = Pattern.compile(patternForEmail);
+		Matcher matcher = pattern.matcher(mail);
+		return matcher.matches();
+	}
+
 	private String composeMessage(List<FileBackupDetails> fileList) {
 		StringBuffer sb = new StringBuffer();
 		sb.append("Dear Admin , \n\n");
 		sb.append("We hope this email finds you well. We are writing to provide you with the monthly AWS S3 bucket cost and usage report for the month ")
-			.append(new SimpleDateFormat("MMM/YYYY").format(new Date()))
-			.append(". \nThis report aims to summarize the usage cost incurred and data usage in this month, and details about the number of objects stored, bucket size and cost of the S3 bucket. \n\n")
-			.append("\nAttention to these details will greatly contribute to our overall understanding of S3 bucket operations and assist in decision-making processes.\n\n");
+				.append(new SimpleDateFormat("MMM/YYYY").format(new Date()))
+				.append(". \nThis report aims to summarize the usage cost incurred and data usage in this month, and details about the number of objects stored, bucket size and cost of the S3 bucket. \n\n")
+				.append("\nAttention to these details will greatly contribute to our overall understanding of S3 bucket operations and assist in decision-making processes.\n\n");
 		sb.append("Following are the details of files uploaded this month: \n");
-		int failedFiles = (int) fileList.stream().filter((name) -> name.getUploadStatus().equals(FileUploadStatus.FAILED.name()))
-				.count();
-		int successFiles = (int) fileList.stream().filter((name) -> name.getUploadStatus().equals(FileUploadStatus.SUCCESS.name()))
-				.count();
+		int failedFiles = (int) fileList.stream()
+				.filter((name) -> name.getUploadStatus().equals(FileUploadStatus.FAILED.name())).count();
+		int successFiles = (int) fileList.stream()
+				.filter((name) -> name.getUploadStatus().equals(FileUploadStatus.SUCCESS.name())).count();
 		int totalFiles = successFiles + failedFiles;
 		sb.append("Total number of files  : " + totalFiles + "\n");
 		sb.append("Number of files that are successfully uploaded : " + successFiles + "\n");

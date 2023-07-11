@@ -59,6 +59,8 @@ public class S3Backup {
 			logger.info("Failure files uploading.......");
 			FileUploadDetailsService.getFailureFileDetails().forEach(file -> {
 				try {
+					logger.info("File path on local drive : "+file.getFilePathOnLocalDrive());
+					logger.info("File path after calling Path.of() : " + Path.of(file.getFilePathOnLocalDrive()));
 					uploadFileToS3(s3Client, BUCKET_NAME, file.getFilePathInS3(),
 							Path.of(file.getFilePathOnLocalDrive()),file.getFileStatus());
 					sendNotificationEmail(FileUploadDetailsService.getFailureFileDetails(), s3Client, BUCKET_NAME);
@@ -75,13 +77,7 @@ public class S3Backup {
 				// "D:/Central Data"
 				String backupFolderPath = propertiesExtractor.getProperty("s3upload.input-folder-path");
 				logger.info("backupFolderPath :" + backupFolderPath);
-				File backupFolder = new File(backupFolderPath); // Specify the folder to backup
-				// Iterate over the files and folders in the backup folder
-//				List<Path> list = Files.walk(backupFolder.toPath()).filter(path -> !Files.isDirectory(path))
-//				.filter(path -> isRecentlyUpdated(path)).toList();
-//				for(Path p : list) {
-//					p.toFile().
-//				}
+				File backupFolder = new File(backupFolderPath); 
 				Files.walk(backupFolder.toPath()).filter(path -> !Files.isDirectory(path))
 						.filter(path -> isRecentlyUpdated(path)).forEach(path -> {
 							String key = backupFolder.toPath().relativize(path).toString();
@@ -113,6 +109,7 @@ public class S3Backup {
 
 	private static void uploadFileToS3(S3Client s3Client, String bucketName, String key, Path filePath,
 			String... fileStatuses) throws IOException {
+		logger.info(filePath.toString());
 		long size = Files.size(filePath);
 		try {
 			PutObjectRequest request = PutObjectRequest.builder().bucket(bucketName).key(key)
@@ -122,22 +119,18 @@ public class S3Backup {
 			s3Client.putObject(request, filePath);
 			logger.info("Uploaded file: " + filePath);
 			if (fileStatuses.length > 0) {
-				//System.out.println("Types of files Uploading : "+fileUploadCategory);
 				FileUploadDetailsService.backupFileData(key, filePath, FileUploadStatus.SUCCESS, fileStatuses[0],
 						FileSizeCalculator.getFileSize(size));
 			} else {
-				//System.out.println("Types of files Uploading : "+fileUploadCategory);
 				FileUploadDetailsService.backupFileData(key, filePath, FileUploadStatus.SUCCESS, fileStatus.name(),
 						FileSizeCalculator.getFileSize(size));
 			}
 		} catch (Exception e) {
 			System.err.println("Error uploading file in catch block: " + filePath + " - " + e.getMessage());
 			if (fileStatuses.length > 0) {
-				//System.out.println("Types of files Uploading : "+fileUploadCategory);
 				FileUploadDetailsService.backupFileData(key, filePath, FileUploadStatus.FAILED, fileStatuses[0],
 						FileSizeCalculator.getFileSize(size));
 			} else {
-				//System.out.println("Types of files Uploading in catch block: "+fileUploadCategory);
 				FileUploadDetailsService.backupFileData(key, filePath, FileUploadStatus.FAILED, fileStatus.name(),
 						FileSizeCalculator.getFileSize(size));
 			}
@@ -159,7 +152,6 @@ public class S3Backup {
 			}
 			Instant oneMonthAgo = Instant.now().minus(30, ChronoUnit.DAYS);
 			return lastModified.isAfter(oneMonthAgo);
-
 		} catch (Exception e) {
 			System.err.println("Error retrieving file attributes: " + filePath + " - " + e.getMessage());
 			return false;

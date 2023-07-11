@@ -10,13 +10,17 @@ import com.amazonaws.services.lambda.AWSLambda;
 import com.amazonaws.services.lambda.AWSLambdaClientBuilder;
 import com.amazonaws.services.lambda.model.InvokeRequest;
 import com.amazonaws.services.lambda.model.InvokeResult;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.vyomlabs.entity.LambdaFunctionOutput;
 import com.vyomlabs.util.PropertiesExtractor;
 import com.vyomlabs.util.TextEncryptorAndDecryptor;
 
 public class S3LambdaTrigger {
-	
+
 	private final Logger logger = Logger.getLogger(S3LambdaTrigger.class);
-	
+	Gson gson = new GsonBuilder().setPrettyPrinting().create();
+
 	public int triggerLambdaForReportGeneration() throws IOException {
 		logger.info("Lambda Trigger started..........");
 		PropertiesExtractor propertiesExtractor = new PropertiesExtractor();
@@ -30,12 +34,14 @@ public class S3LambdaTrigger {
 				.withCredentials(new AWSStaticCredentialsProvider(new BasicAWSCredentials(accessKey, secretKey)));
 
 		AWSLambda awsLambda = lambdaClientBuilder.build();
-		
+
 		InvokeRequest request = new InvokeRequest().withFunctionName(lambdaFunctionName).withPayload(event);
 		logger.info("Lambda invoked...........");
 		InvokeResult result = awsLambda.invoke(request);
-		logger.info("Lambda function output : "+new String(result.getPayload().array()));
-		return result.getStatusCode();
+		String lambdaFunctionOutput = new String(result.getPayload().array());
+		logger.info("Lambda function output : " + lambdaFunctionOutput);
+		LambdaFunctionOutput lambdaOutput = gson.fromJson(lambdaFunctionOutput, LambdaFunctionOutput.class);
+		return lambdaOutput.getStatusCode();
 	}
 
 }
