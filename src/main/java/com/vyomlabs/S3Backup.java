@@ -13,11 +13,11 @@ import org.apache.log4j.Logger;
 
 import com.opencsv.exceptions.CsvValidationException;
 import com.vyomlabs.emailservice.EmailService;
-import com.vyomlabs.filebackupdata.FileBackupDetails;
-import com.vyomlabs.filebackupdata.FileStatus;
-import com.vyomlabs.filebackupdata.FileUploadCategory;
+import com.vyomlabs.entity.FileBackupDetails;
+import com.vyomlabs.entity.FileStatus;
+import com.vyomlabs.entity.FileUploadCategory;
+import com.vyomlabs.entity.FileUploadStatus;
 import com.vyomlabs.filebackupdata.FileUploadDetailsService;
-import com.vyomlabs.filebackupdata.FileUploadStatus;
 import com.vyomlabs.util.FileSizeCalculator;
 import com.vyomlabs.util.PropertiesExtractor;
 import com.vyomlabs.util.TextEncryptorAndDecryptor;
@@ -32,17 +32,12 @@ import software.amazon.awssdk.services.s3.model.StorageClass;
 public class S3Backup {
 
 	private final static Logger logger = Logger.getLogger(S3Backup.class);
+
 	public static FileUploadCategory fileUploadCategory;
-//	 BasicConfigurator.configure();
-//	 BasicConfigurator basicConfigurator = new BasicConfigurator();
-	// Replace with your AWS access key ID and secret access key
-	// static String accessKeyId = "******************************";
-	// static String secretAccessKey = "******************************";
+
 	private static FileStatus fileStatus;
-	// S3Config s3Config = new S3Config();
+
 	static S3LambdaTrigger s3LambdaTrigger = new S3LambdaTrigger();
-	// private static final String REGION = "*********"; // Change to your desired
-	// AWS region
 
 	public static void main(String[] args) throws IOException, CsvValidationException {
 
@@ -66,7 +61,6 @@ public class S3Backup {
 							Path.of(file.getFilePathOnLocalDrive()), file.getFileStatus());
 					sendNotificationEmail(FileUploadDetailsService.getFailureFileDetails(), s3Client, BUCKET_NAME);
 				} catch (IOException | CsvValidationException e) {
-					// TODO Auto-generated catch block
 					logger.info("Exception caught in line no 53.....................");
 					e.printStackTrace();
 				}
@@ -75,7 +69,6 @@ public class S3Backup {
 			fileUploadCategory = FileUploadCategory.DIFFERENTIAL_FILES_UPLOAD;
 			try {
 				logger.info("Fresh differential files uploading.......");
-				// "D:/Central Data"
 				String backupFolderPath = propertiesExtractor.getProperty("s3upload.input-folder-path");
 				logger.info("backupFolderPath :" + backupFolderPath);
 				File backupFolder = new File(backupFolderPath);

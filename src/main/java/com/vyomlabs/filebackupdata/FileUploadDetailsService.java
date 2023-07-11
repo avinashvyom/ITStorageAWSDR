@@ -20,6 +20,8 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.opencsv.CSVWriter;
 import com.opencsv.exceptions.CsvValidationException;
+import com.vyomlabs.entity.FileBackupDetails;
+import com.vyomlabs.entity.FileUploadStatus;
 
 public class FileUploadDetailsService {
 
@@ -83,7 +85,6 @@ public class FileUploadDetailsService {
 		Date now = uploadDate;
 		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd-MMM-yyyy hh:mm:ss a");
 		simpleDateFormat.format(now, stringBuffer, new FieldPosition(0));
-		logger.info("Date format : " + stringBuffer.toString());
 		return stringBuffer.toString();
 	}
 
@@ -92,10 +93,10 @@ public class FileUploadDetailsService {
 		File file = new File(Path.of("").toAbsolutePath().toString() + "\\" + fileName);
 		boolean result = file.createNewFile();
 		if (result) {
-			System.out.println("File Created : " + file.getName() + ", at path :" + file.getAbsolutePath());
+			logger.info("File Created : " + file.getName() + ", at path :" + file.getAbsolutePath());
 			return file;
 		} else {
-			System.out.println("File already exists : " + file.getName() + "\n at path:" + file.getAbsolutePath());
+			logger.info("File already exists : " + file.getName() + "\n at path:" + file.getAbsolutePath());
 			return file;
 		}
 	}
@@ -111,7 +112,6 @@ public class FileUploadDetailsService {
 		try (BufferedReader br = new BufferedReader(new FileReader(getCSVFileName() + ".csv"))) {
 			String line;
 			while ((line = br.readLine()) != null) {
-				// System.out.println("Single Line : "+line);
 				String[] values = line.split(",");
 				records.add(Arrays.asList(values));
 			}

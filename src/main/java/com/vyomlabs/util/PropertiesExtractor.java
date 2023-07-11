@@ -31,7 +31,6 @@ public class PropertiesExtractor {
 				fos.close();
 			}
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -41,7 +40,5 @@ public class PropertiesExtractor {
 		Properties properties = new Properties();
 		properties.load(fis);
 		return properties.getProperty(key);
-		//fis.close();
-		//return null;
 	}
 }

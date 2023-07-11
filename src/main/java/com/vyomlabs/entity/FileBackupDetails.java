@@ -1,4 +1,4 @@
-package com.vyomlabs.filebackupdata;
+package com.vyomlabs.entity;
 
 import com.google.gson.annotations.SerializedName;
 

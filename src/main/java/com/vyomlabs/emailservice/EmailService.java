@@ -2,7 +2,6 @@ package com.vyomlabs.emailservice;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Path;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -25,10 +24,8 @@ import javax.mail.internet.MimeMultipart;
 
 import org.apache.log4j.Logger;
 
-import com.vyomlabs.S3Backup;
-import com.vyomlabs.filebackupdata.FileBackupDetails;
-import com.vyomlabs.filebackupdata.FileUploadDetailsService;
-import com.vyomlabs.filebackupdata.FileUploadStatus;
+import com.vyomlabs.entity.FileBackupDetails;
+import com.vyomlabs.entity.FileUploadStatus;
 import com.vyomlabs.util.PropertiesExtractor;
 import com.vyomlabs.util.TextEncryptorAndDecryptor;
 
@@ -49,29 +46,20 @@ public class EmailService {
 	}
 
 	public void sendMail(File costReport, File usageReport, File fileDetails) throws IOException {
-		// TODO Auto-generated method stub
 
-		System.out.println("preparing to send message ...");
+		logger.info("preparing to send message ...");
 		String message = composeMessage(fileList);
 		String subject = "Monthly S3 Bucket Usage and Cost Report for the Month - " + new SimpleDateFormat("MMM/YYYY").format(new Date());
 		String to = propertiesExtractor.getProperty("mail.receiver");
 		String from = propertiesExtractor.getProperty("mail.sender");
-		;// "backup@vyommail.com";//"aws-storage@vyom-labs.com";//
-			// "prasad.dharmadhikari@vyomlabs.com";
 		String host = propertiesExtractor.getProperty("mail.smtp.host");// "10.51.4.50";
-		// String smtpServer =
-		// "smtp.yandex.com";//"vyomlabs-com.mail.protection.outlook.com";
 
-		// get the system properties
 		Properties properties = System.getProperties();
 		System.out.println("PROPERTIES " + properties);
 		properties.put("mail.smtp.host", host);
 		properties.put("mail.smtp.port", propertiesExtractor.getProperty("mail.smtp.port"));
 		properties.put("mail.smtp.starttls.enable", propertiesExtractor.getProperty("mail.smtp.starttls.enable"));
-		// properties.put("mail.smtp.auth", "true");
 		properties.put("mail.smtp.auth", propertiesExtractor.getProperty("mail.smtp.auth"));
-		// Session.getInstance(properties);
-		// Session session = Session.getInstance(properties);
 		String password = TextEncryptorAndDecryptor
 				.decrypt(propertiesExtractor.getProperty("mail.authentication.password"));
 		Session session = Session.getInstance(properties, new Authenticator() {
@@ -99,16 +87,10 @@ public class EmailService {
 					e.printStackTrace();
 				}
 			});
-			//mimeMessage.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
 			mimeMessage.setSubject(subject);
-			//String path = "D:\\Vyom Projects\\DR setup AWS S3\\FileBackupToAWSS3\\JULY_2023.xlsx";
 			
 			MimeMultipart mimeMultipart = new MimeMultipart();
-			// text
-			// file
-
 			MimeBodyPart textMime = new MimeBodyPart();
-			// IOUtils.copy(null, null);
 			MimeBodyPart costFileMime = new MimeBodyPart();
 			MimeBodyPart usageFileMime = new MimeBodyPart();
 			MimeBodyPart fileDetailsMime = new MimeBodyPart();
@@ -127,7 +109,6 @@ public class EmailService {
 			System.err.println("Error occured during sending mail....................");
 			e.printStackTrace();
 		}
-
 	}
 
 	private boolean isValidEmail(String mail) {
@@ -164,8 +145,4 @@ public class EmailService {
 		return sb.toString();
 	}
 
-//	public static void main(String[] args) throws IOException {
-//		EmailService emailService = new EmailService();
-//		emailService.sendMail();
-//	}
 }

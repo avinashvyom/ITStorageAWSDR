@@ -20,7 +20,6 @@ public class S3ObjectFetch {
 	private String COST_REPORT_FILE_NAME = "Cost_Report_" + getCurrentMonthAndYear() + ".csv";
 
 	public File getCostReport(S3Client s3Client, String BUCKET_NAME) throws IOException {
-		// TODO Auto-generated method stub
 		String path = Path.of("").toAbsolutePath().toString() + "\\" + COST_REPORT_FILE_NAME;
 
 		GetObjectRequest getObjectRequest = GetObjectRequest.builder().bucket(BUCKET_NAME)
@@ -30,8 +29,6 @@ public class S3ObjectFetch {
 
 		IOUtils.copy(inputStream, outputStream);
 		
-		//System.out.println("no of bytes copied : " + copy);
-
 		inputStream.close();
 		outputStream.close();
 
@@ -46,13 +43,7 @@ public class S3ObjectFetch {
 		ResponseInputStream<GetObjectResponse> inputStream = s3Client.getObject(getObjectRequest);
 		FileOutputStream outputStream = new FileOutputStream(path);
 
-//		byte[] buffer = new byte[4096];
-//		int bytesRead = -1;
-//		while ((bytesRead = inputStream.read(buffer)) != -1) {
-//			outputStream.write(buffer, 0, bytesRead);
-//		}
 		IOUtils.copy(inputStream, outputStream);
-		//System.out.println("no of bytes copied : " + copy);
 		inputStream.close();
 		outputStream.close();
 

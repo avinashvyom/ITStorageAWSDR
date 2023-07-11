@@ -12,9 +12,8 @@ import javax.crypto.spec.SecretKeySpec;
 public class TextEncryptorAndDecryptor {
 	private static SecretKeySpec secretKey;
 	private static byte[] key;
-	private static String keyForEncryptionAndDecryption = "vyomlabs";
+	private static String keyForEncryptionAndDecryption = "*********";
 
-	// setKey
 	public static void setKey(String myKey) {
 		try {
 			key = myKey.getBytes("UTF-8");
@@ -23,12 +22,10 @@ public class TextEncryptorAndDecryptor {
 			key = Arrays.copyOf(key, 16);
 			secretKey = new SecretKeySpec(key, "AES");
 		} catch (UnsupportedEncodingException | NoSuchAlgorithmException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
 
-	// encrypt the data
 	public static String encrypt(String inputString) {
 		try {
 			setKey(keyForEncryptionAndDecryption);
@@ -36,13 +33,11 @@ public class TextEncryptorAndDecryptor {
 			cipher.init(Cipher.ENCRYPT_MODE, secretKey);
 			return Base64.getEncoder().encodeToString(cipher.doFinal(inputString.getBytes("UTF-8")));
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return null;
 	}
 
-	// decrypt the data
 	public static String decrypt(String encryptedText) {
 		try {
 			setKey(keyForEncryptionAndDecryption);
@@ -54,17 +49,5 @@ public class TextEncryptorAndDecryptor {
 		}
 		return null;
 	}
-
-//	public static void main(String[] args) {
-//		// TODO Auto-generated method stub
-//		
-//		String encryptedText = encrypt("****************************************");
-//		System.out.println("Encrypted text is : " + encryptedText);
-//
-//		String originalString = decrypt(encryptedText);
-//
-//		System.out.println("Original string is : " + originalString);
-//
-//	}
 
 }

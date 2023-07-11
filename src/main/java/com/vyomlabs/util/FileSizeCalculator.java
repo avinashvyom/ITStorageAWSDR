@@ -22,23 +22,4 @@ public class FileSizeCalculator {
 		else
 			return df.format(size);
 	}
-
-//	public static void main(String[] args) {
-//		System.out.println("Welcome to file size : ");
-//		try {
-//			System.out.println(getFileSize(
-//					Files.size(Path.of("D:\\Vyom Projects\\DR setup AWS S3\\Final jar\\application.properties"))));
-//			System.out.println(getFileSize(
-//					Files.size(Path.of("D:\\Vyom Projects\\DR setup AWS S3\\Final jar\\jdk-17_windows-x64_bin.exe"))));
-//			System.out.println(getFileSize(
-//					Files.size(Path.of("D:\\Vyom Projects\\DR setup AWS S3\\Final jar\\s3-backup-service.jar"))));
-//			System.out
-//					.println(getFileSize(Files.size(Path.of("D:\\Central data backup\\Finance\\user 2\\user 2.txt"))));
-//
-//		} catch (IOException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//	}
-
 }
