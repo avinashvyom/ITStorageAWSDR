@@ -2,6 +2,7 @@ package com.vyomlabs.emailservice;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Path;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -26,6 +27,7 @@ import org.apache.log4j.Logger;
 
 import com.vyomlabs.S3Backup;
 import com.vyomlabs.filebackupdata.FileBackupDetails;
+import com.vyomlabs.filebackupdata.FileUploadDetailsService;
 import com.vyomlabs.filebackupdata.FileUploadStatus;
 import com.vyomlabs.util.PropertiesExtractor;
 import com.vyomlabs.util.TextEncryptorAndDecryptor;
@@ -46,7 +48,7 @@ public class EmailService {
 		this.fileList = fileList;
 	}
 
-	public void sendMail(File costReport, File usageReport) throws IOException {
+	public void sendMail(File costReport, File usageReport, File fileDetails) throws IOException {
 		// TODO Auto-generated method stub
 
 		System.out.println("preparing to send message ...");
@@ -100,7 +102,7 @@ public class EmailService {
 			//mimeMessage.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
 			mimeMessage.setSubject(subject);
 			//String path = "D:\\Vyom Projects\\DR setup AWS S3\\FileBackupToAWSS3\\JULY_2023.xlsx";
-
+			
 			MimeMultipart mimeMultipart = new MimeMultipart();
 			// text
 			// file
@@ -109,12 +111,15 @@ public class EmailService {
 			// IOUtils.copy(null, null);
 			MimeBodyPart costFileMime = new MimeBodyPart();
 			MimeBodyPart usageFileMime = new MimeBodyPart();
+			MimeBodyPart fileDetailsMime = new MimeBodyPart();
 			textMime.setText(message);
 			costFileMime.attachFile(costReport);
 			usageFileMime.attachFile(usageReport);
+			fileDetailsMime.attachFile(fileDetails);
 			mimeMultipart.addBodyPart(textMime);
 			mimeMultipart.addBodyPart(costFileMime);
 			mimeMultipart.addBodyPart(usageFileMime);
+			mimeMultipart.addBodyPart(fileDetailsMime);
 			mimeMessage.setContent(mimeMultipart);
 			Transport.send(mimeMessage);
 			System.out.println("Mail sent successfully.........................");

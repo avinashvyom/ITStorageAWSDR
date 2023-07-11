@@ -131,7 +131,7 @@ public class FileUploadDetailsService {
 				.toList();
 	}
 
-	private static String getCSVFileName() {
+	public static String getCSVFileName() {
 		return LocalDateTime.now().getMonth().toString() + "_" + LocalDateTime.now().getYear();
 	}
 }

@@ -27,6 +27,7 @@ import software.amazon.awssdk.auth.credentials.StaticCredentialsProvider;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.s3.S3Client;
 import software.amazon.awssdk.services.s3.model.PutObjectRequest;
+import software.amazon.awssdk.services.s3.model.StorageClass;
 
 public class S3Backup {
 
@@ -59,10 +60,10 @@ public class S3Backup {
 			logger.info("Failure files uploading.......");
 			FileUploadDetailsService.getFailureFileDetails().forEach(file -> {
 				try {
-					logger.info("File path on local drive : "+file.getFilePathOnLocalDrive());
+					logger.info("File path on local drive : " + file.getFilePathOnLocalDrive());
 					logger.info("File path after calling Path.of() : " + Path.of(file.getFilePathOnLocalDrive()));
 					uploadFileToS3(s3Client, BUCKET_NAME, file.getFilePathInS3(),
-							Path.of(file.getFilePathOnLocalDrive()),file.getFileStatus());
+							Path.of(file.getFilePathOnLocalDrive()), file.getFileStatus());
 					sendNotificationEmail(FileUploadDetailsService.getFailureFileDetails(), s3Client, BUCKET_NAME);
 				} catch (IOException | CsvValidationException e) {
 					// TODO Auto-generated catch block
@@ -77,7 +78,7 @@ public class S3Backup {
 				// "D:/Central Data"
 				String backupFolderPath = propertiesExtractor.getProperty("s3upload.input-folder-path");
 				logger.info("backupFolderPath :" + backupFolderPath);
-				File backupFolder = new File(backupFolderPath); 
+				File backupFolder = new File(backupFolderPath);
 				Files.walk(backupFolder.toPath()).filter(path -> !Files.isDirectory(path))
 						.filter(path -> isRecentlyUpdated(path)).forEach(path -> {
 							String key = backupFolder.toPath().relativize(path).toString();
@@ -113,9 +114,7 @@ public class S3Backup {
 		long size = Files.size(filePath);
 		try {
 			PutObjectRequest request = PutObjectRequest.builder().bucket(bucketName).key(key)
-					.build();/*
-								 * .storageClass( StorageClass. STANDARD_IA)
-								 */
+					.storageClass(StorageClass.STANDARD_IA).build();
 			s3Client.putObject(request, filePath);
 			logger.info("Uploaded file: " + filePath);
 			if (fileStatuses.length > 0) {
@@ -162,6 +161,7 @@ public class S3Backup {
 			throws IOException {
 		File costReport;
 		File usageReport;
+		File fileDetails = new File(Path.of(FileUploadDetailsService.getCSVFileName() + ".csv").toString());
 		EmailService emailService = new EmailService();
 		emailService.setFileList(fileList);
 		logger.info("Trigger to lambda function....................");
@@ -171,7 +171,7 @@ public class S3Backup {
 			costReport = s3ObjectFetch.getCostReport(s3Client, BUCKET_NAME);
 			logger.info("Fetching usage report file....................");
 			usageReport = s3ObjectFetch.getUsageReport(s3Client, BUCKET_NAME);
-			emailService.sendMail(costReport, usageReport);
+			emailService.sendMail(costReport, usageReport, fileDetails);
 		}
 	}
 }
