@@ -2,6 +2,7 @@ package com.vyomlabs.util;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.file.Paths;
@@ -35,10 +36,17 @@ public class PropertiesExtractor {
 		}
 	}
 	
-	public String getProperty(String key) throws IOException {
-		FileInputStream fis = new FileInputStream(file);
-		Properties properties = new Properties();
-		properties.load(fis);
-		return properties.getProperty(key);
+	public String getProperty(String key) {
+		FileInputStream fis;
+		try {
+			fis = new FileInputStream(file);
+			Properties properties = new Properties();
+			properties.load(fis);
+			return properties.getProperty(key);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return null;
+		}
 	}
 }

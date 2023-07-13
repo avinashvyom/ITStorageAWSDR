@@ -9,22 +9,23 @@ import java.util.Date;
 
 import org.apache.commons.io.IOUtils;
 
-import software.amazon.awssdk.core.ResponseInputStream;
-import software.amazon.awssdk.services.s3.S3Client;
-import software.amazon.awssdk.services.s3.model.GetObjectRequest;
-import software.amazon.awssdk.services.s3.model.GetObjectResponse;
+import com.amazonaws.services.s3.AmazonS3;
+import com.amazonaws.services.s3.model.GetObjectRequest;
+import com.amazonaws.services.s3.model.S3Object;
+import com.amazonaws.services.s3.model.S3ObjectInputStream;
 
 public class S3ObjectFetch {
 
 	private String USAGE_REPORT_FILE_NAME = "Usage_Report_" + getCurrentMonthAndYear() + ".csv";
 	private String COST_REPORT_FILE_NAME = "Cost_Report_" + getCurrentMonthAndYear() + ".csv";
 
-	public File getCostReport(S3Client s3Client, String BUCKET_NAME) throws IOException {
+	public File getCostReport(AmazonS3 s3Client, String BUCKET_NAME) throws IOException {
 		String path = Path.of("").toAbsolutePath().toString() + "\\" + COST_REPORT_FILE_NAME;
 
-		GetObjectRequest getObjectRequest = GetObjectRequest.builder().bucket(BUCKET_NAME)
-				.key(COST_REPORT_FILE_NAME).build();
-		ResponseInputStream<GetObjectResponse> inputStream = s3Client.getObject(getObjectRequest);
+		GetObjectRequest getObjectRequest = new GetObjectRequest(BUCKET_NAME, COST_REPORT_FILE_NAME);
+		
+		S3Object s3Object = s3Client.getObject(getObjectRequest);
+		S3ObjectInputStream inputStream = s3Object.getObjectContent();
 		FileOutputStream outputStream = new FileOutputStream(path);
 
 		IOUtils.copy(inputStream, outputStream);
@@ -35,12 +36,12 @@ public class S3ObjectFetch {
 		return new File(Path.of("").toAbsolutePath().toString() + "\\" + COST_REPORT_FILE_NAME);
 	}
 
-	public File getUsageReport(S3Client s3Client, String BUCKET_NAME) throws IOException {
+	public File getUsageReport(AmazonS3 s3Client, String BUCKET_NAME) throws IOException {
 		String path = Path.of("").toAbsolutePath().toString() + "\\" + USAGE_REPORT_FILE_NAME;
 
-		GetObjectRequest getObjectRequest = GetObjectRequest.builder().bucket(BUCKET_NAME)
-				.key(USAGE_REPORT_FILE_NAME).build();
-		ResponseInputStream<GetObjectResponse> inputStream = s3Client.getObject(getObjectRequest);
+		GetObjectRequest getObjectRequest = new GetObjectRequest(BUCKET_NAME, USAGE_REPORT_FILE_NAME);		
+		S3Object s3Object = s3Client.getObject(getObjectRequest);
+		S3ObjectInputStream inputStream = s3Object.getObjectContent();
 		FileOutputStream outputStream = new FileOutputStream(path);
 
 		IOUtils.copy(inputStream, outputStream);
