@@ -12,7 +12,7 @@ import javax.crypto.spec.SecretKeySpec;
 public class TextEncryptorAndDecryptor {
 	private static SecretKeySpec secretKey;
 	private static byte[] key;
-	private static String keyForEncryptionAndDecryption = "vyomlabs";
+	private static String keyForEncryptionAndDecryption = "**********";
 
 	public static void setKey(String myKey) {
 		try {
