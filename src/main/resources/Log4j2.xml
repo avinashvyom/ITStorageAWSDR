@@ -1,13 +1,30 @@
 <Configuration status="WARN">
- <Appenders>
-  <Console name="ConsoleAppender" target="SYSTEM_OUT">
-   <PatternLayout pattern="%d{YYYY-MM-dd HH:mm:ss} [%t] %-5p %c:%L - %m%n" />
-  </Console>
- </Appenders>
-
- <Loggers>
-  <Root level="WARN">
-   <AppenderRef ref="ConsoleAppender"/>
-  </Root>
- </Loggers>
+	<Appenders>
+		<Console name="ConsoleAppender" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="%d{YYYY-MM-dd HH:mm:ss} [%t] %-5p %c:%L - %m%n" />
+		</Console>
+	</Appenders>
+	<Appenders>
+		<RollingFile name="fileLogger"
+			fileName="s3BackupService.log"
+			filePattern="s3BackupService-%d{yyyy-MM-dd}.log">
+			<PatternLayout>
+				<pattern>%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n
+				</pattern>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy interval="1"
+					modulate="true" />
+				<SizeBasedTriggeringPolicy size="10MB" />
+			</Policies>
+			<DefaultRolloverStrategy max="20">
+			</DefaultRolloverStrategy>
+		</RollingFile>
+	</Appenders>
+	<Loggers>
+		<Root level="WARN">
+			<AppenderRef ref="ConsoleAppender" />
+		</Root>
+	</Loggers>
 </Configuration>
