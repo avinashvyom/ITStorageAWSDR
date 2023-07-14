@@ -9,13 +9,14 @@ public class FileGenerator {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
-		
+
 		for (int i = 1; i <= 10; i++) {
-			File file = new File(Path.of("D:\\Central Data").toAbsolutePath().toString() + "\\" + "File 10_" + i + ".txt");
+			File file = new File(
+					Path.of("D:\\test").toAbsolutePath().toString() + "\\" /* + i + "." */+ "File 12_" + i + ".txt");
 			file.createNewFile();
-			FileWriter fw = new FileWriter(file,true);
-			fw.write("Welcome to File "+i);
-			fw.close();		
+			FileWriter fw = new FileWriter(file, true);
+			fw.write("Welcome to File " + i);
+			fw.close();
 		}
 		System.out.println("done................");
 	}

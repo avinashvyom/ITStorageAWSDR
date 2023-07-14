@@ -20,8 +20,7 @@ public class AppConfig {
 	public static AmazonS3 getS3Client() {
 		return AmazonS3ClientBuilder.standard()
 				.withCredentials(new AWSStaticCredentialsProvider(new BasicAWSCredentials(accessKey, secretKey)))
-				.withRegion(region)
-				.build();
+				.withRegion(region).build();
 	}
 
 }

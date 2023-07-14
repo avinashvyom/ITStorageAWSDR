@@ -10,10 +10,9 @@ import java.time.temporal.ChronoUnit;
 import java.util.List;
 
 import org.apache.log4j.Logger;
-
+import com.amazonaws.services.s3.model.StorageClass;
 import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.model.PutObjectRequest;
-import com.amazonaws.services.s3.model.StorageClass;
 import com.amazonaws.services.s3.transfer.TransferManager;
 import com.amazonaws.services.s3.transfer.TransferManagerBuilder;
 import com.amazonaws.services.s3.transfer.Upload;
@@ -44,6 +43,7 @@ public class S3Backup {
 	public static void main(String[] args) throws IOException, CsvValidationException {
 		String BUCKET_NAME = propertiesExtractor.getProperty("s3.bucket-name");
 		AmazonS3 s3Client = AppConfig.getS3Client();
+		
 		if (FileUploadDetailsService.checkIfBackupDetailsFileExists()
 				&& !FileUploadDetailsService.getFailureFileDetails().isEmpty()) {
 			fileUploadCategory = FileUploadCategory.FAILURE_FILES_UPLOAD;
@@ -96,9 +96,9 @@ public class S3Backup {
 				sendNotificationEmail(FileUploadDetailsService.getFileDetails(), s3Client, BUCKET_NAME);
 			} catch (Exception e) {
 				System.err.println("Error occurred during backup: " + e.getMessage());
+				e.printStackTrace();
 				sendNotificationEmail(FileUploadDetailsService.getFileDetails(), s3Client, BUCKET_NAME);
 			} finally {
-
 			}
 		}
 	}
@@ -109,18 +109,17 @@ public class S3Backup {
 		long size = Files.size(filePath);
 		try {
 			transferManager = TransferManagerBuilder.standard().withS3Client(s3Client)
-					.withMultipartUploadThreshold((long) (104857600)).withMinimumUploadPartSize((long) (104857600))
+					.withMultipartUploadThreshold((long) (104857600))
+					.withMinimumUploadPartSize((long) (104857600))
 					.build();
 			PutObjectRequest request = new PutObjectRequest(BUCKET_NAME, key, filePath.toFile());
-			// request.withStorageClass(com.amazonaws.services.s3.model.StorageClass.StandardInfrequentAccess);
-			// Upload upload = tm.upload("vyomlabsbucket", "Central Data/5.iso.zip", new
-			// File("D:\\Central Data\\5.iso.zip"));
+			 request.withStorageClass(StorageClass.StandardInfrequentAccess);
 
-			Upload upload = transferManager.upload(BUCKET_NAME, key, filePath.toFile());
+			Upload upload = transferManager.upload(request);
 			logger.info("Multipart upload started for file : " + filePath.getFileName());
 			upload.waitForCompletion();
 			logger.info("Multipart upload completed for file : " + filePath.getFileName());
-			transferManager.shutdownNow();
+			//transferManager.shutdownNow();
 			FileUploadDetailsService.backupFileData(key, filePath, FileUploadStatus.SUCCESS, fileStatus.name(),
 					FileSizeCalculator.getFileSize(size));
 		} catch (Exception e) {
@@ -150,6 +149,7 @@ public class S3Backup {
 			}
 		} catch (Exception e) {
 			System.err.println("Error uploading file in catch block: " + filePath + " - " + e.getMessage());
+			e.printStackTrace();
 			if (fileStatuses.length > 0) {
 				FileUploadDetailsService.backupFileData(key, filePath, FileUploadStatus.FAILED, fileStatuses[0],
 						FileSizeCalculator.getFileSize(size));
@@ -172,7 +172,7 @@ public class S3Backup {
 				fileStatus = FileStatus.MODIFIED;
 				logger.info("File Status for " + filePath.toFile().getName() + " is :" + fileStatus);
 			}
-			Instant oneMonthAgo = Instant.now().minus(30, ChronoUnit.DAYS);
+			Instant oneMonthAgo = Instant.now().minus(Integer.parseInt(propertiesExtractor.getProperty("files.upload.duration")), ChronoUnit.DAYS);
 			return lastModified.isAfter(oneMonthAgo);
 		} catch (Exception e) {
 			System.err.println("Error retrieving file attributes: " + filePath + " - " + e.getMessage());
