@@ -119,7 +119,6 @@ public class S3Backup {
 			logger.info("Multipart upload started for file : " + filePath.getFileName());
 			upload.waitForCompletion();
 			logger.info("Multipart upload completed for file : " + filePath.getFileName());
-			//transferManager.shutdownNow();
 			FileUploadDetailsService.backupFileData(key, filePath, FileUploadStatus.SUCCESS, fileStatus.name(),
 					FileSizeCalculator.getFileSize(size));
 		} catch (Exception e) {
@@ -172,7 +171,9 @@ public class S3Backup {
 				fileStatus = FileStatus.MODIFIED;
 				logger.info("File Status for " + filePath.toFile().getName() + " is :" + fileStatus);
 			}
-			Instant oneMonthAgo = Instant.now().minus(Integer.parseInt(propertiesExtractor.getProperty("files.upload.duration")), ChronoUnit.DAYS);
+			int fileUploadDuration = Integer.parseInt(propertiesExtractor.getProperty("files.upload.duration"));
+			logger.info("File Upload Duration selected : "+ fileUploadDuration);
+			Instant oneMonthAgo = Instant.now().minus(fileUploadDuration, ChronoUnit.DAYS);
 			return lastModified.isAfter(oneMonthAgo);
 		} catch (Exception e) {
 			System.err.println("Error retrieving file attributes: " + filePath + " - " + e.getMessage());
