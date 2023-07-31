@@ -3521,4 +3521,1453 @@
   2023-07-10 18:57:43 INFO  S3LambdaTrigger:35 - Lambda invoked...........
   2023-07-10 18:57:51 INFO  S3LambdaTrigger:37 - Lambda function output : {"statusCode": 400, "body": "File moving failed. S3 usage report generation skipped."}
   2023-07-10 18:57:51 INFO  S3Backup:180 - Fetching cost report file....................
+  2023-07-11 13:19:41 INFO  S3Backup:59 - Failure files uploading.......
+  2023-07-11 13:19:41 INFO  S3Backup:67 - Exception caught in line no 53.....................
+  2023-07-11 13:19:41 INFO  S3Backup:67 - Exception caught in line no 53.....................
+  2023-07-11 13:19:41 INFO  S3Backup:67 - Exception caught in line no 53.....................
+  2023-07-11 13:19:41 INFO  S3Backup:67 - Exception caught in line no 53.....................
+  2023-07-11 13:19:41 INFO  S3Backup:67 - Exception caught in line no 53.....................
+  2023-07-11 13:19:41 INFO  S3Backup:67 - Exception caught in line no 53.....................
+  2023-07-11 13:19:41 INFO  S3Backup:67 - Exception caught in line no 53.....................
+  2023-07-11 13:19:41 INFO  S3Backup:67 - Exception caught in line no 53.....................
+  2023-07-11 13:19:41 INFO  S3Backup:67 - Exception caught in line no 53.....................
+  2023-07-11 13:19:41 INFO  S3Backup:67 - Exception caught in line no 53.....................
+  2023-07-11 13:19:41 INFO  S3Backup:67 - Exception caught in line no 53.....................
+  2023-07-11 13:19:41 INFO  S3Backup:67 - Exception caught in line no 53.....................
+  2023-07-11 13:20:07 INFO  S3Backup:74 - Fresh differential files uploading.......
+  2023-07-11 13:20:07 INFO  S3Backup:77 - backupFolderPath :D:/Central Data
+  2023-07-11 13:20:07 INFO  S3Backup:152 - File Status for abc.dat is :MODIFIED
+  2023-07-11 13:20:07 INFO  S3Backup:84 - key: Central Data/abc.dat
+  2023-07-11 13:20:07 INFO  S3Backup:85 - path: D:\Central Data\abc.dat
+  2023-07-11 13:24:38 INFO  S3Backup:117 - Uploaded file: D:\Central Data\abc.dat
+  2023-07-11 13:24:39 INFO  FileUploadDetailsService:146 - Date format : 11-Jul-2023 01:24:39 pm
+  2023-07-11 13:24:39 INFO  S3Backup:95 - Backup completed successfully.........................
+  2023-07-11 13:24:39 INFO  FileUploadDetailsService:66 - [FileBackupDetails(fileName=abc.dat, filePathOnLocalDrive=D:\Central Data\abc.dat, filePathInS3=Central Data/abc.dat, uploadDate=11-Jul-2023 01:24:39 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=5.00 GB)]
+  2023-07-11 13:24:39 INFO  S3Backup:169 - Trigger to lambda function....................
+  2023-07-11 13:24:39 INFO  S3LambdaTrigger:21 - Lambda Trigger started..........
+  2023-07-11 13:24:39 INFO  S3LambdaTrigger:26 - Lambda function name : Monthly-Report-Generation-Function
+  2023-07-11 13:24:39 INFO  S3LambdaTrigger:35 - Lambda invoked...........
+  2023-07-11 13:24:47 INFO  S3LambdaTrigger:37 - Lambda function output : {"statusCode": 400, "body": "File moving failed. S3 usage report generation skipped."}
+  2023-07-11 13:24:47 INFO  S3Backup:172 - Fetching cost report file....................
+  2023-07-11 13:24:48 INFO  S3Backup:174 - Fetching usage report file....................
+  2023-07-11 13:24:48 INFO  EmailService:93 - invalid email id.......
+  2023-07-11 13:32:38 INFO  S3Backup:74 - Fresh differential files uploading.......
+  2023-07-11 13:32:38 INFO  S3Backup:77 - backupFolderPath :D:/Central Data
+  2023-07-11 13:32:38 INFO  S3Backup:149 - File Status for File 8_1.txt is :CREATED
+  2023-07-11 13:32:38 INFO  S3Backup:84 - key: Central Data/File 8_1.txt
+  2023-07-11 13:32:38 INFO  S3Backup:85 - path: D:\Central Data\File 8_1.txt
+  2023-07-11 13:32:39 INFO  S3Backup:117 - Uploaded file: D:\Central Data\File 8_1.txt
+  2023-07-11 13:32:39 INFO  FileUploadDetailsService:146 - Date format : 11-Jul-2023 01:32:39 pm
+  2023-07-11 13:32:39 INFO  S3Backup:149 - File Status for File 8_10.txt is :CREATED
+  2023-07-11 13:32:39 INFO  S3Backup:84 - key: Central Data/File 8_10.txt
+  2023-07-11 13:32:39 INFO  S3Backup:85 - path: D:\Central Data\File 8_10.txt
+  2023-07-11 13:32:39 INFO  S3Backup:117 - Uploaded file: D:\Central Data\File 8_10.txt
+  2023-07-11 13:32:39 INFO  FileUploadDetailsService:146 - Date format : 11-Jul-2023 01:32:39 pm
+  2023-07-11 13:32:39 INFO  S3Backup:152 - File Status for File 8_2.txt is :MODIFIED
+  2023-07-11 13:32:39 INFO  S3Backup:84 - key: Central Data/File 8_2.txt
+  2023-07-11 13:32:39 INFO  S3Backup:85 - path: D:\Central Data\File 8_2.txt
+  2023-07-11 13:32:39 INFO  S3Backup:117 - Uploaded file: D:\Central Data\File 8_2.txt
+  2023-07-11 13:32:39 INFO  FileUploadDetailsService:146 - Date format : 11-Jul-2023 01:32:39 pm
+  2023-07-11 13:32:39 INFO  S3Backup:149 - File Status for File 8_3.txt is :CREATED
+  2023-07-11 13:32:39 INFO  S3Backup:84 - key: Central Data/File 8_3.txt
+  2023-07-11 13:32:39 INFO  S3Backup:85 - path: D:\Central Data\File 8_3.txt
+  2023-07-11 13:32:39 INFO  S3Backup:117 - Uploaded file: D:\Central Data\File 8_3.txt
+  2023-07-11 13:32:39 INFO  FileUploadDetailsService:146 - Date format : 11-Jul-2023 01:32:39 pm
+  2023-07-11 13:32:39 INFO  S3Backup:149 - File Status for File 8_4.txt is :CREATED
+  2023-07-11 13:32:39 INFO  S3Backup:84 - key: Central Data/File 8_4.txt
+  2023-07-11 13:32:39 INFO  S3Backup:85 - path: D:\Central Data\File 8_4.txt
+  2023-07-11 13:32:39 INFO  S3Backup:117 - Uploaded file: D:\Central Data\File 8_4.txt
+  2023-07-11 13:32:39 INFO  FileUploadDetailsService:146 - Date format : 11-Jul-2023 01:32:39 pm
+  2023-07-11 13:32:39 INFO  S3Backup:152 - File Status for File 8_5.txt is :MODIFIED
+  2023-07-11 13:32:39 INFO  S3Backup:84 - key: Central Data/File 8_5.txt
+  2023-07-11 13:32:39 INFO  S3Backup:85 - path: D:\Central Data\File 8_5.txt
+  2023-07-11 13:32:39 INFO  S3Backup:117 - Uploaded file: D:\Central Data\File 8_5.txt
+  2023-07-11 13:32:39 INFO  FileUploadDetailsService:146 - Date format : 11-Jul-2023 01:32:39 pm
+  2023-07-11 13:32:39 INFO  S3Backup:149 - File Status for File 8_6.txt is :CREATED
+  2023-07-11 13:32:39 INFO  S3Backup:84 - key: Central Data/File 8_6.txt
+  2023-07-11 13:32:39 INFO  S3Backup:85 - path: D:\Central Data\File 8_6.txt
+  2023-07-11 13:32:39 INFO  S3Backup:117 - Uploaded file: D:\Central Data\File 8_6.txt
+  2023-07-11 13:32:39 INFO  FileUploadDetailsService:146 - Date format : 11-Jul-2023 01:32:39 pm
+  2023-07-11 13:32:39 INFO  S3Backup:149 - File Status for File 8_7.txt is :CREATED
+  2023-07-11 13:32:39 INFO  S3Backup:84 - key: Central Data/File 8_7.txt
+  2023-07-11 13:32:39 INFO  S3Backup:85 - path: D:\Central Data\File 8_7.txt
+  2023-07-11 13:32:39 INFO  S3Backup:117 - Uploaded file: D:\Central Data\File 8_7.txt
+  2023-07-11 13:32:39 INFO  FileUploadDetailsService:146 - Date format : 11-Jul-2023 01:32:39 pm
+  2023-07-11 13:32:39 INFO  S3Backup:149 - File Status for File 8_8.txt is :CREATED
+  2023-07-11 13:32:39 INFO  S3Backup:84 - key: Central Data/File 8_8.txt
+  2023-07-11 13:32:39 INFO  S3Backup:85 - path: D:\Central Data\File 8_8.txt
+  2023-07-11 13:32:39 INFO  S3Backup:117 - Uploaded file: D:\Central Data\File 8_8.txt
+  2023-07-11 13:32:39 INFO  FileUploadDetailsService:146 - Date format : 11-Jul-2023 01:32:39 pm
+  2023-07-11 13:32:39 INFO  S3Backup:149 - File Status for File 8_9.txt is :CREATED
+  2023-07-11 13:32:39 INFO  S3Backup:84 - key: Central Data/File 8_9.txt
+  2023-07-11 13:32:39 INFO  S3Backup:85 - path: D:\Central Data\File 8_9.txt
+  2023-07-11 13:32:39 INFO  S3Backup:117 - Uploaded file: D:\Central Data\File 8_9.txt
+  2023-07-11 13:32:39 INFO  FileUploadDetailsService:146 - Date format : 11-Jul-2023 01:32:39 pm
+  2023-07-11 13:32:39 INFO  S3Backup:95 - Backup completed successfully.........................
+  2023-07-11 13:32:39 INFO  FileUploadDetailsService:66 - [FileBackupDetails(fileName=File 8_1.txt, filePathOnLocalDrive=D:\Central Data\File 8_1.txt, filePathInS3=Central Data/File 8_1.txt, uploadDate=11-Jul-2023 01:32:39 pm, uploadStatus=SUCCESS, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 8_10.txt, filePathOnLocalDrive=D:\Central Data\File 8_10.txt, filePathInS3=Central Data/File 8_10.txt, uploadDate=11-Jul-2023 01:32:39 pm, uploadStatus=SUCCESS, fileStatus=CREATED, fileSize=18.00 B), FileBackupDetails(fileName=File 8_2.txt, filePathOnLocalDrive=D:\Central Data\File 8_2.txt, filePathInS3=Central Data/File 8_2.txt, uploadDate=11-Jul-2023 01:32:39 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=File 8_3.txt, filePathOnLocalDrive=D:\Central Data\File 8_3.txt, filePathInS3=Central Data/File 8_3.txt, uploadDate=11-Jul-2023 01:32:39 pm, uploadStatus=SUCCESS, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 8_4.txt, filePathOnLocalDrive=D:\Central Data\File 8_4.txt, filePathInS3=Central Data/File 8_4.txt, uploadDate=11-Jul-2023 01:32:39 pm, uploadStatus=SUCCESS, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 8_5.txt, filePathOnLocalDrive=D:\Central Data\File 8_5.txt, filePathInS3=Central Data/File 8_5.txt, uploadDate=11-Jul-2023 01:32:39 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=File 8_6.txt, filePathOnLocalDrive=D:\Central Data\File 8_6.txt, filePathInS3=Central Data/File 8_6.txt, uploadDate=11-Jul-2023 01:32:39 pm, uploadStatus=SUCCESS, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 8_7.txt, filePathOnLocalDrive=D:\Central Data\File 8_7.txt, filePathInS3=Central Data/File 8_7.txt, uploadDate=11-Jul-2023 01:32:39 pm, uploadStatus=SUCCESS, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 8_8.txt, filePathOnLocalDrive=D:\Central Data\File 8_8.txt, filePathInS3=Central Data/File 8_8.txt, uploadDate=11-Jul-2023 01:32:39 pm, uploadStatus=SUCCESS, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 8_9.txt, filePathOnLocalDrive=D:\Central Data\File 8_9.txt, filePathInS3=Central Data/File 8_9.txt, uploadDate=11-Jul-2023 01:32:39 pm, uploadStatus=SUCCESS, fileStatus=CREATED, fileSize=17.00 B)]
+  2023-07-11 13:32:39 INFO  S3Backup:169 - Trigger to lambda function....................
+  2023-07-11 13:32:39 INFO  S3LambdaTrigger:21 - Lambda Trigger started..........
+  2023-07-11 13:32:39 INFO  S3LambdaTrigger:26 - Lambda function name : Monthly-Report-Generation-Function
+  2023-07-11 13:32:40 INFO  S3LambdaTrigger:35 - Lambda invoked...........
+  2023-07-11 13:32:53 INFO  S3LambdaTrigger:37 - Lambda function output : {"statusCode": 200, "body": "Cost report and Usage Report generated and stored in S3 bucket: vyomlabsbucket"}
+  2023-07-11 13:32:53 INFO  S3Backup:172 - Fetching cost report file....................
+  2023-07-11 13:32:53 INFO  S3Backup:174 - Fetching usage report file....................
+  2023-07-11 13:32:53 INFO  EmailService:93 - invalid email id.......
+  2023-07-11 15:30:51 INFO  S3Backup:59 - Failure files uploading.......
+  2023-07-11 15:30:51 INFO  S3Backup:67 - Exception caught in line no 53.....................
+  2023-07-11 15:30:51 INFO  S3Backup:67 - Exception caught in line no 53.....................
+  2023-07-11 15:30:51 INFO  S3Backup:67 - Exception caught in line no 53.....................
+  2023-07-11 15:30:51 INFO  S3Backup:67 - Exception caught in line no 53.....................
+  2023-07-11 15:30:51 INFO  S3Backup:67 - Exception caught in line no 53.....................
+  2023-07-11 15:30:51 INFO  S3Backup:67 - Exception caught in line no 53.....................
+  2023-07-11 15:40:52 INFO  S3Backup:59 - Failure files uploading.......
+  2023-07-11 15:40:52 INFO  S3Backup:110 - D:Central DataFile 8_1.txt
+  2023-07-11 15:40:52 INFO  S3Backup:67 - Exception caught in line no 53.....................
+  2023-07-11 15:40:52 INFO  S3Backup:110 - D:Central DataFile 8_10.txt
+  2023-07-11 15:40:52 INFO  S3Backup:67 - Exception caught in line no 53.....................
+  2023-07-11 15:40:52 INFO  S3Backup:110 - D:Central DataFile 8_2.txt
+  2023-07-11 15:40:52 INFO  S3Backup:67 - Exception caught in line no 53.....................
+  2023-07-11 15:40:52 INFO  S3Backup:110 - D:Central DataFile 8_3.txt
+  2023-07-11 15:40:52 INFO  S3Backup:67 - Exception caught in line no 53.....................
+  2023-07-11 15:40:52 INFO  S3Backup:110 - D:Central DataFile 8_4.txt
+  2023-07-11 15:40:52 INFO  S3Backup:67 - Exception caught in line no 53.....................
+  2023-07-11 15:40:52 INFO  S3Backup:110 - D:Central DataFile 8_5.txt
+  2023-07-11 15:40:52 INFO  S3Backup:67 - Exception caught in line no 53.....................
+  2023-07-11 15:45:10 INFO  S3Backup:59 - Failure files uploading.......
+  2023-07-11 15:46:06 INFO  S3Backup:62 - File path on local drive : D:Central DataFile 8_1.txt
+  2023-07-11 15:46:08 INFO  S3Backup:63 - File path after calling Path.of() : D:Central DataFile 8_1.txt
+  2023-07-11 16:00:32 INFO  FileUploadDetailsService:197 - D:Central DataFile 8_1.txt
+  2023-07-11 16:14:40 INFO  S3Backup:76 - Fresh differential files uploading.......
+  2023-07-11 16:14:40 INFO  S3Backup:79 - backupFolderPath :D:/Central Data
+  2023-07-11 16:14:40 INFO  S3Backup:152 - File Status for File 8_1.txt is :CREATED
+  2023-07-11 16:14:40 INFO  S3Backup:86 - key: Central Data/File 8_1.txt
+  2023-07-11 16:14:40 INFO  S3Backup:87 - path: D:\Central Data\File 8_1.txt
+  2023-07-11 16:14:40 INFO  S3Backup:112 - D:\Central Data\File 8_1.txt
+  2023-07-11 16:14:41 INFO  S3Backup:120 - Uploaded file: D:\Central Data\File 8_1.txt
+  2023-07-11 16:14:41 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 8_1.txt
+  2023-07-11 16:14:41 INFO  FileUploadDetailsService:151 - Date format : 11-Jul-2023 04:14:41 pm
+  2023-07-11 16:14:41 INFO  S3Backup:155 - File Status for File 8_2.txt is :MODIFIED
+  2023-07-11 16:14:41 INFO  S3Backup:86 - key: Central Data/File 8_2.txt
+  2023-07-11 16:14:41 INFO  S3Backup:87 - path: D:\Central Data\File 8_2.txt
+  2023-07-11 16:14:41 INFO  S3Backup:112 - D:\Central Data\File 8_2.txt
+  2023-07-11 16:14:41 INFO  S3Backup:120 - Uploaded file: D:\Central Data\File 8_2.txt
+  2023-07-11 16:14:41 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 8_2.txt
+  2023-07-11 16:14:41 INFO  FileUploadDetailsService:151 - Date format : 11-Jul-2023 04:14:41 pm
+  2023-07-11 16:14:41 INFO  S3Backup:152 - File Status for File 8_3.txt is :CREATED
+  2023-07-11 16:14:41 INFO  S3Backup:86 - key: Central Data/File 8_3.txt
+  2023-07-11 16:14:41 INFO  S3Backup:87 - path: D:\Central Data\File 8_3.txt
+  2023-07-11 16:14:41 INFO  S3Backup:112 - D:\Central Data\File 8_3.txt
+  2023-07-11 16:14:41 INFO  S3Backup:120 - Uploaded file: D:\Central Data\File 8_3.txt
+  2023-07-11 16:14:41 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 8_3.txt
+  2023-07-11 16:14:41 INFO  FileUploadDetailsService:151 - Date format : 11-Jul-2023 04:14:41 pm
+  2023-07-11 16:14:41 INFO  S3Backup:152 - File Status for File 8_4.txt is :CREATED
+  2023-07-11 16:14:41 INFO  S3Backup:86 - key: Central Data/File 8_4.txt
+  2023-07-11 16:14:41 INFO  S3Backup:87 - path: D:\Central Data\File 8_4.txt
+  2023-07-11 16:14:41 INFO  S3Backup:112 - D:\Central Data\File 8_4.txt
+  2023-07-11 16:14:41 INFO  S3Backup:120 - Uploaded file: D:\Central Data\File 8_4.txt
+  2023-07-11 16:14:41 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 8_4.txt
+  2023-07-11 16:14:41 INFO  FileUploadDetailsService:151 - Date format : 11-Jul-2023 04:14:41 pm
+  2023-07-11 16:14:41 INFO  S3Backup:155 - File Status for File 8_5.txt is :MODIFIED
+  2023-07-11 16:14:41 INFO  S3Backup:86 - key: Central Data/File 8_5.txt
+  2023-07-11 16:14:41 INFO  S3Backup:87 - path: D:\Central Data\File 8_5.txt
+  2023-07-11 16:14:41 INFO  S3Backup:112 - D:\Central Data\File 8_5.txt
+  2023-07-11 16:14:41 INFO  S3Backup:120 - Uploaded file: D:\Central Data\File 8_5.txt
+  2023-07-11 16:14:41 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 8_5.txt
+  2023-07-11 16:14:41 INFO  FileUploadDetailsService:151 - Date format : 11-Jul-2023 04:14:41 pm
+  2023-07-11 16:14:41 INFO  S3Backup:97 - Backup completed successfully.........................
+  2023-07-11 16:14:41 INFO  FileUploadDetailsService:71 - [FileBackupDetails(fileName=File 8_1.txt, filePathOnLocalDrive=D:\Central Data\File 8_1.txt, filePathInS3=Central Data/File 8_1.txt, uploadDate=11-Jul-2023 04:14:41 pm, uploadStatus=SUCCESS, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 8_2.txt, filePathOnLocalDrive=D:\Central Data\File 8_2.txt, filePathInS3=Central Data/File 8_2.txt, uploadDate=11-Jul-2023 04:14:41 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=File 8_3.txt, filePathOnLocalDrive=D:\Central Data\File 8_3.txt, filePathInS3=Central Data/File 8_3.txt, uploadDate=11-Jul-2023 04:14:41 pm, uploadStatus=SUCCESS, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 8_4.txt, filePathOnLocalDrive=D:\Central Data\File 8_4.txt, filePathInS3=Central Data/File 8_4.txt, uploadDate=11-Jul-2023 04:14:41 pm, uploadStatus=SUCCESS, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 8_5.txt, filePathOnLocalDrive=D:\Central Data\File 8_5.txt, filePathInS3=Central Data/File 8_5.txt, uploadDate=11-Jul-2023 04:14:41 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B)]
+  2023-07-11 16:14:41 INFO  S3Backup:172 - Trigger to lambda function....................
+  2023-07-11 16:14:41 INFO  S3LambdaTrigger:25 - Lambda Trigger started..........
+  2023-07-11 16:14:41 INFO  S3LambdaTrigger:30 - Lambda function name : Monthly-Report-Generation-Function
+  2023-07-11 16:14:42 INFO  S3LambdaTrigger:39 - Lambda invoked...........
+  2023-07-11 16:14:54 INFO  S3LambdaTrigger:42 - Lambda function output : {"statusCode": 200, "body": "Cost report and Usage Report generated and stored in S3 bucket: vyomlabsbucket"}
+  2023-07-11 16:14:54 INFO  S3Backup:175 - Fetching cost report file....................
+  2023-07-11 16:14:54 INFO  S3Backup:177 - Fetching usage report file....................
+  2023-07-11 16:15:55 INFO  FileUploadDetailsService:197 - D:Central DataFile 8_1.txt
+  2023-07-11 16:15:55 INFO  FileUploadDetailsService:197 - D:Central DataFile 8_2.txt
+  2023-07-11 16:15:55 INFO  FileUploadDetailsService:197 - D:Central DataFile 8_3.txt
+  2023-07-11 16:15:55 INFO  FileUploadDetailsService:197 - D:Central DataFile 8_4.txt
+  2023-07-11 16:15:55 INFO  FileUploadDetailsService:197 - D:Central DataFile 8_5.txt
+  2023-07-11 16:15:55 INFO  S3Backup:76 - Fresh differential files uploading.......
+  2023-07-11 16:15:55 INFO  S3Backup:79 - backupFolderPath :D:/Central Data
+  2023-07-11 16:15:55 INFO  S3Backup:152 - File Status for File 8_1.txt is :CREATED
+  2023-07-11 16:15:55 INFO  S3Backup:86 - key: Central Data/File 8_1.txt
+  2023-07-11 16:15:55 INFO  S3Backup:87 - path: D:\Central Data\File 8_1.txt
+  2023-07-11 16:15:55 INFO  S3Backup:112 - D:\Central Data\File 8_1.txt
+  2023-07-11 16:15:55 INFO  S3Backup:120 - Uploaded file: D:\Central Data\File 8_1.txt
+  2023-07-11 16:15:55 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 8_1.txt
+  2023-07-11 16:15:55 INFO  FileUploadDetailsService:151 - Date format : 11-Jul-2023 04:15:55 pm
+  2023-07-11 16:15:55 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 8_1.txt
+  2023-07-11 16:15:55 INFO  FileUploadDetailsService:151 - Date format : 11-Jul-2023 04:15:55 pm
+  2023-07-11 16:15:55 INFO  S3Backup:172 - Trigger to lambda function....................
+  2023-07-11 16:15:55 INFO  S3LambdaTrigger:25 - Lambda Trigger started..........
+  2023-07-11 16:15:55 INFO  S3LambdaTrigger:30 - Lambda function name : Monthly-Report-Generation-Function
+  2023-07-11 16:15:56 INFO  S3LambdaTrigger:39 - Lambda invoked...........
+  2023-07-11 16:16:01 INFO  S3LambdaTrigger:42 - Lambda function output : {"statusCode": 200, "body": "Cost report and Usage Report generated and stored in S3 bucket: vyomlabsbucket"}
+  2023-07-11 16:16:01 INFO  S3Backup:175 - Fetching cost report file....................
+  2023-07-11 16:16:01 INFO  S3Backup:177 - Fetching usage report file....................
+  2023-07-11 16:20:46 INFO  S3Backup:76 - Fresh differential files uploading.......
+  2023-07-11 16:20:46 INFO  S3Backup:79 - backupFolderPath :D:/Central Data
+  2023-07-11 16:20:46 INFO  S3Backup:152 - File Status for File 8_1.txt is :CREATED
+  2023-07-11 16:20:46 INFO  S3Backup:86 - key: Central Data/File 8_1.txt
+  2023-07-11 16:20:46 INFO  S3Backup:87 - path: D:\Central Data\File 8_1.txt
+  2023-07-11 16:20:46 INFO  S3Backup:112 - D:\Central Data\File 8_1.txt
+  2023-07-11 16:20:46 INFO  S3Backup:120 - Uploaded file: D:\Central Data\File 8_1.txt
+  2023-07-11 16:20:46 INFO  FileUploadDetailsService:41 - Local drive path : D:\Central Data\File 8_1.txt
+  2023-07-11 16:20:46 INFO  FileUploadDetailsService:145 - Date format : 11-Jul-2023 04:20:46 pm
+  2023-07-11 16:20:46 INFO  S3Backup:155 - File Status for File 8_2.txt is :MODIFIED
+  2023-07-11 16:20:46 INFO  S3Backup:86 - key: Central Data/File 8_2.txt
+  2023-07-11 16:20:46 INFO  S3Backup:87 - path: D:\Central Data\File 8_2.txt
+  2023-07-11 16:20:46 INFO  S3Backup:112 - D:\Central Data\File 8_2.txt
+  2023-07-11 16:20:46 INFO  S3Backup:120 - Uploaded file: D:\Central Data\File 8_2.txt
+  2023-07-11 16:20:46 INFO  FileUploadDetailsService:41 - Local drive path : D:\Central Data\File 8_2.txt
+  2023-07-11 16:20:46 INFO  FileUploadDetailsService:145 - Date format : 11-Jul-2023 04:20:46 pm
+  2023-07-11 16:20:46 INFO  S3Backup:152 - File Status for File 8_3.txt is :CREATED
+  2023-07-11 16:20:46 INFO  S3Backup:86 - key: Central Data/File 8_3.txt
+  2023-07-11 16:20:46 INFO  S3Backup:87 - path: D:\Central Data\File 8_3.txt
+  2023-07-11 16:20:46 INFO  S3Backup:112 - D:\Central Data\File 8_3.txt
+  2023-07-11 16:20:46 INFO  S3Backup:120 - Uploaded file: D:\Central Data\File 8_3.txt
+  2023-07-11 16:20:46 INFO  FileUploadDetailsService:41 - Local drive path : D:\Central Data\File 8_3.txt
+  2023-07-11 16:20:46 INFO  FileUploadDetailsService:145 - Date format : 11-Jul-2023 04:20:46 pm
+  2023-07-11 16:20:46 INFO  S3Backup:152 - File Status for File 8_4.txt is :CREATED
+  2023-07-11 16:20:46 INFO  S3Backup:86 - key: Central Data/File 8_4.txt
+  2023-07-11 16:20:46 INFO  S3Backup:87 - path: D:\Central Data\File 8_4.txt
+  2023-07-11 16:20:46 INFO  S3Backup:112 - D:\Central Data\File 8_4.txt
+  2023-07-11 16:20:47 INFO  S3Backup:120 - Uploaded file: D:\Central Data\File 8_4.txt
+  2023-07-11 16:20:47 INFO  FileUploadDetailsService:41 - Local drive path : D:\Central Data\File 8_4.txt
+  2023-07-11 16:20:47 INFO  FileUploadDetailsService:145 - Date format : 11-Jul-2023 04:20:47 pm
+  2023-07-11 16:20:47 INFO  S3Backup:155 - File Status for File 8_5.txt is :MODIFIED
+  2023-07-11 16:20:47 INFO  S3Backup:86 - key: Central Data/File 8_5.txt
+  2023-07-11 16:20:47 INFO  S3Backup:87 - path: D:\Central Data\File 8_5.txt
+  2023-07-11 16:20:47 INFO  S3Backup:112 - D:\Central Data\File 8_5.txt
+  2023-07-11 16:20:47 INFO  S3Backup:120 - Uploaded file: D:\Central Data\File 8_5.txt
+  2023-07-11 16:20:47 INFO  FileUploadDetailsService:41 - Local drive path : D:\Central Data\File 8_5.txt
+  2023-07-11 16:20:47 INFO  FileUploadDetailsService:145 - Date format : 11-Jul-2023 04:20:47 pm
+  2023-07-11 16:20:47 INFO  S3Backup:97 - Backup completed successfully.........................
+  2023-07-11 16:20:47 INFO  FileUploadDetailsService:70 - [FileBackupDetails(fileName="File 8_1.txt", filePathOnLocalDrive="D:\Central Data\File 8_1.txt", filePathInS3="Central Data/File 8_1.txt", uploadDate="11-Jul-2023 04:14:41 pm", uploadStatus="SUCCESS", fileStatus="CREATED", fileSize="17.00 B"), FileBackupDetails(fileName="File 8_2.txt", filePathOnLocalDrive="D:\Central Data\File 8_2.txt", filePathInS3="Central Data/File 8_2.txt", uploadDate="11-Jul-2023 04:14:41 pm", uploadStatus="SUCCESS", fileStatus="MODIFIED", fileSize="17.00 B"), FileBackupDetails(fileName="File 8_3.txt", filePathOnLocalDrive="D:\Central Data\File 8_3.txt", filePathInS3="Central Data/File 8_3.txt", uploadDate="11-Jul-2023 04:14:41 pm", uploadStatus="SUCCESS", fileStatus="CREATED", fileSize="17.00 B"), FileBackupDetails(fileName="File 8_4.txt", filePathOnLocalDrive="D:\Central Data\File 8_4.txt", filePathInS3="Central Data/File 8_4.txt", uploadDate="11-Jul-2023 04:14:41 pm", uploadStatus="SUCCESS", fileStatus="CREATED", fileSize="17.00 B"), FileBackupDetails(fileName="File 8_5.txt", filePathOnLocalDrive="D:\Central Data\File 8_5.txt", filePathInS3="Central Data/File 8_5.txt", uploadDate="11-Jul-2023 04:14:41 pm", uploadStatus="SUCCESS", fileStatus="MODIFIED", fileSize="17.00 B"), FileBackupDetails(fileName=File 8_1.txt, filePathOnLocalDrive=D:\Central Data\File 8_1.txt, filePathInS3=Central Data/File 8_1.txt, uploadDate=11-Jul-2023 04:20:46 pm, uploadStatus=SUCCESS, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 8_2.txt, filePathOnLocalDrive=D:\Central Data\File 8_2.txt, filePathInS3=Central Data/File 8_2.txt, uploadDate=11-Jul-2023 04:20:46 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=File 8_3.txt, filePathOnLocalDrive=D:\Central Data\File 8_3.txt, filePathInS3=Central Data/File 8_3.txt, uploadDate=11-Jul-2023 04:20:46 pm, uploadStatus=SUCCESS, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 8_4.txt, filePathOnLocalDrive=D:\Central Data\File 8_4.txt, filePathInS3=Central Data/File 8_4.txt, uploadDate=11-Jul-2023 04:20:47 pm, uploadStatus=SUCCESS, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 8_5.txt, filePathOnLocalDrive=D:\Central Data\File 8_5.txt, filePathInS3=Central Data/File 8_5.txt, uploadDate=11-Jul-2023 04:20:47 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B)]
+  2023-07-11 16:20:47 INFO  S3Backup:172 - Trigger to lambda function....................
+  2023-07-11 16:20:47 INFO  S3LambdaTrigger:25 - Lambda Trigger started..........
+  2023-07-11 16:20:47 INFO  S3LambdaTrigger:30 - Lambda function name : Monthly-Report-Generation-Function
+  2023-07-11 16:20:47 INFO  S3LambdaTrigger:39 - Lambda invoked...........
+  2023-07-11 16:20:52 INFO  S3LambdaTrigger:42 - Lambda function output : {"statusCode": 200, "body": "Cost report and Usage Report generated and stored in S3 bucket: vyomlabsbucket"}
+  2023-07-11 16:20:52 INFO  S3Backup:175 - Fetching cost report file....................
+  2023-07-11 16:20:52 INFO  S3Backup:177 - Fetching usage report file....................
+  2023-07-12 13:30:42 INFO  S3Backup:73 - Fresh differential files uploading.......
+  2023-07-12 13:30:42 INFO  S3Backup:75 - backupFolderPath :D:/Central Data
+  2023-07-12 13:30:42 INFO  S3Backup:142 - File Status for File 8_1.txt is :CREATED
+  2023-07-12 13:30:42 INFO  S3Backup:82 - key: Central Data/File 8_1.txt
+  2023-07-12 13:30:42 INFO  S3Backup:83 - path: D:\Central Data\File 8_1.txt
+  2023-07-12 13:30:42 INFO  S3Backup:108 - D:\Central Data\File 8_1.txt
+  2023-07-12 13:30:42 INFO  S3Backup:114 - Uploaded file: D:\Central Data\File 8_1.txt
+  2023-07-12 13:30:42 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 8_1.txt
+  2023-07-12 13:30:43 INFO  S3Backup:145 - File Status for File 8_2.txt is :MODIFIED
+  2023-07-12 13:30:43 INFO  S3Backup:82 - key: Central Data/File 8_2.txt
+  2023-07-12 13:30:43 INFO  S3Backup:83 - path: D:\Central Data\File 8_2.txt
+  2023-07-12 13:30:43 INFO  S3Backup:108 - D:\Central Data\File 8_2.txt
+  2023-07-12 13:30:43 INFO  S3Backup:114 - Uploaded file: D:\Central Data\File 8_2.txt
+  2023-07-12 13:30:43 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 8_2.txt
+  2023-07-12 13:30:43 INFO  S3Backup:142 - File Status for File 8_3.txt is :CREATED
+  2023-07-12 13:30:43 INFO  S3Backup:82 - key: Central Data/File 8_3.txt
+  2023-07-12 13:30:43 INFO  S3Backup:83 - path: D:\Central Data\File 8_3.txt
+  2023-07-12 13:30:43 INFO  S3Backup:108 - D:\Central Data\File 8_3.txt
+  2023-07-12 13:30:43 INFO  S3Backup:114 - Uploaded file: D:\Central Data\File 8_3.txt
+  2023-07-12 13:30:43 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 8_3.txt
+  2023-07-12 13:30:43 INFO  S3Backup:142 - File Status for File 8_4.txt is :CREATED
+  2023-07-12 13:30:43 INFO  S3Backup:82 - key: Central Data/File 8_4.txt
+  2023-07-12 13:30:43 INFO  S3Backup:83 - path: D:\Central Data\File 8_4.txt
+  2023-07-12 13:30:43 INFO  S3Backup:108 - D:\Central Data\File 8_4.txt
+  2023-07-12 13:30:43 INFO  S3Backup:114 - Uploaded file: D:\Central Data\File 8_4.txt
+  2023-07-12 13:30:43 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 8_4.txt
+  2023-07-12 13:30:43 INFO  S3Backup:145 - File Status for File 8_5.txt is :MODIFIED
+  2023-07-12 13:30:43 INFO  S3Backup:82 - key: Central Data/File 8_5.txt
+  2023-07-12 13:30:43 INFO  S3Backup:83 - path: D:\Central Data\File 8_5.txt
+  2023-07-12 13:30:43 INFO  S3Backup:108 - D:\Central Data\File 8_5.txt
+  2023-07-12 13:30:43 INFO  S3Backup:114 - Uploaded file: D:\Central Data\File 8_5.txt
+  2023-07-12 13:30:43 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 8_5.txt
+  2023-07-12 13:30:43 INFO  S3Backup:142 - File Status for File 9_1.txt is :CREATED
+  2023-07-12 13:30:43 INFO  S3Backup:82 - key: Central Data/File 9_1.txt
+  2023-07-12 13:30:43 INFO  S3Backup:83 - path: D:\Central Data\File 9_1.txt
+  2023-07-12 13:30:43 INFO  S3Backup:108 - D:\Central Data\File 9_1.txt
+  2023-07-12 13:30:43 INFO  S3Backup:114 - Uploaded file: D:\Central Data\File 9_1.txt
+  2023-07-12 13:30:43 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 9_1.txt
+  2023-07-12 13:30:43 INFO  S3Backup:145 - File Status for File 9_10.txt is :MODIFIED
+  2023-07-12 13:30:43 INFO  S3Backup:82 - key: Central Data/File 9_10.txt
+  2023-07-12 13:30:43 INFO  S3Backup:83 - path: D:\Central Data\File 9_10.txt
+  2023-07-12 13:30:43 INFO  S3Backup:108 - D:\Central Data\File 9_10.txt
+  2023-07-12 13:30:43 INFO  S3Backup:114 - Uploaded file: D:\Central Data\File 9_10.txt
+  2023-07-12 13:30:43 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 9_10.txt
+  2023-07-12 13:30:43 INFO  S3Backup:142 - File Status for File 9_2.txt is :CREATED
+  2023-07-12 13:30:43 INFO  S3Backup:82 - key: Central Data/File 9_2.txt
+  2023-07-12 13:30:43 INFO  S3Backup:83 - path: D:\Central Data\File 9_2.txt
+  2023-07-12 13:30:43 INFO  S3Backup:108 - D:\Central Data\File 9_2.txt
+  2023-07-12 13:30:43 INFO  S3Backup:114 - Uploaded file: D:\Central Data\File 9_2.txt
+  2023-07-12 13:30:43 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 9_2.txt
+  2023-07-12 13:30:43 INFO  S3Backup:142 - File Status for File 9_3.txt is :CREATED
+  2023-07-12 13:30:43 INFO  S3Backup:82 - key: Central Data/File 9_3.txt
+  2023-07-12 13:30:43 INFO  S3Backup:83 - path: D:\Central Data\File 9_3.txt
+  2023-07-12 13:30:43 INFO  S3Backup:108 - D:\Central Data\File 9_3.txt
+  2023-07-12 13:30:43 INFO  S3Backup:114 - Uploaded file: D:\Central Data\File 9_3.txt
+  2023-07-12 13:30:43 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 9_3.txt
+  2023-07-12 13:30:43 INFO  S3Backup:142 - File Status for File 9_4.txt is :CREATED
+  2023-07-12 13:30:43 INFO  S3Backup:82 - key: Central Data/File 9_4.txt
+  2023-07-12 13:30:43 INFO  S3Backup:83 - path: D:\Central Data\File 9_4.txt
+  2023-07-12 13:30:43 INFO  S3Backup:108 - D:\Central Data\File 9_4.txt
+  2023-07-12 13:30:43 INFO  S3Backup:114 - Uploaded file: D:\Central Data\File 9_4.txt
+  2023-07-12 13:30:43 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 9_4.txt
+  2023-07-12 13:30:43 INFO  S3Backup:142 - File Status for File 9_5.txt is :CREATED
+  2023-07-12 13:30:43 INFO  S3Backup:82 - key: Central Data/File 9_5.txt
+  2023-07-12 13:30:43 INFO  S3Backup:83 - path: D:\Central Data\File 9_5.txt
+  2023-07-12 13:30:43 INFO  S3Backup:108 - D:\Central Data\File 9_5.txt
+  2023-07-12 13:30:43 INFO  S3Backup:114 - Uploaded file: D:\Central Data\File 9_5.txt
+  2023-07-12 13:30:43 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 9_5.txt
+  2023-07-12 13:30:43 INFO  S3Backup:142 - File Status for File 9_6.txt is :CREATED
+  2023-07-12 13:30:43 INFO  S3Backup:82 - key: Central Data/File 9_6.txt
+  2023-07-12 13:30:43 INFO  S3Backup:83 - path: D:\Central Data\File 9_6.txt
+  2023-07-12 13:30:43 INFO  S3Backup:108 - D:\Central Data\File 9_6.txt
+  2023-07-12 13:30:43 INFO  S3Backup:114 - Uploaded file: D:\Central Data\File 9_6.txt
+  2023-07-12 13:30:43 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 9_6.txt
+  2023-07-12 13:30:43 INFO  S3Backup:142 - File Status for File 9_7.txt is :CREATED
+  2023-07-12 13:30:43 INFO  S3Backup:82 - key: Central Data/File 9_7.txt
+  2023-07-12 13:30:43 INFO  S3Backup:83 - path: D:\Central Data\File 9_7.txt
+  2023-07-12 13:30:43 INFO  S3Backup:108 - D:\Central Data\File 9_7.txt
+  2023-07-12 13:30:43 INFO  S3Backup:114 - Uploaded file: D:\Central Data\File 9_7.txt
+  2023-07-12 13:30:43 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 9_7.txt
+  2023-07-12 13:30:43 INFO  S3Backup:145 - File Status for File 9_8.txt is :MODIFIED
+  2023-07-12 13:30:43 INFO  S3Backup:82 - key: Central Data/File 9_8.txt
+  2023-07-12 13:30:43 INFO  S3Backup:83 - path: D:\Central Data\File 9_8.txt
+  2023-07-12 13:30:43 INFO  S3Backup:108 - D:\Central Data\File 9_8.txt
+  2023-07-12 13:30:43 INFO  S3Backup:114 - Uploaded file: D:\Central Data\File 9_8.txt
+  2023-07-12 13:30:43 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 9_8.txt
+  2023-07-12 13:30:43 INFO  S3Backup:142 - File Status for File 9_9.txt is :CREATED
+  2023-07-12 13:30:43 INFO  S3Backup:82 - key: Central Data/File 9_9.txt
+  2023-07-12 13:30:43 INFO  S3Backup:83 - path: D:\Central Data\File 9_9.txt
+  2023-07-12 13:30:43 INFO  S3Backup:108 - D:\Central Data\File 9_9.txt
+  2023-07-12 13:30:43 INFO  S3Backup:114 - Uploaded file: D:\Central Data\File 9_9.txt
+  2023-07-12 13:30:43 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 9_9.txt
+  2023-07-12 13:30:43 INFO  S3Backup:93 - Backup completed successfully.........................
+  2023-07-12 13:30:43 INFO  FileUploadDetailsService:58 - [FileBackupDetails(fileName=File 8_1.txt, filePathOnLocalDrive=D:\Central Data\File 8_1.txt, filePathInS3=Central Data/File 8_1.txt, uploadDate=12-Jul-2023 01:30:43 pm, uploadStatus=SUCCESS, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 8_2.txt, filePathOnLocalDrive=D:\Central Data\File 8_2.txt, filePathInS3=Central Data/File 8_2.txt, uploadDate=12-Jul-2023 01:30:43 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=File 8_3.txt, filePathOnLocalDrive=D:\Central Data\File 8_3.txt, filePathInS3=Central Data/File 8_3.txt, uploadDate=12-Jul-2023 01:30:43 pm, uploadStatus=SUCCESS, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 8_4.txt, filePathOnLocalDrive=D:\Central Data\File 8_4.txt, filePathInS3=Central Data/File 8_4.txt, uploadDate=12-Jul-2023 01:30:43 pm, uploadStatus=SUCCESS, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 8_5.txt, filePathOnLocalDrive=D:\Central Data\File 8_5.txt, filePathInS3=Central Data/File 8_5.txt, uploadDate=12-Jul-2023 01:30:43 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=File 9_1.txt, filePathOnLocalDrive=D:\Central Data\File 9_1.txt, filePathInS3=Central Data/File 9_1.txt, uploadDate=12-Jul-2023 01:30:43 pm, uploadStatus=SUCCESS, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 9_10.txt, filePathOnLocalDrive=D:\Central Data\File 9_10.txt, filePathInS3=Central Data/File 9_10.txt, uploadDate=12-Jul-2023 01:30:43 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=18.00 B), FileBackupDetails(fileName=File 9_2.txt, filePathOnLocalDrive=D:\Central Data\File 9_2.txt, filePathInS3=Central Data/File 9_2.txt, uploadDate=12-Jul-2023 01:30:43 pm, uploadStatus=SUCCESS, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 9_3.txt, filePathOnLocalDrive=D:\Central Data\File 9_3.txt, filePathInS3=Central Data/File 9_3.txt, uploadDate=12-Jul-2023 01:30:43 pm, uploadStatus=SUCCESS, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 9_4.txt, filePathOnLocalDrive=D:\Central Data\File 9_4.txt, filePathInS3=Central Data/File 9_4.txt, uploadDate=12-Jul-2023 01:30:43 pm, uploadStatus=SUCCESS, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 9_5.txt, filePathOnLocalDrive=D:\Central Data\File 9_5.txt, filePathInS3=Central Data/File 9_5.txt, uploadDate=12-Jul-2023 01:30:43 pm, uploadStatus=SUCCESS, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 9_6.txt, filePathOnLocalDrive=D:\Central Data\File 9_6.txt, filePathInS3=Central Data/File 9_6.txt, uploadDate=12-Jul-2023 01:30:43 pm, uploadStatus=SUCCESS, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 9_7.txt, filePathOnLocalDrive=D:\Central Data\File 9_7.txt, filePathInS3=Central Data/File 9_7.txt, uploadDate=12-Jul-2023 01:30:43 pm, uploadStatus=SUCCESS, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 9_8.txt, filePathOnLocalDrive=D:\Central Data\File 9_8.txt, filePathInS3=Central Data/File 9_8.txt, uploadDate=12-Jul-2023 01:30:43 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=File 9_9.txt, filePathOnLocalDrive=D:\Central Data\File 9_9.txt, filePathInS3=Central Data/File 9_9.txt, uploadDate=12-Jul-2023 01:30:43 pm, uploadStatus=SUCCESS, fileStatus=CREATED, fileSize=17.00 B)]
+  2023-07-12 13:30:43 INFO  FileUploadDetailsService:96 - File Created : JULY_2023.csv, at path :D:\Vyom Projects\DR setup AWS S3\FileBackupToAWSS3\JULY_2023.csv
+  2023-07-12 13:30:43 INFO  S3Backup:162 - Trigger to lambda function....................
+  2023-07-12 13:30:43 INFO  S3LambdaTrigger:25 - Lambda Trigger started..........
+  2023-07-12 13:30:43 INFO  S3LambdaTrigger:30 - Lambda function name : Monthly-Report-Generation-Function
+  2023-07-12 13:30:44 INFO  S3LambdaTrigger:39 - Lambda invoked...........
+  2023-07-12 13:30:56 INFO  S3LambdaTrigger:42 - Lambda function output : {"statusCode": 200, "body": "Cost report and Usage Report generated and stored in S3 bucket: vyomlabsbucket"}
+  2023-07-12 13:30:56 INFO  S3Backup:165 - Fetching cost report file....................
+  2023-07-12 13:30:57 INFO  S3Backup:167 - Fetching usage report file....................
+  2023-07-12 13:30:57 INFO  EmailService:50 - preparing to send message ...
+  2023-07-12 18:37:33 INFO  S3Backup:93 - Fresh differential files uploading.......
+  2023-07-12 18:37:33 INFO  S3Backup:95 - backupFolderPath :D:/Central Data
+  2023-07-12 18:37:33 INFO  S3Backup:176 - File Status for 5.iso.zip is :MODIFIED
+  2023-07-12 18:37:33 INFO  S3Backup:102 - key: Central Data/5.iso.zip
+  2023-07-12 18:37:33 INFO  S3Backup:103 - path: D:\Central Data\5.iso.zip
+  2023-07-12 18:37:33 INFO  S3Backup:139 - D:\Central Data\5.iso.zip
+  2023-07-12 18:37:34 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\5.iso.zip
+  2023-07-12 18:37:34 INFO  S3Backup:111 - Backup completed successfully.........................
+  2023-07-12 18:37:34 INFO  FileUploadDetailsService:58 - [FileBackupDetails(fileName="File 8_1.txt", filePathOnLocalDrive="D:\Central Data\File 8_1.txt", filePathInS3="Central Data/File 8_1.txt", uploadDate="12-07-2023 13:30", uploadStatus="SUCCESS", fileStatus="CREATED", fileSize="17.00 B"), FileBackupDetails(fileName="File 8_2.txt", filePathOnLocalDrive="D:\Central Data\File 8_2.txt", filePathInS3="Central Data/File 8_2.txt", uploadDate="12-07-2023 13:30", uploadStatus="SUCCESS", fileStatus="MODIFIED", fileSize="17.00 B"), FileBackupDetails(fileName="File 8_3.txt", filePathOnLocalDrive="D:\Central Data\File 8_3.txt", filePathInS3="Central Data/File 8_3.txt", uploadDate="12-07-2023 13:30", uploadStatus="SUCCESS", fileStatus="CREATED", fileSize="17.00 B"), FileBackupDetails(fileName="File 8_4.txt", filePathOnLocalDrive="D:\Central Data\File 8_4.txt", filePathInS3="Central Data/File 8_4.txt", uploadDate="12-07-2023 13:30", uploadStatus="SUCCESS", fileStatus="CREATED", fileSize="17.00 B"), FileBackupDetails(fileName="File 8_5.txt", filePathOnLocalDrive="D:\Central Data\File 8_5.txt", filePathInS3="Central Data/File 8_5.txt", uploadDate="12-07-2023 13:30", uploadStatus="SUCCESS", fileStatus="MODIFIED", fileSize="17.00 B"), FileBackupDetails(fileName="File 9_1.txt", filePathOnLocalDrive="D:\Central Data\File 9_1.txt", filePathInS3="Central Data/File 9_1.txt", uploadDate="12-07-2023 13:30", uploadStatus="SUCCESS", fileStatus="CREATED", fileSize="17.00 B"), FileBackupDetails(fileName="File 9_10.txt", filePathOnLocalDrive="D:\Central Data\File 9_10.txt", filePathInS3="Central Data/File 9_10.txt", uploadDate="12-07-2023 13:30", uploadStatus="SUCCESS", fileStatus="MODIFIED", fileSize="18.00 B"), FileBackupDetails(fileName="File 9_2.txt", filePathOnLocalDrive="D:\Central Data\File 9_2.txt", filePathInS3="Central Data/File 9_2.txt", uploadDate="12-07-2023 13:30", uploadStatus="SUCCESS", fileStatus="CREATED", fileSize="17.00 B"), FileBackupDetails(fileName="File 9_3.txt", filePathOnLocalDrive="D:\Central Data\File 9_3.txt", filePathInS3="Central Data/File 9_3.txt", uploadDate="12-07-2023 13:30", uploadStatus="SUCCESS", fileStatus="CREATED", fileSize="17.00 B"), FileBackupDetails(fileName="File 9_4.txt", filePathOnLocalDrive="D:\Central Data\File 9_4.txt", filePathInS3="Central Data/File 9_4.txt", uploadDate="12-07-2023 13:30", uploadStatus="SUCCESS", fileStatus="CREATED", fileSize="17.00 B"), FileBackupDetails(fileName="File 9_5.txt", filePathOnLocalDrive="D:\Central Data\File 9_5.txt", filePathInS3="Central Data/File 9_5.txt", uploadDate="12-07-2023 13:30", uploadStatus="SUCCESS", fileStatus="CREATED", fileSize="17.00 B"), FileBackupDetails(fileName="File 9_6.txt", filePathOnLocalDrive="D:\Central Data\File 9_6.txt", filePathInS3="Central Data/File 9_6.txt", uploadDate="12-07-2023 13:30", uploadStatus="SUCCESS", fileStatus="CREATED", fileSize="17.00 B"), FileBackupDetails(fileName="File 9_7.txt", filePathOnLocalDrive="D:\Central Data\File 9_7.txt", filePathInS3="Central Data/File 9_7.txt", uploadDate="12-07-2023 13:30", uploadStatus="SUCCESS", fileStatus="CREATED", fileSize="17.00 B"), FileBackupDetails(fileName="File 9_8.txt", filePathOnLocalDrive="D:\Central Data\File 9_8.txt", filePathInS3="Central Data/File 9_8.txt", uploadDate="12-07-2023 13:30", uploadStatus="SUCCESS", fileStatus="MODIFIED", fileSize="17.00 B"), FileBackupDetails(fileName="File 9_9.txt", filePathOnLocalDrive="D:\Central Data\File 9_9.txt", filePathInS3="Central Data/File 9_9.txt", uploadDate="12-07-2023 13:30", uploadStatus="SUCCESS", fileStatus="CREATED", fileSize="17.00 B"), FileBackupDetails(fileName="5.iso.zip", filePathOnLocalDrive="D:\Central Data\5.iso.zip", filePathInS3="Central Data/5.iso.zip", uploadDate="12-Jul-2023 06:36:15 pm", uploadStatus="FAILED", fileStatus="MODIFIED", fileSize="5.95 GB"), FileBackupDetails(fileName=5.iso.zip, filePathOnLocalDrive=D:\Central Data\5.iso.zip, filePathInS3=Central Data/5.iso.zip, uploadDate=12-Jul-2023 06:37:34 pm, uploadStatus=FAILED, fileStatus=MODIFIED, fileSize=5.95 GB)]
+  2023-07-12 18:37:34 INFO  FileUploadDetailsService:99 - File already exists : JULY_2023.csv
+ at path:D:\Vyom Projects\DR setup AWS S3\FileBackupToAWSS3\JULY_2023.csv
+  2023-07-12 18:37:34 INFO  S3Backup:193 - Trigger to lambda function....................
+  2023-07-12 18:37:34 INFO  S3LambdaTrigger:25 - Lambda Trigger started..........
+  2023-07-12 18:37:34 INFO  S3LambdaTrigger:30 - Lambda function name : Monthly-Report-Generation-Function
+  2023-07-12 18:37:34 INFO  S3LambdaTrigger:39 - Lambda invoked...........
+  2023-07-12 18:37:43 INFO  S3LambdaTrigger:42 - Lambda function output : {"statusCode": 200, "body": "Cost report and Usage Report generated and stored in S3 bucket: vyomlabsbucket"}
+  2023-07-12 18:37:43 INFO  S3Backup:196 - Fetching cost report file....................
+  2023-07-12 18:37:43 INFO  S3Backup:198 - Fetching usage report file....................
+  2023-07-12 18:37:43 INFO  EmailService:50 - preparing to send message ...
+  2023-07-12 18:41:52 INFO  S3Backup:93 - Fresh differential files uploading.......
+  2023-07-12 18:41:52 INFO  S3Backup:95 - backupFolderPath :D:/Central Data
+  2023-07-12 18:41:52 INFO  S3Backup:183 - File Status for 5.iso.zip is :MODIFIED
+  2023-07-12 18:41:52 INFO  S3Backup:102 - key: Central Data/5.iso.zip
+  2023-07-12 18:41:52 INFO  S3Backup:103 - path: D:\Central Data\5.iso.zip
+  2023-07-12 18:41:52 INFO  S3Backup:107 - Initiating multipart upload...............
+  2023-07-12 18:41:52 INFO  S3Backup:138 - Multipart Upload Started........
+  2023-07-12 18:41:52 INFO  LoggingTransferListener:43 - Transfer initiated...
+  2023-07-12 18:41:52 INFO  LoggingTransferListener:43 - |                    | 0.0%
+  2023-07-12 18:41:54 INFO  LoggingTransferListener:43 - |=                   | 5.2%
+  2023-07-12 18:41:54 INFO  LoggingTransferListener:43 - |==                  | 10.2%
+  2023-07-12 18:41:55 INFO  LoggingTransferListener:43 - |===                 | 15.2%
+  2023-07-12 18:41:55 INFO  LoggingTransferListener:43 - |====                | 20.2%
+  2023-07-12 18:41:56 INFO  LoggingTransferListener:43 - |=====               | 25.2%
+  2023-07-12 18:41:56 INFO  LoggingTransferListener:43 - |======              | 30.2%
+  2023-07-12 18:41:57 INFO  LoggingTransferListener:43 - |=======             | 35.2%
+  2023-07-12 18:41:57 INFO  LoggingTransferListener:43 - |========            | 40.2%
+  2023-07-12 18:41:58 INFO  LoggingTransferListener:43 - |=========           | 45.1%
+  2023-07-12 18:41:59 INFO  LoggingTransferListener:43 - |==========          | 50.1%
+  2023-07-12 18:42:00 INFO  LoggingTransferListener:43 - |===========         | 55.1%
+  2023-07-12 18:42:01 INFO  LoggingTransferListener:43 - |============        | 60.1%
+  2023-07-12 18:42:37 WARN  LoggingTransferListener:117 - Transfer failed.
+  software.amazon.awssdk.services.s3.model.S3Exception: Your socket connection to the server was not read from or written to within the timeout period. Idle connections will be closed. (Service: S3, Status Code: 400, Request ID: 4V6WP72D4FGKK2NA, Extended Request ID: MwsUA4zonaRVik236wMlejpnW2kOePcIlxfijuOMoQVJMWVkjFlt1IagRDb8OlECl1CZfk0HGbNYkUg/SrpgYg==)
+	at software.amazon.awssdk.protocols.xml.internal.unmarshall.AwsXmlPredicatedResponseHandler.handleErrorResponse(AwsXmlPredicatedResponseHandler.java:156)
+	at software.amazon.awssdk.protocols.xml.internal.unmarshall.AwsXmlPredicatedResponseHandler.handleResponse(AwsXmlPredicatedResponseHandler.java:108)
+	at software.amazon.awssdk.protocols.xml.internal.unmarshall.AwsXmlPredicatedResponseHandler.handle(AwsXmlPredicatedResponseHandler.java:85)
+	at software.amazon.awssdk.protocols.xml.internal.unmarshall.AwsXmlPredicatedResponseHandler.handle(AwsXmlPredicatedResponseHandler.java:43)
+	at software.amazon.awssdk.core.internal.handler.BaseClientHandler.lambda$successTransformationResponseHandler$7(BaseClientHandler.java:270)
+	at software.amazon.awssdk.core.internal.http.async.AsyncResponseHandler.lambda$prepare$0(AsyncResponseHandler.java:89)
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1150)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2147)
+	at software.amazon.awssdk.core.internal.http.async.AsyncResponseHandler$BaosSubscriber.onComplete(AsyncResponseHandler.java:132)
+	at software.amazon.awssdk.utils.async.SimplePublisher.doProcessQueue(SimplePublisher.java:275)
+	at software.amazon.awssdk.utils.async.SimplePublisher.processEventQueue(SimplePublisher.java:224)
+	at software.amazon.awssdk.utils.async.SimplePublisher.complete(SimplePublisher.java:157)
+	at java.base/java.util.concurrent.CompletableFuture.uniRunNow(CompletableFuture.java:819)
+	at java.base/java.util.concurrent.CompletableFuture.uniRunStage(CompletableFuture.java:803)
+	at java.base/java.util.concurrent.CompletableFuture.thenRun(CompletableFuture.java:2195)
+	at software.amazon.awssdk.services.s3.internal.crt.S3CrtResponseHandlerAdapter.onErrorResponseComplete(S3CrtResponseHandlerAdapter.java:135)
+	at software.amazon.awssdk.services.s3.internal.crt.S3CrtResponseHandlerAdapter.handleError(S3CrtResponseHandlerAdapter.java:124)
+	at software.amazon.awssdk.services.s3.internal.crt.S3CrtResponseHandlerAdapter.onFinished(S3CrtResponseHandlerAdapter.java:93)
+	at software.amazon.awssdk.crt.s3.S3MetaRequestResponseHandlerNativeAdapter.onFinished(S3MetaRequestResponseHandlerNativeAdapter.java:24)
+2023-07-12 18:42:37 INFO  S3Backup:200 - Trigger to lambda function....................
+  2023-07-12 18:42:37 INFO  S3LambdaTrigger:25 - Lambda Trigger started..........
+  2023-07-12 18:42:37 INFO  S3LambdaTrigger:30 - Lambda function name : Monthly-Report-Generation-Function
+  2023-07-12 18:42:38 INFO  S3LambdaTrigger:39 - Lambda invoked...........
+  2023-07-12 18:42:45 INFO  S3LambdaTrigger:42 - Lambda function output : {"statusCode": 200, "body": "Cost report and Usage Report generated and stored in S3 bucket: vyomlabsbucket"}
+  2023-07-12 18:42:45 INFO  S3Backup:203 - Fetching cost report file....................
+  2023-07-12 18:42:46 INFO  S3Backup:205 - Fetching usage report file....................
+  2023-07-12 18:42:46 INFO  EmailService:50 - preparing to send message ...
+  2023-07-12 18:59:52 INFO  S3Backup:93 - Fresh differential files uploading.......
+  2023-07-12 18:59:52 INFO  S3Backup:95 - backupFolderPath :D:/Central Data
+  2023-07-12 18:59:52 INFO  S3Backup:183 - File Status for 5.iso.zip is :MODIFIED
+  2023-07-12 18:59:52 INFO  S3Backup:102 - key: Central Data/5.iso.zip
+  2023-07-12 18:59:52 INFO  S3Backup:103 - path: D:\Central Data\5.iso.zip
+  2023-07-12 18:59:52 INFO  S3Backup:107 - Initiating multipart upload...............
+  2023-07-12 18:59:52 INFO  S3Backup:138 - Multipart Upload Started........
+  2023-07-12 18:59:52 INFO  LoggingTransferListener:43 - Transfer initiated...
+  2023-07-12 18:59:52 INFO  LoggingTransferListener:43 - |                    | 0.0%
+  2023-07-12 18:59:53 INFO  LoggingTransferListener:43 - |=                   | 5.2%
+  2023-07-12 18:59:53 INFO  LoggingTransferListener:43 - |==                  | 10.2%
+  2023-07-12 18:59:54 INFO  LoggingTransferListener:43 - |===                 | 15.2%
+  2023-07-12 18:59:54 INFO  LoggingTransferListener:43 - |====                | 20.2%
+  2023-07-12 18:59:55 INFO  LoggingTransferListener:43 - |=====               | 25.2%
+  2023-07-12 18:59:55 INFO  LoggingTransferListener:43 - |======              | 30.2%
+  2023-07-12 18:59:56 INFO  LoggingTransferListener:43 - |=======             | 35.2%
+  2023-07-12 18:59:56 INFO  LoggingTransferListener:43 - |========            | 40.2%
+  2023-07-12 18:59:57 INFO  LoggingTransferListener:43 - |=========           | 45.1%
+  2023-07-12 18:59:57 INFO  LoggingTransferListener:43 - |==========          | 50.1%
+  2023-07-12 18:59:58 INFO  LoggingTransferListener:43 - |===========         | 55.1%
+  2023-07-12 18:59:58 INFO  LoggingTransferListener:43 - |============        | 60.1%
+  2023-07-12 18:59:59 INFO  LoggingTransferListener:43 - |=============       | 65.1%
+  2023-07-12 18:59:59 INFO  LoggingTransferListener:43 - |==============      | 70.1%
+  2023-07-12 19:00:00 INFO  LoggingTransferListener:43 - |===============     | 75.1%
+  2023-07-12 19:00:01 INFO  LoggingTransferListener:43 - |================    | 80.1%
+  2023-07-12 19:00:02 INFO  LoggingTransferListener:43 - |=================   | 85.1%
+  2023-07-12 19:00:03 INFO  LoggingTransferListener:43 - |==================  | 90.1%
+  2023-07-12 19:00:04 INFO  LoggingTransferListener:43 - |=================== | 95.1%
+  2023-07-12 19:00:04 INFO  LoggingTransferListener:43 - |====================| 100.0%
+  2023-07-12 19:01:39 WARN  LoggingTransferListener:117 - Transfer failed.
+  software.amazon.awssdk.services.s3.model.S3Exception: Your socket connection to the server was not read from or written to within the timeout period. Idle connections will be closed. (Service: S3, Status Code: 400, Request ID: 1622H01QPBG48RY3, Extended Request ID: lrwTokvEf+iPplZqAxsDIx9DH/Jzoo8b6EHewPgqw9BY2AuEAFIjLS6N/XOognvbHFIvLwDEP3A=)
+	at software.amazon.awssdk.protocols.xml.internal.unmarshall.AwsXmlPredicatedResponseHandler.handleErrorResponse(AwsXmlPredicatedResponseHandler.java:156)
+	at software.amazon.awssdk.protocols.xml.internal.unmarshall.AwsXmlPredicatedResponseHandler.handleResponse(AwsXmlPredicatedResponseHandler.java:108)
+	at software.amazon.awssdk.protocols.xml.internal.unmarshall.AwsXmlPredicatedResponseHandler.handle(AwsXmlPredicatedResponseHandler.java:85)
+	at software.amazon.awssdk.protocols.xml.internal.unmarshall.AwsXmlPredicatedResponseHandler.handle(AwsXmlPredicatedResponseHandler.java:43)
+	at software.amazon.awssdk.core.internal.handler.BaseClientHandler.lambda$successTransformationResponseHandler$7(BaseClientHandler.java:270)
+	at software.amazon.awssdk.core.internal.http.async.AsyncResponseHandler.lambda$prepare$0(AsyncResponseHandler.java:89)
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1150)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2147)
+	at software.amazon.awssdk.core.internal.http.async.AsyncResponseHandler$BaosSubscriber.onComplete(AsyncResponseHandler.java:132)
+	at software.amazon.awssdk.utils.async.SimplePublisher.doProcessQueue(SimplePublisher.java:275)
+	at software.amazon.awssdk.utils.async.SimplePublisher.processEventQueue(SimplePublisher.java:224)
+	at software.amazon.awssdk.utils.async.SimplePublisher.complete(SimplePublisher.java:157)
+	at java.base/java.util.concurrent.CompletableFuture.uniRunNow(CompletableFuture.java:819)
+	at java.base/java.util.concurrent.CompletableFuture.uniRunStage(CompletableFuture.java:803)
+	at java.base/java.util.concurrent.CompletableFuture.thenRun(CompletableFuture.java:2195)
+	at software.amazon.awssdk.services.s3.internal.crt.S3CrtResponseHandlerAdapter.onErrorResponseComplete(S3CrtResponseHandlerAdapter.java:135)
+	at software.amazon.awssdk.services.s3.internal.crt.S3CrtResponseHandlerAdapter.handleError(S3CrtResponseHandlerAdapter.java:124)
+	at software.amazon.awssdk.services.s3.internal.crt.S3CrtResponseHandlerAdapter.onFinished(S3CrtResponseHandlerAdapter.java:93)
+	at software.amazon.awssdk.crt.s3.S3MetaRequestResponseHandlerNativeAdapter.onFinished(S3MetaRequestResponseHandlerNativeAdapter.java:24)
+2023-07-12 19:01:39 INFO  S3Backup:200 - Trigger to lambda function....................
+  2023-07-12 19:01:39 INFO  S3LambdaTrigger:25 - Lambda Trigger started..........
+  2023-07-12 19:01:39 INFO  S3LambdaTrigger:30 - Lambda function name : Monthly-Report-Generation-Function
+  2023-07-12 19:01:39 INFO  S3LambdaTrigger:39 - Lambda invoked...........
+  2023-07-12 19:01:54 INFO  S3LambdaTrigger:42 - Lambda function output : {"statusCode": 200, "body": "Cost report and Usage Report generated and stored in S3 bucket: vyomlabsbucket"}
+  2023-07-12 19:01:54 INFO  S3Backup:203 - Fetching cost report file....................
+  2023-07-12 19:01:54 INFO  S3Backup:205 - Fetching usage report file....................
+  2023-07-12 19:01:54 INFO  EmailService:50 - preparing to send message ...
+  2023-07-13 13:20:22 INFO  S3Backup:70 - Fresh differential files uploading.......
+  2023-07-13 13:20:22 INFO  S3Backup:72 - backupFolderPath :D:/Central Data
+  2023-07-13 13:20:22 INFO  S3Backup:168 - File Status for 5.iso.zip is :MODIFIED
+  2023-07-13 13:20:22 INFO  S3Backup:79 - key: Central Data/5.iso.zip
+  2023-07-13 13:20:22 INFO  S3Backup:80 - path: D:\Central Data\5.iso.zip
+  2023-07-13 13:20:22 INFO  S3Backup:84 - Initiating multipart upload...............
+  2023-07-13 13:20:22 INFO  S3Backup:119 - Multipart upload started for file : 5.iso.zip
+  2023-07-13 13:23:36 ERROR S3Backup:125 - Error occured during Multipart upload.....
+  2023-07-13 13:23:36 INFO  S3Backup:165 - File Status for File 10_1.txt is :CREATED
+  2023-07-13 13:23:36 INFO  S3Backup:79 - key: Central Data/File 10_1.txt
+  2023-07-13 13:23:36 INFO  S3Backup:80 - path: D:\Central Data\File 10_1.txt
+  2023-07-13 13:23:36 INFO  S3Backup:132 - D:\Central Data\File 10_1.txt
+  2023-07-13 13:23:36 WARN  Base64:113 - JAXB is unavailable. Will fallback to SDK implementation which may be less performant.If you are using Java 9+, you will need to include javax.xml.bind:jaxb-api as a dependency.
+  2023-07-13 13:23:36 INFO  S3Backup:138 - Uploaded file: D:\Central Data\File 10_1.txt
+  2023-07-13 13:23:36 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 10_1.txt
+  2023-07-13 13:23:36 INFO  S3Backup:168 - File Status for File 10_10.txt is :MODIFIED
+  2023-07-13 13:23:36 INFO  S3Backup:79 - key: Central Data/File 10_10.txt
+  2023-07-13 13:23:36 INFO  S3Backup:80 - path: D:\Central Data\File 10_10.txt
+  2023-07-13 13:23:36 INFO  S3Backup:132 - D:\Central Data\File 10_10.txt
+  2023-07-13 13:23:36 INFO  S3Backup:138 - Uploaded file: D:\Central Data\File 10_10.txt
+  2023-07-13 13:23:36 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 10_10.txt
+  2023-07-13 13:23:36 INFO  S3Backup:165 - File Status for File 10_2.txt is :CREATED
+  2023-07-13 13:23:36 INFO  S3Backup:79 - key: Central Data/File 10_2.txt
+  2023-07-13 13:23:36 INFO  S3Backup:80 - path: D:\Central Data\File 10_2.txt
+  2023-07-13 13:23:36 INFO  S3Backup:132 - D:\Central Data\File 10_2.txt
+  2023-07-13 13:23:37 INFO  S3Backup:138 - Uploaded file: D:\Central Data\File 10_2.txt
+  2023-07-13 13:23:37 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 10_2.txt
+  2023-07-13 13:23:37 INFO  S3Backup:165 - File Status for File 10_3.txt is :CREATED
+  2023-07-13 13:23:37 INFO  S3Backup:79 - key: Central Data/File 10_3.txt
+  2023-07-13 13:23:37 INFO  S3Backup:80 - path: D:\Central Data\File 10_3.txt
+  2023-07-13 13:23:37 INFO  S3Backup:132 - D:\Central Data\File 10_3.txt
+  2023-07-13 13:23:37 INFO  S3Backup:138 - Uploaded file: D:\Central Data\File 10_3.txt
+  2023-07-13 13:23:37 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 10_3.txt
+  2023-07-13 13:23:37 INFO  S3Backup:165 - File Status for File 10_4.txt is :CREATED
+  2023-07-13 13:23:37 INFO  S3Backup:79 - key: Central Data/File 10_4.txt
+  2023-07-13 13:23:37 INFO  S3Backup:80 - path: D:\Central Data\File 10_4.txt
+  2023-07-13 13:23:37 INFO  S3Backup:132 - D:\Central Data\File 10_4.txt
+  2023-07-13 13:23:37 INFO  S3Backup:138 - Uploaded file: D:\Central Data\File 10_4.txt
+  2023-07-13 13:23:37 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 10_4.txt
+  2023-07-13 13:23:37 INFO  S3Backup:165 - File Status for File 10_5.txt is :CREATED
+  2023-07-13 13:23:37 INFO  S3Backup:79 - key: Central Data/File 10_5.txt
+  2023-07-13 13:23:37 INFO  S3Backup:80 - path: D:\Central Data\File 10_5.txt
+  2023-07-13 13:23:37 INFO  S3Backup:132 - D:\Central Data\File 10_5.txt
+  2023-07-13 13:23:37 INFO  S3Backup:138 - Uploaded file: D:\Central Data\File 10_5.txt
+  2023-07-13 13:23:37 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 10_5.txt
+  2023-07-13 13:23:37 INFO  S3Backup:168 - File Status for File 10_6.txt is :MODIFIED
+  2023-07-13 13:23:37 INFO  S3Backup:79 - key: Central Data/File 10_6.txt
+  2023-07-13 13:23:37 INFO  S3Backup:80 - path: D:\Central Data\File 10_6.txt
+  2023-07-13 13:23:37 INFO  S3Backup:132 - D:\Central Data\File 10_6.txt
+  2023-07-13 13:23:37 INFO  S3Backup:138 - Uploaded file: D:\Central Data\File 10_6.txt
+  2023-07-13 13:23:37 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 10_6.txt
+  2023-07-13 13:23:37 INFO  S3Backup:165 - File Status for File 10_7.txt is :CREATED
+  2023-07-13 13:23:37 INFO  S3Backup:79 - key: Central Data/File 10_7.txt
+  2023-07-13 13:23:37 INFO  S3Backup:80 - path: D:\Central Data\File 10_7.txt
+  2023-07-13 13:23:37 INFO  S3Backup:132 - D:\Central Data\File 10_7.txt
+  2023-07-13 13:23:38 INFO  S3Backup:138 - Uploaded file: D:\Central Data\File 10_7.txt
+  2023-07-13 13:23:38 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 10_7.txt
+  2023-07-13 13:23:38 INFO  S3Backup:165 - File Status for File 10_8.txt is :CREATED
+  2023-07-13 13:23:38 INFO  S3Backup:79 - key: Central Data/File 10_8.txt
+  2023-07-13 13:23:38 INFO  S3Backup:80 - path: D:\Central Data\File 10_8.txt
+  2023-07-13 13:23:38 INFO  S3Backup:132 - D:\Central Data\File 10_8.txt
+  2023-07-13 13:23:38 INFO  S3Backup:138 - Uploaded file: D:\Central Data\File 10_8.txt
+  2023-07-13 13:23:38 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 10_8.txt
+  2023-07-13 13:23:38 INFO  S3Backup:165 - File Status for File 10_9.txt is :CREATED
+  2023-07-13 13:23:38 INFO  S3Backup:79 - key: Central Data/File 10_9.txt
+  2023-07-13 13:23:38 INFO  S3Backup:80 - path: D:\Central Data\File 10_9.txt
+  2023-07-13 13:23:38 INFO  S3Backup:132 - D:\Central Data\File 10_9.txt
+  2023-07-13 13:23:38 INFO  S3Backup:138 - Uploaded file: D:\Central Data\File 10_9.txt
+  2023-07-13 13:23:38 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 10_9.txt
+  2023-07-13 13:23:38 INFO  S3Backup:95 - Backup completed successfully.........................
+  2023-07-13 13:23:38 INFO  FileUploadDetailsService:58 - [FileBackupDetails(fileName=File 10_1.txt, filePathOnLocalDrive=D:\Central Data\File 10_1.txt, filePathInS3=Central Data/File 10_1.txt, uploadDate=13-Jul-2023 01:23:36 pm, uploadStatus=SUCCESS, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 10_10.txt, filePathOnLocalDrive=D:\Central Data\File 10_10.txt, filePathInS3=Central Data/File 10_10.txt, uploadDate=13-Jul-2023 01:23:36 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=18.00 B), FileBackupDetails(fileName=File 10_2.txt, filePathOnLocalDrive=D:\Central Data\File 10_2.txt, filePathInS3=Central Data/File 10_2.txt, uploadDate=13-Jul-2023 01:23:37 pm, uploadStatus=SUCCESS, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 10_3.txt, filePathOnLocalDrive=D:\Central Data\File 10_3.txt, filePathInS3=Central Data/File 10_3.txt, uploadDate=13-Jul-2023 01:23:37 pm, uploadStatus=SUCCESS, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 10_4.txt, filePathOnLocalDrive=D:\Central Data\File 10_4.txt, filePathInS3=Central Data/File 10_4.txt, uploadDate=13-Jul-2023 01:23:37 pm, uploadStatus=SUCCESS, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 10_5.txt, filePathOnLocalDrive=D:\Central Data\File 10_5.txt, filePathInS3=Central Data/File 10_5.txt, uploadDate=13-Jul-2023 01:23:37 pm, uploadStatus=SUCCESS, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 10_6.txt, filePathOnLocalDrive=D:\Central Data\File 10_6.txt, filePathInS3=Central Data/File 10_6.txt, uploadDate=13-Jul-2023 01:23:37 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=File 10_7.txt, filePathOnLocalDrive=D:\Central Data\File 10_7.txt, filePathInS3=Central Data/File 10_7.txt, uploadDate=13-Jul-2023 01:23:38 pm, uploadStatus=SUCCESS, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 10_8.txt, filePathOnLocalDrive=D:\Central Data\File 10_8.txt, filePathInS3=Central Data/File 10_8.txt, uploadDate=13-Jul-2023 01:23:38 pm, uploadStatus=SUCCESS, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 10_9.txt, filePathOnLocalDrive=D:\Central Data\File 10_9.txt, filePathInS3=Central Data/File 10_9.txt, uploadDate=13-Jul-2023 01:23:38 pm, uploadStatus=SUCCESS, fileStatus=CREATED, fileSize=17.00 B)]
+  2023-07-13 13:23:38 INFO  FileUploadDetailsService:96 - File Created : JULY_2023.csv, at path :D:\Vyom Projects\DR setup AWS S3\FileBackupToAWSS3\JULY_2023.csv
+  2023-07-13 13:23:38 INFO  S3Backup:185 - Trigger to lambda function....................
+  2023-07-13 13:23:38 INFO  S3LambdaTrigger:25 - Lambda Trigger started..........
+  2023-07-13 13:23:38 INFO  S3LambdaTrigger:30 - Lambda function name : Monthly-Report-Generation-Function
+  2023-07-13 13:23:38 INFO  S3LambdaTrigger:39 - Lambda invoked...........
+  2023-07-13 13:23:53 INFO  S3LambdaTrigger:42 - Lambda function output : {"statusCode": 200, "body": "Cost report and Usage Report generated and stored in S3 bucket: vyomlabsbucket"}
+  2023-07-13 13:23:53 INFO  S3Backup:188 - Fetching cost report file....................
+  2023-07-13 13:23:53 INFO  S3Backup:190 - Fetching usage report file....................
+  2023-07-13 13:23:53 INFO  EmailService:50 - preparing to send message ...
+  2023-07-13 14:46:45 INFO  S3Backup:70 - Fresh differential files uploading.......
+  2023-07-13 14:46:45 INFO  S3Backup:72 - backupFolderPath :D:/Central Data
+  2023-07-13 14:46:45 INFO  S3Backup:175 - File Status for 5.iso.zip is :MODIFIED
+  2023-07-13 14:46:45 INFO  S3Backup:79 - key: Central Data/5.iso.zip
+  2023-07-13 14:46:45 INFO  S3Backup:80 - path: D:\Central Data\5.iso.zip
+  2023-07-13 14:46:45 INFO  S3Backup:84 - Initiating multipart upload...............
+  2023-07-13 14:46:45 INFO  S3Backup:122 - Multipart upload started for file : 5.iso.zip
+  2023-07-13 14:53:29 INFO  S3Backup:124 - Multipart upload completed for file : 5.iso.zip
+  2023-07-13 14:53:29 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\5.iso.zip
+  2023-07-13 14:53:29 INFO  S3Backup:172 - File Status for File 10_1.txt is :CREATED
+  2023-07-13 14:53:29 INFO  S3Backup:79 - key: Central Data/File 10_1.txt
+  2023-07-13 14:53:29 INFO  S3Backup:80 - path: D:\Central Data\File 10_1.txt
+  2023-07-13 14:53:29 INFO  S3Backup:139 - D:\Central Data\File 10_1.txt
+  2023-07-13 14:53:29 WARN  Base64:113 - JAXB is unavailable. Will fallback to SDK implementation which may be less performant.If you are using Java 9+, you will need to include javax.xml.bind:jaxb-api as a dependency.
+  2023-07-13 14:53:29 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 10_1.txt
+  2023-07-13 14:53:29 INFO  S3Backup:175 - File Status for File 10_10.txt is :MODIFIED
+  2023-07-13 14:53:29 INFO  S3Backup:79 - key: Central Data/File 10_10.txt
+  2023-07-13 14:53:29 INFO  S3Backup:80 - path: D:\Central Data\File 10_10.txt
+  2023-07-13 14:53:29 INFO  S3Backup:139 - D:\Central Data\File 10_10.txt
+  2023-07-13 14:53:29 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 10_10.txt
+  2023-07-13 14:53:29 INFO  S3Backup:172 - File Status for File 10_2.txt is :CREATED
+  2023-07-13 14:53:29 INFO  S3Backup:79 - key: Central Data/File 10_2.txt
+  2023-07-13 14:53:29 INFO  S3Backup:80 - path: D:\Central Data\File 10_2.txt
+  2023-07-13 14:53:29 INFO  S3Backup:139 - D:\Central Data\File 10_2.txt
+  2023-07-13 14:53:29 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 10_2.txt
+  2023-07-13 14:53:29 INFO  S3Backup:172 - File Status for File 10_3.txt is :CREATED
+  2023-07-13 14:53:29 INFO  S3Backup:79 - key: Central Data/File 10_3.txt
+  2023-07-13 14:53:29 INFO  S3Backup:80 - path: D:\Central Data\File 10_3.txt
+  2023-07-13 14:53:29 INFO  S3Backup:139 - D:\Central Data\File 10_3.txt
+  2023-07-13 14:53:29 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 10_3.txt
+  2023-07-13 14:53:29 INFO  S3Backup:172 - File Status for File 10_4.txt is :CREATED
+  2023-07-13 14:53:29 INFO  S3Backup:79 - key: Central Data/File 10_4.txt
+  2023-07-13 14:53:29 INFO  S3Backup:80 - path: D:\Central Data\File 10_4.txt
+  2023-07-13 14:53:29 INFO  S3Backup:139 - D:\Central Data\File 10_4.txt
+  2023-07-13 14:53:29 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 10_4.txt
+  2023-07-13 14:53:29 INFO  S3Backup:172 - File Status for File 10_5.txt is :CREATED
+  2023-07-13 14:53:29 INFO  S3Backup:79 - key: Central Data/File 10_5.txt
+  2023-07-13 14:53:29 INFO  S3Backup:80 - path: D:\Central Data\File 10_5.txt
+  2023-07-13 14:53:29 INFO  S3Backup:139 - D:\Central Data\File 10_5.txt
+  2023-07-13 14:53:29 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 10_5.txt
+  2023-07-13 14:53:29 INFO  S3Backup:175 - File Status for File 10_6.txt is :MODIFIED
+  2023-07-13 14:53:29 INFO  S3Backup:79 - key: Central Data/File 10_6.txt
+  2023-07-13 14:53:29 INFO  S3Backup:80 - path: D:\Central Data\File 10_6.txt
+  2023-07-13 14:53:29 INFO  S3Backup:139 - D:\Central Data\File 10_6.txt
+  2023-07-13 14:53:29 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 10_6.txt
+  2023-07-13 14:53:29 INFO  S3Backup:172 - File Status for File 10_7.txt is :CREATED
+  2023-07-13 14:53:29 INFO  S3Backup:79 - key: Central Data/File 10_7.txt
+  2023-07-13 14:53:29 INFO  S3Backup:80 - path: D:\Central Data\File 10_7.txt
+  2023-07-13 14:53:29 INFO  S3Backup:139 - D:\Central Data\File 10_7.txt
+  2023-07-13 14:53:29 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 10_7.txt
+  2023-07-13 14:53:29 INFO  S3Backup:172 - File Status for File 10_8.txt is :CREATED
+  2023-07-13 14:53:29 INFO  S3Backup:79 - key: Central Data/File 10_8.txt
+  2023-07-13 14:53:29 INFO  S3Backup:80 - path: D:\Central Data\File 10_8.txt
+  2023-07-13 14:53:29 INFO  S3Backup:139 - D:\Central Data\File 10_8.txt
+  2023-07-13 14:53:29 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 10_8.txt
+  2023-07-13 14:53:29 INFO  S3Backup:172 - File Status for File 10_9.txt is :CREATED
+  2023-07-13 14:53:29 INFO  S3Backup:79 - key: Central Data/File 10_9.txt
+  2023-07-13 14:53:29 INFO  S3Backup:80 - path: D:\Central Data\File 10_9.txt
+  2023-07-13 14:53:29 INFO  S3Backup:139 - D:\Central Data\File 10_9.txt
+  2023-07-13 14:53:29 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 10_9.txt
+  2023-07-13 14:53:29 INFO  S3Backup:95 - Backup completed successfully.........................
+  2023-07-13 14:53:29 INFO  FileUploadDetailsService:58 - [FileBackupDetails(fileName=5.iso.zip, filePathOnLocalDrive=D:\Central Data\5.iso.zip, filePathInS3=Central Data/5.iso.zip, uploadDate=13-Jul-2023 02:53:29 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=5.95 GB), FileBackupDetails(fileName=File 10_1.txt, filePathOnLocalDrive=D:\Central Data\File 10_1.txt, filePathInS3=Central Data/File 10_1.txt, uploadDate=13-Jul-2023 02:53:29 pm, uploadStatus=FAILED, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 10_10.txt, filePathOnLocalDrive=D:\Central Data\File 10_10.txt, filePathInS3=Central Data/File 10_10.txt, uploadDate=13-Jul-2023 02:53:29 pm, uploadStatus=FAILED, fileStatus=MODIFIED, fileSize=18.00 B), FileBackupDetails(fileName=File 10_2.txt, filePathOnLocalDrive=D:\Central Data\File 10_2.txt, filePathInS3=Central Data/File 10_2.txt, uploadDate=13-Jul-2023 02:53:29 pm, uploadStatus=FAILED, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 10_3.txt, filePathOnLocalDrive=D:\Central Data\File 10_3.txt, filePathInS3=Central Data/File 10_3.txt, uploadDate=13-Jul-2023 02:53:29 pm, uploadStatus=FAILED, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 10_4.txt, filePathOnLocalDrive=D:\Central Data\File 10_4.txt, filePathInS3=Central Data/File 10_4.txt, uploadDate=13-Jul-2023 02:53:29 pm, uploadStatus=FAILED, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 10_5.txt, filePathOnLocalDrive=D:\Central Data\File 10_5.txt, filePathInS3=Central Data/File 10_5.txt, uploadDate=13-Jul-2023 02:53:29 pm, uploadStatus=FAILED, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 10_6.txt, filePathOnLocalDrive=D:\Central Data\File 10_6.txt, filePathInS3=Central Data/File 10_6.txt, uploadDate=13-Jul-2023 02:53:29 pm, uploadStatus=FAILED, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=File 10_7.txt, filePathOnLocalDrive=D:\Central Data\File 10_7.txt, filePathInS3=Central Data/File 10_7.txt, uploadDate=13-Jul-2023 02:53:29 pm, uploadStatus=FAILED, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 10_8.txt, filePathOnLocalDrive=D:\Central Data\File 10_8.txt, filePathInS3=Central Data/File 10_8.txt, uploadDate=13-Jul-2023 02:53:29 pm, uploadStatus=FAILED, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 10_9.txt, filePathOnLocalDrive=D:\Central Data\File 10_9.txt, filePathInS3=Central Data/File 10_9.txt, uploadDate=13-Jul-2023 02:53:29 pm, uploadStatus=FAILED, fileStatus=CREATED, fileSize=17.00 B)]
+  2023-07-13 14:53:29 INFO  FileUploadDetailsService:96 - File Created : JULY_2023.csv, at path :D:\Vyom Projects\DR setup AWS S3\FileBackupToAWSS3\JULY_2023.csv
+  2023-07-13 14:53:29 INFO  S3Backup:192 - Trigger to lambda function....................
+  2023-07-13 14:53:29 INFO  S3LambdaTrigger:25 - Lambda Trigger started..........
+  2023-07-13 14:53:29 INFO  S3LambdaTrigger:30 - Lambda function name : Monthly-Report-Generation-Function
+  2023-07-13 14:53:29 INFO  S3LambdaTrigger:39 - Lambda invoked...........
+  2023-07-13 14:53:44 INFO  S3LambdaTrigger:42 - Lambda function output : {"statusCode": 200, "body": "Cost report and Usage Report generated and stored in S3 bucket: vyomlabsbucket"}
+  2023-07-13 14:53:44 INFO  S3Backup:195 - Fetching cost report file....................
+  2023-07-13 14:53:44 INFO  S3Backup:192 - Trigger to lambda function....................
+  2023-07-13 14:53:44 INFO  S3LambdaTrigger:25 - Lambda Trigger started..........
+  2023-07-13 14:53:44 INFO  S3LambdaTrigger:30 - Lambda function name : Monthly-Report-Generation-Function
+  2023-07-13 14:53:44 INFO  S3LambdaTrigger:39 - Lambda invoked...........
+  2023-07-13 14:53:51 INFO  S3LambdaTrigger:42 - Lambda function output : {"statusCode": 200, "body": "Cost report and Usage Report generated and stored in S3 bucket: vyomlabsbucket"}
+  2023-07-13 14:53:51 INFO  S3Backup:195 - Fetching cost report file....................
+  2023-07-13 15:00:51 INFO  S3Backup:70 - Fresh differential files uploading.......
+  2023-07-13 15:00:51 INFO  S3Backup:72 - backupFolderPath :D:/Central Data
+  2023-07-13 15:00:51 INFO  S3Backup:176 - File Status for 5.iso.zip is :MODIFIED
+  2023-07-13 15:00:51 INFO  S3Backup:79 - key: Central Data/5.iso.zip
+  2023-07-13 15:00:51 INFO  S3Backup:80 - path: D:\Central Data\5.iso.zip
+  2023-07-13 15:00:51 INFO  S3Backup:84 - Initiating multipart upload...............
+  2023-07-13 15:00:51 INFO  S3Backup:122 - Multipart upload started for file : 5.iso.zip
+  2023-07-13 15:04:28 INFO  S3Backup:124 - Multipart upload completed for file : 5.iso.zip
+  2023-07-13 15:04:28 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\5.iso.zip
+  2023-07-13 15:04:28 INFO  S3Backup:173 - File Status for File 10_1.txt is :CREATED
+  2023-07-13 15:04:28 INFO  S3Backup:79 - key: Central Data/File 10_1.txt
+  2023-07-13 15:04:28 INFO  S3Backup:80 - path: D:\Central Data\File 10_1.txt
+  2023-07-13 15:04:28 INFO  S3Backup:140 - D:\Central Data\File 10_1.txt
+  2023-07-13 15:04:28 WARN  Base64:113 - JAXB is unavailable. Will fallback to SDK implementation which may be less performant.If you are using Java 9+, you will need to include javax.xml.bind:jaxb-api as a dependency.
+  2023-07-13 15:04:28 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 10_1.txt
+  2023-07-13 15:04:28 INFO  S3Backup:176 - File Status for File 10_10.txt is :MODIFIED
+  2023-07-13 15:04:28 INFO  S3Backup:79 - key: Central Data/File 10_10.txt
+  2023-07-13 15:04:28 INFO  S3Backup:80 - path: D:\Central Data\File 10_10.txt
+  2023-07-13 15:04:28 INFO  S3Backup:140 - D:\Central Data\File 10_10.txt
+  2023-07-13 15:04:28 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 10_10.txt
+  2023-07-13 15:04:28 INFO  S3Backup:173 - File Status for File 10_2.txt is :CREATED
+  2023-07-13 15:04:28 INFO  S3Backup:79 - key: Central Data/File 10_2.txt
+  2023-07-13 15:04:28 INFO  S3Backup:80 - path: D:\Central Data\File 10_2.txt
+  2023-07-13 15:04:28 INFO  S3Backup:140 - D:\Central Data\File 10_2.txt
+  2023-07-13 15:04:28 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 10_2.txt
+  2023-07-13 15:04:28 INFO  S3Backup:173 - File Status for File 10_3.txt is :CREATED
+  2023-07-13 15:04:28 INFO  S3Backup:79 - key: Central Data/File 10_3.txt
+  2023-07-13 15:04:28 INFO  S3Backup:80 - path: D:\Central Data\File 10_3.txt
+  2023-07-13 15:04:28 INFO  S3Backup:140 - D:\Central Data\File 10_3.txt
+  2023-07-13 15:04:28 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 10_3.txt
+  2023-07-13 15:04:28 INFO  S3Backup:173 - File Status for File 10_4.txt is :CREATED
+  2023-07-13 15:04:28 INFO  S3Backup:79 - key: Central Data/File 10_4.txt
+  2023-07-13 15:04:28 INFO  S3Backup:80 - path: D:\Central Data\File 10_4.txt
+  2023-07-13 15:04:28 INFO  S3Backup:140 - D:\Central Data\File 10_4.txt
+  2023-07-13 15:04:28 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 10_4.txt
+  2023-07-13 15:04:28 INFO  S3Backup:173 - File Status for File 10_5.txt is :CREATED
+  2023-07-13 15:04:28 INFO  S3Backup:79 - key: Central Data/File 10_5.txt
+  2023-07-13 15:04:28 INFO  S3Backup:80 - path: D:\Central Data\File 10_5.txt
+  2023-07-13 15:04:28 INFO  S3Backup:140 - D:\Central Data\File 10_5.txt
+  2023-07-13 15:04:28 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 10_5.txt
+  2023-07-13 15:04:28 INFO  S3Backup:176 - File Status for File 10_6.txt is :MODIFIED
+  2023-07-13 15:04:28 INFO  S3Backup:79 - key: Central Data/File 10_6.txt
+  2023-07-13 15:04:28 INFO  S3Backup:80 - path: D:\Central Data\File 10_6.txt
+  2023-07-13 15:04:28 INFO  S3Backup:140 - D:\Central Data\File 10_6.txt
+  2023-07-13 15:04:28 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 10_6.txt
+  2023-07-13 15:04:28 INFO  S3Backup:173 - File Status for File 10_7.txt is :CREATED
+  2023-07-13 15:04:28 INFO  S3Backup:79 - key: Central Data/File 10_7.txt
+  2023-07-13 15:04:28 INFO  S3Backup:80 - path: D:\Central Data\File 10_7.txt
+  2023-07-13 15:04:28 INFO  S3Backup:140 - D:\Central Data\File 10_7.txt
+  2023-07-13 15:04:28 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 10_7.txt
+  2023-07-13 15:04:28 INFO  S3Backup:173 - File Status for File 10_8.txt is :CREATED
+  2023-07-13 15:04:28 INFO  S3Backup:79 - key: Central Data/File 10_8.txt
+  2023-07-13 15:04:28 INFO  S3Backup:80 - path: D:\Central Data\File 10_8.txt
+  2023-07-13 15:04:28 INFO  S3Backup:140 - D:\Central Data\File 10_8.txt
+  2023-07-13 15:04:28 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 10_8.txt
+  2023-07-13 15:04:28 INFO  S3Backup:173 - File Status for File 10_9.txt is :CREATED
+  2023-07-13 15:04:28 INFO  S3Backup:79 - key: Central Data/File 10_9.txt
+  2023-07-13 15:04:28 INFO  S3Backup:80 - path: D:\Central Data\File 10_9.txt
+  2023-07-13 15:04:28 INFO  S3Backup:140 - D:\Central Data\File 10_9.txt
+  2023-07-13 15:04:28 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 10_9.txt
+  2023-07-13 15:04:28 INFO  S3Backup:95 - Backup completed successfully.........................
+  2023-07-13 15:04:28 INFO  FileUploadDetailsService:58 - [FileBackupDetails(fileName=5.iso.zip, filePathOnLocalDrive=D:\Central Data\5.iso.zip, filePathInS3=Central Data/5.iso.zip, uploadDate=13-Jul-2023 03:04:28 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=5.95 GB), FileBackupDetails(fileName=File 10_1.txt, filePathOnLocalDrive=D:\Central Data\File 10_1.txt, filePathInS3=Central Data/File 10_1.txt, uploadDate=13-Jul-2023 03:04:28 pm, uploadStatus=FAILED, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 10_10.txt, filePathOnLocalDrive=D:\Central Data\File 10_10.txt, filePathInS3=Central Data/File 10_10.txt, uploadDate=13-Jul-2023 03:04:28 pm, uploadStatus=FAILED, fileStatus=MODIFIED, fileSize=18.00 B), FileBackupDetails(fileName=File 10_2.txt, filePathOnLocalDrive=D:\Central Data\File 10_2.txt, filePathInS3=Central Data/File 10_2.txt, uploadDate=13-Jul-2023 03:04:28 pm, uploadStatus=FAILED, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 10_3.txt, filePathOnLocalDrive=D:\Central Data\File 10_3.txt, filePathInS3=Central Data/File 10_3.txt, uploadDate=13-Jul-2023 03:04:28 pm, uploadStatus=FAILED, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 10_4.txt, filePathOnLocalDrive=D:\Central Data\File 10_4.txt, filePathInS3=Central Data/File 10_4.txt, uploadDate=13-Jul-2023 03:04:28 pm, uploadStatus=FAILED, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 10_5.txt, filePathOnLocalDrive=D:\Central Data\File 10_5.txt, filePathInS3=Central Data/File 10_5.txt, uploadDate=13-Jul-2023 03:04:28 pm, uploadStatus=FAILED, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 10_6.txt, filePathOnLocalDrive=D:\Central Data\File 10_6.txt, filePathInS3=Central Data/File 10_6.txt, uploadDate=13-Jul-2023 03:04:28 pm, uploadStatus=FAILED, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=File 10_7.txt, filePathOnLocalDrive=D:\Central Data\File 10_7.txt, filePathInS3=Central Data/File 10_7.txt, uploadDate=13-Jul-2023 03:04:28 pm, uploadStatus=FAILED, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 10_8.txt, filePathOnLocalDrive=D:\Central Data\File 10_8.txt, filePathInS3=Central Data/File 10_8.txt, uploadDate=13-Jul-2023 03:04:28 pm, uploadStatus=FAILED, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 10_9.txt, filePathOnLocalDrive=D:\Central Data\File 10_9.txt, filePathInS3=Central Data/File 10_9.txt, uploadDate=13-Jul-2023 03:04:28 pm, uploadStatus=FAILED, fileStatus=CREATED, fileSize=17.00 B)]
+  2023-07-13 15:04:28 INFO  FileUploadDetailsService:96 - File Created : JULY_2023.csv, at path :D:\Vyom Projects\DR setup AWS S3\FileBackupToAWSS3\JULY_2023.csv
+  2023-07-13 15:04:28 INFO  S3Backup:193 - Trigger to lambda function....................
+  2023-07-13 15:04:28 INFO  S3LambdaTrigger:25 - Lambda Trigger started..........
+  2023-07-13 15:04:28 INFO  S3LambdaTrigger:30 - Lambda function name : Monthly-Report-Generation-Function
+  2023-07-13 15:04:29 INFO  S3LambdaTrigger:39 - Lambda invoked...........
+  2023-07-13 15:04:35 INFO  S3LambdaTrigger:42 - Lambda function output : {"statusCode": 200, "body": "Cost report and Usage Report generated and stored in S3 bucket: vyomlabsbucket"}
+  2023-07-13 15:04:35 INFO  S3Backup:196 - Fetching cost report file....................
+  2023-07-13 15:04:35 INFO  S3Backup:193 - Trigger to lambda function....................
+  2023-07-13 15:04:35 INFO  S3LambdaTrigger:25 - Lambda Trigger started..........
+  2023-07-13 15:04:35 INFO  S3LambdaTrigger:30 - Lambda function name : Monthly-Report-Generation-Function
+  2023-07-13 15:04:35 INFO  S3LambdaTrigger:39 - Lambda invoked...........
+  2023-07-13 15:04:42 INFO  S3LambdaTrigger:42 - Lambda function output : {"statusCode": 200, "body": "Cost report and Usage Report generated and stored in S3 bucket: vyomlabsbucket"}
+  2023-07-13 15:04:42 INFO  S3Backup:196 - Fetching cost report file....................
+  2023-07-13 15:14:09 INFO  S3Backup:69 - Fresh differential files uploading.......
+  2023-07-13 15:14:09 INFO  S3Backup:71 - backupFolderPath :D:/Central Data
+  2023-07-13 15:14:09 INFO  S3Backup:172 - File Status for 5.iso.zip is :MODIFIED
+  2023-07-13 15:14:09 INFO  S3Backup:78 - key: Central Data/5.iso.zip
+  2023-07-13 15:14:09 INFO  S3Backup:79 - path: D:\Central Data\5.iso.zip
+  2023-07-13 15:14:09 INFO  S3Backup:83 - Initiating multipart upload...............
+  2023-07-13 15:14:09 INFO  S3Backup:119 - Multipart upload started for file : 5.iso.zip
+  2023-07-13 15:17:54 INFO  S3Backup:121 - Multipart upload completed for file : 5.iso.zip
+  2023-07-13 15:17:54 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\5.iso.zip
+  2023-07-13 15:17:54 INFO  S3Backup:169 - File Status for File 10_1.txt is :CREATED
+  2023-07-13 15:17:54 INFO  S3Backup:78 - key: Central Data/File 10_1.txt
+  2023-07-13 15:17:54 INFO  S3Backup:79 - path: D:\Central Data\File 10_1.txt
+  2023-07-13 15:17:54 INFO  S3Backup:136 - D:\Central Data\File 10_1.txt
+  2023-07-13 15:17:54 WARN  Base64:113 - JAXB is unavailable. Will fallback to SDK implementation which may be less performant.If you are using Java 9+, you will need to include javax.xml.bind:jaxb-api as a dependency.
+  2023-07-13 15:17:54 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 10_1.txt
+  2023-07-13 15:17:54 INFO  S3Backup:172 - File Status for File 10_10.txt is :MODIFIED
+  2023-07-13 15:17:54 INFO  S3Backup:78 - key: Central Data/File 10_10.txt
+  2023-07-13 15:17:54 INFO  S3Backup:79 - path: D:\Central Data\File 10_10.txt
+  2023-07-13 15:17:54 INFO  S3Backup:136 - D:\Central Data\File 10_10.txt
+  2023-07-13 15:17:54 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 10_10.txt
+  2023-07-13 15:17:54 INFO  S3Backup:169 - File Status for File 10_2.txt is :CREATED
+  2023-07-13 15:17:54 INFO  S3Backup:78 - key: Central Data/File 10_2.txt
+  2023-07-13 15:17:54 INFO  S3Backup:79 - path: D:\Central Data\File 10_2.txt
+  2023-07-13 15:17:54 INFO  S3Backup:136 - D:\Central Data\File 10_2.txt
+  2023-07-13 15:17:54 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 10_2.txt
+  2023-07-13 15:17:54 INFO  S3Backup:169 - File Status for File 10_3.txt is :CREATED
+  2023-07-13 15:17:54 INFO  S3Backup:78 - key: Central Data/File 10_3.txt
+  2023-07-13 15:17:54 INFO  S3Backup:79 - path: D:\Central Data\File 10_3.txt
+  2023-07-13 15:17:54 INFO  S3Backup:136 - D:\Central Data\File 10_3.txt
+  2023-07-13 15:17:54 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 10_3.txt
+  2023-07-13 15:17:54 INFO  S3Backup:169 - File Status for File 10_4.txt is :CREATED
+  2023-07-13 15:17:54 INFO  S3Backup:78 - key: Central Data/File 10_4.txt
+  2023-07-13 15:17:54 INFO  S3Backup:79 - path: D:\Central Data\File 10_4.txt
+  2023-07-13 15:17:54 INFO  S3Backup:136 - D:\Central Data\File 10_4.txt
+  2023-07-13 15:17:54 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 10_4.txt
+  2023-07-13 15:17:54 INFO  S3Backup:169 - File Status for File 10_5.txt is :CREATED
+  2023-07-13 15:17:54 INFO  S3Backup:78 - key: Central Data/File 10_5.txt
+  2023-07-13 15:17:54 INFO  S3Backup:79 - path: D:\Central Data\File 10_5.txt
+  2023-07-13 15:17:54 INFO  S3Backup:136 - D:\Central Data\File 10_5.txt
+  2023-07-13 15:17:54 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 10_5.txt
+  2023-07-13 15:17:54 INFO  S3Backup:172 - File Status for File 10_6.txt is :MODIFIED
+  2023-07-13 15:17:54 INFO  S3Backup:78 - key: Central Data/File 10_6.txt
+  2023-07-13 15:17:54 INFO  S3Backup:79 - path: D:\Central Data\File 10_6.txt
+  2023-07-13 15:17:54 INFO  S3Backup:136 - D:\Central Data\File 10_6.txt
+  2023-07-13 15:17:54 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 10_6.txt
+  2023-07-13 15:17:54 INFO  S3Backup:169 - File Status for File 10_7.txt is :CREATED
+  2023-07-13 15:17:54 INFO  S3Backup:78 - key: Central Data/File 10_7.txt
+  2023-07-13 15:17:54 INFO  S3Backup:79 - path: D:\Central Data\File 10_7.txt
+  2023-07-13 15:17:54 INFO  S3Backup:136 - D:\Central Data\File 10_7.txt
+  2023-07-13 15:17:54 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 10_7.txt
+  2023-07-13 15:17:54 INFO  S3Backup:169 - File Status for File 10_8.txt is :CREATED
+  2023-07-13 15:17:54 INFO  S3Backup:78 - key: Central Data/File 10_8.txt
+  2023-07-13 15:17:54 INFO  S3Backup:79 - path: D:\Central Data\File 10_8.txt
+  2023-07-13 15:17:54 INFO  S3Backup:136 - D:\Central Data\File 10_8.txt
+  2023-07-13 15:17:54 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 10_8.txt
+  2023-07-13 15:17:54 INFO  S3Backup:169 - File Status for File 10_9.txt is :CREATED
+  2023-07-13 15:17:54 INFO  S3Backup:78 - key: Central Data/File 10_9.txt
+  2023-07-13 15:17:54 INFO  S3Backup:79 - path: D:\Central Data\File 10_9.txt
+  2023-07-13 15:17:54 INFO  S3Backup:136 - D:\Central Data\File 10_9.txt
+  2023-07-13 15:17:54 INFO  FileUploadDetailsService:43 - Local drive path : D:\Central Data\File 10_9.txt
+  2023-07-13 15:17:54 INFO  S3Backup:93 - Backup completed successfully.........................
+  2023-07-13 15:17:54 INFO  FileUploadDetailsService:58 - [FileBackupDetails(fileName="5.iso.zip", filePathOnLocalDrive="D:\Central Data\5.iso.zip", filePathInS3="Central Data/5.iso.zip", uploadDate="13-Jul-2023 03:04:28 pm", uploadStatus="SUCCESS", fileStatus="MODIFIED", fileSize="5.95 GB"), FileBackupDetails(fileName="File 10_1.txt", filePathOnLocalDrive="D:\Central Data\File 10_1.txt", filePathInS3="Central Data/File 10_1.txt", uploadDate="13-Jul-2023 03:04:28 pm", uploadStatus="FAILED", fileStatus="CREATED", fileSize="17.00 B"), FileBackupDetails(fileName="File 10_10.txt", filePathOnLocalDrive="D:\Central Data\File 10_10.txt", filePathInS3="Central Data/File 10_10.txt", uploadDate="13-Jul-2023 03:04:28 pm", uploadStatus="FAILED", fileStatus="MODIFIED", fileSize="18.00 B"), FileBackupDetails(fileName="File 10_2.txt", filePathOnLocalDrive="D:\Central Data\File 10_2.txt", filePathInS3="Central Data/File 10_2.txt", uploadDate="13-Jul-2023 03:04:28 pm", uploadStatus="FAILED", fileStatus="CREATED", fileSize="17.00 B"), FileBackupDetails(fileName="File 10_3.txt", filePathOnLocalDrive="D:\Central Data\File 10_3.txt", filePathInS3="Central Data/File 10_3.txt", uploadDate="13-Jul-2023 03:04:28 pm", uploadStatus="FAILED", fileStatus="CREATED", fileSize="17.00 B"), FileBackupDetails(fileName="File 10_4.txt", filePathOnLocalDrive="D:\Central Data\File 10_4.txt", filePathInS3="Central Data/File 10_4.txt", uploadDate="13-Jul-2023 03:04:28 pm", uploadStatus="FAILED", fileStatus="CREATED", fileSize="17.00 B"), FileBackupDetails(fileName="File 10_5.txt", filePathOnLocalDrive="D:\Central Data\File 10_5.txt", filePathInS3="Central Data/File 10_5.txt", uploadDate="13-Jul-2023 03:04:28 pm", uploadStatus="FAILED", fileStatus="CREATED", fileSize="17.00 B"), FileBackupDetails(fileName="File 10_6.txt", filePathOnLocalDrive="D:\Central Data\File 10_6.txt", filePathInS3="Central Data/File 10_6.txt", uploadDate="13-Jul-2023 03:04:28 pm", uploadStatus="FAILED", fileStatus="MODIFIED", fileSize="17.00 B"), FileBackupDetails(fileName="File 10_7.txt", filePathOnLocalDrive="D:\Central Data\File 10_7.txt", filePathInS3="Central Data/File 10_7.txt", uploadDate="13-Jul-2023 03:04:28 pm", uploadStatus="FAILED", fileStatus="CREATED", fileSize="17.00 B"), FileBackupDetails(fileName="File 10_8.txt", filePathOnLocalDrive="D:\Central Data\File 10_8.txt", filePathInS3="Central Data/File 10_8.txt", uploadDate="13-Jul-2023 03:04:28 pm", uploadStatus="FAILED", fileStatus="CREATED", fileSize="17.00 B"), FileBackupDetails(fileName="File 10_9.txt", filePathOnLocalDrive="D:\Central Data\File 10_9.txt", filePathInS3="Central Data/File 10_9.txt", uploadDate="13-Jul-2023 03:04:28 pm", uploadStatus="FAILED", fileStatus="CREATED", fileSize="17.00 B"), FileBackupDetails(fileName=5.iso.zip, filePathOnLocalDrive=D:\Central Data\5.iso.zip, filePathInS3=Central Data/5.iso.zip, uploadDate=13-Jul-2023 03:17:54 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=5.95 GB), FileBackupDetails(fileName=File 10_1.txt, filePathOnLocalDrive=D:\Central Data\File 10_1.txt, filePathInS3=Central Data/File 10_1.txt, uploadDate=13-Jul-2023 03:17:54 pm, uploadStatus=FAILED, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 10_10.txt, filePathOnLocalDrive=D:\Central Data\File 10_10.txt, filePathInS3=Central Data/File 10_10.txt, uploadDate=13-Jul-2023 03:17:54 pm, uploadStatus=FAILED, fileStatus=MODIFIED, fileSize=18.00 B), FileBackupDetails(fileName=File 10_2.txt, filePathOnLocalDrive=D:\Central Data\File 10_2.txt, filePathInS3=Central Data/File 10_2.txt, uploadDate=13-Jul-2023 03:17:54 pm, uploadStatus=FAILED, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 10_3.txt, filePathOnLocalDrive=D:\Central Data\File 10_3.txt, filePathInS3=Central Data/File 10_3.txt, uploadDate=13-Jul-2023 03:17:54 pm, uploadStatus=FAILED, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 10_4.txt, filePathOnLocalDrive=D:\Central Data\File 10_4.txt, filePathInS3=Central Data/File 10_4.txt, uploadDate=13-Jul-2023 03:17:54 pm, uploadStatus=FAILED, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 10_5.txt, filePathOnLocalDrive=D:\Central Data\File 10_5.txt, filePathInS3=Central Data/File 10_5.txt, uploadDate=13-Jul-2023 03:17:54 pm, uploadStatus=FAILED, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 10_6.txt, filePathOnLocalDrive=D:\Central Data\File 10_6.txt, filePathInS3=Central Data/File 10_6.txt, uploadDate=13-Jul-2023 03:17:54 pm, uploadStatus=FAILED, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=File 10_7.txt, filePathOnLocalDrive=D:\Central Data\File 10_7.txt, filePathInS3=Central Data/File 10_7.txt, uploadDate=13-Jul-2023 03:17:54 pm, uploadStatus=FAILED, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 10_8.txt, filePathOnLocalDrive=D:\Central Data\File 10_8.txt, filePathInS3=Central Data/File 10_8.txt, uploadDate=13-Jul-2023 03:17:54 pm, uploadStatus=FAILED, fileStatus=CREATED, fileSize=17.00 B), FileBackupDetails(fileName=File 10_9.txt, filePathOnLocalDrive=D:\Central Data\File 10_9.txt, filePathInS3=Central Data/File 10_9.txt, uploadDate=13-Jul-2023 03:17:54 pm, uploadStatus=FAILED, fileStatus=CREATED, fileSize=17.00 B)]
+  2023-07-13 15:17:54 INFO  FileUploadDetailsService:99 - File already exists : JULY_2023.csv
+ at path:D:\Vyom Projects\DR setup AWS S3\FileBackupToAWSS3\JULY_2023.csv
+  2023-07-13 15:17:54 INFO  S3Backup:189 - Trigger to lambda function....................
+  2023-07-13 15:17:54 INFO  S3LambdaTrigger:25 - Lambda Trigger started..........
+  2023-07-13 15:17:54 INFO  S3LambdaTrigger:30 - Lambda function name : Monthly-Report-Generation-Function
+  2023-07-13 15:17:54 INFO  S3LambdaTrigger:39 - Lambda invoked...........
+  2023-07-13 15:18:04 INFO  S3LambdaTrigger:42 - Lambda function output : {"statusCode": 200, "body": "Cost report and Usage Report generated and stored in S3 bucket: vyomlabsbucket"}
+  2023-07-13 15:18:04 INFO  S3Backup:192 - Fetching cost report file....................
+  2023-07-13 15:18:04 INFO  S3Backup:189 - Trigger to lambda function....................
+  2023-07-13 15:18:04 INFO  S3LambdaTrigger:25 - Lambda Trigger started..........
+  2023-07-13 15:18:04 INFO  S3LambdaTrigger:30 - Lambda function name : Monthly-Report-Generation-Function
+  2023-07-13 15:18:04 INFO  S3LambdaTrigger:39 - Lambda invoked...........
+  2023-07-13 15:18:06 INFO  S3LambdaTrigger:42 - Lambda function output : {"statusCode": 200, "body": "Cost report and Usage Report generated and stored in S3 bucket: vyomlabsbucket"}
+  2023-07-13 15:18:06 INFO  S3Backup:192 - Fetching cost report file....................
+  2023-07-13 15:32:30 INFO  S3Backup:70 - Fresh differential files uploading.......
+  2023-07-13 15:32:30 INFO  S3Backup:72 - backupFolderPath :D:/test
+  2023-07-13 15:32:30 INFO  S3Backup:170 - File Status for abc.txt is :CREATED
+  2023-07-13 15:32:30 INFO  S3Backup:79 - key: test/abc.txt
+  2023-07-13 15:32:30 INFO  S3Backup:80 - path: D:\test\abc.txt
+  2023-07-13 15:32:30 INFO  S3Backup:137 - D:\test\abc.txt
+  2023-07-13 15:32:30 WARN  Base64:113 - JAXB is unavailable. Will fallback to SDK implementation which may be less performant.If you are using Java 9+, you will need to include javax.xml.bind:jaxb-api as a dependency.
+  2023-07-13 15:32:30 INFO  S3Backup:143 - Uploaded file: D:\test\abc.txt
+  2023-07-13 15:32:30 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\abc.txt
+  2023-07-13 15:32:30 INFO  S3Backup:94 - Backup completed successfully.........................
+  2023-07-13 15:32:30 INFO  FileUploadDetailsService:58 - [FileBackupDetails(fileName=abc.txt, filePathOnLocalDrive=D:\test\abc.txt, filePathInS3=test/abc.txt, uploadDate=13-Jul-2023 03:32:30 pm, uploadStatus=SUCCESS, fileStatus=CREATED, fileSize=0.00 B)]
+  2023-07-13 15:32:30 INFO  FileUploadDetailsService:96 - File Created : JULY_2023.csv, at path :D:\Vyom Projects\DR setup AWS S3\FileBackupToAWSS3\JULY_2023.csv
+  2023-07-13 15:32:30 INFO  S3Backup:190 - Trigger to lambda function....................
+  2023-07-13 15:32:30 INFO  S3LambdaTrigger:25 - Lambda Trigger started..........
+  2023-07-13 15:32:30 INFO  S3LambdaTrigger:30 - Lambda function name : Monthly-Report-Generation-Function
+  2023-07-13 15:32:31 INFO  S3LambdaTrigger:39 - Lambda invoked...........
+  2023-07-13 15:32:41 INFO  S3LambdaTrigger:42 - Lambda function output : {"statusCode": 200, "body": "Cost report and Usage Report generated and stored in S3 bucket: vyomlabsbucket"}
+  2023-07-13 15:32:41 INFO  S3Backup:193 - Fetching cost report file....................
+  2023-07-13 15:32:41 INFO  S3Backup:195 - Fetching usage report file....................
+  2023-07-13 15:32:41 INFO  EmailService:50 - preparing to send message ...
+  2023-07-13 16:10:03 INFO  S3Backup:70 - Fresh differential files uploading.......
+  2023-07-13 16:10:03 INFO  S3Backup:72 - backupFolderPath :D:/test
+  2023-07-13 16:10:03 INFO  S3Backup:174 - File Status for abcdef.dat is :MODIFIED
+  2023-07-13 16:10:03 INFO  S3Backup:79 - key: test/abcdef.dat
+  2023-07-13 16:10:03 INFO  S3Backup:80 - path: D:\test\abcdef.dat
+  2023-07-13 16:10:03 INFO  S3Backup:84 - Initiating multipart upload...............
+  2023-07-13 16:10:03 INFO  S3Backup:121 - Multipart upload started for file : abcdef.dat
+  2023-07-13 16:13:49 INFO  S3Backup:123 - Multipart upload completed for file : abcdef.dat
+  2023-07-13 16:13:49 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\abcdef.dat
+  2023-07-13 16:13:49 INFO  S3Backup:94 - Backup completed successfully.........................
+  2023-07-13 16:13:49 INFO  FileUploadDetailsService:58 - [FileBackupDetails(fileName="abc.txt", filePathOnLocalDrive="D:\test\abc.txt", filePathInS3="test/abc.txt", uploadDate="13-Jul-2023 03:32:30 pm", uploadStatus="SUCCESS", fileStatus="CREATED", fileSize="0.00 B"), FileBackupDetails(fileName=abcdef.dat, filePathOnLocalDrive=D:\test\abcdef.dat, filePathInS3=test/abcdef.dat, uploadDate=13-Jul-2023 04:13:49 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=6.00 GB)]
+  2023-07-13 16:13:49 INFO  FileUploadDetailsService:99 - File already exists : JULY_2023.csv
+ at path:D:\Vyom Projects\DR setup AWS S3\FileBackupToAWSS3\JULY_2023.csv
+  2023-07-13 16:13:49 INFO  S3Backup:191 - Trigger to lambda function....................
+  2023-07-13 16:13:49 INFO  S3LambdaTrigger:25 - Lambda Trigger started..........
+  2023-07-13 16:13:49 INFO  S3LambdaTrigger:30 - Lambda function name : Monthly-Report-Generation-Function
+  2023-07-13 16:13:49 INFO  S3LambdaTrigger:39 - Lambda invoked...........
+  2023-07-13 16:13:59 INFO  S3LambdaTrigger:42 - Lambda function output : {"statusCode": 200, "body": "Cost report and Usage Report generated and stored in S3 bucket: vyomlabsbucket"}
+  2023-07-13 16:13:59 INFO  S3Backup:194 - Fetching cost report file....................
+  2023-07-13 16:13:59 INFO  S3Backup:191 - Trigger to lambda function....................
+  2023-07-13 16:13:59 INFO  S3LambdaTrigger:25 - Lambda Trigger started..........
+  2023-07-13 16:13:59 INFO  S3LambdaTrigger:30 - Lambda function name : Monthly-Report-Generation-Function
+  2023-07-13 16:13:59 INFO  S3LambdaTrigger:39 - Lambda invoked...........
+  2023-07-13 16:14:01 INFO  S3LambdaTrigger:42 - Lambda function output : {"statusCode": 200, "body": "Cost report and Usage Report generated and stored in S3 bucket: vyomlabsbucket"}
+  2023-07-13 16:14:01 INFO  S3Backup:194 - Fetching cost report file....................
+  2023-07-13 16:32:30 INFO  S3Backup:70 - Fresh differential files uploading.......
+  2023-07-13 16:32:30 INFO  S3Backup:72 - backupFolderPath :D:/test
+  2023-07-13 16:32:30 INFO  S3Backup:174 - File Status for abcdef.dat is :MODIFIED
+  2023-07-13 16:32:30 INFO  S3Backup:79 - key: test/abcdef.dat
+  2023-07-13 16:32:30 INFO  S3Backup:80 - path: D:\test\abcdef.dat
+  2023-07-13 16:32:30 INFO  S3Backup:84 - Initiating multipart upload...............
+  2023-07-13 16:32:30 INFO  S3Backup:121 - Multipart upload started for file : abcdef.dat
+  2023-07-13 16:33:55 INFO  S3Backup:70 - Fresh differential files uploading.......
+  2023-07-13 16:33:55 INFO  S3Backup:72 - backupFolderPath :D:/test
+  2023-07-13 16:33:55 INFO  S3Backup:174 - File Status for 1.File 11_1.txt is :MODIFIED
+  2023-07-13 16:33:55 INFO  S3Backup:79 - key: test/1.File 11_1.txt
+  2023-07-13 16:33:55 INFO  S3Backup:80 - path: D:\test\1.File 11_1.txt
+  2023-07-13 16:33:55 INFO  S3Backup:138 - D:\test\1.File 11_1.txt
+  2023-07-13 16:33:55 WARN  Base64:113 - JAXB is unavailable. Will fallback to SDK implementation which may be less performant.If you are using Java 9+, you will need to include javax.xml.bind:jaxb-api as a dependency.
+  2023-07-13 16:33:55 INFO  S3Backup:144 - Uploaded file: D:\test\1.File 11_1.txt
+  2023-07-13 16:33:55 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\1.File 11_1.txt
+  2023-07-13 16:33:55 INFO  S3Backup:174 - File Status for 10.File 11_10.txt is :MODIFIED
+  2023-07-13 16:33:55 INFO  S3Backup:79 - key: test/10.File 11_10.txt
+  2023-07-13 16:33:55 INFO  S3Backup:80 - path: D:\test\10.File 11_10.txt
+  2023-07-13 16:33:55 INFO  S3Backup:138 - D:\test\10.File 11_10.txt
+  2023-07-13 16:33:55 INFO  S3Backup:144 - Uploaded file: D:\test\10.File 11_10.txt
+  2023-07-13 16:33:55 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\10.File 11_10.txt
+  2023-07-13 16:33:55 INFO  S3Backup:174 - File Status for 2.File 11_2.txt is :MODIFIED
+  2023-07-13 16:33:55 INFO  S3Backup:79 - key: test/2.File 11_2.txt
+  2023-07-13 16:33:55 INFO  S3Backup:80 - path: D:\test\2.File 11_2.txt
+  2023-07-13 16:33:55 INFO  S3Backup:138 - D:\test\2.File 11_2.txt
+  2023-07-13 16:33:55 INFO  S3Backup:144 - Uploaded file: D:\test\2.File 11_2.txt
+  2023-07-13 16:33:55 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\2.File 11_2.txt
+  2023-07-13 16:33:55 INFO  S3Backup:174 - File Status for 3.File 11_3.txt is :MODIFIED
+  2023-07-13 16:33:55 INFO  S3Backup:79 - key: test/3.File 11_3.txt
+  2023-07-13 16:33:55 INFO  S3Backup:80 - path: D:\test\3.File 11_3.txt
+  2023-07-13 16:33:55 INFO  S3Backup:138 - D:\test\3.File 11_3.txt
+  2023-07-13 16:33:55 INFO  S3Backup:144 - Uploaded file: D:\test\3.File 11_3.txt
+  2023-07-13 16:33:55 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\3.File 11_3.txt
+  2023-07-13 16:33:55 INFO  S3Backup:174 - File Status for 4.File 11_4.txt is :MODIFIED
+  2023-07-13 16:33:55 INFO  S3Backup:79 - key: test/4.File 11_4.txt
+  2023-07-13 16:33:55 INFO  S3Backup:80 - path: D:\test\4.File 11_4.txt
+  2023-07-13 16:33:55 INFO  S3Backup:138 - D:\test\4.File 11_4.txt
+  2023-07-13 16:33:55 INFO  S3Backup:144 - Uploaded file: D:\test\4.File 11_4.txt
+  2023-07-13 16:33:55 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\4.File 11_4.txt
+  2023-07-13 16:33:55 INFO  S3Backup:174 - File Status for 5.1.abcdef.dat is :MODIFIED
+  2023-07-13 16:33:55 INFO  S3Backup:79 - key: test/5.1.abcdef.dat
+  2023-07-13 16:33:55 INFO  S3Backup:80 - path: D:\test\5.1.abcdef.dat
+  2023-07-13 16:33:55 INFO  S3Backup:84 - Initiating multipart upload...............
+  2023-07-13 16:33:55 INFO  S3Backup:121 - Multipart upload started for file : 5.1.abcdef.dat
+  2023-07-13 16:37:44 INFO  S3Backup:123 - Multipart upload completed for file : 5.1.abcdef.dat
+  2023-07-13 16:37:44 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\5.1.abcdef.dat
+  2023-07-13 16:37:44 INFO  S3Backup:174 - File Status for 5.File 11_5.txt is :MODIFIED
+  2023-07-13 16:37:44 INFO  S3Backup:79 - key: test/5.File 11_5.txt
+  2023-07-13 16:37:44 INFO  S3Backup:80 - path: D:\test\5.File 11_5.txt
+  2023-07-13 16:37:44 INFO  S3Backup:138 - D:\test\5.File 11_5.txt
+  2023-07-13 16:37:44 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\5.File 11_5.txt
+  2023-07-13 16:37:44 INFO  S3Backup:174 - File Status for 6.File 11_6.txt is :MODIFIED
+  2023-07-13 16:37:44 INFO  S3Backup:79 - key: test/6.File 11_6.txt
+  2023-07-13 16:37:44 INFO  S3Backup:80 - path: D:\test\6.File 11_6.txt
+  2023-07-13 16:37:44 INFO  S3Backup:138 - D:\test\6.File 11_6.txt
+  2023-07-13 16:37:44 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\6.File 11_6.txt
+  2023-07-13 16:37:44 INFO  S3Backup:174 - File Status for 7.File 11_7.txt is :MODIFIED
+  2023-07-13 16:37:44 INFO  S3Backup:79 - key: test/7.File 11_7.txt
+  2023-07-13 16:37:44 INFO  S3Backup:80 - path: D:\test\7.File 11_7.txt
+  2023-07-13 16:37:44 INFO  S3Backup:138 - D:\test\7.File 11_7.txt
+  2023-07-13 16:37:44 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\7.File 11_7.txt
+  2023-07-13 16:37:44 INFO  S3Backup:174 - File Status for 8.File 11_8.txt is :MODIFIED
+  2023-07-13 16:37:44 INFO  S3Backup:79 - key: test/8.File 11_8.txt
+  2023-07-13 16:37:44 INFO  S3Backup:80 - path: D:\test\8.File 11_8.txt
+  2023-07-13 16:37:44 INFO  S3Backup:138 - D:\test\8.File 11_8.txt
+  2023-07-13 16:37:44 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\8.File 11_8.txt
+  2023-07-13 16:37:44 INFO  S3Backup:174 - File Status for 9.File 11_9.txt is :MODIFIED
+  2023-07-13 16:37:44 INFO  S3Backup:79 - key: test/9.File 11_9.txt
+  2023-07-13 16:37:44 INFO  S3Backup:80 - path: D:\test\9.File 11_9.txt
+  2023-07-13 16:37:44 INFO  S3Backup:138 - D:\test\9.File 11_9.txt
+  2023-07-13 16:37:44 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\9.File 11_9.txt
+  2023-07-13 16:37:44 INFO  S3Backup:94 - Backup completed successfully.........................
+  2023-07-13 16:37:44 INFO  FileUploadDetailsService:58 - [FileBackupDetails(fileName="""abc.txt""", filePathOnLocalDrive="""D:\test\abc.txt""", filePathInS3="""test/abc.txt""", uploadDate="""13-Jul-2023 03:32:30 pm""", uploadStatus="""SUCCESS""", fileStatus="""CREATED""", fileSize="""0.00 B"""), FileBackupDetails(fileName="abcdef.dat", filePathOnLocalDrive="D:\test\abcdef.dat", filePathInS3="test/abcdef.dat", uploadDate="13-Jul-2023 04:13:49 pm", uploadStatus="SUCCESS", fileStatus="MODIFIED", fileSize="6.00 GB"), FileBackupDetails(fileName=1.File 11_1.txt, filePathOnLocalDrive=D:\test\1.File 11_1.txt, filePathInS3=test/1.File 11_1.txt, uploadDate=13-Jul-2023 04:33:55 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=10.File 11_10.txt, filePathOnLocalDrive=D:\test\10.File 11_10.txt, filePathInS3=test/10.File 11_10.txt, uploadDate=13-Jul-2023 04:33:55 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=18.00 B), FileBackupDetails(fileName=2.File 11_2.txt, filePathOnLocalDrive=D:\test\2.File 11_2.txt, filePathInS3=test/2.File 11_2.txt, uploadDate=13-Jul-2023 04:33:55 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=3.File 11_3.txt, filePathOnLocalDrive=D:\test\3.File 11_3.txt, filePathInS3=test/3.File 11_3.txt, uploadDate=13-Jul-2023 04:33:55 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=4.File 11_4.txt, filePathOnLocalDrive=D:\test\4.File 11_4.txt, filePathInS3=test/4.File 11_4.txt, uploadDate=13-Jul-2023 04:33:55 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=5.1.abcdef.dat, filePathOnLocalDrive=D:\test\5.1.abcdef.dat, filePathInS3=test/5.1.abcdef.dat, uploadDate=13-Jul-2023 04:37:44 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=6.00 GB), FileBackupDetails(fileName=5.File 11_5.txt, filePathOnLocalDrive=D:\test\5.File 11_5.txt, filePathInS3=test/5.File 11_5.txt, uploadDate=13-Jul-2023 04:37:44 pm, uploadStatus=FAILED, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=6.File 11_6.txt, filePathOnLocalDrive=D:\test\6.File 11_6.txt, filePathInS3=test/6.File 11_6.txt, uploadDate=13-Jul-2023 04:37:44 pm, uploadStatus=FAILED, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=7.File 11_7.txt, filePathOnLocalDrive=D:\test\7.File 11_7.txt, filePathInS3=test/7.File 11_7.txt, uploadDate=13-Jul-2023 04:37:44 pm, uploadStatus=FAILED, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=8.File 11_8.txt, filePathOnLocalDrive=D:\test\8.File 11_8.txt, filePathInS3=test/8.File 11_8.txt, uploadDate=13-Jul-2023 04:37:44 pm, uploadStatus=FAILED, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=9.File 11_9.txt, filePathOnLocalDrive=D:\test\9.File 11_9.txt, filePathInS3=test/9.File 11_9.txt, uploadDate=13-Jul-2023 04:37:44 pm, uploadStatus=FAILED, fileStatus=MODIFIED, fileSize=17.00 B)]
+  2023-07-13 16:37:44 INFO  FileUploadDetailsService:99 - File already exists : JULY_2023.csv
+ at path:D:\Vyom Projects\DR setup AWS S3\FileBackupToAWSS3\JULY_2023.csv
+  2023-07-13 16:37:44 INFO  S3Backup:191 - Trigger to lambda function....................
+  2023-07-13 16:37:44 INFO  S3LambdaTrigger:25 - Lambda Trigger started..........
+  2023-07-13 16:37:44 INFO  S3LambdaTrigger:30 - Lambda function name : Monthly-Report-Generation-Function
+  2023-07-13 16:37:44 INFO  S3LambdaTrigger:39 - Lambda invoked...........
+  2023-07-13 16:37:54 INFO  S3LambdaTrigger:42 - Lambda function output : {"statusCode": 200, "body": "Cost report and Usage Report generated and stored in S3 bucket: vyomlabsbucket"}
+  2023-07-13 16:37:54 INFO  S3Backup:194 - Fetching cost report file....................
+  2023-07-13 16:37:54 INFO  S3Backup:191 - Trigger to lambda function....................
+  2023-07-13 16:37:54 INFO  S3LambdaTrigger:25 - Lambda Trigger started..........
+  2023-07-13 16:37:54 INFO  S3LambdaTrigger:30 - Lambda function name : Monthly-Report-Generation-Function
+  2023-07-13 16:37:54 INFO  S3LambdaTrigger:39 - Lambda invoked...........
+  2023-07-13 16:37:56 INFO  S3LambdaTrigger:42 - Lambda function output : {"statusCode": 200, "body": "Cost report and Usage Report generated and stored in S3 bucket: vyomlabsbucket"}
+  2023-07-13 16:37:56 INFO  S3Backup:194 - Fetching cost report file....................
+  2023-07-13 16:50:53 INFO  S3Backup:69 - Fresh differential files uploading.......
+  2023-07-13 16:50:53 INFO  S3Backup:71 - backupFolderPath :D:/test
+  2023-07-13 16:50:53 INFO  S3Backup:174 - File Status for 1.File 11_1.txt is :MODIFIED
+  2023-07-13 16:50:53 INFO  S3Backup:78 - key: test/1.File 11_1.txt
+  2023-07-13 16:50:53 INFO  S3Backup:79 - path: D:\test\1.File 11_1.txt
+  2023-07-13 16:50:53 INFO  S3Backup:138 - D:\test\1.File 11_1.txt
+  2023-07-13 16:50:53 WARN  Base64:113 - JAXB is unavailable. Will fallback to SDK implementation which may be less performant.If you are using Java 9+, you will need to include javax.xml.bind:jaxb-api as a dependency.
+  2023-07-13 16:50:54 INFO  S3Backup:144 - Uploaded file: D:\test\1.File 11_1.txt
+  2023-07-13 16:50:54 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\1.File 11_1.txt
+  2023-07-13 16:50:54 INFO  S3Backup:174 - File Status for 10.File 11_10.txt is :MODIFIED
+  2023-07-13 16:50:54 INFO  S3Backup:78 - key: test/10.File 11_10.txt
+  2023-07-13 16:50:54 INFO  S3Backup:79 - path: D:\test\10.File 11_10.txt
+  2023-07-13 16:50:54 INFO  S3Backup:138 - D:\test\10.File 11_10.txt
+  2023-07-13 16:50:54 INFO  S3Backup:144 - Uploaded file: D:\test\10.File 11_10.txt
+  2023-07-13 16:50:54 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\10.File 11_10.txt
+  2023-07-13 16:50:54 INFO  S3Backup:174 - File Status for 2.File 11_2.txt is :MODIFIED
+  2023-07-13 16:50:54 INFO  S3Backup:78 - key: test/2.File 11_2.txt
+  2023-07-13 16:50:54 INFO  S3Backup:79 - path: D:\test\2.File 11_2.txt
+  2023-07-13 16:50:54 INFO  S3Backup:138 - D:\test\2.File 11_2.txt
+  2023-07-13 16:50:54 INFO  S3Backup:144 - Uploaded file: D:\test\2.File 11_2.txt
+  2023-07-13 16:50:54 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\2.File 11_2.txt
+  2023-07-13 16:50:54 INFO  S3Backup:174 - File Status for 3.File 11_3.txt is :MODIFIED
+  2023-07-13 16:50:54 INFO  S3Backup:78 - key: test/3.File 11_3.txt
+  2023-07-13 16:50:54 INFO  S3Backup:79 - path: D:\test\3.File 11_3.txt
+  2023-07-13 16:50:54 INFO  S3Backup:138 - D:\test\3.File 11_3.txt
+  2023-07-13 16:50:54 INFO  S3Backup:144 - Uploaded file: D:\test\3.File 11_3.txt
+  2023-07-13 16:50:54 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\3.File 11_3.txt
+  2023-07-13 16:50:54 INFO  S3Backup:174 - File Status for 4.File 11_4.txt is :MODIFIED
+  2023-07-13 16:50:54 INFO  S3Backup:78 - key: test/4.File 11_4.txt
+  2023-07-13 16:50:54 INFO  S3Backup:79 - path: D:\test\4.File 11_4.txt
+  2023-07-13 16:50:54 INFO  S3Backup:138 - D:\test\4.File 11_4.txt
+  2023-07-13 16:50:54 INFO  S3Backup:144 - Uploaded file: D:\test\4.File 11_4.txt
+  2023-07-13 16:50:54 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\4.File 11_4.txt
+  2023-07-13 16:50:54 INFO  S3Backup:174 - File Status for 5.1.abcdef.dat is :MODIFIED
+  2023-07-13 16:50:54 INFO  S3Backup:78 - key: test/5.1.abcdef.dat
+  2023-07-13 16:50:54 INFO  S3Backup:79 - path: D:\test\5.1.abcdef.dat
+  2023-07-13 16:50:54 INFO  S3Backup:83 - Initiating multipart upload...............
+  2023-07-13 16:50:54 INFO  S3Backup:121 - Multipart upload started for file : 5.1.abcdef.dat
+  2023-07-13 16:54:27 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\5.1.abcdef.dat
+  2023-07-13 16:54:27 ERROR S3Backup:131 - Error occured during Multipart upload.....
+  2023-07-13 16:54:27 INFO  S3Backup:174 - File Status for 5.File 11_5.txt is :MODIFIED
+  2023-07-13 16:54:27 INFO  S3Backup:78 - key: test/5.File 11_5.txt
+  2023-07-13 16:54:27 INFO  S3Backup:79 - path: D:\test\5.File 11_5.txt
+  2023-07-13 16:54:27 INFO  S3Backup:138 - D:\test\5.File 11_5.txt
+  2023-07-13 16:54:29 INFO  S3Backup:144 - Uploaded file: D:\test\5.File 11_5.txt
+  2023-07-13 16:54:29 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\5.File 11_5.txt
+  2023-07-13 16:54:29 INFO  S3Backup:174 - File Status for 6.File 11_6.txt is :MODIFIED
+  2023-07-13 16:54:29 INFO  S3Backup:78 - key: test/6.File 11_6.txt
+  2023-07-13 16:54:29 INFO  S3Backup:79 - path: D:\test\6.File 11_6.txt
+  2023-07-13 16:54:29 INFO  S3Backup:138 - D:\test\6.File 11_6.txt
+  2023-07-13 16:54:29 INFO  S3Backup:144 - Uploaded file: D:\test\6.File 11_6.txt
+  2023-07-13 16:54:29 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\6.File 11_6.txt
+  2023-07-13 16:54:29 INFO  S3Backup:174 - File Status for 7.File 11_7.txt is :MODIFIED
+  2023-07-13 16:54:29 INFO  S3Backup:78 - key: test/7.File 11_7.txt
+  2023-07-13 16:54:29 INFO  S3Backup:79 - path: D:\test\7.File 11_7.txt
+  2023-07-13 16:54:29 INFO  S3Backup:138 - D:\test\7.File 11_7.txt
+  2023-07-13 16:54:30 INFO  S3Backup:144 - Uploaded file: D:\test\7.File 11_7.txt
+  2023-07-13 16:54:30 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\7.File 11_7.txt
+  2023-07-13 16:54:30 INFO  S3Backup:174 - File Status for 8.File 11_8.txt is :MODIFIED
+  2023-07-13 16:54:30 INFO  S3Backup:78 - key: test/8.File 11_8.txt
+  2023-07-13 16:54:30 INFO  S3Backup:79 - path: D:\test\8.File 11_8.txt
+  2023-07-13 16:54:30 INFO  S3Backup:138 - D:\test\8.File 11_8.txt
+  2023-07-13 16:54:30 INFO  S3Backup:144 - Uploaded file: D:\test\8.File 11_8.txt
+  2023-07-13 16:54:30 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\8.File 11_8.txt
+  2023-07-13 16:54:30 INFO  S3Backup:174 - File Status for 9.File 11_9.txt is :MODIFIED
+  2023-07-13 16:54:30 INFO  S3Backup:78 - key: test/9.File 11_9.txt
+  2023-07-13 16:54:30 INFO  S3Backup:79 - path: D:\test\9.File 11_9.txt
+  2023-07-13 16:54:30 INFO  S3Backup:138 - D:\test\9.File 11_9.txt
+  2023-07-13 16:54:30 INFO  S3Backup:144 - Uploaded file: D:\test\9.File 11_9.txt
+  2023-07-13 16:54:30 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\9.File 11_9.txt
+  2023-07-13 16:54:30 INFO  S3Backup:93 - Backup completed successfully.........................
+  2023-07-13 16:54:30 INFO  FileUploadDetailsService:58 - [FileBackupDetails(fileName=1.File 11_1.txt, filePathOnLocalDrive=D:\test\1.File 11_1.txt, filePathInS3=test/1.File 11_1.txt, uploadDate=13-Jul-2023 04:50:54 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=10.File 11_10.txt, filePathOnLocalDrive=D:\test\10.File 11_10.txt, filePathInS3=test/10.File 11_10.txt, uploadDate=13-Jul-2023 04:50:54 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=18.00 B), FileBackupDetails(fileName=2.File 11_2.txt, filePathOnLocalDrive=D:\test\2.File 11_2.txt, filePathInS3=test/2.File 11_2.txt, uploadDate=13-Jul-2023 04:50:54 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=3.File 11_3.txt, filePathOnLocalDrive=D:\test\3.File 11_3.txt, filePathInS3=test/3.File 11_3.txt, uploadDate=13-Jul-2023 04:50:54 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=4.File 11_4.txt, filePathOnLocalDrive=D:\test\4.File 11_4.txt, filePathInS3=test/4.File 11_4.txt, uploadDate=13-Jul-2023 04:50:54 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=5.1.abcdef.dat, filePathOnLocalDrive=D:\test\5.1.abcdef.dat, filePathInS3=test/5.1.abcdef.dat, uploadDate=13-Jul-2023 04:54:27 pm, uploadStatus=FAILED, fileStatus=MODIFIED, fileSize=6.00 GB), FileBackupDetails(fileName=5.File 11_5.txt, filePathOnLocalDrive=D:\test\5.File 11_5.txt, filePathInS3=test/5.File 11_5.txt, uploadDate=13-Jul-2023 04:54:29 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=6.File 11_6.txt, filePathOnLocalDrive=D:\test\6.File 11_6.txt, filePathInS3=test/6.File 11_6.txt, uploadDate=13-Jul-2023 04:54:29 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=7.File 11_7.txt, filePathOnLocalDrive=D:\test\7.File 11_7.txt, filePathInS3=test/7.File 11_7.txt, uploadDate=13-Jul-2023 04:54:30 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=8.File 11_8.txt, filePathOnLocalDrive=D:\test\8.File 11_8.txt, filePathInS3=test/8.File 11_8.txt, uploadDate=13-Jul-2023 04:54:30 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=9.File 11_9.txt, filePathOnLocalDrive=D:\test\9.File 11_9.txt, filePathInS3=test/9.File 11_9.txt, uploadDate=13-Jul-2023 04:54:30 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B)]
+  2023-07-13 16:54:30 INFO  FileUploadDetailsService:96 - File Created : JULY_2023.csv, at path :D:\Vyom Projects\DR setup AWS S3\FileBackupToAWSS3\JULY_2023.csv
+  2023-07-13 16:54:30 INFO  S3Backup:191 - Trigger to lambda function....................
+  2023-07-13 16:54:30 INFO  S3LambdaTrigger:25 - Lambda Trigger started..........
+  2023-07-13 16:54:30 INFO  S3LambdaTrigger:30 - Lambda function name : Monthly-Report-Generation-Function
+  2023-07-13 16:54:30 INFO  S3LambdaTrigger:39 - Lambda invoked...........
+  2023-07-13 16:54:40 INFO  S3LambdaTrigger:42 - Lambda function output : {"statusCode": 200, "body": "Cost report and Usage Report generated and stored in S3 bucket: vyomlabsbucket"}
+  2023-07-13 16:54:40 INFO  S3Backup:194 - Fetching cost report file....................
+  2023-07-13 16:54:40 INFO  S3Backup:196 - Fetching usage report file....................
+  2023-07-13 16:54:40 INFO  EmailService:50 - preparing to send message ...
+  2023-07-13 17:21:04 INFO  S3Backup:70 - Fresh differential files uploading.......
+  2023-07-13 17:21:04 INFO  S3Backup:72 - backupFolderPath :D:/test
+  2023-07-13 17:21:04 INFO  S3Backup:175 - File Status for 1.File 11_1.txt is :MODIFIED
+  2023-07-13 17:21:04 INFO  S3Backup:79 - key: test/1.File 11_1.txt
+  2023-07-13 17:21:04 INFO  S3Backup:80 - path: D:\test\1.File 11_1.txt
+  2023-07-13 17:21:04 INFO  S3Backup:139 - D:\test\1.File 11_1.txt
+  2023-07-13 17:21:04 WARN  Base64:113 - JAXB is unavailable. Will fallback to SDK implementation which may be less performant.If you are using Java 9+, you will need to include javax.xml.bind:jaxb-api as a dependency.
+  2023-07-13 17:21:05 INFO  S3Backup:145 - Uploaded file: D:\test\1.File 11_1.txt
+  2023-07-13 17:21:05 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\1.File 11_1.txt
+  2023-07-13 17:21:05 INFO  S3Backup:175 - File Status for 10.File 11_10.txt is :MODIFIED
+  2023-07-13 17:21:05 INFO  S3Backup:79 - key: test/10.File 11_10.txt
+  2023-07-13 17:21:05 INFO  S3Backup:80 - path: D:\test\10.File 11_10.txt
+  2023-07-13 17:21:05 INFO  S3Backup:139 - D:\test\10.File 11_10.txt
+  2023-07-13 17:21:05 INFO  S3Backup:145 - Uploaded file: D:\test\10.File 11_10.txt
+  2023-07-13 17:21:05 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\10.File 11_10.txt
+  2023-07-13 17:21:05 INFO  S3Backup:175 - File Status for 2.File 11_2.txt is :MODIFIED
+  2023-07-13 17:21:05 INFO  S3Backup:79 - key: test/2.File 11_2.txt
+  2023-07-13 17:21:05 INFO  S3Backup:80 - path: D:\test\2.File 11_2.txt
+  2023-07-13 17:21:05 INFO  S3Backup:139 - D:\test\2.File 11_2.txt
+  2023-07-13 17:21:05 INFO  S3Backup:145 - Uploaded file: D:\test\2.File 11_2.txt
+  2023-07-13 17:21:05 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\2.File 11_2.txt
+  2023-07-13 17:21:05 INFO  S3Backup:175 - File Status for 3.File 11_3.txt is :MODIFIED
+  2023-07-13 17:21:05 INFO  S3Backup:79 - key: test/3.File 11_3.txt
+  2023-07-13 17:21:05 INFO  S3Backup:80 - path: D:\test\3.File 11_3.txt
+  2023-07-13 17:21:05 INFO  S3Backup:139 - D:\test\3.File 11_3.txt
+  2023-07-13 17:21:05 INFO  S3Backup:145 - Uploaded file: D:\test\3.File 11_3.txt
+  2023-07-13 17:21:05 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\3.File 11_3.txt
+  2023-07-13 17:21:05 INFO  S3Backup:175 - File Status for 4.File 11_4.txt is :MODIFIED
+  2023-07-13 17:21:05 INFO  S3Backup:79 - key: test/4.File 11_4.txt
+  2023-07-13 17:21:05 INFO  S3Backup:80 - path: D:\test\4.File 11_4.txt
+  2023-07-13 17:21:05 INFO  S3Backup:139 - D:\test\4.File 11_4.txt
+  2023-07-13 17:21:05 INFO  S3Backup:145 - Uploaded file: D:\test\4.File 11_4.txt
+  2023-07-13 17:21:05 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\4.File 11_4.txt
+  2023-07-13 17:21:05 INFO  S3Backup:175 - File Status for 5.1.abcdef.dat is :MODIFIED
+  2023-07-13 17:21:05 INFO  S3Backup:79 - key: test/5.1.abcdef.dat
+  2023-07-13 17:21:05 INFO  S3Backup:80 - path: D:\test\5.1.abcdef.dat
+  2023-07-13 17:21:05 INFO  S3Backup:84 - Initiating multipart upload...............
+  2023-07-13 17:21:05 INFO  S3Backup:122 - Multipart upload started for file : 5.1.abcdef.dat
+  2023-07-13 17:28:57 INFO  S3Backup:124 - Multipart upload completed for file : 5.1.abcdef.dat
+  2023-07-13 17:28:57 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\5.1.abcdef.dat
+  2023-07-13 17:28:57 INFO  S3Backup:175 - File Status for 5.File 11_5.txt is :MODIFIED
+  2023-07-13 17:28:57 INFO  S3Backup:79 - key: test/5.File 11_5.txt
+  2023-07-13 17:28:57 INFO  S3Backup:80 - path: D:\test\5.File 11_5.txt
+  2023-07-13 17:28:57 INFO  S3Backup:139 - D:\test\5.File 11_5.txt
+  2023-07-13 17:28:57 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\5.File 11_5.txt
+  2023-07-13 17:28:57 INFO  S3Backup:175 - File Status for 6.File 11_6.txt is :MODIFIED
+  2023-07-13 17:28:57 INFO  S3Backup:79 - key: test/6.File 11_6.txt
+  2023-07-13 17:28:57 INFO  S3Backup:80 - path: D:\test\6.File 11_6.txt
+  2023-07-13 17:28:57 INFO  S3Backup:139 - D:\test\6.File 11_6.txt
+  2023-07-13 17:28:57 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\6.File 11_6.txt
+  2023-07-13 17:28:57 INFO  S3Backup:175 - File Status for 7.File 11_7.txt is :MODIFIED
+  2023-07-13 17:28:57 INFO  S3Backup:79 - key: test/7.File 11_7.txt
+  2023-07-13 17:28:57 INFO  S3Backup:80 - path: D:\test\7.File 11_7.txt
+  2023-07-13 17:28:57 INFO  S3Backup:139 - D:\test\7.File 11_7.txt
+  2023-07-13 17:28:57 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\7.File 11_7.txt
+  2023-07-13 17:28:57 INFO  S3Backup:175 - File Status for 8.File 11_8.txt is :MODIFIED
+  2023-07-13 17:28:57 INFO  S3Backup:79 - key: test/8.File 11_8.txt
+  2023-07-13 17:28:57 INFO  S3Backup:80 - path: D:\test\8.File 11_8.txt
+  2023-07-13 17:28:57 INFO  S3Backup:139 - D:\test\8.File 11_8.txt
+  2023-07-13 17:28:57 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\8.File 11_8.txt
+  2023-07-13 17:28:57 INFO  S3Backup:175 - File Status for 9.File 11_9.txt is :MODIFIED
+  2023-07-13 17:28:57 INFO  S3Backup:79 - key: test/9.File 11_9.txt
+  2023-07-13 17:28:57 INFO  S3Backup:80 - path: D:\test\9.File 11_9.txt
+  2023-07-13 17:28:57 INFO  S3Backup:139 - D:\test\9.File 11_9.txt
+  2023-07-13 17:28:57 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\9.File 11_9.txt
+  2023-07-13 17:28:57 INFO  S3Backup:94 - Backup completed successfully.........................
+  2023-07-13 17:28:57 INFO  FileUploadDetailsService:58 - [FileBackupDetails(fileName=1.File 11_1.txt, filePathOnLocalDrive=D:\test\1.File 11_1.txt, filePathInS3=test/1.File 11_1.txt, uploadDate=13-Jul-2023 05:21:05 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=10.File 11_10.txt, filePathOnLocalDrive=D:\test\10.File 11_10.txt, filePathInS3=test/10.File 11_10.txt, uploadDate=13-Jul-2023 05:21:05 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=18.00 B), FileBackupDetails(fileName=2.File 11_2.txt, filePathOnLocalDrive=D:\test\2.File 11_2.txt, filePathInS3=test/2.File 11_2.txt, uploadDate=13-Jul-2023 05:21:05 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=3.File 11_3.txt, filePathOnLocalDrive=D:\test\3.File 11_3.txt, filePathInS3=test/3.File 11_3.txt, uploadDate=13-Jul-2023 05:21:05 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=4.File 11_4.txt, filePathOnLocalDrive=D:\test\4.File 11_4.txt, filePathInS3=test/4.File 11_4.txt, uploadDate=13-Jul-2023 05:21:05 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=5.1.abcdef.dat, filePathOnLocalDrive=D:\test\5.1.abcdef.dat, filePathInS3=test/5.1.abcdef.dat, uploadDate=13-Jul-2023 05:28:57 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=6.00 GB), FileBackupDetails(fileName=5.File 11_5.txt, filePathOnLocalDrive=D:\test\5.File 11_5.txt, filePathInS3=test/5.File 11_5.txt, uploadDate=13-Jul-2023 05:28:57 pm, uploadStatus=FAILED, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=6.File 11_6.txt, filePathOnLocalDrive=D:\test\6.File 11_6.txt, filePathInS3=test/6.File 11_6.txt, uploadDate=13-Jul-2023 05:28:57 pm, uploadStatus=FAILED, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=7.File 11_7.txt, filePathOnLocalDrive=D:\test\7.File 11_7.txt, filePathInS3=test/7.File 11_7.txt, uploadDate=13-Jul-2023 05:28:57 pm, uploadStatus=FAILED, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=8.File 11_8.txt, filePathOnLocalDrive=D:\test\8.File 11_8.txt, filePathInS3=test/8.File 11_8.txt, uploadDate=13-Jul-2023 05:28:57 pm, uploadStatus=FAILED, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=9.File 11_9.txt, filePathOnLocalDrive=D:\test\9.File 11_9.txt, filePathInS3=test/9.File 11_9.txt, uploadDate=13-Jul-2023 05:28:57 pm, uploadStatus=FAILED, fileStatus=MODIFIED, fileSize=17.00 B)]
+  2023-07-13 17:28:57 INFO  FileUploadDetailsService:96 - File Created : JULY_2023.csv, at path :D:\Vyom Projects\DR setup AWS S3\FileBackupToAWSS3\JULY_2023.csv
+  2023-07-13 17:28:57 INFO  S3Backup:192 - Trigger to lambda function....................
+  2023-07-13 17:28:57 INFO  S3LambdaTrigger:25 - Lambda Trigger started..........
+  2023-07-13 17:28:58 INFO  S3LambdaTrigger:30 - Lambda function name : Monthly-Report-Generation-Function
+  2023-07-13 17:28:58 INFO  S3LambdaTrigger:39 - Lambda invoked...........
+  2023-07-13 17:29:08 INFO  S3LambdaTrigger:42 - Lambda function output : {"statusCode": 200, "body": "Cost report and Usage Report generated and stored in S3 bucket: vyomlabsbucket"}
+  2023-07-13 17:29:08 INFO  S3Backup:195 - Fetching cost report file....................
+  2023-07-13 17:29:08 INFO  S3Backup:197 - Fetching usage report file....................
+  2023-07-13 17:29:08 INFO  EmailService:50 - preparing to send message ...
+  2023-07-13 18:21:53 INFO  S3Backup:70 - Fresh differential files uploading.......
+  2023-07-13 18:21:53 INFO  S3Backup:72 - backupFolderPath :D:/test
+  2023-07-13 18:21:53 INFO  S3Backup:176 - File Status for 1.File 11_1.txt is :MODIFIED
+  2023-07-13 18:21:53 INFO  S3Backup:79 - key: test/1.File 11_1.txt
+  2023-07-13 18:21:53 INFO  S3Backup:80 - path: D:\test\1.File 11_1.txt
+  2023-07-13 18:21:53 INFO  S3Backup:139 - D:\test\1.File 11_1.txt
+  2023-07-13 18:21:54 INFO  S3Backup:145 - Uploaded file: D:\test\1.File 11_1.txt
+  2023-07-13 18:21:54 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\1.File 11_1.txt
+  2023-07-13 18:21:54 INFO  S3Backup:176 - File Status for 10.File 11_10.txt is :MODIFIED
+  2023-07-13 18:21:54 INFO  S3Backup:79 - key: test/10.File 11_10.txt
+  2023-07-13 18:21:54 INFO  S3Backup:80 - path: D:\test\10.File 11_10.txt
+  2023-07-13 18:21:54 INFO  S3Backup:139 - D:\test\10.File 11_10.txt
+  2023-07-13 18:21:54 INFO  S3Backup:145 - Uploaded file: D:\test\10.File 11_10.txt
+  2023-07-13 18:21:54 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\10.File 11_10.txt
+  2023-07-13 18:21:54 INFO  S3Backup:176 - File Status for 2.File 11_2.txt is :MODIFIED
+  2023-07-13 18:21:54 INFO  S3Backup:79 - key: test/2.File 11_2.txt
+  2023-07-13 18:21:54 INFO  S3Backup:80 - path: D:\test\2.File 11_2.txt
+  2023-07-13 18:21:54 INFO  S3Backup:139 - D:\test\2.File 11_2.txt
+  2023-07-13 18:21:54 INFO  S3Backup:145 - Uploaded file: D:\test\2.File 11_2.txt
+  2023-07-13 18:21:54 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\2.File 11_2.txt
+  2023-07-13 18:21:54 INFO  S3Backup:176 - File Status for 3.File 11_3.txt is :MODIFIED
+  2023-07-13 18:21:54 INFO  S3Backup:79 - key: test/3.File 11_3.txt
+  2023-07-13 18:21:54 INFO  S3Backup:80 - path: D:\test\3.File 11_3.txt
+  2023-07-13 18:21:54 INFO  S3Backup:139 - D:\test\3.File 11_3.txt
+  2023-07-13 18:21:54 INFO  S3Backup:145 - Uploaded file: D:\test\3.File 11_3.txt
+  2023-07-13 18:21:54 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\3.File 11_3.txt
+  2023-07-13 18:21:54 INFO  S3Backup:176 - File Status for 4.File 11_4.txt is :MODIFIED
+  2023-07-13 18:21:54 INFO  S3Backup:79 - key: test/4.File 11_4.txt
+  2023-07-13 18:21:54 INFO  S3Backup:80 - path: D:\test\4.File 11_4.txt
+  2023-07-13 18:21:54 INFO  S3Backup:139 - D:\test\4.File 11_4.txt
+  2023-07-13 18:21:54 INFO  S3Backup:145 - Uploaded file: D:\test\4.File 11_4.txt
+  2023-07-13 18:21:54 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\4.File 11_4.txt
+  2023-07-13 18:21:54 INFO  S3Backup:176 - File Status for 5.1.abcdef.dat is :MODIFIED
+  2023-07-13 18:21:54 INFO  S3Backup:79 - key: test/5.1.abcdef.dat
+  2023-07-13 18:21:54 INFO  S3Backup:80 - path: D:\test\5.1.abcdef.dat
+  2023-07-13 18:21:54 INFO  S3Backup:84 - Initiating multipart upload...............
+  2023-07-13 18:21:54 INFO  S3Backup:122 - Multipart upload started for file : 5.1.abcdef.dat
+  2023-07-13 18:25:36 INFO  S3Backup:124 - Multipart upload completed for file : 5.1.abcdef.dat
+  2023-07-13 18:25:36 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\5.1.abcdef.dat
+  2023-07-13 18:25:36 INFO  S3Backup:176 - File Status for 5.File 11_5.txt is :MODIFIED
+  2023-07-13 18:25:36 INFO  S3Backup:79 - key: test/5.File 11_5.txt
+  2023-07-13 18:25:36 INFO  S3Backup:80 - path: D:\test\5.File 11_5.txt
+  2023-07-13 18:25:36 INFO  S3Backup:139 - D:\test\5.File 11_5.txt
+  2023-07-13 18:25:36 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\5.File 11_5.txt
+  2023-07-13 18:25:36 INFO  S3Backup:176 - File Status for 6.File 11_6.txt is :MODIFIED
+  2023-07-13 18:25:36 INFO  S3Backup:79 - key: test/6.File 11_6.txt
+  2023-07-13 18:25:36 INFO  S3Backup:80 - path: D:\test\6.File 11_6.txt
+  2023-07-13 18:25:36 INFO  S3Backup:139 - D:\test\6.File 11_6.txt
+  2023-07-13 18:25:36 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\6.File 11_6.txt
+  2023-07-13 18:25:36 INFO  S3Backup:176 - File Status for 7.File 11_7.txt is :MODIFIED
+  2023-07-13 18:25:36 INFO  S3Backup:79 - key: test/7.File 11_7.txt
+  2023-07-13 18:25:36 INFO  S3Backup:80 - path: D:\test\7.File 11_7.txt
+  2023-07-13 18:25:36 INFO  S3Backup:139 - D:\test\7.File 11_7.txt
+  2023-07-13 18:25:36 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\7.File 11_7.txt
+  2023-07-13 18:25:36 INFO  S3Backup:176 - File Status for 8.File 11_8.txt is :MODIFIED
+  2023-07-13 18:25:36 INFO  S3Backup:79 - key: test/8.File 11_8.txt
+  2023-07-13 18:25:36 INFO  S3Backup:80 - path: D:\test\8.File 11_8.txt
+  2023-07-13 18:25:36 INFO  S3Backup:139 - D:\test\8.File 11_8.txt
+  2023-07-13 18:25:36 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\8.File 11_8.txt
+  2023-07-13 18:25:36 INFO  S3Backup:176 - File Status for 9.File 11_9.txt is :MODIFIED
+  2023-07-13 18:25:36 INFO  S3Backup:79 - key: test/9.File 11_9.txt
+  2023-07-13 18:25:36 INFO  S3Backup:80 - path: D:\test\9.File 11_9.txt
+  2023-07-13 18:25:36 INFO  S3Backup:139 - D:\test\9.File 11_9.txt
+  2023-07-13 18:25:36 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\9.File 11_9.txt
+  2023-07-13 18:25:36 INFO  S3Backup:94 - Backup completed successfully.........................
+  2023-07-13 18:25:36 INFO  FileUploadDetailsService:58 - [FileBackupDetails(fileName=1.File 11_1.txt, filePathOnLocalDrive=D:\test\1.File 11_1.txt, filePathInS3=test/1.File 11_1.txt, uploadDate=13-Jul-2023 06:21:54 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=10.File 11_10.txt, filePathOnLocalDrive=D:\test\10.File 11_10.txt, filePathInS3=test/10.File 11_10.txt, uploadDate=13-Jul-2023 06:21:54 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=18.00 B), FileBackupDetails(fileName=2.File 11_2.txt, filePathOnLocalDrive=D:\test\2.File 11_2.txt, filePathInS3=test/2.File 11_2.txt, uploadDate=13-Jul-2023 06:21:54 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=3.File 11_3.txt, filePathOnLocalDrive=D:\test\3.File 11_3.txt, filePathInS3=test/3.File 11_3.txt, uploadDate=13-Jul-2023 06:21:54 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=4.File 11_4.txt, filePathOnLocalDrive=D:\test\4.File 11_4.txt, filePathInS3=test/4.File 11_4.txt, uploadDate=13-Jul-2023 06:21:54 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=5.1.abcdef.dat, filePathOnLocalDrive=D:\test\5.1.abcdef.dat, filePathInS3=test/5.1.abcdef.dat, uploadDate=13-Jul-2023 06:25:36 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=6.00 GB), FileBackupDetails(fileName=5.File 11_5.txt, filePathOnLocalDrive=D:\test\5.File 11_5.txt, filePathInS3=test/5.File 11_5.txt, uploadDate=13-Jul-2023 06:25:36 pm, uploadStatus=FAILED, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=6.File 11_6.txt, filePathOnLocalDrive=D:\test\6.File 11_6.txt, filePathInS3=test/6.File 11_6.txt, uploadDate=13-Jul-2023 06:25:36 pm, uploadStatus=FAILED, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=7.File 11_7.txt, filePathOnLocalDrive=D:\test\7.File 11_7.txt, filePathInS3=test/7.File 11_7.txt, uploadDate=13-Jul-2023 06:25:36 pm, uploadStatus=FAILED, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=8.File 11_8.txt, filePathOnLocalDrive=D:\test\8.File 11_8.txt, filePathInS3=test/8.File 11_8.txt, uploadDate=13-Jul-2023 06:25:36 pm, uploadStatus=FAILED, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=9.File 11_9.txt, filePathOnLocalDrive=D:\test\9.File 11_9.txt, filePathInS3=test/9.File 11_9.txt, uploadDate=13-Jul-2023 06:25:36 pm, uploadStatus=FAILED, fileStatus=MODIFIED, fileSize=17.00 B)]
+  2023-07-13 18:25:36 INFO  FileUploadDetailsService:96 - File Created : JULY_2023.csv, at path :D:\Vyom Projects\DR setup AWS S3\FileBackupToAWSS3\JULY_2023.csv
+  2023-07-13 18:25:36 INFO  S3Backup:193 - Trigger to lambda function....................
+  2023-07-13 18:25:36 INFO  S3LambdaTrigger:25 - Lambda Trigger started..........
+  2023-07-13 18:25:36 INFO  S3LambdaTrigger:30 - Lambda function name : Monthly-Report-Generation-Function
+  2023-07-13 18:25:36 INFO  S3LambdaTrigger:39 - Lambda invoked...........
+  2023-07-13 18:25:46 INFO  S3LambdaTrigger:42 - Lambda function output : {"statusCode": 200, "body": "Cost report and Usage Report generated and stored in S3 bucket: vyomlabsbucket"}
+  2023-07-13 18:25:46 INFO  S3Backup:196 - Fetching cost report file....................
+  2023-07-13 18:25:46 INFO  S3Backup:198 - Fetching usage report file....................
+  2023-07-13 18:25:46 INFO  EmailService:50 - preparing to send message ...
+  2023-07-13 18:32:29 INFO  S3Backup:70 - Fresh differential files uploading.......
+  2023-07-13 18:32:29 INFO  S3Backup:72 - backupFolderPath :D:/test
+  2023-07-13 18:32:29 INFO  S3Backup:176 - File Status for 1.File 11_1.txt is :MODIFIED
+  2023-07-13 18:32:29 INFO  S3Backup:79 - key: test/1.File 11_1.txt
+  2023-07-13 18:32:29 INFO  S3Backup:80 - path: D:\test\1.File 11_1.txt
+  2023-07-13 18:32:29 INFO  S3Backup:139 - D:\test\1.File 11_1.txt
+  2023-07-13 18:32:30 INFO  S3Backup:145 - Uploaded file: D:\test\1.File 11_1.txt
+  2023-07-13 18:32:30 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\1.File 11_1.txt
+  2023-07-13 18:32:30 INFO  S3Backup:176 - File Status for 10.File 11_10.txt is :MODIFIED
+  2023-07-13 18:32:30 INFO  S3Backup:79 - key: test/10.File 11_10.txt
+  2023-07-13 18:32:30 INFO  S3Backup:80 - path: D:\test\10.File 11_10.txt
+  2023-07-13 18:32:30 INFO  S3Backup:139 - D:\test\10.File 11_10.txt
+  2023-07-13 18:32:30 INFO  S3Backup:145 - Uploaded file: D:\test\10.File 11_10.txt
+  2023-07-13 18:32:30 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\10.File 11_10.txt
+  2023-07-13 18:32:30 INFO  S3Backup:176 - File Status for 2.File 11_2.txt is :MODIFIED
+  2023-07-13 18:32:30 INFO  S3Backup:79 - key: test/2.File 11_2.txt
+  2023-07-13 18:32:30 INFO  S3Backup:80 - path: D:\test\2.File 11_2.txt
+  2023-07-13 18:32:30 INFO  S3Backup:139 - D:\test\2.File 11_2.txt
+  2023-07-13 18:32:30 INFO  S3Backup:145 - Uploaded file: D:\test\2.File 11_2.txt
+  2023-07-13 18:32:30 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\2.File 11_2.txt
+  2023-07-13 18:32:30 INFO  S3Backup:176 - File Status for 3.File 11_3.txt is :MODIFIED
+  2023-07-13 18:32:30 INFO  S3Backup:79 - key: test/3.File 11_3.txt
+  2023-07-13 18:32:30 INFO  S3Backup:80 - path: D:\test\3.File 11_3.txt
+  2023-07-13 18:32:30 INFO  S3Backup:139 - D:\test\3.File 11_3.txt
+  2023-07-13 18:32:30 INFO  S3Backup:145 - Uploaded file: D:\test\3.File 11_3.txt
+  2023-07-13 18:32:30 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\3.File 11_3.txt
+  2023-07-13 18:32:30 INFO  S3Backup:176 - File Status for 4.File 11_4.txt is :MODIFIED
+  2023-07-13 18:32:30 INFO  S3Backup:79 - key: test/4.File 11_4.txt
+  2023-07-13 18:32:30 INFO  S3Backup:80 - path: D:\test\4.File 11_4.txt
+  2023-07-13 18:32:30 INFO  S3Backup:139 - D:\test\4.File 11_4.txt
+  2023-07-13 18:32:30 INFO  S3Backup:145 - Uploaded file: D:\test\4.File 11_4.txt
+  2023-07-13 18:32:30 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\4.File 11_4.txt
+  2023-07-13 18:32:30 INFO  S3Backup:176 - File Status for 5.1.abcdef.dat is :MODIFIED
+  2023-07-13 18:32:30 INFO  S3Backup:79 - key: test/5.1.abcdef.dat
+  2023-07-13 18:32:30 INFO  S3Backup:80 - path: D:\test\5.1.abcdef.dat
+  2023-07-13 18:32:30 INFO  S3Backup:84 - Initiating multipart upload...............
+  2023-07-13 18:32:30 INFO  S3Backup:122 - Multipart upload started for file : 5.1.abcdef.dat
+  2023-07-13 18:36:49 INFO  S3Backup:124 - Multipart upload completed for file : 5.1.abcdef.dat
+  2023-07-13 18:36:49 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\5.1.abcdef.dat
+  2023-07-13 18:36:49 INFO  S3Backup:176 - File Status for 5.File 11_5.txt is :MODIFIED
+  2023-07-13 18:36:49 INFO  S3Backup:79 - key: test/5.File 11_5.txt
+  2023-07-13 18:36:49 INFO  S3Backup:80 - path: D:\test\5.File 11_5.txt
+  2023-07-13 18:36:49 INFO  S3Backup:139 - D:\test\5.File 11_5.txt
+  2023-07-13 18:36:49 INFO  S3Backup:145 - Uploaded file: D:\test\5.File 11_5.txt
+  2023-07-13 18:36:49 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\5.File 11_5.txt
+  2023-07-13 18:36:49 INFO  S3Backup:176 - File Status for 6.File 11_6.txt is :MODIFIED
+  2023-07-13 18:36:49 INFO  S3Backup:79 - key: test/6.File 11_6.txt
+  2023-07-13 18:36:49 INFO  S3Backup:80 - path: D:\test\6.File 11_6.txt
+  2023-07-13 18:36:49 INFO  S3Backup:139 - D:\test\6.File 11_6.txt
+  2023-07-13 18:36:49 INFO  S3Backup:145 - Uploaded file: D:\test\6.File 11_6.txt
+  2023-07-13 18:36:50 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\6.File 11_6.txt
+  2023-07-13 18:36:50 INFO  S3Backup:176 - File Status for 7.File 11_7.txt is :MODIFIED
+  2023-07-13 18:36:50 INFO  S3Backup:79 - key: test/7.File 11_7.txt
+  2023-07-13 18:36:50 INFO  S3Backup:80 - path: D:\test\7.File 11_7.txt
+  2023-07-13 18:36:50 INFO  S3Backup:139 - D:\test\7.File 11_7.txt
+  2023-07-13 18:36:50 INFO  S3Backup:145 - Uploaded file: D:\test\7.File 11_7.txt
+  2023-07-13 18:36:50 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\7.File 11_7.txt
+  2023-07-13 18:36:50 INFO  S3Backup:176 - File Status for 8.File 11_8.txt is :MODIFIED
+  2023-07-13 18:36:50 INFO  S3Backup:79 - key: test/8.File 11_8.txt
+  2023-07-13 18:36:50 INFO  S3Backup:80 - path: D:\test\8.File 11_8.txt
+  2023-07-13 18:36:50 INFO  S3Backup:139 - D:\test\8.File 11_8.txt
+  2023-07-13 18:36:50 INFO  S3Backup:145 - Uploaded file: D:\test\8.File 11_8.txt
+  2023-07-13 18:36:50 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\8.File 11_8.txt
+  2023-07-13 18:36:50 INFO  S3Backup:176 - File Status for 9.File 11_9.txt is :MODIFIED
+  2023-07-13 18:36:50 INFO  S3Backup:79 - key: test/9.File 11_9.txt
+  2023-07-13 18:36:50 INFO  S3Backup:80 - path: D:\test\9.File 11_9.txt
+  2023-07-13 18:36:50 INFO  S3Backup:139 - D:\test\9.File 11_9.txt
+  2023-07-13 18:36:50 INFO  S3Backup:145 - Uploaded file: D:\test\9.File 11_9.txt
+  2023-07-13 18:36:50 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\9.File 11_9.txt
+  2023-07-13 18:36:50 INFO  S3Backup:94 - Backup completed successfully.........................
+  2023-07-13 18:36:50 INFO  FileUploadDetailsService:58 - [FileBackupDetails(fileName=1.File 11_1.txt, filePathOnLocalDrive=D:\test\1.File 11_1.txt, filePathInS3=test/1.File 11_1.txt, uploadDate=13-Jul-2023 06:32:30 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=10.File 11_10.txt, filePathOnLocalDrive=D:\test\10.File 11_10.txt, filePathInS3=test/10.File 11_10.txt, uploadDate=13-Jul-2023 06:32:30 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=18.00 B), FileBackupDetails(fileName=2.File 11_2.txt, filePathOnLocalDrive=D:\test\2.File 11_2.txt, filePathInS3=test/2.File 11_2.txt, uploadDate=13-Jul-2023 06:32:30 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=3.File 11_3.txt, filePathOnLocalDrive=D:\test\3.File 11_3.txt, filePathInS3=test/3.File 11_3.txt, uploadDate=13-Jul-2023 06:32:30 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=4.File 11_4.txt, filePathOnLocalDrive=D:\test\4.File 11_4.txt, filePathInS3=test/4.File 11_4.txt, uploadDate=13-Jul-2023 06:32:30 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=5.1.abcdef.dat, filePathOnLocalDrive=D:\test\5.1.abcdef.dat, filePathInS3=test/5.1.abcdef.dat, uploadDate=13-Jul-2023 06:36:49 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=6.00 GB), FileBackupDetails(fileName=5.File 11_5.txt, filePathOnLocalDrive=D:\test\5.File 11_5.txt, filePathInS3=test/5.File 11_5.txt, uploadDate=13-Jul-2023 06:36:49 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=6.File 11_6.txt, filePathOnLocalDrive=D:\test\6.File 11_6.txt, filePathInS3=test/6.File 11_6.txt, uploadDate=13-Jul-2023 06:36:50 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=7.File 11_7.txt, filePathOnLocalDrive=D:\test\7.File 11_7.txt, filePathInS3=test/7.File 11_7.txt, uploadDate=13-Jul-2023 06:36:50 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=8.File 11_8.txt, filePathOnLocalDrive=D:\test\8.File 11_8.txt, filePathInS3=test/8.File 11_8.txt, uploadDate=13-Jul-2023 06:36:50 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=9.File 11_9.txt, filePathOnLocalDrive=D:\test\9.File 11_9.txt, filePathInS3=test/9.File 11_9.txt, uploadDate=13-Jul-2023 06:36:50 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B)]
+  2023-07-13 18:36:50 INFO  FileUploadDetailsService:96 - File Created : JULY_2023.csv, at path :D:\Vyom Projects\DR setup AWS S3\FileBackupToAWSS3\JULY_2023.csv
+  2023-07-13 18:36:50 INFO  S3Backup:193 - Trigger to lambda function....................
+  2023-07-13 18:36:50 INFO  S3LambdaTrigger:25 - Lambda Trigger started..........
+  2023-07-13 18:36:50 INFO  S3LambdaTrigger:30 - Lambda function name : Monthly-Report-Generation-Function
+  2023-07-13 18:36:50 INFO  S3LambdaTrigger:39 - Lambda invoked...........
+  2023-07-13 18:37:00 INFO  S3LambdaTrigger:42 - Lambda function output : {"statusCode": 200, "body": "Cost report and Usage Report generated and stored in S3 bucket: vyomlabsbucket"}
+  2023-07-13 18:37:00 INFO  S3Backup:196 - Fetching cost report file....................
+  2023-07-13 18:37:00 INFO  S3Backup:198 - Fetching usage report file....................
+  2023-07-13 18:37:00 INFO  EmailService:50 - preparing to send message ...
+  2023-07-13 18:45:08 INFO  S3Backup:70 - Fresh differential files uploading.......
+  2023-07-13 18:45:08 INFO  S3Backup:72 - backupFolderPath :D:/test
+  2023-07-13 18:45:08 INFO  S3Backup:176 - File Status for 3.File 11_3.txt is :MODIFIED
+  2023-07-13 18:45:08 INFO  S3Backup:79 - key: test/3.File 11_3.txt
+  2023-07-13 18:45:08 INFO  S3Backup:80 - path: D:\test\3.File 11_3.txt
+  2023-07-13 18:45:08 INFO  S3Backup:139 - D:\test\3.File 11_3.txt
+  2023-07-13 18:45:08 INFO  S3Backup:145 - Uploaded file: D:\test\3.File 11_3.txt
+  2023-07-13 18:45:08 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\3.File 11_3.txt
+  2023-07-13 18:45:08 INFO  S3Backup:176 - File Status for 4.File 11_4.txt is :MODIFIED
+  2023-07-13 18:45:08 INFO  S3Backup:79 - key: test/4.File 11_4.txt
+  2023-07-13 18:45:08 INFO  S3Backup:80 - path: D:\test\4.File 11_4.txt
+  2023-07-13 18:45:08 INFO  S3Backup:139 - D:\test\4.File 11_4.txt
+  2023-07-13 18:45:08 INFO  S3Backup:145 - Uploaded file: D:\test\4.File 11_4.txt
+  2023-07-13 18:45:08 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\4.File 11_4.txt
+  2023-07-13 18:45:08 INFO  S3Backup:176 - File Status for 5.1.abcdef.dat is :MODIFIED
+  2023-07-13 18:45:08 INFO  S3Backup:79 - key: test/5.1.abcdef.dat
+  2023-07-13 18:45:08 INFO  S3Backup:80 - path: D:\test\5.1.abcdef.dat
+  2023-07-13 18:45:08 INFO  S3Backup:84 - Initiating multipart upload...............
+  2023-07-13 18:45:08 INFO  S3Backup:122 - Multipart upload started for file : 5.1.abcdef.dat
+  2023-07-13 18:49:11 INFO  S3Backup:124 - Multipart upload completed for file : 5.1.abcdef.dat
+  2023-07-13 18:49:11 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\5.1.abcdef.dat
+  2023-07-13 18:49:11 INFO  S3Backup:176 - File Status for 5.File 11_5.txt is :MODIFIED
+  2023-07-13 18:49:11 INFO  S3Backup:79 - key: test/5.File 11_5.txt
+  2023-07-13 18:49:11 INFO  S3Backup:80 - path: D:\test\5.File 11_5.txt
+  2023-07-13 18:49:11 INFO  S3Backup:139 - D:\test\5.File 11_5.txt
+  2023-07-13 18:49:11 INFO  S3Backup:145 - Uploaded file: D:\test\5.File 11_5.txt
+  2023-07-13 18:49:11 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\5.File 11_5.txt
+  2023-07-13 18:49:11 INFO  S3Backup:176 - File Status for 6.File 11_6.txt is :MODIFIED
+  2023-07-13 18:49:11 INFO  S3Backup:79 - key: test/6.File 11_6.txt
+  2023-07-13 18:49:11 INFO  S3Backup:80 - path: D:\test\6.File 11_6.txt
+  2023-07-13 18:49:11 INFO  S3Backup:139 - D:\test\6.File 11_6.txt
+  2023-07-13 18:49:11 INFO  S3Backup:145 - Uploaded file: D:\test\6.File 11_6.txt
+  2023-07-13 18:49:11 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\6.File 11_6.txt
+  2023-07-13 18:49:11 INFO  S3Backup:94 - Backup completed successfully.........................
+  2023-07-13 18:49:11 INFO  FileUploadDetailsService:58 - [FileBackupDetails(fileName=3.File 11_3.txt, filePathOnLocalDrive=D:\test\3.File 11_3.txt, filePathInS3=test/3.File 11_3.txt, uploadDate=13-Jul-2023 06:45:08 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=4.File 11_4.txt, filePathOnLocalDrive=D:\test\4.File 11_4.txt, filePathInS3=test/4.File 11_4.txt, uploadDate=13-Jul-2023 06:45:08 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=5.1.abcdef.dat, filePathOnLocalDrive=D:\test\5.1.abcdef.dat, filePathInS3=test/5.1.abcdef.dat, uploadDate=13-Jul-2023 06:49:11 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=6.00 GB), FileBackupDetails(fileName=5.File 11_5.txt, filePathOnLocalDrive=D:\test\5.File 11_5.txt, filePathInS3=test/5.File 11_5.txt, uploadDate=13-Jul-2023 06:49:11 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=6.File 11_6.txt, filePathOnLocalDrive=D:\test\6.File 11_6.txt, filePathInS3=test/6.File 11_6.txt, uploadDate=13-Jul-2023 06:49:11 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B)]
+  2023-07-13 18:49:11 INFO  FileUploadDetailsService:96 - File Created : JULY_2023.csv, at path :D:\Vyom Projects\DR setup AWS S3\FileBackupToAWSS3\JULY_2023.csv
+  2023-07-13 18:49:11 INFO  S3Backup:193 - Trigger to lambda function....................
+  2023-07-13 18:49:11 INFO  S3LambdaTrigger:25 - Lambda Trigger started..........
+  2023-07-13 18:49:11 INFO  S3LambdaTrigger:30 - Lambda function name : Monthly-Report-Generation-Function
+  2023-07-13 18:49:11 INFO  S3LambdaTrigger:39 - Lambda invoked...........
+  2023-07-13 18:49:21 INFO  S3LambdaTrigger:42 - Lambda function output : {"statusCode": 200, "body": "Cost report and Usage Report generated and stored in S3 bucket: vyomlabsbucket"}
+  2023-07-13 18:49:21 INFO  S3Backup:196 - Fetching cost report file....................
+  2023-07-13 18:49:21 INFO  S3Backup:198 - Fetching usage report file....................
+  2023-07-13 18:49:21 INFO  EmailService:50 - preparing to send message ...
+  2023-07-14 12:08:55 INFO  S3Backup:70 - Fresh differential files uploading.......
+  2023-07-14 12:08:55 INFO  S3Backup:72 - backupFolderPath :D:/test
+  2023-07-14 12:08:55 INFO  S3Backup:94 - Backup completed successfully.........................
+  2023-07-14 12:08:55 INFO  FileUploadDetailsService:58 - [FileBackupDetails(fileName="3.File 11_3.txt", filePathOnLocalDrive="D:\test\3.File 11_3.txt", filePathInS3="test/3.File 11_3.txt", uploadDate="13-Jul-2023 06:45:08 pm", uploadStatus="SUCCESS", fileStatus="MODIFIED", fileSize="17.00 B"), FileBackupDetails(fileName="4.File 11_4.txt", filePathOnLocalDrive="D:\test\4.File 11_4.txt", filePathInS3="test/4.File 11_4.txt", uploadDate="13-Jul-2023 06:45:08 pm", uploadStatus="SUCCESS", fileStatus="MODIFIED", fileSize="17.00 B"), FileBackupDetails(fileName="5.1.abcdef.dat", filePathOnLocalDrive="D:\test\5.1.abcdef.dat", filePathInS3="test/5.1.abcdef.dat", uploadDate="13-Jul-2023 06:49:11 pm", uploadStatus="SUCCESS", fileStatus="MODIFIED", fileSize="6.00 GB"), FileBackupDetails(fileName="5.File 11_5.txt", filePathOnLocalDrive="D:\test\5.File 11_5.txt", filePathInS3="test/5.File 11_5.txt", uploadDate="13-Jul-2023 06:49:11 pm", uploadStatus="SUCCESS", fileStatus="MODIFIED", fileSize="17.00 B"), FileBackupDetails(fileName="6.File 11_6.txt", filePathOnLocalDrive="D:\test\6.File 11_6.txt", filePathInS3="test/6.File 11_6.txt", uploadDate="13-Jul-2023 06:49:11 pm", uploadStatus="SUCCESS", fileStatus="MODIFIED", fileSize="17.00 B")]
+  2023-07-14 12:08:55 INFO  FileUploadDetailsService:99 - File already exists : JULY_2023.csv
+ at path:D:\Vyom Projects\DR setup AWS S3\FileBackupToAWSS3\JULY_2023.csv
+  2023-07-14 12:08:55 INFO  S3Backup:190 - Trigger to lambda function....................
+  2023-07-14 12:08:55 INFO  S3LambdaTrigger:25 - Lambda Trigger started..........
+  2023-07-14 12:08:55 INFO  S3LambdaTrigger:30 - Lambda function name : Monthly-Report-Generation-Function
+  2023-07-14 12:08:55 INFO  S3LambdaTrigger:39 - Lambda invoked...........
+  2023-07-14 12:09:06 INFO  S3LambdaTrigger:42 - Lambda function output : {"statusCode": 200, "body": "Cost report and Usage Report generated and stored in S3 bucket: vyomlabsbucket"}
+  2023-07-14 12:09:06 INFO  S3Backup:193 - Fetching cost report file....................
+  2023-07-14 12:09:06 INFO  S3Backup:195 - Fetching usage report file....................
+  2023-07-14 12:09:06 INFO  EmailService:50 - preparing to send message ...
+  2023-07-14 12:09:59 INFO  S3Backup:70 - Fresh differential files uploading.......
+  2023-07-14 12:09:59 INFO  S3Backup:72 - backupFolderPath :D:/test
+  2023-07-14 12:09:59 INFO  S3Backup:173 - File Status for 1.File 12_1.txt is :MODIFIED
+  2023-07-14 12:09:59 INFO  S3Backup:79 - key: test/1.File 12_1.txt
+  2023-07-14 12:09:59 INFO  S3Backup:80 - path: D:\test\1.File 12_1.txt
+  2023-07-14 12:09:59 INFO  S3Backup:136 - D:\test\1.File 12_1.txt
+  2023-07-14 12:09:59 INFO  S3Backup:142 - Uploaded file: D:\test\1.File 12_1.txt
+  2023-07-14 12:09:59 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\1.File 12_1.txt
+  2023-07-14 12:09:59 INFO  S3Backup:173 - File Status for 10.File 12_10.txt is :MODIFIED
+  2023-07-14 12:09:59 INFO  S3Backup:79 - key: test/10.File 12_10.txt
+  2023-07-14 12:09:59 INFO  S3Backup:80 - path: D:\test\10.File 12_10.txt
+  2023-07-14 12:09:59 INFO  S3Backup:136 - D:\test\10.File 12_10.txt
+  2023-07-14 12:09:59 INFO  S3Backup:142 - Uploaded file: D:\test\10.File 12_10.txt
+  2023-07-14 12:09:59 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\10.File 12_10.txt
+  2023-07-14 12:09:59 INFO  S3Backup:173 - File Status for 2.File 12_2.txt is :MODIFIED
+  2023-07-14 12:09:59 INFO  S3Backup:79 - key: test/2.File 12_2.txt
+  2023-07-14 12:09:59 INFO  S3Backup:80 - path: D:\test\2.File 12_2.txt
+  2023-07-14 12:09:59 INFO  S3Backup:136 - D:\test\2.File 12_2.txt
+  2023-07-14 12:09:59 INFO  S3Backup:142 - Uploaded file: D:\test\2.File 12_2.txt
+  2023-07-14 12:09:59 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\2.File 12_2.txt
+  2023-07-14 12:09:59 INFO  S3Backup:173 - File Status for 3.File 12_3.txt is :MODIFIED
+  2023-07-14 12:09:59 INFO  S3Backup:79 - key: test/3.File 12_3.txt
+  2023-07-14 12:09:59 INFO  S3Backup:80 - path: D:\test\3.File 12_3.txt
+  2023-07-14 12:09:59 INFO  S3Backup:136 - D:\test\3.File 12_3.txt
+  2023-07-14 12:09:59 INFO  S3Backup:142 - Uploaded file: D:\test\3.File 12_3.txt
+  2023-07-14 12:09:59 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\3.File 12_3.txt
+  2023-07-14 12:09:59 INFO  S3Backup:173 - File Status for 4.File 12_4.txt is :MODIFIED
+  2023-07-14 12:09:59 INFO  S3Backup:79 - key: test/4.File 12_4.txt
+  2023-07-14 12:09:59 INFO  S3Backup:80 - path: D:\test\4.File 12_4.txt
+  2023-07-14 12:09:59 INFO  S3Backup:136 - D:\test\4.File 12_4.txt
+  2023-07-14 12:09:59 INFO  S3Backup:142 - Uploaded file: D:\test\4.File 12_4.txt
+  2023-07-14 12:09:59 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\4.File 12_4.txt
+  2023-07-14 12:09:59 INFO  S3Backup:173 - File Status for 5.File 12_5.txt is :MODIFIED
+  2023-07-14 12:09:59 INFO  S3Backup:79 - key: test/5.File 12_5.txt
+  2023-07-14 12:09:59 INFO  S3Backup:80 - path: D:\test\5.File 12_5.txt
+  2023-07-14 12:09:59 INFO  S3Backup:136 - D:\test\5.File 12_5.txt
+  2023-07-14 12:09:59 INFO  S3Backup:142 - Uploaded file: D:\test\5.File 12_5.txt
+  2023-07-14 12:09:59 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\5.File 12_5.txt
+  2023-07-14 12:09:59 INFO  S3Backup:173 - File Status for 6.File 12_6.txt is :MODIFIED
+  2023-07-14 12:09:59 INFO  S3Backup:79 - key: test/6.File 12_6.txt
+  2023-07-14 12:09:59 INFO  S3Backup:80 - path: D:\test\6.File 12_6.txt
+  2023-07-14 12:09:59 INFO  S3Backup:136 - D:\test\6.File 12_6.txt
+  2023-07-14 12:09:59 INFO  S3Backup:142 - Uploaded file: D:\test\6.File 12_6.txt
+  2023-07-14 12:09:59 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\6.File 12_6.txt
+  2023-07-14 12:09:59 INFO  S3Backup:173 - File Status for 7.File 12_7.txt is :MODIFIED
+  2023-07-14 12:09:59 INFO  S3Backup:79 - key: test/7.File 12_7.txt
+  2023-07-14 12:09:59 INFO  S3Backup:80 - path: D:\test\7.File 12_7.txt
+  2023-07-14 12:09:59 INFO  S3Backup:136 - D:\test\7.File 12_7.txt
+  2023-07-14 12:09:59 INFO  S3Backup:142 - Uploaded file: D:\test\7.File 12_7.txt
+  2023-07-14 12:09:59 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\7.File 12_7.txt
+  2023-07-14 12:09:59 INFO  S3Backup:173 - File Status for 8.File 12_8.txt is :MODIFIED
+  2023-07-14 12:09:59 INFO  S3Backup:79 - key: test/8.File 12_8.txt
+  2023-07-14 12:09:59 INFO  S3Backup:80 - path: D:\test\8.File 12_8.txt
+  2023-07-14 12:09:59 INFO  S3Backup:136 - D:\test\8.File 12_8.txt
+  2023-07-14 12:09:59 INFO  S3Backup:142 - Uploaded file: D:\test\8.File 12_8.txt
+  2023-07-14 12:09:59 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\8.File 12_8.txt
+  2023-07-14 12:09:59 INFO  S3Backup:173 - File Status for 9.File 12_9.txt is :MODIFIED
+  2023-07-14 12:09:59 INFO  S3Backup:79 - key: test/9.File 12_9.txt
+  2023-07-14 12:09:59 INFO  S3Backup:80 - path: D:\test\9.File 12_9.txt
+  2023-07-14 12:09:59 INFO  S3Backup:136 - D:\test\9.File 12_9.txt
+  2023-07-14 12:10:00 INFO  S3Backup:142 - Uploaded file: D:\test\9.File 12_9.txt
+  2023-07-14 12:10:00 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\9.File 12_9.txt
+  2023-07-14 12:10:00 INFO  S3Backup:94 - Backup completed successfully.........................
+  2023-07-14 12:10:00 INFO  FileUploadDetailsService:58 - [FileBackupDetails(fileName=1.File 12_1.txt, filePathOnLocalDrive=D:\test\1.File 12_1.txt, filePathInS3=test/1.File 12_1.txt, uploadDate=14-Jul-2023 12:09:59 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=10.File 12_10.txt, filePathOnLocalDrive=D:\test\10.File 12_10.txt, filePathInS3=test/10.File 12_10.txt, uploadDate=14-Jul-2023 12:09:59 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=18.00 B), FileBackupDetails(fileName=2.File 12_2.txt, filePathOnLocalDrive=D:\test\2.File 12_2.txt, filePathInS3=test/2.File 12_2.txt, uploadDate=14-Jul-2023 12:09:59 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=3.File 12_3.txt, filePathOnLocalDrive=D:\test\3.File 12_3.txt, filePathInS3=test/3.File 12_3.txt, uploadDate=14-Jul-2023 12:09:59 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=4.File 12_4.txt, filePathOnLocalDrive=D:\test\4.File 12_4.txt, filePathInS3=test/4.File 12_4.txt, uploadDate=14-Jul-2023 12:09:59 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=5.File 12_5.txt, filePathOnLocalDrive=D:\test\5.File 12_5.txt, filePathInS3=test/5.File 12_5.txt, uploadDate=14-Jul-2023 12:09:59 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=6.File 12_6.txt, filePathOnLocalDrive=D:\test\6.File 12_6.txt, filePathInS3=test/6.File 12_6.txt, uploadDate=14-Jul-2023 12:09:59 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=7.File 12_7.txt, filePathOnLocalDrive=D:\test\7.File 12_7.txt, filePathInS3=test/7.File 12_7.txt, uploadDate=14-Jul-2023 12:09:59 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=8.File 12_8.txt, filePathOnLocalDrive=D:\test\8.File 12_8.txt, filePathInS3=test/8.File 12_8.txt, uploadDate=14-Jul-2023 12:09:59 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=9.File 12_9.txt, filePathOnLocalDrive=D:\test\9.File 12_9.txt, filePathInS3=test/9.File 12_9.txt, uploadDate=14-Jul-2023 12:10:00 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B)]
+  2023-07-14 12:10:00 INFO  FileUploadDetailsService:96 - File Created : JULY_2023.csv, at path :D:\Vyom Projects\DR setup AWS S3\FileBackupToAWSS3\JULY_2023.csv
+  2023-07-14 12:10:00 INFO  S3Backup:190 - Trigger to lambda function....................
+  2023-07-14 12:10:00 INFO  S3LambdaTrigger:25 - Lambda Trigger started..........
+  2023-07-14 12:10:00 INFO  S3LambdaTrigger:30 - Lambda function name : Monthly-Report-Generation-Function
+  2023-07-14 12:10:00 INFO  S3LambdaTrigger:39 - Lambda invoked...........
+  2023-07-14 12:10:02 INFO  S3LambdaTrigger:42 - Lambda function output : {"statusCode": 200, "body": "Cost report and Usage Report generated and stored in S3 bucket: vyomlabsbucket"}
+  2023-07-14 12:10:02 INFO  S3Backup:193 - Fetching cost report file....................
+  2023-07-14 12:10:02 INFO  S3Backup:195 - Fetching usage report file....................
+  2023-07-14 12:10:02 INFO  EmailService:50 - preparing to send message ...
+  2023-07-14 12:26:50 INFO  S3Backup:70 - Fresh differential files uploading.......
+  2023-07-14 12:26:50 INFO  S3Backup:72 - backupFolderPath :D:/test
+  2023-07-14 12:26:50 INFO  S3Backup:173 - File Status for 1.File 12_1.txt is :MODIFIED
+  2023-07-14 12:26:50 INFO  S3Backup:79 - key: test/1.File 12_1.txt
+  2023-07-14 12:26:50 INFO  S3Backup:80 - path: D:\test\1.File 12_1.txt
+  2023-07-14 12:26:50 INFO  S3Backup:136 - D:\test\1.File 12_1.txt
+  2023-07-14 12:26:51 INFO  S3Backup:142 - Uploaded file: D:\test\1.File 12_1.txt
+  2023-07-14 12:26:51 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\1.File 12_1.txt
+  2023-07-14 12:26:51 INFO  S3Backup:173 - File Status for 10.File 12_10.txt is :MODIFIED
+  2023-07-14 12:26:51 INFO  S3Backup:79 - key: test/10.File 12_10.txt
+  2023-07-14 12:26:51 INFO  S3Backup:80 - path: D:\test\10.File 12_10.txt
+  2023-07-14 12:26:51 INFO  S3Backup:136 - D:\test\10.File 12_10.txt
+  2023-07-14 12:26:51 INFO  S3Backup:142 - Uploaded file: D:\test\10.File 12_10.txt
+  2023-07-14 12:26:51 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\10.File 12_10.txt
+  2023-07-14 12:26:51 INFO  S3Backup:173 - File Status for 2.File 12_2.txt is :MODIFIED
+  2023-07-14 12:26:51 INFO  S3Backup:79 - key: test/2.File 12_2.txt
+  2023-07-14 12:26:51 INFO  S3Backup:80 - path: D:\test\2.File 12_2.txt
+  2023-07-14 12:26:51 INFO  S3Backup:136 - D:\test\2.File 12_2.txt
+  2023-07-14 12:26:51 INFO  S3Backup:142 - Uploaded file: D:\test\2.File 12_2.txt
+  2023-07-14 12:26:51 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\2.File 12_2.txt
+  2023-07-14 12:26:51 INFO  S3Backup:173 - File Status for 3.File 11_3.txt is :MODIFIED
+  2023-07-14 12:26:51 INFO  S3Backup:79 - key: test/3.File 11_3.txt
+  2023-07-14 12:26:51 INFO  S3Backup:80 - path: D:\test\3.File 11_3.txt
+  2023-07-14 12:26:51 INFO  S3Backup:136 - D:\test\3.File 11_3.txt
+  2023-07-14 12:26:51 INFO  S3Backup:142 - Uploaded file: D:\test\3.File 11_3.txt
+  2023-07-14 12:26:51 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\3.File 11_3.txt
+  2023-07-14 12:26:51 INFO  S3Backup:173 - File Status for 3.File 12_3.txt is :MODIFIED
+  2023-07-14 12:26:51 INFO  S3Backup:79 - key: test/3.File 12_3.txt
+  2023-07-14 12:26:51 INFO  S3Backup:80 - path: D:\test\3.File 12_3.txt
+  2023-07-14 12:26:51 INFO  S3Backup:136 - D:\test\3.File 12_3.txt
+  2023-07-14 12:26:51 INFO  S3Backup:142 - Uploaded file: D:\test\3.File 12_3.txt
+  2023-07-14 12:26:51 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\3.File 12_3.txt
+  2023-07-14 12:26:51 INFO  S3Backup:173 - File Status for 4.File 11_4.txt is :MODIFIED
+  2023-07-14 12:26:51 INFO  S3Backup:79 - key: test/4.File 11_4.txt
+  2023-07-14 12:26:51 INFO  S3Backup:80 - path: D:\test\4.File 11_4.txt
+  2023-07-14 12:26:51 INFO  S3Backup:136 - D:\test\4.File 11_4.txt
+  2023-07-14 12:26:51 INFO  S3Backup:142 - Uploaded file: D:\test\4.File 11_4.txt
+  2023-07-14 12:26:51 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\4.File 11_4.txt
+  2023-07-14 12:26:51 INFO  S3Backup:173 - File Status for 4.File 12_4.txt is :MODIFIED
+  2023-07-14 12:26:51 INFO  S3Backup:79 - key: test/4.File 12_4.txt
+  2023-07-14 12:26:51 INFO  S3Backup:80 - path: D:\test\4.File 12_4.txt
+  2023-07-14 12:26:51 INFO  S3Backup:136 - D:\test\4.File 12_4.txt
+  2023-07-14 12:26:51 INFO  S3Backup:142 - Uploaded file: D:\test\4.File 12_4.txt
+  2023-07-14 12:26:51 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\4.File 12_4.txt
+  2023-07-14 12:26:51 INFO  S3Backup:173 - File Status for 5.1.abcdef.dat is :MODIFIED
+  2023-07-14 12:26:51 INFO  S3Backup:79 - key: test/5.1.abcdef.dat
+  2023-07-14 12:26:51 INFO  S3Backup:80 - path: D:\test\5.1.abcdef.dat
+  2023-07-14 12:26:51 INFO  S3Backup:84 - Initiating multipart upload...............
+  2023-07-14 12:26:51 INFO  S3Backup:119 - Multipart upload started for file : 5.1.abcdef.dat
+  2023-07-14 12:30:36 INFO  S3Backup:121 - Multipart upload completed for file : 5.1.abcdef.dat
+  2023-07-14 12:30:36 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\5.1.abcdef.dat
+  2023-07-14 12:30:36 INFO  S3Backup:173 - File Status for 5.File 11_5.txt is :MODIFIED
+  2023-07-14 12:30:36 INFO  S3Backup:79 - key: test/5.File 11_5.txt
+  2023-07-14 12:30:36 INFO  S3Backup:80 - path: D:\test\5.File 11_5.txt
+  2023-07-14 12:30:36 INFO  S3Backup:136 - D:\test\5.File 11_5.txt
+  2023-07-14 12:30:36 INFO  S3Backup:142 - Uploaded file: D:\test\5.File 11_5.txt
+  2023-07-14 12:30:36 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\5.File 11_5.txt
+  2023-07-14 12:30:36 INFO  S3Backup:173 - File Status for 5.File 12_5.txt is :MODIFIED
+  2023-07-14 12:30:36 INFO  S3Backup:79 - key: test/5.File 12_5.txt
+  2023-07-14 12:30:36 INFO  S3Backup:80 - path: D:\test\5.File 12_5.txt
+  2023-07-14 12:30:36 INFO  S3Backup:136 - D:\test\5.File 12_5.txt
+  2023-07-14 12:30:36 INFO  S3Backup:142 - Uploaded file: D:\test\5.File 12_5.txt
+  2023-07-14 12:30:36 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\5.File 12_5.txt
+  2023-07-14 12:30:36 INFO  S3Backup:173 - File Status for 6.File 11_6.txt is :MODIFIED
+  2023-07-14 12:30:36 INFO  S3Backup:79 - key: test/6.File 11_6.txt
+  2023-07-14 12:30:36 INFO  S3Backup:80 - path: D:\test\6.File 11_6.txt
+  2023-07-14 12:30:36 INFO  S3Backup:136 - D:\test\6.File 11_6.txt
+  2023-07-14 12:30:36 INFO  S3Backup:142 - Uploaded file: D:\test\6.File 11_6.txt
+  2023-07-14 12:30:36 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\6.File 11_6.txt
+  2023-07-14 12:30:36 INFO  S3Backup:173 - File Status for 6.File 12_6.txt is :MODIFIED
+  2023-07-14 12:30:36 INFO  S3Backup:79 - key: test/6.File 12_6.txt
+  2023-07-14 12:30:36 INFO  S3Backup:80 - path: D:\test\6.File 12_6.txt
+  2023-07-14 12:30:36 INFO  S3Backup:136 - D:\test\6.File 12_6.txt
+  2023-07-14 12:30:36 INFO  S3Backup:142 - Uploaded file: D:\test\6.File 12_6.txt
+  2023-07-14 12:30:36 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\6.File 12_6.txt
+  2023-07-14 12:30:36 INFO  S3Backup:173 - File Status for 7.File 12_7.txt is :MODIFIED
+  2023-07-14 12:30:36 INFO  S3Backup:79 - key: test/7.File 12_7.txt
+  2023-07-14 12:30:36 INFO  S3Backup:80 - path: D:\test\7.File 12_7.txt
+  2023-07-14 12:30:36 INFO  S3Backup:136 - D:\test\7.File 12_7.txt
+  2023-07-14 12:30:37 INFO  S3Backup:142 - Uploaded file: D:\test\7.File 12_7.txt
+  2023-07-14 12:30:37 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\7.File 12_7.txt
+  2023-07-14 12:30:37 INFO  S3Backup:173 - File Status for 8.File 12_8.txt is :MODIFIED
+  2023-07-14 12:30:37 INFO  S3Backup:79 - key: test/8.File 12_8.txt
+  2023-07-14 12:30:37 INFO  S3Backup:80 - path: D:\test\8.File 12_8.txt
+  2023-07-14 12:30:37 INFO  S3Backup:136 - D:\test\8.File 12_8.txt
+  2023-07-14 12:30:37 INFO  S3Backup:142 - Uploaded file: D:\test\8.File 12_8.txt
+  2023-07-14 12:30:37 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\8.File 12_8.txt
+  2023-07-14 12:30:37 INFO  S3Backup:173 - File Status for 9.File 12_9.txt is :MODIFIED
+  2023-07-14 12:30:37 INFO  S3Backup:79 - key: test/9.File 12_9.txt
+  2023-07-14 12:30:37 INFO  S3Backup:80 - path: D:\test\9.File 12_9.txt
+  2023-07-14 12:30:37 INFO  S3Backup:136 - D:\test\9.File 12_9.txt
+  2023-07-14 12:30:37 INFO  S3Backup:142 - Uploaded file: D:\test\9.File 12_9.txt
+  2023-07-14 12:30:37 INFO  FileUploadDetailsService:43 - Local drive path : D:\test\9.File 12_9.txt
+  2023-07-14 12:30:37 INFO  S3Backup:94 - Backup completed successfully.........................
+  2023-07-14 12:30:37 INFO  FileUploadDetailsService:58 - [FileBackupDetails(fileName=1.File 12_1.txt, filePathOnLocalDrive=D:\test\1.File 12_1.txt, filePathInS3=test/1.File 12_1.txt, uploadDate=14-Jul-2023 12:26:51 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=10.File 12_10.txt, filePathOnLocalDrive=D:\test\10.File 12_10.txt, filePathInS3=test/10.File 12_10.txt, uploadDate=14-Jul-2023 12:26:51 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=18.00 B), FileBackupDetails(fileName=2.File 12_2.txt, filePathOnLocalDrive=D:\test\2.File 12_2.txt, filePathInS3=test/2.File 12_2.txt, uploadDate=14-Jul-2023 12:26:51 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=3.File 11_3.txt, filePathOnLocalDrive=D:\test\3.File 11_3.txt, filePathInS3=test/3.File 11_3.txt, uploadDate=14-Jul-2023 12:26:51 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=3.File 12_3.txt, filePathOnLocalDrive=D:\test\3.File 12_3.txt, filePathInS3=test/3.File 12_3.txt, uploadDate=14-Jul-2023 12:26:51 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=4.File 11_4.txt, filePathOnLocalDrive=D:\test\4.File 11_4.txt, filePathInS3=test/4.File 11_4.txt, uploadDate=14-Jul-2023 12:26:51 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=4.File 12_4.txt, filePathOnLocalDrive=D:\test\4.File 12_4.txt, filePathInS3=test/4.File 12_4.txt, uploadDate=14-Jul-2023 12:26:51 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=5.1.abcdef.dat, filePathOnLocalDrive=D:\test\5.1.abcdef.dat, filePathInS3=test/5.1.abcdef.dat, uploadDate=14-Jul-2023 12:30:36 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=6.00 GB), FileBackupDetails(fileName=5.File 11_5.txt, filePathOnLocalDrive=D:\test\5.File 11_5.txt, filePathInS3=test/5.File 11_5.txt, uploadDate=14-Jul-2023 12:30:36 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=5.File 12_5.txt, filePathOnLocalDrive=D:\test\5.File 12_5.txt, filePathInS3=test/5.File 12_5.txt, uploadDate=14-Jul-2023 12:30:36 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=6.File 11_6.txt, filePathOnLocalDrive=D:\test\6.File 11_6.txt, filePathInS3=test/6.File 11_6.txt, uploadDate=14-Jul-2023 12:30:36 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=6.File 12_6.txt, filePathOnLocalDrive=D:\test\6.File 12_6.txt, filePathInS3=test/6.File 12_6.txt, uploadDate=14-Jul-2023 12:30:36 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=7.File 12_7.txt, filePathOnLocalDrive=D:\test\7.File 12_7.txt, filePathInS3=test/7.File 12_7.txt, uploadDate=14-Jul-2023 12:30:37 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=8.File 12_8.txt, filePathOnLocalDrive=D:\test\8.File 12_8.txt, filePathInS3=test/8.File 12_8.txt, uploadDate=14-Jul-2023 12:30:37 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B), FileBackupDetails(fileName=9.File 12_9.txt, filePathOnLocalDrive=D:\test\9.File 12_9.txt, filePathInS3=test/9.File 12_9.txt, uploadDate=14-Jul-2023 12:30:37 pm, uploadStatus=SUCCESS, fileStatus=MODIFIED, fileSize=17.00 B)]
+  2023-07-14 12:30:37 INFO  FileUploadDetailsService:96 - File Created : JULY_2023.csv, at path :D:\Vyom Projects\DR setup AWS S3\FileBackupToAWSS3\JULY_2023.csv
+  2023-07-14 12:30:37 INFO  S3Backup:190 - Trigger to lambda function....................
+  2023-07-14 12:30:37 INFO  S3LambdaTrigger:25 - Lambda Trigger started..........
+  2023-07-14 12:30:37 INFO  S3LambdaTrigger:30 - Lambda function name : Monthly-Report-Generation-Function
+  2023-07-14 12:30:37 INFO  S3LambdaTrigger:39 - Lambda invoked...........
+  2023-07-14 12:30:46 INFO  S3LambdaTrigger:42 - Lambda function output : {"statusCode": 200, "body": "Cost report and Usage Report generated and stored in S3 bucket: vyomlabsbucket"}
+  2023-07-14 12:30:46 INFO  S3Backup:193 - Fetching cost report file....................
+  2023-07-14 12:30:47 INFO  S3Backup:195 - Fetching usage report file....................
+  2023-07-14 12:30:47 INFO  EmailService:50 - preparing to send message ...
   
