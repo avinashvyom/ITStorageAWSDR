@@ -39,7 +39,6 @@ public class FileUploadDetailsService {
 			String fileSize, File csvFile) throws IOException {
 		String localDrivePath = filePath.toString();
 		logger.info("Local drive path : " + localDrivePath);
-		// Gson gson = new GsonBuilder().setPrettyPrinting().create();
 		FileBackupDetails fileBackupDetails = new FileBackupDetails();
 		fileBackupDetails.setFileName(filePath.getFileName().toString());
 		fileBackupDetails.setFilePathOnLocalDrive(filePath.toString());
@@ -49,7 +48,6 @@ public class FileUploadDetailsService {
 		fileBackupDetails.setUploadDate(formatProperDateTime(new Date()));
 		fileBackupDetails.setFileSize(fileSize);
 		fileDetails.add(fileBackupDetails);
-		// logger.info(gson.toJson(fileBackupDetails));
 		return writeDataInCSVFile(fileBackupDetails, csvFile);
 	}
 
@@ -67,7 +65,6 @@ public class FileUploadDetailsService {
 			return csvFile;
 		} catch (Exception e) {
 			logger.error("Exception caught in writeDataInCSVFile() method......");
-			// logger.info(e.printStackTrace(), e);
 			logger.info(e.getMessage(), e);
 			e.printStackTrace();
 			return csvFile;
@@ -103,7 +100,6 @@ public class FileUploadDetailsService {
 				records.add(Arrays.asList(values));
 			}
 		}
-		//logger.info("Records from CSV File : " + records.toString());
 		List<FileBackupDetails> failureFileDetails = new ArrayList<>();
 		for (List<String> record : records) {
 			if (records.get(0).equals(record)) {
@@ -111,26 +107,18 @@ public class FileUploadDetailsService {
 			} else {
 				FileBackupDetails fileBackupDetails = new FileBackupDetails(record.get(0), record.get(1), record.get(2),
 						record.get(3), record.get(4), record.get(5), record.get(6));
-				//logger.info("File Backup Details Object : "+fileBackupDetails.toString());
-				//logger.info("File upload status : "+record.get(4));
-				//String string = record.get(4);
 				if (record.get(4).equals(FileUploadStatus.FAILED.name())) {
 					logger.info("Encountered Failed record.........");
 					failureFileDetails.add(fileBackupDetails);
 				}
 			}
 		}
-		// List<FileBackupDetails> failureDetails = fileDetails.stream().filter(data ->
-		// (data.getUploadStatus().equals(FileUploadStatus.FAILED.name())))
-		// .toList();
 		logger.info("Failure file Details : " + failureFileDetails.toString());
 		return failureFileDetails;
 	}
 
 	public static String getCSVFileName() {
 		String fileName = LocalDateTime.now().getMonth().toString() + "_" + LocalDateTime.now().getYear() + ".csv";
-		// File file = new File(Path.of("").toAbsolutePath().toString() + "\\" +
-		// fileName);
 		return fileName;
 	}
 
