@@ -6,8 +6,10 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.attribute.BasicFileAttributes;
+import java.text.SimpleDateFormat;
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;
+import java.util.Date;
 import java.util.List;
 
 import org.apache.log4j.Logger;
@@ -37,24 +39,26 @@ public class S3Backup {
 	public static FileUploadCategory fileUploadCategory;
 
 	private static FileStatus fileStatus;
+
 	private static File csvFile;
+	
+	private static String USAGE_REPORT_FILE_NAME = "Usage_Report_" + getCurrentMonthAndYear() + ".csv";
+
+	private static String COST_REPORT_FILE_NAME = "Cost_Report_" + getCurrentMonthAndYear() + ".csv";
 
 	static S3LambdaTrigger s3LambdaTrigger = new S3LambdaTrigger();
+
 	static PropertiesExtractor propertiesExtractor = new PropertiesExtractor();
 
 	private final static long FILE_SIZE_IN_BYTES = 5368709120l;
 
 	public static void main(String[] args) throws IOException, CsvValidationException {
+		
 		PropertyConfigurator.configure(Paths.get("").toAbsolutePath().toString() + "\\" + "application.properties");
-		String BUCKET_NAME = propertiesExtractor.getProperty("s3.bucket-name");
-		AmazonS3 s3Client = AppConfig.getS3Client();
 
-		// String backupFolderPath =
-		// propertiesExtractor.getProperty("s3upload.input-folder-path");
-		// Stream<Path> filter =
-		// Files.walk(Path.of(propertiesExtractor.getProperty("s3upload.input-folder-path")))
-		// .filter(path -> !Files.isDirectory(path)).filter(path ->
-		// isRecentlyUpdated(path));
+		String BUCKET_NAME = propertiesExtractor.getProperty("s3.bucket-name");
+		
+		AmazonS3 s3Client = AppConfig.getS3Client();
 
 		if (FileUploadDetailsService.checkIfBackupDetailsFileExists()
 				&& !FileUploadDetailsService.getFailureFileDetails().isEmpty()) {
@@ -63,8 +67,6 @@ public class S3Backup {
 			logger.info("Failure files uploading.......");
 			FileUploadDetailsService.getFailureFileDetails().forEach(file -> {
 				try {
-					// logger.info("File size : " +
-					// Path.of(file.getFilePathOnLocalDrive().toString()).toFile().length());
 					if (Path.of(file.getFilePathOnLocalDrive().toString()).toFile().length() > FILE_SIZE_IN_BYTES) {
 						initiateMultipartUpload(s3Client, BUCKET_NAME, Path.of(file.getFilePathOnLocalDrive()),
 								file.getFilePathInS3());
@@ -107,7 +109,6 @@ public class S3Backup {
 							}
 						});
 				logger.info("Backup completed successfully.........................");
-				// FileUploadDetailsService.writeDataInCSVFile();
 				sendNotificationEmail(FileUploadDetailsService.getFileDetails(), s3Client, BUCKET_NAME, csvFile);
 			} catch (Exception e) {
 				logger.error("Error occurred during backup: " + e.getMessage());
@@ -205,6 +206,11 @@ public class S3Backup {
 			return false;
 		}
 	}
+	
+	private static String getCurrentMonthAndYear() {
+		return new SimpleDateFormat("MMM-YYYY").format(new Date());
+	}
+
 
 	private static void sendNotificationEmail(List<FileBackupDetails> fileList, AmazonS3 s3Client, String BUCKET_NAME,
 			File csvFile) throws IOException {
@@ -216,9 +222,9 @@ public class S3Backup {
 		if (s3LambdaTrigger.triggerLambdaForReportGeneration() == 200) {
 			S3ObjectFetch s3ObjectFetch = new S3ObjectFetch();
 			logger.info("Fetching cost report file....................");
-			costReport = s3ObjectFetch.getCostReport(s3Client, BUCKET_NAME);
+			costReport = s3ObjectFetch.getReportFromBucket(s3Client, BUCKET_NAME, COST_REPORT_FILE_NAME);
 			logger.info("Fetching usage report file....................");
-			usageReport = s3ObjectFetch.getUsageReport(s3Client, BUCKET_NAME);
+			usageReport = s3ObjectFetch.getReportFromBucket(s3Client, BUCKET_NAME, USAGE_REPORT_FILE_NAME);
 			emailService.sendMail(costReport, usageReport, csvFile);
 		}
 	}
