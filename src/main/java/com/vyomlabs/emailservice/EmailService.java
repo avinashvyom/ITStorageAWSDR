@@ -84,7 +84,6 @@ public class EmailService {
 						logger.info("invalid email id.......");
 					}
 				} catch (MessagingException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			});
@@ -105,15 +104,14 @@ public class EmailService {
 			mimeMultipart.addBodyPart(fileDetailsMime);
 			mimeMessage.setContent(mimeMultipart);
 			Transport.send(mimeMessage);
-			System.out.println("Mail sent successfully.........................");
+			logger.info("Mail sent successfully.........................");
 		} catch (Exception e) {
-			System.err.println("Error occured during sending mail....................");
+			logger.error("Error occured during sending mail....................");
 			e.printStackTrace();
 		}
 	}
 
 	private boolean isValidEmail(String mail) {
-		// TODO Auto-generated method stub
 		String patternForEmail = "^[a-z0-9](\\.?[a-z0-9_-]){0,}@[a-z0-9-]+\\.([a-z]{1,6}\\.)?[a-z]{2,6}$";
 		Pattern pattern = Pattern.compile(patternForEmail);
 		Matcher matcher = pattern.matcher(mail);
