@@ -17,8 +17,10 @@ public class S3ObjectFetch {
 
 	private String USAGE_REPORT_FILE_NAME = "Usage_Report_" + getCurrentMonthAndYear() + ".csv";
 	private String COST_REPORT_FILE_NAME = "Cost_Report_" + getCurrentMonthAndYear() + ".csv";
+	
 
 	public File getCostReport(AmazonS3 s3Client, String BUCKET_NAME) {
+		//PropertyConfigurator.configure("src/main/resources/log4j.properties");
 		try {
 			String path = Path.of("").toAbsolutePath().toString() + "\\" + COST_REPORT_FILE_NAME;
 
@@ -41,6 +43,7 @@ public class S3ObjectFetch {
 	}
 
 	public File getUsageReport(AmazonS3 s3Client, String BUCKET_NAME) {
+		//PropertyConfigurator.configure("src/main/resources/log4j.properties");
 		try {
 			String path = Path.of("").toAbsolutePath().toString() + "\\" + USAGE_REPORT_FILE_NAME;
 

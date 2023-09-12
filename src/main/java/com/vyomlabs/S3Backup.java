@@ -4,15 +4,18 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.nio.file.attribute.BasicFileAttributes;
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;
 import java.util.List;
 
 import org.apache.log4j.Logger;
-import com.amazonaws.services.s3.model.StorageClass;
+import org.apache.log4j.PropertyConfigurator;
+
 import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.model.PutObjectRequest;
+import com.amazonaws.services.s3.model.StorageClass;
 import com.amazonaws.services.s3.transfer.TransferManager;
 import com.amazonaws.services.s3.transfer.TransferManagerBuilder;
 import com.amazonaws.services.s3.transfer.Upload;
@@ -34,6 +37,7 @@ public class S3Backup {
 	public static FileUploadCategory fileUploadCategory;
 
 	private static FileStatus fileStatus;
+	private static File csvFile;
 
 	static S3LambdaTrigger s3LambdaTrigger = new S3LambdaTrigger();
 	static PropertiesExtractor propertiesExtractor = new PropertiesExtractor();
@@ -41,31 +45,42 @@ public class S3Backup {
 	private final static long FILE_SIZE_IN_BYTES = 5368709120l;
 
 	public static void main(String[] args) throws IOException, CsvValidationException {
+		PropertyConfigurator.configure(Paths.get("").toAbsolutePath().toString() + "\\" + "application.properties");
 		String BUCKET_NAME = propertiesExtractor.getProperty("s3.bucket-name");
 		AmazonS3 s3Client = AppConfig.getS3Client();
-		
+
+		// String backupFolderPath =
+		// propertiesExtractor.getProperty("s3upload.input-folder-path");
+		// Stream<Path> filter =
+		// Files.walk(Path.of(propertiesExtractor.getProperty("s3upload.input-folder-path")))
+		// .filter(path -> !Files.isDirectory(path)).filter(path ->
+		// isRecentlyUpdated(path));
+
 		if (FileUploadDetailsService.checkIfBackupDetailsFileExists()
 				&& !FileUploadDetailsService.getFailureFileDetails().isEmpty()) {
+			csvFile = FileUploadDetailsService.getCSVFile();
 			fileUploadCategory = FileUploadCategory.FAILURE_FILES_UPLOAD;
 			logger.info("Failure files uploading.......");
 			FileUploadDetailsService.getFailureFileDetails().forEach(file -> {
 				try {
-					System.out.println("File size : " + Path.of(file.getFilePathOnLocalDrive()).toFile().length());
-					if (Path.of(file.getFilePathOnLocalDrive()).toFile().length() > FILE_SIZE_IN_BYTES) {
+					// logger.info("File size : " +
+					// Path.of(file.getFilePathOnLocalDrive().toString()).toFile().length());
+					if (Path.of(file.getFilePathOnLocalDrive().toString()).toFile().length() > FILE_SIZE_IN_BYTES) {
 						initiateMultipartUpload(s3Client, BUCKET_NAME, Path.of(file.getFilePathOnLocalDrive()),
 								file.getFilePathInS3());
 					} else {
 						uploadFileToS3(s3Client, BUCKET_NAME, file.getFilePathInS3(),
 								Path.of(file.getFilePathOnLocalDrive()), file.getFileStatus());
 					}
-					sendNotificationEmail(FileUploadDetailsService.getFailureFileDetails(), s3Client, BUCKET_NAME);
-				} catch (IOException | CsvValidationException e) {
+				} catch (IOException e) {
 					logger.info("Exception caught in line no 53.....................");
 					e.printStackTrace();
 				}
 			});
+			sendNotificationEmail(FileUploadDetailsService.getFailureFileDetails(), s3Client, BUCKET_NAME, csvFile);
 		} else {
 			fileUploadCategory = FileUploadCategory.DIFFERENTIAL_FILES_UPLOAD;
+			csvFile = FileUploadDetailsService.createCSVFile();
 			try {
 				logger.info("Fresh differential files uploading.......");
 				String backupFolderPath = propertiesExtractor.getProperty("s3upload.input-folder-path");
@@ -92,12 +107,12 @@ public class S3Backup {
 							}
 						});
 				logger.info("Backup completed successfully.........................");
-				FileUploadDetailsService.writeDataInCSVFile();
-				sendNotificationEmail(FileUploadDetailsService.getFileDetails(), s3Client, BUCKET_NAME);
+				// FileUploadDetailsService.writeDataInCSVFile();
+				sendNotificationEmail(FileUploadDetailsService.getFileDetails(), s3Client, BUCKET_NAME, csvFile);
 			} catch (Exception e) {
-				System.err.println("Error occurred during backup: " + e.getMessage());
+				logger.error("Error occurred during backup: " + e.getMessage());
 				e.printStackTrace();
-				sendNotificationEmail(FileUploadDetailsService.getFileDetails(), s3Client, BUCKET_NAME);
+				sendNotificationEmail(FileUploadDetailsService.getFileDetails(), s3Client, BUCKET_NAME, csvFile);
 			} finally {
 			}
 		}
@@ -109,23 +124,26 @@ public class S3Backup {
 		long size = Files.size(filePath);
 		try {
 			transferManager = TransferManagerBuilder.standard().withS3Client(s3Client)
-					.withMultipartUploadThreshold((long) (104857600))
-					.withMinimumUploadPartSize((long) (104857600))
+					.withMultipartUploadThreshold((long) (104857600)).withMinimumUploadPartSize((long) (104857600))
 					.build();
 			PutObjectRequest request = new PutObjectRequest(BUCKET_NAME, key, filePath.toFile());
-			 request.withStorageClass(StorageClass.StandardInfrequentAccess);
+			request.withStorageClass(StorageClass.StandardInfrequentAccess);
 
 			Upload upload = transferManager.upload(request);
 			logger.info("Multipart upload started for file : " + filePath.getFileName());
 			upload.waitForCompletion();
 			logger.info("Multipart upload completed for file : " + filePath.getFileName());
-			FileUploadDetailsService.backupFileData(key, filePath, FileUploadStatus.SUCCESS, fileStatus.name(),
-					FileSizeCalculator.getFileSize(size));
+			if (fileUploadCategory.equals(FileUploadCategory.DIFFERENTIAL_FILES_UPLOAD)) {
+				csvFile = FileUploadDetailsService.backupFileData(key, filePath, FileUploadStatus.SUCCESS,
+						fileStatus.name(), FileSizeCalculator.getFileSize(size), csvFile);
+			}
 		} catch (Exception e) {
-			FileUploadDetailsService.backupFileData(key, filePath, FileUploadStatus.FAILED, fileStatus.name(),
-					FileSizeCalculator.getFileSize(size));
+			if (fileUploadCategory.equals(FileUploadCategory.DIFFERENTIAL_FILES_UPLOAD)) {
+				csvFile = FileUploadDetailsService.backupFileData(key, filePath, FileUploadStatus.FAILED,
+						fileStatus.name(), FileSizeCalculator.getFileSize(size), csvFile);
+			}
 			e.printStackTrace();
-			logger.error("Error occured during Multipart upload.....");
+			logger.error("Error occured during Multipart upload....." + e.getMessage());
 
 		}
 	}
@@ -140,21 +158,29 @@ public class S3Backup {
 			s3Client.putObject(request);
 			logger.info("Uploaded file: " + filePath);
 			if (fileStatuses.length > 0) {
-				FileUploadDetailsService.backupFileData(key, filePath, FileUploadStatus.SUCCESS, fileStatuses[0],
-						FileSizeCalculator.getFileSize(size));
+				if (fileUploadCategory.equals(FileUploadCategory.DIFFERENTIAL_FILES_UPLOAD)) {
+					csvFile = FileUploadDetailsService.backupFileData(key, filePath, FileUploadStatus.SUCCESS,
+							fileStatuses[0], FileSizeCalculator.getFileSize(size), csvFile);
+				}
 			} else {
-				FileUploadDetailsService.backupFileData(key, filePath, FileUploadStatus.SUCCESS, fileStatus.name(),
-						FileSizeCalculator.getFileSize(size));
+				if (fileUploadCategory.equals(FileUploadCategory.DIFFERENTIAL_FILES_UPLOAD)) {
+					csvFile = FileUploadDetailsService.backupFileData(key, filePath, FileUploadStatus.SUCCESS,
+							fileStatus.name(), FileSizeCalculator.getFileSize(size), csvFile);
+				}
 			}
 		} catch (Exception e) {
-			System.err.println("Error uploading file in catch block: " + filePath + " - " + e.getMessage());
+			logger.error("Error uploading file : " + filePath + " - " + e.getMessage());
 			e.printStackTrace();
 			if (fileStatuses.length > 0) {
-				FileUploadDetailsService.backupFileData(key, filePath, FileUploadStatus.FAILED, fileStatuses[0],
-						FileSizeCalculator.getFileSize(size));
+				if (fileUploadCategory.equals(FileUploadCategory.DIFFERENTIAL_FILES_UPLOAD)) {
+					csvFile = FileUploadDetailsService.backupFileData(key, filePath, FileUploadStatus.FAILED,
+							fileStatuses[0], FileSizeCalculator.getFileSize(size), csvFile);
+				}
 			} else {
-				FileUploadDetailsService.backupFileData(key, filePath, FileUploadStatus.FAILED, fileStatus.name(),
-						FileSizeCalculator.getFileSize(size));
+				if (fileUploadCategory.equals(FileUploadCategory.DIFFERENTIAL_FILES_UPLOAD)) {
+					csvFile = FileUploadDetailsService.backupFileData(key, filePath, FileUploadStatus.FAILED,
+							fileStatus.name(), FileSizeCalculator.getFileSize(size), csvFile);
+				}
 			}
 		}
 	}
@@ -172,20 +198,18 @@ public class S3Backup {
 				logger.info("File Status for " + filePath.toFile().getName() + " is :" + fileStatus);
 			}
 			int fileUploadDuration = Integer.parseInt(propertiesExtractor.getProperty("files.upload.duration"));
-			logger.info("File Upload Duration selected : "+ fileUploadDuration);
 			Instant oneMonthAgo = Instant.now().minus(fileUploadDuration, ChronoUnit.DAYS);
 			return lastModified.isAfter(oneMonthAgo);
 		} catch (Exception e) {
-			System.err.println("Error retrieving file attributes: " + filePath + " - " + e.getMessage());
+			logger.error("Error retrieving file attributes: " + filePath + " - " + e.getMessage());
 			return false;
 		}
 	}
 
-	private static void sendNotificationEmail(List<FileBackupDetails> fileList, AmazonS3 s3Client, String BUCKET_NAME)
-			throws IOException {
+	private static void sendNotificationEmail(List<FileBackupDetails> fileList, AmazonS3 s3Client, String BUCKET_NAME,
+			File csvFile) throws IOException {
 		File costReport;
 		File usageReport;
-		File fileDetails = new File(Path.of(FileUploadDetailsService.getCSVFileName() + ".csv").toString());
 		EmailService emailService = new EmailService();
 		emailService.setFileList(fileList);
 		logger.info("Trigger to lambda function....................");
@@ -195,7 +219,7 @@ public class S3Backup {
 			costReport = s3ObjectFetch.getCostReport(s3Client, BUCKET_NAME);
 			logger.info("Fetching usage report file....................");
 			usageReport = s3ObjectFetch.getUsageReport(s3Client, BUCKET_NAME);
-			emailService.sendMail(costReport, usageReport, fileDetails);
+			emailService.sendMail(costReport, usageReport, csvFile);
 		}
 	}
 }

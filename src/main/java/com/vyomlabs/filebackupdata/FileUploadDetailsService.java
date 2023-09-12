@@ -16,8 +16,6 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import com.opencsv.CSVWriter;
 import com.opencsv.exceptions.CsvValidationException;
 import com.vyomlabs.entity.FileBackupDetails;
@@ -37,11 +35,11 @@ public class FileUploadDetailsService {
 
 	private final static Logger logger = Logger.getLogger(FileUploadDetailsService.class);
 
-	public static void backupFileData(String key, Path filePath, FileUploadStatus uploadStatus, String fileStatus,
-			String fileSize) throws IOException {
+	public static File backupFileData(String key, Path filePath, FileUploadStatus uploadStatus, String fileStatus,
+			String fileSize, File csvFile) throws IOException {
 		String localDrivePath = filePath.toString();
 		logger.info("Local drive path : " + localDrivePath);
-		Gson gson = new GsonBuilder().setPrettyPrinting().create();
+		// Gson gson = new GsonBuilder().setPrettyPrinting().create();
 		FileBackupDetails fileBackupDetails = new FileBackupDetails();
 		fileBackupDetails.setFileName(filePath.getFileName().toString());
 		fileBackupDetails.setFilePathOnLocalDrive(filePath.toString());
@@ -51,32 +49,28 @@ public class FileUploadDetailsService {
 		fileBackupDetails.setUploadDate(formatProperDateTime(new Date()));
 		fileBackupDetails.setFileSize(fileSize);
 		fileDetails.add(fileBackupDetails);
-		System.out.println(gson.toJson(fileBackupDetails));
+		// logger.info(gson.toJson(fileBackupDetails));
+		return writeDataInCSVFile(fileBackupDetails, csvFile);
 	}
 
-	public static void writeDataInCSVFile() {
-		logger.info(fileDetails.toString());
-		File file;
+	public static File writeDataInCSVFile(FileBackupDetails fileBackupDetails, File csvFile) {
 		try {
-			file = createFile();
-			FileWriter fw = new FileWriter(file);
+			FileWriter fw = new FileWriter(csvFile, true);
 			CSVWriter csvWriter = new CSVWriter(fw);
-			List<String[]> data = new ArrayList<String[]>();
-			String[] columnNames = { "File Name", "File Path on Local Drive", "File Path in S3", "Upload Date",
-					"Upload Status", "File Status", "File Size" };
-			data.add(columnNames);
-			fileDetails.stream().forEach((fileDetail) -> {
-				data.add(new String[] { fileDetail.getFileName(), fileDetail.getFilePathOnLocalDrive(),
-						fileDetail.getFilePathInS3(), fileDetail.getUploadDate(),
-						fileDetail.getUploadStatus().toString(), fileDetail.getFileStatus().toString(),
-						fileDetail.getFileSize() });
-			});
-			csvWriter.writeAll(data);
-			System.out.println("completed writing data in csv file.................");
+			String[] data = { fileBackupDetails.getFileName(), fileBackupDetails.getFilePathOnLocalDrive(),
+					fileBackupDetails.getFilePathInS3(), fileBackupDetails.getUploadDate(),
+					fileBackupDetails.getUploadStatus().toString(), fileBackupDetails.getFileStatus().toString(),
+					fileBackupDetails.getFileSize() };
+			csvWriter.writeNext(data);
+			logger.info("completed writing data in csv file.................");
 			csvWriter.close();
+			return csvFile;
 		} catch (Exception e) {
-			System.out.println("Exception caught in writeDataInExcelFile() method......");
+			logger.error("Exception caught in writeDataInCSVFile() method......");
+			// logger.info(e.printStackTrace(), e);
+			logger.info(e.getMessage(), e);
 			e.printStackTrace();
+			return csvFile;
 		}
 	}
 
@@ -88,50 +82,79 @@ public class FileUploadDetailsService {
 		return stringBuffer.toString();
 	}
 
-	private static File createFile() throws IOException {
-		String fileName = LocalDateTime.now().getMonth().toString() + "_" + LocalDateTime.now().getYear() + ".csv";
-		File file = new File(Path.of("").toAbsolutePath().toString() + "\\" + fileName);
-		boolean result = file.createNewFile();
-		if (result) {
-			logger.info("File Created : " + file.getName() + ", at path :" + file.getAbsolutePath());
-			return file;
-		} else {
-			logger.info("File already exists : " + file.getName() + "\n at path:" + file.getAbsolutePath());
-			return file;
-		}
-	}
-
-	public static boolean checkIfBackupDetailsFileExists() {
-		String fileName = LocalDateTime.now().getMonth().toString() + "_" + LocalDateTime.now().getYear() + ".csv";
-		File file = new File(fileName);
-		return file.exists();
+	public static boolean checkIfBackupDetailsFileExists() throws IOException {
+		String fileName = getCSVFileName();
+		File file = new File(Path.of("").toAbsolutePath().toString() + "/" + fileName);
+		logger.info("File Path is : "+file.getAbsolutePath());
+		boolean result = file.exists();
+		//logger.info("Is file present? : " + result);
+		return result;
 	}
 
 	public static List<FileBackupDetails> getFailureFileDetails() throws CsvValidationException, IOException {
 		List<List<String>> records = new ArrayList<List<String>>();
-		try (BufferedReader br = new BufferedReader(new FileReader(getCSVFileName() + ".csv"))) {
+		File file = new File(Path.of("").toAbsolutePath().toString() + "/" + getCSVFileName());
+		logger.info("File Path is  : "+file.getAbsolutePath());
+		try (BufferedReader br = new BufferedReader(
+				new FileReader(file))) {
 			String line;
 			while ((line = br.readLine()) != null) {
 				String[] values = line.split(",");
 				records.add(Arrays.asList(values));
 			}
 		}
-		fileDetails = new ArrayList<>();
+		//logger.info("Records from CSV File : " + records.toString());
+		List<FileBackupDetails> failureFileDetails = new ArrayList<>();
 		for (List<String> record : records) {
 			if (records.get(0).equals(record)) {
 				continue;
 			} else {
 				FileBackupDetails fileBackupDetails = new FileBackupDetails(record.get(0), record.get(1), record.get(2),
 						record.get(3), record.get(4), record.get(5), record.get(6));
-				fileDetails.add(fileBackupDetails);
+				//logger.info("File Backup Details Object : "+fileBackupDetails.toString());
+				//logger.info("File upload status : "+record.get(4));
+				//String string = record.get(4);
+				if (record.get(4).equals(FileUploadStatus.FAILED.name())) {
+					logger.info("Encountered Failed record.........");
+					failureFileDetails.add(fileBackupDetails);
+				}
 			}
 		}
-		System.out.println(fileDetails.toString());
-		return fileDetails.stream().filter(data -> (data.getUploadStatus().equals(FileUploadStatus.FAILED.name())))
-				.toList();
+		// List<FileBackupDetails> failureDetails = fileDetails.stream().filter(data ->
+		// (data.getUploadStatus().equals(FileUploadStatus.FAILED.name())))
+		// .toList();
+		logger.info("Failure file Details : " + failureFileDetails.toString());
+		return failureFileDetails;
 	}
 
 	public static String getCSVFileName() {
-		return LocalDateTime.now().getMonth().toString() + "_" + LocalDateTime.now().getYear();
+		String fileName = LocalDateTime.now().getMonth().toString() + "_" + LocalDateTime.now().getYear() + ".csv";
+		// File file = new File(Path.of("").toAbsolutePath().toString() + "\\" +
+		// fileName);
+		return fileName;
+	}
+
+	public static File createCSVFile() throws IOException {
+		String fileName = getCSVFileName();
+		File file = new File(Path.of("").toAbsolutePath().toString() + "\\" + fileName);
+		boolean result = file.createNewFile();
+		if (result) {
+			logger.info("File Created : " + file.getName() + ", at path :" + file.getAbsolutePath());
+		} else {
+			logger.info("File already exists : " + file.getName() + "\n at path:" + file.getAbsolutePath());
+		}
+		FileWriter fw = new FileWriter(file, true);
+		CSVWriter csvWriter = new CSVWriter(fw);
+		String[] columnNames = { "File Name", "File Path on Local Drive", "File Path in S3", "Upload Date",
+				"Upload Status", "File Status", "File Size" };
+		csvWriter.writeNext(columnNames);
+		csvWriter.close();
+		return file;
+	}
+
+	public static File getCSVFile() {
+		String fileName = getCSVFileName();
+		File file = new File(Path.of("").toAbsolutePath().toString() + "\\" + fileName);
+		return file;
 	}
 }

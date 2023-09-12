@@ -3,6 +3,7 @@ package com.vyomlabs;
 import java.io.IOException;
 
 import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 
 import com.amazonaws.auth.AWSStaticCredentialsProvider;
 import com.amazonaws.auth.BasicAWSCredentials;
@@ -22,6 +23,7 @@ public class S3LambdaTrigger {
 	Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
 	public int triggerLambdaForReportGeneration() throws IOException {
+		PropertyConfigurator.configure("D:\\Vyom Projects\\DR setup AWS S3\\FileBackupToAWSS3\\src\\main\\resources\\log4j.properties");
 		logger.info("Lambda Trigger started..........");
 		PropertiesExtractor propertiesExtractor = new PropertiesExtractor();
 		String accessKey = TextEncryptorAndDecryptor.decrypt(propertiesExtractor.getProperty("s3.access-key"));

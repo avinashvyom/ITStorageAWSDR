@@ -46,6 +46,7 @@ public class EmailService {
 	}
 
 	public void sendMail(File costReport, File usageReport, File fileDetails) throws IOException {
+		//PropertyConfigurator.configure("src/main/resources/log4j.properties");
 
 		logger.info("preparing to send message ...");
 		String message = composeMessage(fileList);
@@ -55,7 +56,7 @@ public class EmailService {
 		String host = propertiesExtractor.getProperty("mail.smtp.host");// "10.51.4.50";
 
 		Properties properties = System.getProperties();
-		System.out.println("PROPERTIES " + properties);
+		//logger.info("PROPERTIES : " + properties);
 		properties.put("mail.smtp.host", host);
 		properties.put("mail.smtp.port", propertiesExtractor.getProperty("mail.smtp.port"));
 		properties.put("mail.smtp.starttls.enable", propertiesExtractor.getProperty("mail.smtp.starttls.enable"));
