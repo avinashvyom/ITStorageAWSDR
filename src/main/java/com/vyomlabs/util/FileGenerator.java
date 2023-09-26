@@ -9,16 +9,17 @@ public class FileGenerator {
 
 	public static void main(String[] args) throws IOException, InterruptedException {
 		// TODO Auto-generated method stub
-		for (int i = 1; i <= 10; i++) {
+		for (int i = 1; i <= 500000; i++) {
 			File file = new File(Path.of("D:\\test").toAbsolutePath().toString() + "\\" + "File " + i + ".txt");
 			file.createNewFile();
 			FileWriter fw = new FileWriter(file);
 			fw.write("Welcome to File " + i + "\n");
 	//		fw.flush();
 //			Thread.sleep(3000);
-			System.out.println("Wrote data........");
+			//System.out.println("Wrote data........");
 			fw.close();
 		}
+		System.out.println("done.....");
 		//fw.close();
 	}
 }
