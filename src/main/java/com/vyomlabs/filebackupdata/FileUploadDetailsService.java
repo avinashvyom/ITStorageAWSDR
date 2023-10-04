@@ -1,6 +1,5 @@
 package com.vyomlabs.filebackupdata;
 
-import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -10,20 +9,31 @@ import java.text.FieldPosition;
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
+import java.util.stream.Collectors;
 
+import org.apache.commons.csv.CSVFormat;
+import org.apache.commons.csv.CSVParser;
+import org.apache.commons.csv.CSVRecord;
 import org.apache.log4j.Logger;
 
 import com.opencsv.CSVWriter;
 import com.opencsv.exceptions.CsvValidationException;
 import com.vyomlabs.entity.FileBackupDetails;
+import com.vyomlabs.entity.FileDetails;
+import com.vyomlabs.entity.FileUploadCategory;
 import com.vyomlabs.entity.FileUploadStatus;
+import com.vyomlabs.util.FileDataProvider;
+import com.vyomlabs.util.PropertiesExtractor;
 
 public class FileUploadDetailsService {
 
 	static List<FileBackupDetails> fileDetails = new ArrayList<>();
+
+	FileDataProvider fileDataProvider = new FileDataProvider();
+
+	static PropertiesExtractor propertiesExtractor = new PropertiesExtractor();
 
 	public static List<FileBackupDetails> getFileDetails() {
 		return fileDetails;
@@ -36,9 +46,10 @@ public class FileUploadDetailsService {
 	private final static Logger logger = Logger.getLogger(FileUploadDetailsService.class);
 
 	public static File backupFileData(String key, Path filePath, FileUploadStatus uploadStatus, String fileStatus,
-			String fileSize, File csvFile) throws IOException {
+			String fileSize, File csvFile, FileUploadCategory fileUploadCategory) throws IOException {
 		String localDrivePath = filePath.toString();
 		logger.info("Local drive path : " + localDrivePath);
+		logger.info("CSV file name : " + csvFile.getName());
 		FileBackupDetails fileBackupDetails = new FileBackupDetails();
 		fileBackupDetails.setFileName(filePath.getFileName().toString());
 		fileBackupDetails.setFilePathOnLocalDrive(filePath.toString());
@@ -48,7 +59,12 @@ public class FileUploadDetailsService {
 		fileBackupDetails.setUploadDate(formatProperDateTime(new Date()));
 		fileBackupDetails.setFileSize(fileSize);
 		fileDetails.add(fileBackupDetails);
-		return writeDataInCSVFile(fileBackupDetails, csvFile);
+		if (fileUploadCategory.equals(FileUploadCategory.FRESH_DIFFERENTIAL_FILES_UPLOAD)) {
+			return writeDataInCSVFile(fileBackupDetails, getCSVFile(fileUploadCategory));
+		} else {
+			return writeDataInCSVFile(fileBackupDetails, getCSVFile(fileUploadCategory));
+		}
+
 	}
 
 	public static File writeDataInCSVFile(FileBackupDetails fileBackupDetails, File csvFile) {
@@ -60,7 +76,7 @@ public class FileUploadDetailsService {
 					fileBackupDetails.getUploadStatus().toString(), fileBackupDetails.getFileStatus().toString(),
 					fileBackupDetails.getFileSize() };
 			csvWriter.writeNext(data);
-			logger.info("completed writing data in csv file.................");
+			logger.info("completed writing data in csv file : " + csvFile.getName());
 			csvWriter.close();
 			return csvFile;
 		} catch (Exception e) {
@@ -80,50 +96,228 @@ public class FileUploadDetailsService {
 	}
 
 	public static boolean checkIfBackupDetailsFileExists() throws IOException {
-		String fileName = getCSVFileName();
+		String fileName = getCSVFileName(FileUploadCategory.FRESH_DIFFERENTIAL_FILES_UPLOAD);
 		File file = new File(Path.of("").toAbsolutePath().toString() + "/" + fileName);
-		logger.info("File Path is : "+file.getAbsolutePath());
+		logger.info("File Path is : " + file.getAbsolutePath());
 		boolean result = file.exists();
-		//logger.info("Is file present? : " + result);
+		// logger.info("Is file present? : " + result);
 		return result;
 	}
 
-	public static List<FileBackupDetails> getFailureFileDetails() throws CsvValidationException, IOException {
-		List<List<String>> records = new ArrayList<List<String>>();
-		File file = new File(Path.of("").toAbsolutePath().toString() + "/" + getCSVFileName());
-		logger.info("File Path is  : "+file.getAbsolutePath());
-		try (BufferedReader br = new BufferedReader(
-				new FileReader(file))) {
-			String line;
-			while ((line = br.readLine()) != null) {
-				String[] values = line.split(",");
-				records.add(Arrays.asList(values));
-			}
+	public static List<FileDetails> getFailureFileDetails(File csvFile) throws CsvValidationException, IOException {
+//		List<List<String>> records = new ArrayList<List<String>>();
+		// File file = new File(Path.of("").toAbsolutePath().toString() + "/" +
+		// getCSVFileName());
+		List<FileBackupDetails> csvRecords = new ArrayList<>();
+		logger.info("File Path is  : " + csvFile.getAbsolutePath());
+//		try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
+//			String line;
+//			while ((line = br.readLine()) != null) {
+//				String[] values = line.split(",");
+//				records.add(Arrays.asList(values));
+//			}
+//			
+//		}
+
+		FileReader fileReader = new FileReader(csvFile);
+		CSVParser csvParser = new CSVParser(fileReader, CSVFormat.DEFAULT);
+		for (CSVRecord csvRecord : csvParser) {
+			FileBackupDetails fileBackupDetails = FileBackupDetails.builder().fileName(csvRecord.get(0))
+					.filePathOnLocalDrive(csvRecord.get(1)).filePathInS3(csvRecord.get(2)).uploadDate(csvRecord.get(3))
+					.uploadStatus(csvRecord.get(4)).fileStatus(csvRecord.get(5)).fileSize(csvRecord.get(6)).build();
+			csvRecords.add(fileBackupDetails);
 		}
-		List<FileBackupDetails> failureFileDetails = new ArrayList<>();
-		for (List<String> record : records) {
-			if (records.get(0).equals(record)) {
-				continue;
-			} else {
-				FileBackupDetails fileBackupDetails = new FileBackupDetails(record.get(0), record.get(1), record.get(2),
-						record.get(3), record.get(4), record.get(5), record.get(6));
-				if (record.get(4).equals(FileUploadStatus.FAILED.name())) {
-					logger.info("Encountered Failed record.........");
-					failureFileDetails.add(fileBackupDetails);
-				}
-			}
-		}
-		logger.info("Failure file Details : " + failureFileDetails.toString());
+
+		csvParser.close();
+		// records.add(getCSVFileRecords(csvFile));
+
+		logger.info("no of records from csv are : " + csvRecords.size());
+		logger.info("CSV records : " + csvRecords.toString());
+		csvRecords.remove(0);
+		logger.info("number of records from csv after removing header are : " + csvRecords.size());
+		List<FileDetails> failureFileDetails = new ArrayList<>();
+//		for (List<String> record : records) {
+//			if (records.get(0).equals(record)) {
+//				continue;
+//			} else {
+//				if (record.get(4).equals(FileUploadStatus.FAILED.name())) {
+//					// FileBackupDetails fileBackupDetails = new FileBackupDetails(record.get(0),
+//					// record.get(1),
+//					// record.get(2), record.get(3), record.get(4), record.get(5), record.get(6));
+//					logger.info("Encountered Failed record.........");
+//					FileDetails fileDetails = FileDetails.builder().fileName(record.get(0))
+//							.filePathOnLocalDrive(record.get(1)).filePathInS3(record.get(2)).fileStatus(record.get(5))
+//							.build();
+//					failureFileDetails.add(fileDetails);
+//				}
+//			}
+//		}
+
+		failureFileDetails.addAll(addThePendingAndFailedFiles(csvRecords));
+
+		logger.info("Failure or Pending file Details : " + failureFileDetails.toString());
+		logger.info("No of failure or pending records are : " + failureFileDetails.size());
 		return failureFileDetails;
 	}
 
-	public static String getCSVFileName() {
-		String fileName = LocalDateTime.now().getMonth().toString() + "_" + LocalDateTime.now().getYear() + ".csv";
-		return fileName;
+	private static List<FileDetails> addThePendingAndFailedFiles(List<FileBackupDetails> records) throws IOException {
+
+		// List<FileDetails> pendingAndFailedFileDetails = new ArrayList<>();
+
+		// List<FileBackupDetails> successFileDetails = new ArrayList<>();
+
+		// FileBackupDetails headerRow = records.remove(0);
+
+		// List to capture success records
+		List<FileDetails> successRecords = new ArrayList<>();
+
+		// filtering success records from csv and adding to list
+
+//		records.forEach(record-> {
+//			if(record.getUploadStatus().equals(FileUploadStatus.SUCCESS.name())) {
+//				FileDetails fileDetail = FileDetails.builder().fileName(record.getFileName()).filePathInS3(record.getFilePathInS3())
+//						.filePathOnLocalDrive(record.getFilePathOnLocalDrive()).fileStatus(record.getFileStatus()).build();
+//				successRecords.add(fileDetail);				
+//			}
+//		});
+
+		records.stream().filter(record -> record.getUploadStatus().equals(FileUploadStatus.SUCCESS.name()))
+				.forEach(record -> {
+					FileDetails fileDetail = FileDetails.builder().fileName(record.getFileName())
+							.filePathInS3(record.getFilePathInS3())
+							.filePathOnLocalDrive(record.getFilePathOnLocalDrive()).fileStatus(record.getFileStatus())
+							.build();
+					successRecords.add(fileDetail);
+				});
+//		records.stream().filter(record -> record.get(4).equals(FileUploadStatus.SUCCESS.name())).forEach(record -> {
+//			FileDetails fileDetail = FileDetails.builder().fileName(record.get(0)).filePathInS3(record.get(2))
+//					.filePathOnLocalDrive(record.get(1)).fileStatus(record.get(5)).build();
+//			successRecords.add(fileDetail);
+//		});
+
+		logger.info("no of Success Records are : " + successRecords.size());
+		logger.info("Success records are : \n" + successRecords.toString());
+		// .collect(Collectors.toList());
+//		records.stream().forEach(record -> {
+//			// if (records.get(0).equals(record)) {
+//			// continue;
+//			// } else {
+//			if (record.get(4).equals(FileUploadStatus.SUCCESS.name())) {
+//				// FileBackupDetails fileBackupDetails = new FileBackupDetails(record.get(0),
+//				// record.get(1),
+//				// record.get(2), record.get(3), record.get(4), record.get(5), record.get(6));
+//				logger.info("Encountered Success record.........");
+//				// successFileDetails.add(fileBackupDetails);
+//				successFileDetailsMap.put(record.get(0), Path.of(record.get(1)));
+//			}
+//			// }
+//		});
+//		for (List<String> record : records) {
+//			if (records.get(0).equals(record)) {
+//				continue;
+//			} else {
+//				if (record.get(4).equals(FileUploadStatus.SUCCESS.name())) {
+//					//FileBackupDetails fileBackupDetails = new FileBackupDetails(record.get(0), record.get(1),
+//							//record.get(2), record.get(3), record.get(4), record.get(5), record.get(6));
+//					logger.info("Encountered Success record.........");
+//					//successFileDetails.add(fileBackupDetails);
+//					successFileDetailsMap.put(record.get(0),Path.of(record.get(1)));
+//				}
+//			}
+//		}
+
+//		successFileDetails.stream().forEach(element-> {
+//			//Path.of(element.getFilePathOnLocalDrive());
+//			//element.getFileName();
+//			fileDetailsMap.put(element.getFileName(),Path.of(element.getFilePathOnLocalDrive()));
+//		});
+
+		String backupFolderPath = propertiesExtractor.getProperty("s3upload.input-folder-path");
+
+		// logger.info("backupFolderPath :" + backupFolderPath);
+
+		File backupFolder = new File(backupFolderPath);
+
+//		File backupFolder = new File(backupFolderPath);
+
+		// get all files data for upload..... from FileDataProvider class
+		// which contains (SUCCESS records , FAILED records and PENDING records also)
+		List<FileDetails> masterFileDataForUpload = FileDataProvider.getFileDataForUpload(backupFolder);
+
+		logger.info("Master data for upload is : \n" + masterFileDataForUpload.toString());
+		logger.info(
+				"No of records for master upload before removing success records : " + masterFileDataForUpload.size());
+		// Now we are removing all success records so that only pending and failed
+		// records remain in list
+		masterFileDataForUpload.removeAll(successRecords);
+
+//		for (FileDetails fileDetails : masterFileDataForUpload) {
+//			if(successRecords.contains(fileDetails)) {
+//				logger.info("record is present in success record.......");
+//				boolean remove = masterFileDataForUpload.remove(fileDetails);
+//				if (remove == true) {
+//					logger.info("record is removed..........");
+//				}
+//			}
+//		}
+//		
+//		masterFileDataForUpload.removeIf(record -> successRecords.contains(record));
+//		
+		logger.info(
+				"No of records for master upload after removing success records : " + masterFileDataForUpload.size());
+
+		// now all this list to our resultant list and return
+		// pendingAndFailedFileDetails.addAll(masterFileDataForUpload);
+
+		logger.info("No of records for pendingAndFailedFiles after adding records to new list records : "
+				+ masterFileDataForUpload.size());
+		// fileDataForUpload.filter();
+
+//		fileDataForUpload.stream().filter(path -> !successFileDetailsMap.containsKey(path.getFileName().toString()))
+//				.forEach(path -> {
+//					String filePath = backupFolder.toPath().relativize(path).toString();
+//					String fileName = path.toFile().getName();
+//					String key = backupFolder.toPath().relativize(path).toString();
+//					key = backupFolderPath.substring(3) + "/" + key;
+//					key = key.replace("\\", "/");
+//
+//					FileDetails fileDetails = FileDetails.builder().fileName(fileName).filePathOnLocalDrive(filePath)
+//							.filePathInS3(key).build();
+//					pendingFileDetails.add(fileDetails);
+//					// FileBackupDetails fileBackupDetails = new FileBackupDetails
+//					// (fileName, filePath,key, backupFolderPath, backupFolderPath, key,
+//					// backupFolderPath)
+//				});
+
+		logger.info("Pending and failed file records are : " + masterFileDataForUpload.toString());
+
+		return masterFileDataForUpload;
 	}
 
-	public static File createCSVFile() throws IOException {
-		String fileName = getCSVFileName();
+	public static String getCSVFileName(FileUploadCategory fileUploadCategory) {
+
+		String fileName = null;
+		switch (fileUploadCategory) {
+
+		case FRESH_DIFFERENTIAL_FILES_UPLOAD: {
+			fileName = LocalDateTime.now().getMonth().toString() + "_" + LocalDateTime.now().getYear() + ".csv";
+			// return fileName;
+			break;
+		}
+		case FAILURE_FILES_UPLOAD: {
+			fileName = LocalDateTime.now().getMonth().toString() + "_" + LocalDateTime.now().getYear() + "_" + "RERUN"
+					+ ".csv";
+			// return fileName;
+			break;
+		}
+		}
+		return fileName;
+
+	}
+
+	public static File createCSVFile(FileUploadCategory fileUploadCategory) throws IOException {
+		String fileName = getCSVFileName(fileUploadCategory);
+		logger.info("FileName for category : " + fileUploadCategory + " is :" + fileName);
 		File file = new File(Path.of("").toAbsolutePath().toString() + "\\" + fileName);
 		boolean result = file.createNewFile();
 		if (result) {
@@ -140,9 +334,19 @@ public class FileUploadDetailsService {
 		return file;
 	}
 
-	public static File getCSVFile() {
-		String fileName = getCSVFileName();
+	public static File getCSVFile(FileUploadCategory fileUploadCategory) {
+		String fileName = getCSVFileName(fileUploadCategory);
+		logger.info("FileName for category (From getCSVFile() method) : " + fileUploadCategory + " is :" + fileName);
 		File file = new File(Path.of("").toAbsolutePath().toString() + "\\" + fileName);
 		return file;
 	}
+
+	public static File getMainCSVFile() {
+		// TODO Auto-generated method stub
+		String fileName = LocalDateTime.now().getMonth().toString() + "_" + LocalDateTime.now().getYear() + ".csv";
+		File file = new File(Path.of("").toAbsolutePath().toString() + "\\" + fileName);
+		return file;
+		// return null;
+	}
+
 }

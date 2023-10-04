@@ -1,6 +1,7 @@
 package com.vyomlabs.emailservice;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -25,7 +26,7 @@ import javax.mail.internet.MimeMultipart;
 import org.apache.log4j.Logger;
 
 import com.vyomlabs.entity.FileBackupDetails;
-import com.vyomlabs.entity.FileUploadStatus;
+import com.vyomlabs.util.CSVUtil;
 import com.vyomlabs.util.PropertiesExtractor;
 import com.vyomlabs.util.TextEncryptorAndDecryptor;
 
@@ -45,11 +46,11 @@ public class EmailService {
 		this.fileList = fileList;
 	}
 
-	public void sendMail(File costReport, File usageReport, File fileDetails) throws IOException {
+	public void sendMail(File costReport, File usageReport, File csvFile) throws IOException {
 		//PropertyConfigurator.configure("src/main/resources/log4j.properties");
 
 		logger.info("preparing to send message ...");
-		String message = composeMessage(fileList);
+		String message = composeMessage(csvFile);
 		String subject = "Monthly S3 Bucket Usage and Cost Report for the Month - " + new SimpleDateFormat("MMM/YYYY").format(new Date());
 		String to = propertiesExtractor.getProperty("mail.receiver");
 		String from = propertiesExtractor.getProperty("mail.sender");
@@ -97,7 +98,7 @@ public class EmailService {
 			textMime.setText(message);
 			costFileMime.attachFile(costReport);
 			usageFileMime.attachFile(usageReport);
-			fileDetailsMime.attachFile(fileDetails);
+			fileDetailsMime.attachFile(csvFile);
 			mimeMultipart.addBodyPart(textMime);
 			mimeMultipart.addBodyPart(costFileMime);
 			mimeMultipart.addBodyPart(usageFileMime);
@@ -118,7 +119,7 @@ public class EmailService {
 		return matcher.matches();
 	}
 
-	private String composeMessage(List<FileBackupDetails> fileList) {
+	private String composeMessage(File csvFile) throws FileNotFoundException, IOException {
 		StringBuffer sb = new StringBuffer();
 		sb.append("Dear Admin , \n\n");
 		sb.append("We hope this email finds you well. We are writing to provide you with the monthly AWS S3 bucket cost and usage report for the month ")
@@ -126,10 +127,10 @@ public class EmailService {
 				.append(". \nThis report aims to summarize the usage cost incurred and data usage in this month, and details about the number of objects stored, bucket size and cost of the S3 bucket. \n\n")
 				.append("\nAttention to these details will greatly contribute to our overall understanding of S3 bucket operations and assist in decision-making processes.\n\n");
 		sb.append("Following are the details of files uploaded this month: \n");
-		int failedFiles = (int) fileList.stream()
-				.filter((name) -> name.getUploadStatus().equals(FileUploadStatus.FAILED.name())).count();
-		int successFiles = (int) fileList.stream()
-				.filter((name) -> name.getUploadStatus().equals(FileUploadStatus.SUCCESS.name())).count();
+		
+		CSVUtil csvUtil = new CSVUtil(csvFile);
+		int failedFiles = csvUtil.getFailedFilesCount();
+		int successFiles = csvUtil.getSuccessFilesCount();
 		int totalFiles = successFiles + failedFiles;
 		sb.append("Total number of files  : " + totalFiles + "\n");
 		sb.append("Number of files that are successfully uploaded : " + successFiles + "\n");
