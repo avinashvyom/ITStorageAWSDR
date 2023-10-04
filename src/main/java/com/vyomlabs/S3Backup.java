@@ -38,7 +38,9 @@ public class S3Backup {
 
 	//private static FileStatus fileStatus;
 
-	private static File csvFile;
+	private static File mainCSVFile;
+	
+	private static File rerunCSVFile;
 
 	private static String USAGE_REPORT_FILE_NAME = "Usage_Report_" + getCurrentMonthAndYear() + ".csv";
 
@@ -66,9 +68,9 @@ public class S3Backup {
 			// MONTHNAME_YEAR_RERUN.csv and upload the files
 			// and create records in RERUN csv file.
 			fileUploadCategory = FileUploadCategory.FAILURE_FILES_UPLOAD;
-			FileUploadDetailsService.createCSVFile(fileUploadCategory);
-			csvFile = FileUploadDetailsService.getMainCSVFile();
-			List<FileDetails> failureFileDetails = FileUploadDetailsService.getFailureFileDetails(csvFile);
+			rerunCSVFile = FileUploadDetailsService.createCSVFile(fileUploadCategory);
+			mainCSVFile = FileUploadDetailsService.getMainCSVFile();
+			List<FileDetails> failureFileDetails = FileUploadDetailsService.getFailureFileDetails(mainCSVFile);
 			if (!failureFileDetails.isEmpty()) {
 				logger.info("Failure files uploading.......");
 				failureFileDetails.forEach(file -> {
@@ -81,18 +83,19 @@ public class S3Backup {
 									Path.of(file.getFilePathOnLocalDrive()),file.getFileStatus());
 						}
 					} catch (IOException e) {
-						logger.info("Exception caught in line no 53.....................");
-						e.printStackTrace();
+						logger.info("Exception caught if block.....................");
+						logger.info("Exception : "+e);
+						//e.printStackTrace();
 					}
 				});
-				sendNotificationEmail(FileUploadDetailsService.getFileDetails(), s3Client, BUCKET_NAME, csvFile);
+				sendNotificationEmail(FileUploadDetailsService.getFileDetails(), s3Client, BUCKET_NAME, rerunCSVFile);
 			} else {
 				logger.info("All files are successfully uploaded.................");
 				System.exit(0);
 			}
 		} else {
 			fileUploadCategory = FileUploadCategory.FRESH_DIFFERENTIAL_FILES_UPLOAD;
-			csvFile = FileUploadDetailsService.createCSVFile(fileUploadCategory);
+			mainCSVFile = FileUploadDetailsService.createCSVFile(fileUploadCategory);
 			try {
 				logger.info("Fresh differential files uploading.......");
 				String backupFolderPath = propertiesExtractor.getProperty("s3upload.input-folder-path");
@@ -101,9 +104,6 @@ public class S3Backup {
 				List<FileDetails> fileDataForUpload = FileDataProvider.getFileDataForUpload(backupFolder);
 				fileDataForUpload.forEach(fileDetail -> {
 					String key = fileDetail.getFilePathInS3();
-					//String key = backupFolder.toPath().relativize(path).toString();
-					//key = backupFolderPath.substring(3) + "/" + key;
-					//key = key.replace("\\", "/");
 					logger.info("key: " + key);
 					logger.info("path: " + fileDetail.getFilePathOnLocalDrive());
 					Path filePath = Path.of(fileDetail.getFilePathOnLocalDrive());
@@ -124,11 +124,11 @@ public class S3Backup {
 					}
 				});
 				logger.info("Backup completed successfully.........................");
-				sendNotificationEmail(FileUploadDetailsService.getFileDetails(), s3Client, BUCKET_NAME, csvFile);
+				sendNotificationEmail(FileUploadDetailsService.getFileDetails(), s3Client, BUCKET_NAME, mainCSVFile);
 			} catch (Exception e) {
 				logger.error("Error occurred during backup: " + e.getMessage());
 				e.printStackTrace();
-				sendNotificationEmail(FileUploadDetailsService.getFileDetails(), s3Client, BUCKET_NAME, csvFile);
+				sendNotificationEmail(FileUploadDetailsService.getFileDetails(), s3Client, BUCKET_NAME, mainCSVFile);
 			} finally {
 			}
 		}
@@ -150,23 +150,30 @@ public class S3Backup {
 			upload.waitForCompletion();
 			logger.info("Multipart upload completed for file : " + filePath.getFileName());
 //			if (fileUploadCategory.equals(FileUploadCategory.DIFFERENTIAL_FILES_UPLOAD)) {
-			csvFile = FileUploadDetailsService.backupFileData(key, filePath, FileUploadStatus.SUCCESS,
-					fileStatus, FileSizeCalculator.getFileSize(size), csvFile, fileUploadCategory);
-//			} else {
-//				FileUploadDetailsService.backupFileData(key, filePath, FileUploadStatus.SUCCESS, fileStatus.name(),
-//						FileSizeCalculator.getFileSize(size), csvFile, fileUploadCategory);
-//			}
+			
+			switch(fileUploadCategory) {
+			case FRESH_DIFFERENTIAL_FILES_UPLOAD : 
+				mainCSVFile = FileUploadDetailsService.backupFileData(key, filePath, FileUploadStatus.SUCCESS,
+						fileStatus, FileSizeCalculator.getFileSize(size), mainCSVFile, fileUploadCategory);
+				break;
+			case FAILURE_FILES_UPLOAD : 
+				rerunCSVFile = FileUploadDetailsService.backupFileData(key, filePath, FileUploadStatus.SUCCESS,
+						fileStatus, FileSizeCalculator.getFileSize(size), rerunCSVFile, fileUploadCategory);
+				break;
+			}
 		} catch (Exception e) {
-			// if (fileUploadCategory.equals(FileUploadCategory.DIFFERENTIAL_FILES_UPLOAD))
-			// {
-			csvFile = FileUploadDetailsService.backupFileData(key, filePath, FileUploadStatus.FAILED, fileStatus,
-					FileSizeCalculator.getFileSize(size), csvFile, fileUploadCategory);
-			// } else {
-//				FileUploadDetailsService.backupFileData(key, filePath, FileUploadStatus.SUCCESS, fileStatus.name(),
-//						FileSizeCalculator.getFileSize(size), csvFile, fileUploadCategory);
-			// }
+			switch(fileUploadCategory) {
+			case FRESH_DIFFERENTIAL_FILES_UPLOAD : 
+				mainCSVFile = FileUploadDetailsService.backupFileData(key, filePath, FileUploadStatus.FAILED,
+						fileStatus, FileSizeCalculator.getFileSize(size), mainCSVFile, fileUploadCategory);
+				break;
+			case FAILURE_FILES_UPLOAD : 
+				rerunCSVFile = FileUploadDetailsService.backupFileData(key, filePath, FileUploadStatus.FAILED,
+						fileStatus, FileSizeCalculator.getFileSize(size), rerunCSVFile, fileUploadCategory);
+				break;
+			}
 			e.printStackTrace();
-			logger.error("Error occured during Multipart upload....." + e.getMessage());
+			logger.error("Error occured during Multipart upload....." + e);
 
 		}
 	}
@@ -193,38 +200,29 @@ public class S3Backup {
 			request.withStorageClass(StorageClass.StandardInfrequentAccess);
 			s3Client.putObject(request);
 			logger.info("Uploaded file: " + filePath);
-			// if (fileStatuses.length > 0) {
-			// if (fileUploadCategory.equals(FileUploadCategory.DIFFERENTIAL_FILES_UPLOAD))
-			// {
-			csvFile = FileUploadDetailsService.backupFileData(key, filePath, FileUploadStatus.SUCCESS, fileStatus,
-					FileSizeCalculator.getFileSize(size), csvFile, fileUploadCategory);
-			// }
-			// } else {
-			// if (fileUploadCategory.equals(FileUploadCategory.DIFFERENTIAL_FILES_UPLOAD))
-			// {
-//					csvFile = FileUploadDetailsService.backupFileData(key, filePath, FileUploadStatus.SUCCESS,
-//							fileStatus, FileSizeCalculator.getFileSize(size), csvFile,
-//							fileUploadCategory);
-			// }
-			// }
+			switch(fileUploadCategory) {
+			case FRESH_DIFFERENTIAL_FILES_UPLOAD : 
+				mainCSVFile = FileUploadDetailsService.backupFileData(key, filePath, FileUploadStatus.SUCCESS,
+						fileStatus, FileSizeCalculator.getFileSize(size), mainCSVFile, fileUploadCategory);
+				break;
+			case FAILURE_FILES_UPLOAD : 
+				rerunCSVFile = FileUploadDetailsService.backupFileData(key, filePath, FileUploadStatus.SUCCESS,
+						fileStatus, FileSizeCalculator.getFileSize(size), rerunCSVFile, fileUploadCategory);
+				break;
+			}
 		} catch (Exception e) {
 			logger.error("Error uploading file : " + filePath + " - " + e.getMessage());
 			logger.error("Exception : ", e);
-//			if (fileStatuses.length > 0) {
-//				if (fileUploadCategory.equals(FileUploadCategory.DIFFERENTIAL_FILES_UPLOAD)) {
-//					csvFile = FileUploadDetailsService.backupFileData(key, filePath, FileUploadStatus.FAILED,
-//							fileStatuses[0], FileSizeCalculator.getFileSize(size), csvFile, fileUploadCategory);
-//				}
-//			} else {
-//				if (fileUploadCategory.equals(FileUploadCategory.DIFFERENTIAL_FILES_UPLOAD)) {
-//					csvFile = FileUploadDetailsService.backupFileData(key, filePath, FileUploadStatus.FAILED,
-//							FileDataProvider.getFileStatus().name(), FileSizeCalculator.getFileSize(size), csvFile,
-//							fileUploadCategory);
-//				}
-//			}
-			csvFile = FileUploadDetailsService.backupFileData(key, filePath, FileUploadStatus.FAILED, fileStatus,
-					FileSizeCalculator.getFileSize(size), csvFile, fileUploadCategory);
-
+			switch(fileUploadCategory) {
+			case FRESH_DIFFERENTIAL_FILES_UPLOAD : 
+				mainCSVFile = FileUploadDetailsService.backupFileData(key, filePath, FileUploadStatus.FAILED,
+						fileStatus, FileSizeCalculator.getFileSize(size), mainCSVFile, fileUploadCategory);
+				break;
+			case FAILURE_FILES_UPLOAD : 
+				rerunCSVFile = FileUploadDetailsService.backupFileData(key, filePath, FileUploadStatus.FAILED,
+						fileStatus, FileSizeCalculator.getFileSize(size), rerunCSVFile, fileUploadCategory);
+				break;
+			}
 		}
 	}
 
