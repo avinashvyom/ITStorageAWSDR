@@ -118,14 +118,14 @@ public class FileUploadDetailsService {
 		csvParser.close();
 
 		logger.info("no of records from csv are : " + csvRecords.size());
-		logger.info("CSV records : " + csvRecords.toString());
+		//logger.info("CSV records : " + csvRecords.toString());
 		csvRecords.remove(0);
 		logger.info("number of records from csv after removing header are : " + csvRecords.size());
 		List<FileDetails> failureFileDetails = new ArrayList<>();
 
 		failureFileDetails.addAll(addThePendingAndFailedFiles(csvRecords));
 
-		logger.info("Failure or Pending file Details : " + failureFileDetails.toString());
+		//logger.info("Failure or Pending file Details : " + failureFileDetails.toString());
 		logger.info("No of failure or pending records are : " + failureFileDetails.size());
 		return failureFileDetails;
 	}
@@ -147,7 +147,7 @@ public class FileUploadDetailsService {
 				});
 
 		logger.info("no of Success Records are : " + successRecords.size());
-		logger.info("Success records are : \n" + successRecords.toString());
+		//logger.info("Success records are : \n" + successRecords.toString());
 
 		String backupFolderPath = propertiesExtractor.getProperty("s3upload.input-folder-path");
 
@@ -158,7 +158,7 @@ public class FileUploadDetailsService {
 		// which contains (SUCCESS records , FAILED records and PENDING records also)
 		List<FileDetails> masterFileDataForUpload = FileDataProvider.getFileDataForUpload(backupFolder);
 
-		logger.info("Master data for upload is : \n" + masterFileDataForUpload.toString());
+		//logger.info("Master data for upload is : \n" + masterFileDataForUpload.toString());
 		logger.info(
 				"No of records for master upload before removing success records : " + masterFileDataForUpload.size());
 		// Now we are removing all success records so that only pending and failed
@@ -173,7 +173,7 @@ public class FileUploadDetailsService {
 		logger.info("No of records for pendingAndFailedFiles after adding records to new list records : "
 				+ masterFileDataForUpload.size());
 
-		logger.info("Pending and failed file records are : " + masterFileDataForUpload.toString());
+		//logger.info("Pending and failed file records are : " + masterFileDataForUpload.toString());
 
 		return masterFileDataForUpload;
 	}
