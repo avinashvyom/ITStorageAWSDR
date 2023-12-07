@@ -102,6 +102,7 @@ public class S3Backup {
 				logger.info("backupFolderPath :" + backupFolderPath);
 				File backupFolder = new File(backupFolderPath);
 				List<FileDetails> fileDataForUpload = FileDataProvider.getFileDataForUpload(backupFolder);
+				logger.info("No of files : " + fileDataForUpload.size());
 				fileDataForUpload.forEach(fileDetail -> {
 					String key = fileDetail.getFilePathInS3();
 					logger.info("key: " + key);
@@ -116,9 +117,9 @@ public class S3Backup {
 						} else {
 							uploadFileToS3(s3Client, BUCKET_NAME, key, filePath,fileDetail.getFileStatus());
 							// to test the interruption test case
-							Thread.sleep(6000);
+							//Thread.sleep(6000);
 						}
-					} catch (IOException | InterruptedException e) {
+					} catch (IOException e) {
 						logger.info("Exception in reading files......");
 						e.printStackTrace();
 					}
@@ -128,6 +129,7 @@ public class S3Backup {
 			} catch (Exception e) {
 				logger.error("Error occurred during backup: " + e.getMessage());
 				e.printStackTrace();
+				logger.error("Error occurred during backup: ", e);
 				sendNotificationEmail(FileUploadDetailsService.getFileDetails(), s3Client, BUCKET_NAME, mainCSVFile);
 			} finally {
 			}
