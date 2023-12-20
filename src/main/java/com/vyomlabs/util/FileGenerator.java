@@ -9,7 +9,7 @@ public class FileGenerator {
 
 	public static void main(String[] args) throws IOException, InterruptedException {
 		// TODO Auto-generated method stub
-		for (int i = 1; i <= 20; i++) {
+		for (int i = 1; i <= 20000; i++) {
 			File file = new File(Path.of("D:\\test").toAbsolutePath().toString() + "\\" + i + ".txt");
 			file.createNewFile();
 			

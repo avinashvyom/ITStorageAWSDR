@@ -54,7 +54,7 @@ public class S3Backup {
 
 	public static void main(String[] args) throws IOException, CsvValidationException {
 
-		PropertyConfigurator.configure(Paths.get("").toAbsolutePath().toString() + "\\" + "application.properties");
+		PropertyConfigurator.configure(Path.of("").toAbsolutePath().toString() + "\\" + "application.properties");
 
 		String BUCKET_NAME = propertiesExtractor.getProperty("s3.bucket-name");
 

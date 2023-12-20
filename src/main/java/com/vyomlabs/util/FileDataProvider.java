@@ -130,8 +130,9 @@ public class FileDataProvider {
 			// Instant lastCreated = fileAttributes.creationTime().toInstant();
 
 			// logger.info("File upload duration is : " + fileUploadDuration);
+			Instant lastCreated = fileAttributes.creationTime().toInstant();
 			Instant oneMonthAgo = Instant.now().minus(fileUploadDuration, ChronoUnit.DAYS);
-			boolean result = lastModified.isAfter(oneMonthAgo);
+			boolean result = lastModified.isAfter(oneMonthAgo) || lastCreated.isAfter(oneMonthAgo);
 			logger.info("Is file modified during the time duration?:- " + result);
 			return result;
 		} catch (Exception e) {

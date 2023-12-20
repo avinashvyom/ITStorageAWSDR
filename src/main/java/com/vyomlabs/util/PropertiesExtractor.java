@@ -11,6 +11,7 @@ public class PropertiesExtractor {
 	public File file;
 	public PropertiesExtractor() {
 		file = new File(Paths.get("").toAbsolutePath().toString() + "\\" + "application.properties");
+		//String name = file.getName();
 		try {
 			boolean result = file.createNewFile();
 			if(result) {

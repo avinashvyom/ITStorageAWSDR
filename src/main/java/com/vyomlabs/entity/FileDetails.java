@@ -1,7 +1,5 @@
 package com.vyomlabs.entity;
 
-import com.google.gson.annotations.SerializedName;
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.EqualsAndHashCode;
@@ -17,16 +15,13 @@ import lombok.Setter;
 @EqualsAndHashCode
 public class FileDetails {
 
-	@SerializedName("name")
+
 	private String fileName;
 
-	@SerializedName("pathOnLocalDrive")
 	private String filePathOnLocalDrive;
 
-	@SerializedName("pathOnS3")
 	private String filePathInS3;
 	
-	@SerializedName("fileStatus")
 	private String fileStatus;
 
 	@Override

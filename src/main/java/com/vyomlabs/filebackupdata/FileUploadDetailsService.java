@@ -108,6 +108,7 @@ public class FileUploadDetailsService {
 
 		FileReader fileReader = new FileReader(csvFile);
 		CSVParser csvParser = new CSVParser(fileReader, CSVFormat.DEFAULT);
+		
 		for (CSVRecord csvRecord : csvParser) {
 			FileBackupDetails fileBackupDetails = FileBackupDetails.builder().fileName(csvRecord.get(0))
 					.filePathOnLocalDrive(csvRecord.get(1)).filePathInS3(csvRecord.get(2)).uploadDate(csvRecord.get(3))
